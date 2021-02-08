@@ -1,8 +1,7 @@
 # Tiles
 
-Navigate to the tiles01 folder 
-    cd tiles01 
+Navigate to the tiles01 folder. Write <code>cd tiles01</code> in the terminal.
 
-Run the command 
-    npm install
-    npm start
+Run the commands
+    <code>npm install</code>
+    <code>npm start</code>
