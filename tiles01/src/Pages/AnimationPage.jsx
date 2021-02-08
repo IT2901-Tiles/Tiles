@@ -5,7 +5,7 @@ function AnimationPage() {
     return (
         <div className="Page">
             <p>AnimationPage</p>
-            <Link to="/cards"><p className="Logo">Back</p></Link>
+            <Link to="/cards"><p>Back</p></Link>
 
         </div>
     );

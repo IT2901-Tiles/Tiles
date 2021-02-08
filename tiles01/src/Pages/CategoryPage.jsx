@@ -10,7 +10,7 @@ function CategoryPage(props) {
         <div className="Page">
             <p>CategoryPage</p>
             <p>{props.location.state.category}</p>
-            <Link to="/cards"><p className="Logo">Cards</p></Link>
+            <Link to="/cards"><p>Cards</p></Link>
         </div>
     );
 }
