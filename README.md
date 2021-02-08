@@ -1,7 +1,8 @@
 # Tiles
 
-Navigate to the tiles01 folder (cd tiles01 in the terminal)
+Navigate to the tiles01 folder 
+    cd tiles01 
 
-Run the command npm install
-
-Run the command npm start
+Run the command 
+    npm install
+    npm start
