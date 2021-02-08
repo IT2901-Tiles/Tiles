@@ -5,10 +5,11 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 
-function CategoryPage() {
+function CategoryPage(props) {
     return (
         <div className="Page">
             <p>CategoryPage</p>
+            <p>{props.location.state.category}</p>
             <Link to="/cards"><p className="Logo">Cards</p></Link>
         </div>
     );
