@@ -18,6 +18,28 @@ p{
 }
 
 /*Class css*/
+/* CHOSEN CARDS PAGE*/ 
+.topContainer .Logo {
+  width: 20%;
+  position: fixed;
+  right: 75%;
+}
+
+/* .topContainer .infoBox{
+  background-color: rgba(108, 143, 143, 0.589);
+  font-family: 'Comic Neue', cursive;
+  color: #F3EAC2;
+  padding: 1%;
+  border-radius: 20px;
+  text-shadow: 2px 2px #252525ab;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  top: 25%;
+} */
+
+
+/* MAIN PAGE */ 
 .mainPage .Logo{
   padding: 1px 2em;
   width: 35%;

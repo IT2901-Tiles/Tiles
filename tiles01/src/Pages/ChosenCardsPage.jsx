@@ -1,9 +1,16 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+//COMPONENTS IMPORTS
+import Logo from "../Components/Logo";
+import TopContainer from '../Components/TopContainer';
 
 function ChosenCardsPage() {
     return (
         <div className="Page">
+        <TopContainer
+            text = "Some text"
+        />
+
             <p>ChosenCardsPage</p>
             <Link
                 to={{
