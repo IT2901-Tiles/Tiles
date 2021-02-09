@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
 import {
-  MemoryRouter as Router,
+  //MemoryRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";

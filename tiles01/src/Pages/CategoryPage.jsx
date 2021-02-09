@@ -3,14 +3,14 @@
 
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import LinkButton from '../Components/LinkButton';
 
 function CategoryPage(props) {
     return (
         <div className="Page">
             <p>CategoryPage</p>
             <p>{props.location.state.category}</p>
-            <Link to="/cards"><p>Cards</p></Link>
+            <LinkButton target="/cards" title="Choose" size="Small" category={props.location.state.category}></LinkButton>
         </div>
     );
 }
