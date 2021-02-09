@@ -1,3 +1,62 @@
+/* MAIN DESIGN */ 
+/* OUR FONTS: 
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+    */
+/*Selector css*/
+html{
+  background-color: #68C2C4;
+}
+h1, p {
+  color: #F3EAC2;
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+}
+p{
+  font-family: 'Comic Neue', cursive;
+}
+
+/*Class css*/
+.mainPage .Logo{
+  padding: 1px 2em;
+  width: 35%;
+  margin: 5% auto 3%;
+  font-size: 2.5rem;
+}
+
+.mainPage .infoBox{
+  background-color: rgba(108, 143, 143, 0.589);
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.5rem;
+  color: #F3EAC2;
+  padding: 1%;
+  border-radius: 20px;
+  width: 70%;  
+  margin: 3% auto;
+  text-shadow: 2px 2px #252525ab;
+}
+
+.Button {
+  background-color: #F08A00;
+  border: solid 5px #C67200;
+  border-radius: 20px;
+  width: 25%;
+  margin: 10% auto;
+  font-size: 1.5rem;
+  padding: auto 5%;
+  width: 15%;
+  
+}
+
+.Button a{
+  text-decoration: none;
+  text-shadow: 2px 2px #252525ab;
+  margin: auto;
+  padding: 3% auto;
+}
+
+/*PRE DEFINDED DESIGN KAN SLETTES? */
 .App {
   text-align: center;
 }
