@@ -29,8 +29,14 @@ function Animation() {
                 <g>
                     <ellipse cx="70" cy="20" rx="15" ry="3" stroke="black" stroke-width="3"  />
                 </g>
-                
+                <g>
+                    <circle cx="240" cy="20" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
+                    <circle cx="190" cy="25" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
+                    <circle cx="225" cy="60" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
+                    <circle cx="155" cy="20" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
+                </g>
             </svg>
+            
         </div> 
     );
 }
