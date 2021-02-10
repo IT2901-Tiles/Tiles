@@ -3,13 +3,18 @@
 
 import React from 'react';
 import { Link } from "react-router-dom";
+import CardContainer from './../Components/CardContainer'
+
 
 
 function CategoryPage(props) {
+    console.log({props},"categorypage")
     return (
         <div className="Page">
             <p>CategoryPage</p>
             <p>{props.location.state.category}</p>
+            
+            <CardContainer category={props.location.state.category}/>
             <Link to="/cards"><p>Cards</p></Link>
         </div>
     );

@@ -8,7 +8,7 @@ function ChosenCardsPage() {
             <Link
                 to={{
                     pathname: "/categories",
-                    state: { category: "Trigger" }
+                    state: { category: "Trigger"}
                 }}>
                 <p>Trigger</p></Link>
             <Link
