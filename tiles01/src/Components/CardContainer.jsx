@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./../css/CardContainer.css"
 import Card from "./Card"
-
+import Button from "./Button"
 
 function importAll(r) {
     return r.keys().map(r);
@@ -25,6 +25,7 @@ function CardContainer(props) {
         {listOfImages.map(
             (image,index) =>  <Card active={activeCard} onClick={handleCardClick} id={index} key={index} src={image.default}  />
         )}
+        <Button/>
         </div>
     );
 }
