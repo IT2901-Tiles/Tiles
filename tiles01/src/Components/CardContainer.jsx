@@ -1,22 +1,24 @@
 import React, { useState } from 'react';
-import "./../css/CardContainer.css"
+
 import Card from "./Card"
-import Button from "./Button"
+import LinkButton from "./LinkButton"
 
 function importAll(r) {
     return r.keys().map(r);
   }
 var cardPaths={
-    "Things":require.context("./../images/things", false, /\.(png|jpe?g|svg)$/),
-    "Trigger":require.context("./../images/sensors", false, /\.(png|jpe?g|svg)$/),
-    "Feedback":require.context("./../images/feedbacks", false, /\.(png|jpe?g|svg)$/)
+    "thing":require.context("./../images/things", false, /\.(png|jpe?g|svg)$/),
+    "trigger":require.context("./../images/sensors", false, /\.(png|jpe?g|svg)$/),
+    "feedback":require.context("./../images/feedbacks", false, /\.(png|jpe?g|svg)$/)
 }
 
 
 function CardContainer(props) {
+    console.log(props.category)
     const listOfImages=importAll(cardPaths[props.category]);
     const [activeCard,setActiveCard] = useState(null);
     function handleCardClick(newValue){
+        props.onSelect(newValue)
         setActiveCard(newValue.id)
         console.log("cardcointainer cardclick")
     }
@@ -25,7 +27,6 @@ function CardContainer(props) {
         {listOfImages.map(
             (image,index) =>  <Card active={activeCard} onClick={handleCardClick} id={index} key={index} src={image.default}  />
         )}
-        <Button/>
         </div>
     );
 }

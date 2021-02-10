@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import "./../css/Card.css"
+import "./Card.css"
 
 
-
+//
 
 
 function Card(props) {
@@ -10,7 +10,7 @@ function Card(props) {
         props.onClick(event.target) 
         console.log("Card click")
     }
-    console.log("card render")
+
     var imageClass="card"
     if (parseInt(props.active) === parseInt(props.id)){
         imageClass="card card-active"

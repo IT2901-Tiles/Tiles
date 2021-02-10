@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LinkButton from '../Components/LinkButton'
 
 function AnimationPage() {
     return (
         <div className="Page">
             <p>AnimationPage</p>
-            <Link to="/cards"><p>Back</p></Link>
-
+            <LinkButton title="Try again!" target="/" size="Large" category="animation"></LinkButton>
         </div>
     );
 }

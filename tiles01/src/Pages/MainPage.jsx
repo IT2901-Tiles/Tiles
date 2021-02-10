@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import LinkButton from '../Components/LinkButton';
 
 function MainPage() {
     return (
         <div className="Page">
             <p>MainPage</p>
-            <Link to="/cards"><p>Cards</p></Link>
+            <LinkButton title="Let's begin!" target="/cards" size="Large"></LinkButton>
         </div>
     );
 }
