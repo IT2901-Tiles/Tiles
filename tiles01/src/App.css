@@ -16,20 +16,21 @@ p{
   font-family: 'Comic Neue', cursive;
 }
 
+/* KAN FJERNES NÅR KNAPP-COMPONENTEN FUNGERER 
 a {
   text-decoration: none;
   text-shadow: 2px 2px #252525ab;
   margin: auto;
   padding: 3% auto;
-}
+} */
 
 /*Class css*/
 
 .Button {
   /*MÅ FIKSES NÅR COMPONENT STYLINGEN ER OPPE OG GÅR*/
-/*   background-color: #F08A00;
+  background-color: #F08A00;
   border: solid 5px #C67200;  
- */  border-radius: 20px;
+  border-radius: 20px;
   /* width: 25%; */
   margin: 10% auto;
   font-size: 1.5rem;
@@ -58,7 +59,60 @@ a {
   text-shadow: 2px 2px #252525ab;
 }
 
+/*** IMG ON MAIN PAGE ***/ 
+.mainPage .motionCard {
+  width: 20%;
+  transform: rotate(15deg);
+  position: absolute;
+  z-index: -1;
+  right: 90%;
+  top: 50%;
+}
 
+.mainPage .colorChangeCard{
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  z-index: 1;
+  right: 80%;
+  top: 62%;
+}
+
+.mainPage .bikeCard{
+  width: 20%;
+  transform: rotate(35deg);
+  position: absolute;
+  z-index: +1;
+  right: 75%;
+  top: 74%;
+}
+/* **TOP** */ 
+.mainPage .dropCardTop{
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  z-index: +1;
+  left: 92%;
+  bottom: 70%;
+}
+
+.mainPage .colorChangeCardTop{
+  width: 20%;
+  transform: rotate(30deg);
+  position: absolute;
+  z-index: 1;
+  left: 84%;
+  bottom: 70%;
+}
+
+.mainPage .motionCardTop{
+  width: 20%;
+  transform: rotate(35deg);
+  position: absolute;
+  z-index: -1;
+  left: 77%;
+  bottom: 80%;
+}
 
 
 /*PRE DEFINDED DESIGN KAN SLETTES? */
