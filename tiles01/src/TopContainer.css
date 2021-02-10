@@ -1,24 +1,28 @@
 /* MÅ FIKSES NÅR JEG HAR TID */ 
-Logo {
-    width: 22px;
+.TopContainer{
+  display: block;
+  padding-top: 1%;
+  padding-bottom: 10%;
+  padding-left: 1%;
+}
+
+
+.TopContainer .Logo {
+    width: 20%;
     position: fixed;
-    right: 75%;
+    font-size: x-large;
   }
   
-.infoBox{
+.TopContainer .infoBox{
     background-color: rgba(108, 143, 143, 0.589);
     font-family: 'Comic Neue', cursive;
     color: #F3EAC2;
     padding: 1%;
     border-radius: 20px;
     text-shadow: 2px 2px #252525ab;
-    width: 50%;
-    /* position: relative;
+    width: 60%;
+    position: fixed;
     left: 25%;
-    top: 25%; */
-    width: "70%";
-    position: "fixed";
-    left: "25%";
-    bottom: "88%";
+    padding: 1.5% 0 1.5%;
   }
   
