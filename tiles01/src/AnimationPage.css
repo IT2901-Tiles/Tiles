@@ -1,0 +1,23 @@
+/* CSS-styling for the components/page of AnimationPage.jsx - feel free to incorporate this in a common CSS-file */
+
+.animationsSquareRestriction {
+    position: absolute;
+    right: 1px;
+
+}
+
+/*fjern denne, blir sikkert lagt til i en annen request*/
+body {
+    background-color: #68C2C4;
+}
+
+.animationSquare {
+    background-color: #FBF4D7;
+    width: 50vw;
+    height: 35vw;
+    border-radius: 30px;
+    position: absolute;
+    right: 5vw;
+    top: 10vw;
+
+}
