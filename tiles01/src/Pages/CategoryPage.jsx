@@ -9,7 +9,6 @@ import LinkButton from '../Components/LinkButton';
 
 
 function CategoryPage(props) {
-    console.log(props.location.state.color)
     const [category] = useState(props.location.state.category)
     var styling = {color : "#68C2C4"}  
     styling.color=props.location.state.color
