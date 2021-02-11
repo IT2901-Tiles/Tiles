@@ -4,6 +4,12 @@
     font-family: 'Roboto', sans-serif;
     */
 /*Selector css*/
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden;
+}
+
 html{
   background-color: #68C2C4;
 }
