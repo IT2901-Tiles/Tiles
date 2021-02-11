@@ -1,3 +1,5 @@
+/*Litt usikker på om vi trenger denne importen da jeg allerede henter det inn i index.html*/
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 /* MAIN DESIGN */ 
 /* OUR FONTS: 
     font-family: 'Comic Neue', cursive;
@@ -122,8 +124,10 @@ a {
 
 
 /*PRE DEFINDED DESIGN KAN SLETTES? */
+
 .App {
   text-align: center;
+  font-family: 'Comic Neue', sans-serif;
 }
 
 .App-logo {

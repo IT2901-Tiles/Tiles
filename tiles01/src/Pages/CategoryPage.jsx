@@ -3,7 +3,11 @@
 
 import React, {useState} from 'react';
 import { Link } from "react-router-dom";
+//COMPONENT imports
 import TopContainer from '../Components/TopContainer';
+import CardContainer from './../Components/CardContainer'
+import LinkButton from '../Components/LinkButton';
+//CSS import
 import "../CardContainer.css";
 
 function CategoryPage(props) {
@@ -14,6 +18,12 @@ function CategoryPage(props) {
     }else if(category === "Feedback"){
         styling.color = "#F7CA14";
         styling.fontSize = "1.5rem";
+    }
+       
+    console.log({props},"categorypage");
+
+    function onCardClick(newValue){
+        console.log(newValue);
     }    
         
     return (
@@ -25,10 +35,10 @@ function CategoryPage(props) {
                     <div className="CardContainerTitle" style={styling}>{category}</div>
                 <p>CategoryPage</p>
                 <p>{props.location.state.category}</p>
-                <Link to="/cards"><p>Cards</p></Link>
+                <CardContainer category={props.location.state.category} onSelect={onCardClick}/>
+                <LinkButton target="/cards" title="Choose" size="Small" category={props.location.state.category}></LinkButton>
             </div>
         </div>
-    );
-}
+
 
 export default CategoryPage;

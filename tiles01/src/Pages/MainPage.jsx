@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-//import './App.css'; 
 //Component imports
 import Logo from "../Components/Logo";
+import LinkButton from '../Components/LinkButton';
+//img imports
 import motionCard from "../img/triggers/motion.png"
 import colorChangeCard from "../img/feedback/colorChange.png"
 import bikeCard from "../img/things/bike.png"
 import dropCard from "../img/triggers/drop.png"
-
 
 function MainPage() {
 
@@ -23,11 +22,7 @@ function MainPage() {
             <p>Welcome to the Tiles Internet of Things Invention! <br/>
             Let’s create some smart creations! </p>
             </div>
-            <div className="Button">
-            <Link to="/cards">
-            <p>Let's begin!</p>
-            </Link>
-            </div>
+            <LinkButton title="Let's begin!" target="/cards" size="Large"></LinkButton>
             <div>
                 <img className="motionCard"  alt="The motion card" src={motionCard} />
                 <img className="colorChangeCard" alt="ColorChangeCard" src={colorChangeCard}/>
