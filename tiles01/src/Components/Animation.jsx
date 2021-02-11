@@ -1,6 +1,8 @@
 import React from 'react';
 
 function Animation() {
+
+    
     
     return (
         <div className="Animation">
@@ -25,12 +27,7 @@ function Animation() {
                
                     <ellipse cx="70" cy="220" rx="15" ry="3" stroke="black" stroke-width="3"  />
                 </g>
-                <g className="emoji">
-                    <circle cx="240" cy="220" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
-                    <circle cx="190" cy="225" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
-                    <circle cx="225" cy="260" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
-                    <circle cx="155" cy="220" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
-                </g>
+               
                 <g className="person">
                     <circle id="head" cx="90" cy="150" r="20" stroke="#ffe5cc" stroke-width="1" fill="#ffe5cc"/>
                     <circle id="eye1" cx="83" cy="145" r="2" stroke="black" stroke-width="1" fill="black"/>
@@ -54,10 +51,33 @@ function Animation() {
                     <line id="tshirt" x1="85" y1="178" x2="70" y2="217" stroke="#ff5050" stroke-width="8"/>
                     <line id="tshirtArm1" x1="83" y1="181" x2="65" y2="177" stroke="#ff5050" stroke-width="8"/>
                     <line id="tshirtArm2" x1="83" y1="181" x2="100" y2="191" stroke="#ff5050" stroke-width="8"/>
-                    
+                </g>
+                <g>
+                    <g>
+                        <circle cx="240" cy="20" r="10" stroke="black" stroke-width="1" fill="#ffd966"></circle>
+                        <circle cx="237" cy="17" r="1" stroke="black" stroke-width="1" fill="black"></circle>
+                        <circle cx="243" cy="17" r="1" stroke="black" stroke-width="1" fill="black"></circle>
+                        <circle cx="240" cy="24" r="3" stroke="black" stroke-width="1" fill="red"></circle>
+                    </g>
+                
+                    <circle cx="190" cy="25" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
+                    <circle cx="187" cy="22" r="1" stroke="black" stroke-width="1" fill="black"/>
+                    <circle cx="193" cy="22" r="1" stroke="black" stroke-width="1" fill="black"/>
+                    <line x1="185" y1="29" x2="195" y2="29" stroke="black" stroke-width="2"/>
+
+                    <circle cx="225" cy="60" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
+                    <circle cx="222" cy="57" r="1" stroke="black" stroke-width="1" fill="black"/>
+                    <circle cx="228" cy="57" r="1" stroke="black" stroke-width="1" fill="black"/>
+                    <path d="M219,63 a40,180 0 0,0 12,0" fill="transparent" stroke="black" stroke-width="2"/>
+                
+                    <circle cx="155" cy="20" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
+                    <circle cx="152" cy="17" r="3" stroke="black" stroke-width="1" fill="black"/>
+                    <circle cx="158" cy="17" r="3" stroke="black" stroke-width="1" fill="black"/>
+                    <line x1="145" y1="17" x2="152" y2="17" stroke="black" stroke-width="2"/>
+                    <line x1="158" y1="17" x2="165" y2="17" stroke="black" stroke-width="2"/>
+                    <path d="M149,23 a40,180 0 0,0 12,0" fill="transparent" stroke="black" stroke-width="2"/>
                 </g>
             </svg>
-            
         </div> 
     );
 }
