@@ -1,14 +1,28 @@
 import './App.css';
+import React from 'react';
+import {
+  //MemoryRouter as Router,
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import MainPage from './Pages/MainPage';
+import ChosenCardsPage from './Pages/ChosenCardsPage';
+import CategoryPage from './Pages/CategoryPage';
+import AnimationPage from './Pages/AnimationPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          HEI
-        </p>
-      </header>
-    </div>
+      <Router>
+        <Switch>
+          <Route exact path='/' component={MainPage} />
+          <Route exact path='/cards' component={ChosenCardsPage} />
+          <Route exact path='/categories' component={CategoryPage} />
+          <Route exact path='/animation' component={AnimationPage} />
+        </Switch>
+      </Router>
+    </div >
   );
 }
 
