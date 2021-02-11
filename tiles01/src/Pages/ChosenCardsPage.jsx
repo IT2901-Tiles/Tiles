@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+
 //COMPONENTS IMPORTS
 import TopContainer from '../Components/TopContainer';
+import LinkButton from '../Components/LinkButton'
+
 
 function ChosenCardsPage() {
     return (
@@ -11,26 +14,11 @@ function ChosenCardsPage() {
         />
 
             <p>ChosenCardsPage</p>
-            <Link
-                to={{
-                    pathname: "/categories",
-                    state: { category: "Trigger" }
-                }}>
-                <p>Trigger</p></Link>
-            <Link
-                to={{
-                    pathname: "/categories",
-                    state: { category: "Things" }
-                }}>
-                <p>Things</p></Link>
-            <Link
-                to={{
-                    pathname: "/categories",
-                    state: { category: "Feedback" }
-                }}>
-                <p>Feedback</p></Link>
-            <Link to="/animation"><p>Animation</p></Link>
-            <Link to="/"><p>Main</p></Link>
+            <LinkButton target="/categories" title="Trigger" category="trigger" size="Small"></LinkButton>
+            <LinkButton target="/categories" title="Things" category="thing" size="Small"></LinkButton>
+            <LinkButton target="/categories" title="Feedback" category="feedback" size="Small"></LinkButton>
+            <LinkButton target="/animation" title="RUN!" category="animation" size="Large"></LinkButton>
+            <LinkButton target="/" title="Back"></LinkButton>
         </div>
     );
 }
