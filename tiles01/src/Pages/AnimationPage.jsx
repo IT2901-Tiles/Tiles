@@ -7,6 +7,7 @@ function AnimationPage() {
         <div className="Page">
             <p>AnimationPage</p>
             <LinkButton title="Try again!" target="/" size="Large" category="animation"></LinkButton>
+            <p>Test</p>
         </div>
     );
 }
