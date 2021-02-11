@@ -11,7 +11,6 @@ function AnimationPage() {
                 AnimationPage
             </p>
                 <AnimationsPreview />
-            <LinkButton title="Try again!" target="/" size="Large" category="animation"></LinkButton>
         </div>
     );
 }

@@ -1,23 +1,27 @@
 /* CSS-styling for the components/page of AnimationPage.jsx - feel free to incorporate this in a common CSS-file */
 
-.animationsSquareRestriction {
-    position: absolute;
-    right: 1px;
+/* The styling below belongs to the grid-outline of AnimationsPreview.jsx */
 
+.gridAnimationsPage {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    height: 5vw;
 }
 
-/*fjern denne, blir sikkert lagt til i en annen request*/
-body {
-    background-color: #68C2C4;
+.gridAnimationItem3 {
+    grid-area: 2 / 1 / span 2 / span 2;
 }
 
-.animationSquare {
+.gridAnimationItem4 {
+    grid-area: 2 / 3 / span 2 / span 2;
     background-color: #FBF4D7;
-    width: 50vw;
-    height: 35vw;
     border-radius: 30px;
-    position: absolute;
-    right: 5vw;
-    top: 10vw;
-
+    height: 600px;
+    margin: 10px;
 }
+
+.gridAnimationItem5 {
+    grid-area: 3 / 1 / 3 / 3;
+}
+
