@@ -7,7 +7,15 @@ function AnimationsPreview() {
     return(
         <div className="gridAnimationsPage">
             <div className="gridAnimationItem3">
-                Area for the selected cards
+                    <div className="card1AnimationsPage">
+                        Placeholder for card 1
+                    </div>
+                    <div className="card2AnimationsPage">
+                        Placeholder for card 2
+                    </div>
+                    <div className="card3AnimationsPage">
+                        Placeholder for card 3
+                    </div>
             </div>
             <div className="gridAnimationItem4">
                 Area for the animations based off the selected cards
