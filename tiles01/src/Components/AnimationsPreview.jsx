@@ -1,20 +1,22 @@
 import React from 'react';
 import LinkButton from './LinkButton';
-
+import CardContainer from './CardContainer';
+import Card from './Card';
 // Component for the preview of the animations in the animation page (final step of the process)
 
-function AnimationsPreview() {
+function AnimationsPreview(props) {
+
     return(
         <div className="gridAnimationsPage">
             <div className="gridAnimationItem3">
                     <div className="card1AnimationsPage">
-                        Placeholder for card 1
+                        card placeholder
                     </div>
                     <div className="card2AnimationsPage">
-                        Placeholder for card 2
+                        card placeholder
                     </div>
                     <div className="card3AnimationsPage">
-                        Placeholder for card 3
+                        card placeholder
                     </div>
             </div>
             <div className="gridAnimationItem4">
