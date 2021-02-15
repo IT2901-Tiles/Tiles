@@ -33,11 +33,11 @@
 /* Styling of the cards */
 .card1AnimationsPage, .card2AnimationsPage, .card3AnimationsPage {
     margin-top: 3vw;
+    margin: 3px;
 }
 
 .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
     height: 20vw;
-    margin: 3px;
 }
 
 .triggerAnimationsPage:hover, .thingAnimationsPage:hover, .feedbackAnimationsPage:hover {
