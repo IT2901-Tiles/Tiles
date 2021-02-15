@@ -7,6 +7,7 @@ import "./Card.css"
 
 function Card(props) {
     function handleClick(event){
+        console.log("dfukc")
         props.onClick(event.target) 
         console.log("Card click")
     }
