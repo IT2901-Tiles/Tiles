@@ -1,0 +1,102 @@
+.pageNotFoundTitle{
+    background-color : #E53D2FEE;
+    color: #F3EAC2;
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    border-radius: 30px;
+    text-shadow: 2px 2px #252525ab;
+    border: 0.25px solid #72140C;
+    box-shadow: 1px 1px 3px #000000AA;
+    padding: 0.5rem;
+    position: center;
+    margin: 1rem 25rem 0;
+}
+
+.middleContainer{
+    background-color: rgba(108, 143, 143, 0.589);
+    font-family: 'Comic Neue', cursive;
+    color: #F3EAC2;
+    font-size: 2rem;
+    border-radius: 20px;
+    text-shadow: 2px 2px #252525ab;
+    margin: 2rem 15rem 2rem;
+    padding: 1rem;
+}
+
+
+.mainPageButton, .cardsButton{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Imgs */
+.image{
+    width: 6rem;
+    position: absolute;
+    box-shadow: 10px 10px 5px rgba(108, 143, 143, 0.5);
+}
+
+/*** left side ***/
+.bikeCard{
+    right: 80%;
+    top: -2%;
+    transform: rotate(15deg);
+}
+
+.colorChangeCard{
+    right: 90%;
+    top: 20%;
+    transform: rotate(-15deg);
+}
+
+.motionCard{
+    right: 80%;
+    top: 42%;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+
+.dropCard{
+    right: 90%;
+    top: 64%;
+    transform: rotate(-15deg);
+}
+
+.penCard{
+    right: 80%;
+    top: 86%;
+    transform: rotate(15deg);
+}
+
+/*** right side ***/
+.colorChangeCard2{
+    left: 90%;
+    top: -14%;
+    transform: rotate(15deg);
+}
+
+.shakeCard{
+    left: 80%;
+    top: 8%;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+.umbrellaCard{
+    left: 90%;
+    top: 30%;
+    transform: rotate(15deg);
+}
+
+.emojiCard{
+    left: 80%;
+    top: 52%;
+    transform: rotate(-15deg);
+}
+
+.motionCard2{
+    left: 90%;
+    top: 74%;
+    transform: rotate(15deg);
+}
