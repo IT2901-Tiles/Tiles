@@ -7,9 +7,9 @@ import LinkButton from '../Components/LinkButton'
 function AnimationPage() {
     return (
         <div className="Page">
-        <TopContainer
-            text = "some text that will be shown in the instruction box"
-        />
+            <TopContainer
+                text="some text that will be shown in the instruction box"
+            />
             <p>AnimationPage</p>
             <LinkButton title="Try again!" target="/" size="Large" category="animation"></LinkButton>
         </div>
