@@ -61,10 +61,22 @@ function Animation() {
 
                     <ellipse id="hatMain" cx="90" cy="133" rx="20" ry="7" fill="red" />
                     <ellipse id="hatTop" cx="90" cy="120" rx="7" ry="7" fill="red" />
+                    
+                    <g>
+                        <line id="arm1" x1="83" y1="180" x2="29" y2="173" stroke="#ffe5cc" stroke-width="4"/>
+                        <line id="thumb" x1="30" y1="173" x2="30" y2="160" stroke="#ffe5cc" stroke-width="4"/>
+                        <line id="fingers1" x1="30" y1="170" x2="20" y2="170" stroke="#ffe5cc" stroke-width="10"/>
+                        <line id="tshirtArm1" x1="83" y1="181" x2="65" y2="177" stroke="#ff5050" stroke-width="8"/>
 
-                    <line id="arm1" x1="83" y1="180" x2="29" y2="173" stroke="#ffe5cc" stroke-width="4"/>
-                    <line id="thumb" x1="30" y1="173" x2="30" y2="160" stroke="#ffe5cc" stroke-width="4"/>
-                    <line id="fingers1" x1="30" y1="170" x2="20" y2="170" stroke="#ffe5cc" stroke-width="10"/>
+                        <animateTransform attributeName="transform"
+                          attributeType="XML"
+                          type="rotate"
+                          from="0 83 180"
+                          to="25 83 180"
+                          dur="0.5s"
+                          repeatCount="indefinite"/>
+                    </g>
+
                     <line id="arm2" x1="83" y1="180" x2="130" y2="210" stroke="#ffe5cc" stroke-width="4"/>
                     <line id="fingers2" x1="128" y1="210" x2="140" y2="210" stroke="#ffe5cc" stroke-width="6"/>
                     
@@ -73,72 +85,31 @@ function Animation() {
                     <line id="shoe" x1="97" y1="280" x2="110" y2="280" stroke="#3366cc" stroke-width="7"/>
                     <line id="pants" x1="70" y1="215" x2="95" y2="270" stroke="#006600" stroke-width="6"/>
                     <line id="tshirt" x1="85" y1="178" x2="70" y2="217" stroke="#ff5050" stroke-width="8"/>
-                    <line id="tshirtArm1" x1="83" y1="181" x2="65" y2="177" stroke="#ff5050" stroke-width="8"/>
                     <line id="tshirtArm2" x1="83" y1="181" x2="100" y2="191" stroke="#ff5050" stroke-width="8"/>
                 </g>
-                <g className="emoji">
-                    <g className="emojiSurprise">
-                        <circle cx="240" cy="220" r="10" stroke="black" stroke-width="1" fill="#ffd966"></circle>
-                        <circle cx="237" cy="217" r="1" stroke="black" stroke-width="1" fill="black"></circle>
-                        <circle cx="243" cy="217" r="1" stroke="black" stroke-width="1" fill="black"></circle>
-                        <circle cx="240" cy="224" r="3" stroke="black" stroke-width="1" fill="red"></circle>
+                <g className="sun">
+                    <circle cx="250" cy="50" r="30" strokeWidth="0" fill="yellow"/>
+                    <line x1="290" y1="65" x2="320" y2="85" stroke="yellow" stroke-width="3" />
+                    <line x1="290" y1="40" x2="320" y2="40" stroke="yellow" stroke-width="3" />
+                    <line x1="280" y1="20" x2="310" y2="5" stroke="yellow" stroke-width="3" />
+                    <line x1="260" y1="10" x2="265" y2="-10" stroke="yellow" stroke-width="3" />
+                    <line x1="240" y1="10" x2="235" y2="-30" stroke="yellow" stroke-width="3" />
+                    <line x1="220" y1="20" x2="205" y2="0" stroke="yellow" stroke-width="3" />
+                    <line x1="210" y1="40" x2="175" y2="35" stroke="yellow" stroke-width="3" />
+                    <line x1="210" y1="65" x2="175" y2="75" stroke="yellow" stroke-width="3" />
+                    <line x1="225" y1="85" x2="205" y2="120" stroke="yellow" stroke-width="3" />
+                    <line x1="255" y1="95" x2="255" y2="130" stroke="yellow" stroke-width="3" />
+                    <line x1="280" y1="85" x2="305" y2="125" stroke="yellow" stroke-width="3" />
                         <animateTransform attributeName="transform"
                           attributeType="XML"
-                          type="translate"
-                          from="0 0"
-                          to="150 20"
-                          begin="2s"
+                          type="rotate"
+                          from="0 250 50"
+                          to="360 250 50"
                           dur="4s"
-                          repeatCount="indefinite"/>
-                    </g>
+                          repeatCount="indefinite"/> 
 
-                    <g className="emojiBoring">                
-                        <circle cx="190" cy="225" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
-                        <circle cx="187" cy="222" r="1" stroke="black" stroke-width="1" fill="black"/>
-                        <circle cx="193" cy="222" r="1" stroke="black" stroke-width="1" fill="black"/>
-                        <line x1="185" y1="229" x2="195" y2="229" stroke="black" stroke-width="2"/>
-                        <animateTransform attributeName="transform"
-                          attributeType="XML"
-                          type="translate"
-                          from="0 0"
-                          to="150 20"
-                          begin="0s"
-                          dur="4s"
-                          repeatCount="indefinite"/>
-                    </g>
-
-                    <g className="emojiSmile">    
-                        <circle cx="225" cy="260" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
-                        <circle cx="222" cy="257" r="1" stroke="black" stroke-width="1" fill="black"/>
-                        <circle cx="228" cy="257" r="1" stroke="black" stroke-width="1" fill="black"/>
-                        <path d="M219,263 a40,180 0 0,0 12,0" fill="transparent" stroke="black" stroke-width="2"/>
-                        <animateTransform attributeName="transform"
-                          attributeType="XML"
-                          type="translate"
-                          from="0 0"
-                          to="150 20"
-                          begin="2s"
-                          dur="4s"
-                          repeatCount="indefinite"/>
-                    </g>
-                
-                    <g className="emojiSunglasses">    
-                        <circle cx="155" cy="220" r="10" stroke="black" stroke-width="1" fill="#ffd966"/>
-                        <circle cx="152" cy="217" r="3" stroke="black" stroke-width="1" fill="black"/>
-                        <circle cx="158" cy="217" r="3" stroke="black" stroke-width="1" fill="black"/>
-                        <line x1="145" y1="217" x2="152" y2="217" stroke="black" stroke-width="2"/>
-                        <line x1="158" y1="217" x2="165" y2="217" stroke="black" stroke-width="2"/>
-                        <path d="M149,223 a40,180 0 0,0 12,0" fill="transparent" stroke="black" stroke-width="2"/>
-                        <animateTransform attributeName="transform"
-                          attributeType="XML"
-                          type="translate"
-                          from="0 0"
-                          to="150 20"
-                          begin="2s"
-                          dur="4s"
-                          repeatCount="indefinite"/>
-                    </g>
                 </g>
+               
                 
             </svg>
         </div> 
