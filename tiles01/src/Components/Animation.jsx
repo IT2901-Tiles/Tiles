@@ -6,7 +6,12 @@ function Animation() {
     
     return (
         <div className="Animation">
+              
             <svg height="400" width="300"> 
+                <g>
+                    <rect width="300" height="400" fill="#b3e6ff"/>
+                    <rect x="0" y="300" width="300" height="100" fill="#8ccd7e"/>
+                </g>
                 <g className="bike"> 
                     <g className="wheel1"> 
                         <line x1="20" y1="255" x2="80" y2="308" stroke="black" stroke-width="3" />
@@ -134,6 +139,7 @@ function Animation() {
                           repeatCount="indefinite"/>
                     </g>
                 </g>
+                
             </svg>
         </div> 
     );
