@@ -11,3 +11,17 @@
 .card-active{
     border: 4px blue solid;
 }
+
+
+/* Styling the card grid on the chosenCards page. Might not be the right place to have this */
+
+
+.cardNotChosenText{
+    display: inline;
+    margin: 3%;
+}
+
+.chosenCard {
+    width:18%;
+    margin: 3%; 
+}
