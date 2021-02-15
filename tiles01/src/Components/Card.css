@@ -1,6 +1,9 @@
 .card{
-    width:15%;
-    margin: 3%;
+    width: 10rem;
+    height: auto;
+    margin: 5% 2%;
+    /* width:15%;
+     */
 }
 
 .card:hover{
@@ -9,5 +12,6 @@
             0px 7px 8px -4px rgba(0, 0, 0, 0.2);
 }
 .card-active{
-    border: 4px blue solid;
+    border: 0.375rem #6AABAD outset;
+    width: 11rem;
 }
