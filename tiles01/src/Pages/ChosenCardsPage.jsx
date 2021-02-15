@@ -1,10 +1,17 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+//COMPONENTS IMPORTS
+import TopContainer from '../Components/TopContainer';
 import LinkButton from '../Components/LinkButton'
+
 
 function ChosenCardsPage() {
     return (
         <div className="Page">
+        <TopContainer
+            text = "Some text"
+        />
+
             <p>ChosenCardsPage</p>
 
             <LinkButton target="/categories" title="Trigger" category="trigger" size="Small"></LinkButton>
