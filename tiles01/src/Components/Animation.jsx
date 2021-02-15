@@ -9,8 +9,8 @@ function Animation() {
               
             <svg height="400" width="300"> 
                 <g>
-                    <rect width="300" height="400" fill="#b3e6ff"/>
-                    <rect x="0" y="300" width="300" height="100" fill="#8ccd7e"/>
+                    <rect id="sky" width="300" height="400" fill="#b3e6ff"/>
+                    <rect id="grass" x="0" y="300" width="300" height="100" fill="#8ccd7e"/>
                 </g>
                 <g className="bike"> 
                     <g className="wheel1"> 
@@ -42,9 +42,9 @@ function Animation() {
                     </g>
                     <circle cx="160" cy="280" r="40" stroke="black" stroke-width="3" fill="transparent"/>
                 
-                    <polygon points="80,240 140,220 100,280 50,280" stroke="lightblue" stroke-width="3" fill="transparent" />
+                    <polygon id="frame" points="80,240 140,220 100,280 50,280" stroke="grey" stroke-width="3" fill="transparent" />
                 
-                    <line x1="138" y1="210" x2="160" y2="280" stroke="lightblue" stroke-width="3" />
+                    <line x1="138" y1="210" x2="160" y2="280" stroke="grey" stroke-width="3" />
                     <line x1="128" y1="210" x2="150" y2="210" stroke="black" stroke-width="3" />
                   
                     <line x1="70" y1="220" x2="100" y2="280" stroke="black" stroke-width="3" />
