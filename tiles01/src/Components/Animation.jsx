@@ -1,4 +1,8 @@
 import React from 'react';
+import Mbc from '../Animations/Mbc'
+import Mcc from '../Animations/Mcc'
+import Mbv from '../Animations/Mbv'
+
 
 function Animation() {
 
@@ -83,6 +87,7 @@ function Animation() {
             </svg>
 
               
+<<<<<<< HEAD
             <svg id="mbv" height="400" width="300"> 
                 <g>
                     <rect id="sky" width="300" height="400" fill="#b3e6ff"/>
@@ -290,6 +295,13 @@ function Animation() {
                     </g>
                 </g>
             </svg>
+=======
+            <Mbv/>
+            <Mbc/>
+            <Mcc/>
+            
+            
+>>>>>>> b82ba208f48d3e0fe8dab15f6f9ac1242b12ea33
         </div> 
     );
 }
