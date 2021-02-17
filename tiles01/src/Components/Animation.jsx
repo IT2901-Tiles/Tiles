@@ -4,6 +4,7 @@ import Mcc from '../Animations/Mcc'
 import Mbv from '../Animations/Mbv'
 import Mpv from '../Animations/Mpv'
 import Mcv from '../Animations/Mcv'
+import Mfv from '../Animations/Mfv'
 
 
 function Animation() {
@@ -17,6 +18,7 @@ function Animation() {
             <Mcc/>
             <Mpv/>
             <Mcv/>
+            <Mfv/>
         </div> 
     );
 }

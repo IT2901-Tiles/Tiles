@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-function Mpv() {
+function Mfv() {
     return (
-        <div className="Mpv">
+        <div className="Mfv">
             <svg id="mpv" height="400" width="300">
                 <g className="background">
                     <rect id="sky" width="300" height="400" fill="#b3e6ff"/>
@@ -98,4 +98,4 @@ function Mpv() {
     );
 }
 
-export default Mpv;
+export default Mfv;
