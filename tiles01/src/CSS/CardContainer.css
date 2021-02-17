@@ -16,15 +16,13 @@
     transform: rotate(-90deg) ;
     height: 2rem;
     background-color: #FBF4D7;
-    /*color: #68C2C4;*/
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.1ex;
     position: absolute;
     font-size: 2rem;
-    left: -15px;
-    bottom: 20%;
-    padding: 5px;
-
+    left: -2%;
+    bottom: 35%;
+    padding: 0.5% 1%;
     z-index: 1;
-
 }
+
