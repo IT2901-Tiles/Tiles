@@ -6,6 +6,7 @@ import Mpv from '../Animations/Mpv'
 import Mcv from '../Animations/Mcv'
 import Mfv from '../Animations/Mfv'
 import Mpc from '../Animations/Mpc'
+import Mfc from '../Animations/Mfc'
 
 
 function Animation() {
@@ -14,6 +15,7 @@ function Animation() {
 
     return (
         <div className="Animation">
+            <Mfc/>
             <Mbv/>
             <Mbc/>
             <Mcc/>
