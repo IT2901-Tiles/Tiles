@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-
 import Card from "./Card"
-import LinkButton from "./LinkButton"
-
 
 //imports all of the images
 function importAll(r) {
@@ -15,7 +12,7 @@ function importAll(r) {
 //paths tp where the different image sets are
 var cardPaths={
     "thing":require.context("./../images/things", false, /\.(png|jpe?g|svg)$/),
-    "trigger":require.context("./../images/sensors", false, /\.(png|jpe?g|svg)$/),
+    "trigger":require.context("./../images/triggers", false, /\.(png|jpe?g|svg)$/),
     "feedback":require.context("./../images/feedbacks", false, /\.(png|jpe?g|svg)$/)
 }
 //props:

@@ -38,3 +38,9 @@
     box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 19px 52px 0 rgba(0,0,0,0.19);
     filter: brightness(110%);
   }
+
+/** an extra class for the buttons on the 404 page to make the Large buttons wider**/
+  .wider {
+    width: 25rem;
+    font-size: 2rem;
+  }
