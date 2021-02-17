@@ -2,20 +2,13 @@
 //men hvis personen som lager denne siden er uenig i det er det bare å si ifra
 
 import React, {useState} from 'react';
-<<<<<<< HEAD
-import CardContainer from '../Components/CardContainer'
 import { Link } from "react-router-dom";
-=======
 //Component Imports
->>>>>>> 2b3a82c75540b359e4275681a8ca7e2703e81f07
 import TopContainer from '../Components/TopContainer';
 import LinkButton from '../Components/LinkButton';
-<<<<<<< HEAD
-=======
 import CardContainer from "../Components/CardContainer";
 //Css imports
 import "../CSS/CardContainer.css";
->>>>>>> 2b3a82c75540b359e4275681a8ca7e2703e81f07
 
 function CategoryPage(props) {
     console.log({props},"categorypage")
