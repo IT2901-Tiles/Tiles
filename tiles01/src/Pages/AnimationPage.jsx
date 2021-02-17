@@ -12,9 +12,7 @@ function AnimationPage() {
             <TopContainer
                 text="some text that will be shown in the instruction box"
             />
-            <p>AnimationPage</p>
             <AnimationsPreview /> 
-            <LinkButton title="Try again!" target="/" size="Large" category="animation"></LinkButton>
         </div>
     );
 }

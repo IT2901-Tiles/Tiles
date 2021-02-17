@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { useState } from 'react';
 import LinkButton from '../Components/LinkButton'
 import TopContainer from '../Components/TopContainer';
-import LinkButton from '../Components/LinkButton'
+
+export default ChosenCardsPage
 
 function ChosenCardsPage(props) {
     const [CardTrigger,setCardTrigger] = useState(null);
@@ -33,5 +34,4 @@ function ChosenCardsPage() {
         </div>
     );
 }
-
-export default ChosenCardsPage;
+}

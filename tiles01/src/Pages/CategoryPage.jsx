@@ -2,13 +2,15 @@
 //men hvis personen som lager denne siden er uenig i det er det bare å si ifra
 
 import React, {useState} from 'react';
+import CardContainer from '../Components/CardContainer'
 import { Link } from "react-router-dom";
 import TopContainer from '../Components/TopContainer';
 import "../CardContainer.css";
 import LinkButton from '../Components/LinkButton';
-import CardContainer from "../Components/CardContainer"
 
 function CategoryPage(props) {
+    console.log({props},"categorypage")
+    const [Card,setCard] = useState(null);
     const [category] = useState(props.location.state.category)
     var styling = {color : "#68C2C4"}  
     styling.color=props.location.state.color
