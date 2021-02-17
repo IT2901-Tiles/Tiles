@@ -2,10 +2,12 @@
 //men hvis personen som lager denne siden er uenig i det er det bare å si ifra
 
 import React, {useState} from 'react';
+//Component Imports
 import TopContainer from '../Components/TopContainer';
-import "../CardContainer.css";
 import LinkButton from '../Components/LinkButton';
-import CardContainer from "../Components/CardContainer"
+import CardContainer from "../Components/CardContainer";
+//Css imports
+import "../CSS/CardContainer.css";
 
 function CategoryPage(props) {
     const [category] = useState(props.location.state.category)

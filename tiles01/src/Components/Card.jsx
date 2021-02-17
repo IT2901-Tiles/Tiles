@@ -1,9 +1,5 @@
-import React, { useState } from 'react';
-import "./Card.css"
-
-
-//
-
+import React from 'react';
+import "../CSS/Card.css";
 
 function Card(props) {
 

@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-
 import Card from "./Card"
-import LinkButton from "./LinkButton"
-
 
 //imports all of the images
 function importAll(r) {
