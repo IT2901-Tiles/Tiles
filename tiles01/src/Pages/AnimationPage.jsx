@@ -10,7 +10,7 @@ function AnimationPage() {
             <p>
                 AnimationPage
             </p>
-                <AnimationsPreview />
+            <AnimationsPreview />       
         </div>
     );
 }

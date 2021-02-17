@@ -22,6 +22,7 @@
     height: 35vw;
     /*margin: 10px;*/
     padding: 5px;
+    position: relative;
 }
 
 .gridAnimationItem5 {
@@ -46,4 +47,21 @@
             0px 7px 8px -4px rgba(0, 0, 0, 0.2);
 }
 
+/* Styling for saving text file  */
+
+.textAreaAnimationPage {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+#textBoxAnimationPage {
+    width: 80%;
+    height: 20%;
+    margin: 3%;
+    font-family: sans-serif;
+}
+/* 
+.textButtonAnimationPage {
+} */
 
