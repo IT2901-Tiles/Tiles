@@ -3,10 +3,10 @@ import React from 'react';
 import Logo from "../Components/Logo";
 import LinkButton from '../Components/LinkButton';
 //img imports
-import motionCard from "../img/triggers/motion.png"
-import colorChangeCard from "../img/feedback/colorChange.png"
-import bikeCard from "../img/things/bike.png"
-import dropCard from "../img/triggers/drop.png"
+import motionCard from "../images/triggers/motion.png"
+import colorChangeCard from "../images/feedbacks/color_change.png"
+import bikeCard from "../images/things/bike.png"
+import dropCard from "../images/triggers/drop.png"
 
 function MainPage() {
 
