@@ -26,19 +26,20 @@ function Mpv() {
                         <line id="tshirtArm1" x1="90" y1="221" x2="65" y2="237" stroke="#ff5050" stroke-width="8"/>
                     </g>
 
-                    <line id="arm2" x1="90" y1="220" x2="130" y2="220" stroke="#ffe5cc" stroke-width="4"/>
-                    <line id="tshirtArm2" x1="90" y1="222" x2="110" y2="221" stroke="#ff5050" stroke-width="8"/>
+                    <line id="arm2" x1="90" y1="220" x2="130" y2="230" stroke="#ffe5cc" stroke-width="4"/>
+                    <line id="tshirtArm2" x1="90" y1="222" x2="110" y2="226" stroke="#ff5050" stroke-width="8"/>
                     
                     <g>  
-                        <line id="paintBrush" x1="128" y1="222" x2="140" y2="222" stroke="blue" stroke-width="6"/>
+                        <line id="penMain" x1="132" y1="220" x2="127" y2="235" stroke="black" stroke-width="4"/>
+                        <polygon id="penTop" points="200,10 250,190 160,210" style="fill:#cc9966;stroke:black;stroke-width:1" />
                         
-                        <animateTransform attributeName="transform"
+                        {/* <animateTransform attributeName="transform"
                             attributeType="XML"
                             type="rotate"
                             from="0 90 220"
                             to="45 90 220"
                             dur="1s"
-                            repeatCount="indefinite"/>
+                            repeatCount="indefinite"/> */}
                     </g>
 
                     <line id="body" x1="90" y1="200" x2="90" y2="320" stroke="#ffe5cc" stroke-width="4"/>
@@ -52,11 +53,19 @@ function Mpv() {
                     <line id="staffeli2" x1="165" y1="250" x2="195" y2="320" stroke="#cc9966" stroke-width="6"/>
                     <line id="staffeliBody" x1="165" y1="170" x2="165" y2="310" stroke="#cc9966" stroke-width="6"/>
                     <rect id="canvas" x="140" y="190" width="50" height="60" fill="white"/>
+                    <line id="staffeliEdge" x1="135" y1="250" x2="195" y2="250" stroke="#cc9966" stroke-width="6"/>
                     
-                    
+                    <circle id="sun" cx="165" cy="220" r="7" strokeWidth="0" fill="yellow"/>
+                        <line x1="175" y1="225" x2="185" y2="230" stroke="yellow" stroke-width="3" />
+                        <line x1="175" y1="215" x2="185" y2="210" stroke="yellow" stroke-width="3" />
+                        <line x1="165" y1="210" x2="165" y2="200" stroke="yellow" stroke-width="3" />
+                        <line x1="155" y1="215" x2="145" y2="210" stroke="yellow" stroke-width="3" />
+                        <line x1="155" y1="225" x2="145" y2="230" stroke="yellow" stroke-width="3" />
+                        <line x1="165" y1="230" x2="165" y2="240" stroke="yellow" stroke-width="3" />
+                  
                 </g>
 
-                <g className="sun">
+                <g className="bigSun">
                     <circle cx="250" cy="50" r="30" strokeWidth="0" fill="yellow"/>
                     <line x1="290" y1="65" x2="320" y2="85" stroke="yellow" stroke-width="3" />
                     <line x1="290" y1="40" x2="320" y2="40" stroke="yellow" stroke-width="3" />
