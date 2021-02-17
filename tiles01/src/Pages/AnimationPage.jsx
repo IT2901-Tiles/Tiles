@@ -1,6 +1,6 @@
 import React from 'react';
 import AnimationsPreview from "../Components/AnimationsPreview"
-import "../AnimationPage.css"
+import "../CSS/AnimationPage.css"
 import { Link } from 'react-router-dom';
 import TopContainer from '../Components/TopContainer'
 import LinkButton from '../Components/LinkButton'
