@@ -52,16 +52,15 @@
 .textAreaAnimationPage {
     position: absolute;
     bottom: 0px;
-    width: 100%;
+    margin: 3%;
+    width: 97%;
 }
 
 #textBoxAnimationPage {
-    width: 80%;
-    height: 20%;
-    margin: 3%;
+    height: 8vh;
     font-family: sans-serif;
+    resize: none;
+    width: 70%;
 }
-/* 
-.textButtonAnimationPage {
-} */
+
 

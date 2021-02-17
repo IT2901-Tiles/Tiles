@@ -3,15 +3,12 @@ import React, { useState } from 'react'
 
 function FormFieldAnimationPage() {
     const [input, setInput] = useState('')
-    let boolInput
 
     // The following function gathers the content from the textarea and inserts it into a external txt-file
     function downloadFile() {
         if (input === ''){
-            boolInput = false;
-            alert("Type something to save the file...")
+            alert("No text found")
         } else {
-            boolInput = true;
             const htmlElement = document.createElement("a")
             const valueInput = new Blob([document.getElementById("textBoxAnimationPage").value], {type: 'text/plain'})
             htmlElement.href = URL.createObjectURL(valueInput)
@@ -21,12 +18,15 @@ function FormFieldAnimationPage() {
         }
     }
 
+    // Will fix the position when the animations are ready
     return (
         <div className="textAreaAnimationPage">
-            <label>Your idea: </label>
+            <label>Your idea:
                 <br/>
                 <textarea id="textBoxAnimationPage" onChange={newInput => setInput(newInput.target.value)}/>
+                <br/>
                 <button onClick={downloadFile} className="textButtonAnimationPage">Save</button>
+                </label>
         </div>
     );
 }
