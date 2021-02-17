@@ -2,7 +2,7 @@
 
 .LargeButton {
     background-color: #F08A00;
-    border: solid 5px #00000043;
+    border: solid 5px #00000035;
     border-radius: 20px;
     font-size: 2.5rem;
     width: 20vw;
@@ -14,9 +14,14 @@
     box-shadow: 4px 6px 3px 4px rgb(0,0,0,0.25);
   }
 
+  .LargeButton:hover{
+    box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 19px 52px 0 rgba(0,0,0,0.19);
+    filter: brightness(110%);
+  }
+
   .SmallButton, .textButtonAnimationPage {
     background-color: #F08A00;
-    border: solid 4px #00000043;
+    border: solid 4px #00000035;
     border-radius: 20px;
     font-size: 1rem;
     width: 80%;
@@ -27,4 +32,9 @@
     font-family: 'Comic Neue', sans-serif;
     text-shadow: 2px 2px rgb(0,0,0,0.1);
     box-shadow: 2px 3px 1.5px 2px rgb(0,0,0,0.25);
+  }
+
+  .SmallButton:hover{
+    box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 19px 52px 0 rgba(0,0,0,0.19);
+    filter: brightness(110%);
   }
