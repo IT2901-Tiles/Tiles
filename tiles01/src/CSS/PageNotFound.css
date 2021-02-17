@@ -2,12 +2,12 @@
     background-color : #E53D2FEE;
     color: #F3EAC2;
     font-family: 'Roboto';
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     border-radius: 30px;
     text-shadow: 2px 2px #252525ab;
     border: 0.25px solid #72140C;
     box-shadow: 1px 1px 3px #000000AA;
-    padding: 0.5rem;
+    padding: 0 0.5rem;
     position: center;
     margin: 1rem 25rem 0;
 }
@@ -19,15 +19,15 @@
     font-size: 2rem;
     border-radius: 20px;
     text-shadow: 2px 2px #252525ab;
-    margin: 2rem 15rem 2rem;
+    margin: 2.5rem 15rem 3rem;
     padding: 1rem;
 }
 
 
-.mainPageButton, .cardsButton{
+.cardsButton{
     display: block;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 7%;
+    margin-bottom: 3%;
 }
 
 /* Imgs */
@@ -99,4 +99,10 @@
     left: 90%;
     top: 74%;
     transform: rotate(15deg);
+}
+
+.dropCard2{
+    left: 80%;
+    top: 95%;
+    transform: rotate(-15deg);
 }

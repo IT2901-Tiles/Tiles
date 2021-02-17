@@ -9,13 +9,13 @@ import dropCard from "../img/triggers/drop.png"
 import penCard from "../img/things/pen.png";
 import shakeCard from "../img/triggers/shake.png"
 import umbrellaCard from "../img/things/umbrella.png"
-import emojiCard from "../img/feedback/emoji.png"; //Byttes ut med kortet vi ender opp med? 
-
+import emojiCard from "../img/feedback/emoji.png"; //Byttes ut med kortet vi ender opp med?  
+//This page does not exist
 function NotFoundPage() {
     return (
         <div className="PageNotFound">
             <div className="pageNotFoundTitle">
-                <h1>This page does not exist</h1>
+                <h1>Page not found</h1>
             </div>
 
             <img src={bikeCard} alt="TheBikeCard" className="image bikeCard"/>
@@ -29,6 +29,7 @@ function NotFoundPage() {
             <img src={umbrellaCard} alt="a card" className="image umbrellaCard"/>
             <img src={emojiCard} alt="a card" className="image emojiCard"/>
             <img src={motionCard} alt="a card" className="image motionCard2"/>
+            <img src={dropCard} alt="a card" className="image dropCard2"/>
 
             <div className="middleContainer">
                 <p>It seems like you are a bit lost. 
@@ -36,11 +37,11 @@ function NotFoundPage() {
             </div>
 
             <div className="bottomContainer">
-            <div className="mainPageButton"> 
-              <LinkButton title="Main page" target="/" size="Large"></LinkButton>
-            </div>
             <div className="cardsButton"> 
-             <LinkButton title="Back to the cards" target="/cards" size="Large"></LinkButton>
+             <LinkButton title="Back to the cards" target="/cards" size="wider Large"></LinkButton>
+            </div>
+            <div className="mainPageButton"> 
+              <LinkButton title="Main page" target="/" size="wider Large"></LinkButton>
             </div>
             </div>
         </div>
