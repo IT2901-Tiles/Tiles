@@ -3,7 +3,7 @@
     margin: 3%;
 }
 
-.card:hover{
+.card:hover, .chosenTrigger:hover, .chosenThing:hover, .chosenFeedback:hover, .cardNotChosenText:hover {
     box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
             0px 5px 22px 4px rgba(0, 0, 0, 0.12),
             0px 7px 8px -4px rgba(0, 0, 0, 0.2);
@@ -15,23 +15,35 @@
 
 /* Will move this to a separate CCS file */
 .chosenCardsGrid {
-    max-width: 65%;
-    margin: auto;
-    margin-top:3%;
-
     display: grid;
-    grid-gap: 2%;
-    grid-template-columns: auto auto auto;
+    /* grid-gap: 2%; */
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    margin-top: 2vh;
 }
 
+.chosenCardsGrid2 {
+    grid-area: 1 / 2 / 1 / 4;
+    display: grid;
+    grid-template-columns: auto auto auto; /* remove one "auto" if we decide to go with 4 cards instad of 3 */
+}
+
+
 .triggerDiv, .thingDiv, .feedbackDiv, .cardNotChosenDiv{
-    width:100%;
     
+}
+
+.cardNotChosenText {
+    height: 19.5vw;
+    border: #E53D2F; /* color as in the Figma protoype */
+    border-style: solid;
+    border-width: 1vh;
+    margin: 10px;
 }
 
 .chosenTrigger, .chosenThing, .chosenFeedback {
-    max-width:100%; /*The cards should fit inside its parent div*/
-    
+    height: 100%;
+    margin: 10px;
 }
 
 .chosenTrigger{
