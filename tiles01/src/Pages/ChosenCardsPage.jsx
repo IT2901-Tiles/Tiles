@@ -23,13 +23,13 @@ function ChosenCardsPage(props) {
             <div className="chosenCardsGrid">
                 <div className="chosenCardsGrid2">
                     {/* <div className="triggerDiv"> */}
-                        {localStorage.getItem("trigger") === "null" ? <div className="cardNotChosenText">No "trigger" card chosen. <br/> <LinkButton target="/categories" title="Choose!" category="trigger" size="Small"></LinkButton></div> : <div><img src={localStorage.getItem("trigger")} alt='Picture of a "trigger" card' className="chosenTrigger" /></div>}
+                        {localStorage.getItem("trigger") === "null" ? <div className="wrapperCardNotChosen"><div className="cardNotChosenText">No "trigger" card chosen. <br/> <LinkButton target="/categories" title="Choose!" category="trigger" size="Small"></LinkButton></div></div> : <div className="chosenCardContainer"><img src={localStorage.getItem("trigger")} alt='Picture of a "trigger" card' className="chosenTrigger" /></div>}
                     {/* </div>
                     <div className="thingDiv"> */}
-                        {localStorage.getItem("thing") === "null" ? <div className="cardNotChosenText">No "thing" card chosen. <br/> <LinkButton target="/categories" title="Choose!" category="thing" size="Small"></LinkButton></div> : <div><img src={localStorage.getItem("thing")} className="chosenThing" alt='Picture of a "thing" card' /></div>}
+                        {localStorage.getItem("thing") === "null" ? <div className="wrapperCardNotChosen"><div className="cardNotChosenText">No "thing" card chosen. <br/> <LinkButton target="/categories" title="Choose!" category="thing" size="Small"></LinkButton></div></div> : <div className="chosenCardContainer"><img src={localStorage.getItem("thing")} className="chosenThing" alt='Picture of a "thing" card' /></div>}
                     {/* </div>
                     <div className="feedbackDiv"> */}
-                        {localStorage.getItem("feedback") === "null" ? <div className="cardNotChosenText">No "feedback" card chosen. <br/> <LinkButton target="/categories" title="Choose!" category="feedback" size="Small"></LinkButton></div> : <div><img src={localStorage.getItem("feedback")} className="chosenFeedback" alt='Picture of a "feedback" card' /></div>}
+                        {localStorage.getItem("feedback") === "null" ? <div className="wrapperCardNotChosen"><div className="cardNotChosenText">No "feedback" card chosen. <br/> <LinkButton target="/categories" title="Choose!" category="feedback" size="Small"></LinkButton></div></div> : <div className="chosenCardContainer"><img src={localStorage.getItem("feedback")} className="chosenFeedback" alt='Picture of a "feedback" card' /></div>}
                     {/* </div> */}
                 </div>
             </div>

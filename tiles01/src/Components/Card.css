@@ -34,16 +34,24 @@
 }
 
 .cardNotChosenText {
-    height: 19.5vw;
     border: #E53D2F; /* color as in the Figma protoype */
     border-style: solid;
-    border-width: 1vh;
-    margin: 10px;
+    border-width: 0.5vw;
+    width: 67.5%;
+    align-content: center;
+    height: 100%;
+}
+
+.wrapperCardNotChosen {
+    height: 18.5vw;
+}
+
+.chosenCardContainer {
+    height: 19.5vw;
 }
 
 .chosenTrigger, .chosenThing, .chosenFeedback {
     height: 100%;
-    margin: 10px;
 }
 
 .chosenTrigger{
