@@ -5,6 +5,7 @@ import Mbv from '../Animations/Mbv'
 import Mpv from '../Animations/Mpv'
 import Mcv from '../Animations/Mcv'
 import Mpc from '../Animations/Mpc'
+import Muc from '../Animations/Muc'
 
 
 function Animation() {
@@ -19,6 +20,7 @@ function Animation() {
             <Mpv />
             <Mcv />
             <Mpc />
+            <Muc />
         </div>
     );
 }
