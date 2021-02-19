@@ -2,6 +2,7 @@
 //men hvis personen som lager denne siden er uenig i det er det bare å si ifra
 
 import React, {useState} from 'react';
+import { Link } from "react-router-dom";
 //Component Imports
 import TopContainer from '../Components/TopContainer';
 import LinkButton from '../Components/LinkButton';
@@ -10,6 +11,8 @@ import CardContainer from "../Components/CardContainer";
 import "../CSS/CardContainer.css";
 
 function CategoryPage(props) {
+    console.log({props},"categorypage")
+    const [Card,setCard] = useState(null);
     const [category] = useState(props.location.state.category)
     var styling = {color : "#68C2C4"}  
     styling.color=props.location.state.color
@@ -25,6 +28,7 @@ function CategoryPage(props) {
     //Function triggered when a card is selected
     function onCardClick(newValue){
         console.log(newValue)
+        setCard(newValue.src)
     }
 
     return (
