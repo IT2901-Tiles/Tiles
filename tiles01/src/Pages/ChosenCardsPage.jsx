@@ -6,7 +6,13 @@ import TopContainer from '../Components/TopContainer';
 
 export default ChosenCardsPage
 
+// function ChosenCardsPage(props) {
+   
+
+
 function ChosenCardsPage(props) {
+
+
     const [CardTrigger,setCardTrigger] = useState(null);
     const [CardThing,setCardThing] = useState(null);
     const [CardFeedback,setCardFeedback] = useState(null);
@@ -14,7 +20,6 @@ function ChosenCardsPage(props) {
     localStorage.setItem(props.location.state.category,props.location.state.card)
 
 
-function ChosenCardsPage() {
     return (
         <div className="Page">
         <TopContainer
@@ -34,4 +39,4 @@ function ChosenCardsPage() {
         </div>
     );
 }
-}
+//}
