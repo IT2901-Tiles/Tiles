@@ -16,7 +16,6 @@ function Animation() {
 
     return (
         <div className="Animation">
-            <Muc />
             <Mfc />
             <Mbv />
             <Mbc />
@@ -25,6 +24,7 @@ function Animation() {
             <Mpc />
             <Mcv />
             <Mfv />
+            <Muc />
         </div>
     );
 }
