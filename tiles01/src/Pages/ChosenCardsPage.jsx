@@ -4,15 +4,9 @@ import { useState } from 'react';
 import LinkButton from '../Components/LinkButton'
 import TopContainer from '../Components/TopContainer';
 
-export default ChosenCardsPage
-
 // function ChosenCardsPage(props) {
-   
-
 
 function ChosenCardsPage(props) {
-
-
     const [CardTrigger,setCardTrigger] = useState(null);
     const [CardThing,setCardThing] = useState(null);
     const [CardFeedback,setCardFeedback] = useState(null);
@@ -40,3 +34,5 @@ function ChosenCardsPage(props) {
     );
 }
 //}
+
+export default ChosenCardsPage

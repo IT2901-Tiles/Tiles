@@ -35,7 +35,7 @@ function LinkButton(props) {
             to={{
                 pathname: path,
                 state: { category: category, card:props.card },
-                state: { category: category, color:colour }
+                // state: { category: category, color:colour }
             }}>
             <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary">{title}</Button>
         </Link>

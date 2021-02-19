@@ -1,7 +1,8 @@
 //tenker at det blir sendt med en prop hit om hvilke kategori det gjelder,
 //men hvis personen som lager denne siden er uenig i det er det bare å si ifra
 
-import React, {useState} from 'react';
+import React from 'react';
+import { useState } from 'react';
 import { Link } from "react-router-dom";
 //Component Imports
 import TopContainer from '../Components/TopContainer';
@@ -40,7 +41,7 @@ function CategoryPage(props) {
             <div className="CardContainer">
                     <div className="CardContainerTitle" style={styling}> {categoryName}</div>
                      <CardContainer category={props.location.state.category} onSelect={onCardClick}/>
-                <LinkButton target="/cards" title="Choose" size="Small" category={props.location.state.category}></LinkButton>
+                <LinkButton target="/cards" title="Choose" size="Small" category={props.location.state.category} card={Card}></LinkButton>
             </div>
 
             
