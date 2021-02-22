@@ -7,7 +7,7 @@ import colorChangeCard from "../images/feedbacks/color_change.png";
 import motionCard from "../images/triggers/motion.png"
 import dropCard from "../images/triggers/drop.png"
 import penCard from "../images/things/pen.png";
-import shakeCard from "../images/triggers/shake.png"
+import shakeCard from "../images/triggers/temperature.png"
 import umbrellaCard from "../images/things/umbrella.png"
 import vibrateCard from "../images/feedbacks/vibrate.png"; 
 //This page does not exist
