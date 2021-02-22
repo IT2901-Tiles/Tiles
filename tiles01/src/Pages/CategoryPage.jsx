@@ -15,7 +15,7 @@ function CategoryPage(props) {
     const [Card,setCard] = useState(null);
     const [category] = useState(props.location.state.category)
     var styling = {color : "#68C2C4" };  
-    styling.color = props.location.state.color;
+    styling.color = props.location.state.color; 
 
 
     //Make the category titles first letter upper case, and ads an s to the thing(s) category
