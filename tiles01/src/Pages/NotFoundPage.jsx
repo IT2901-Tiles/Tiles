@@ -7,7 +7,7 @@ import colorChangeCard from "../images/feedbacks/color_change.png";
 import motionCard from "../images/triggers/motion.png"
 import dropCard from "../images/triggers/drop.png"
 import penCard from "../images/things/pen.png";
-import shakeCard from "../images/triggers/temperature.png"
+import temperatureCard from "../images/triggers/temperature.png"
 import umbrellaCard from "../images/things/umbrella.png"
 import vibrateCard from "../images/feedbacks/vibrate.png"; 
 //This page does not exist
@@ -25,7 +25,7 @@ function NotFoundPage() {
             <img src={penCard} alt="a card" className="image penCard"/>
 
             <img src={colorChangeCard} alt="a card" className="image colorChangeCard2"/>
-            <img src={shakeCard} alt="a card" className="image shakeCard"/>
+            <img src={temperatureCard} alt="a card" className="image temperatureCard"/>
             <img src={umbrellaCard} alt="a card" className="image umbrellaCard"/>
             <img src={vibrateCard} alt="a card" className="image vibrateCard"/>
             <img src={motionCard} alt="a card" className="image motionCard2"/>

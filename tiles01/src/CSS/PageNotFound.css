@@ -76,7 +76,7 @@
     transform: rotate(15deg);
 }
 
-.shakeCard{
+.temperatureCard{
     left: 80%;
     top: 8%;
     transform: rotate(-15deg);
