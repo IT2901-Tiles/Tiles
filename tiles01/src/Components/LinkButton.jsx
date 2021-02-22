@@ -18,8 +18,8 @@ function LinkButton(props) {
     const [category] = useState(props.category)
     const [size] = useState(props.size + "Button")
 
-    let colour = "#F08A00"
-    let fontColour = "#F3EAC2"
+    let colour = "#F08A00";
+    let fontColour = "#F3EAC2";
 
     if (category === "thing") {
         colour = "#D64539"
@@ -34,7 +34,7 @@ function LinkButton(props) {
         <Link
             to={{
                 pathname: path,
-                state: { category: category, card:props.card },
+                state: { category: category, card:props.card, color:colour}
                 // state: { category: category, color:colour }
             }}>
             <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary">{title}</Button>

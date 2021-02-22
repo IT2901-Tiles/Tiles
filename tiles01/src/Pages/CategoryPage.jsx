@@ -3,7 +3,6 @@
 
 import React from 'react';
 import { useState } from 'react';
-import { Link } from "react-router-dom";
 //Component Imports
 import TopContainer from '../Components/TopContainer';
 import LinkButton from '../Components/LinkButton';
@@ -15,8 +14,8 @@ function CategoryPage(props) {
     console.log({props},"categorypage")
     const [Card,setCard] = useState(null);
     const [category] = useState(props.location.state.category)
-    var styling = {color : "#68C2C4"}  
-    styling.color=props.location.state.color
+    var styling = {color : "#68C2C4" };  
+    styling.color = props.location.state.color; 
 
 
     //Make the category titles first letter upper case, and ads an s to the thing(s) category
