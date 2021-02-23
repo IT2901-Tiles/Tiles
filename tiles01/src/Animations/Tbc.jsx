@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Mbc() {
+function Tbc() {
     return (
         <div>
-            <h1>Motion, bike, color change</h1>
+            <h1>Temperature, bike, color change</h1>
             <svg height="400" width="300">
                 <g>
                     <rect width="300" height="400" fill="#b3e6ff" />
@@ -45,19 +45,19 @@ function Mbc() {
                     </g>
                     <circle cx="160" cy="280" r="40" stroke="black" stroke-width="3" fill="transparent" />
 
-                    <g>
-                        <polygon points="80,240 140,220 100,280 50,280" stroke="pink" stroke-width="3" fill="transparent">
+                    <g className="animationPartOfBike">
+                        <polygon points="80,240 140,220 100,280 50,280" stroke="red" stroke-width="3" fill="transparent">
                             <animate
                                 attributeName="stroke"
-                                values="pink;blue;pink;"
+                                values="red;blue;red;"
                                 dur="10s"
                                 repeatCount="indefinite"
                             />
                         </polygon>
-                        <line x1="138" y1="210" x2="160" y2="280" stroke="pink" stroke-width="3">
+                        <line x1="138" y1="210" x2="160" y2="280" stroke="red" stroke-width="3">
                             <animate
                                 attributeName="stroke"
-                                values="pink;blue;pink;"
+                                values="red;blue;red;"
                                 dur="10s"
                                 repeatCount="indefinite"
                             />
@@ -65,52 +65,54 @@ function Mbc() {
                     </g>
 
                     <line x1="128" y1="210" x2="150" y2="210" stroke="black" stroke-width="3" />
-
                     <line x1="70" y1="220" x2="100" y2="280" stroke="black" stroke-width="3" />
-
-                    <ellipse cx="70" cy="220" rx="15" ry="3" stroke="black" stroke-width="3" />
-
-                    <g className="person">
-                        <circle id="head" cx="90" cy="190" r="20" stroke="#ffe5cc" stroke-width="1" fill="#ffe5cc" />
-                        <circle id="eye1" cx="83" cy="185" r="2" stroke="black" stroke-width="1" fill="black" />
-                        <circle id="eye2" cx="97" cy="185" r="2" stroke="black" stroke-width="1" fill="black" />
-                        <circle id="nose" cx="90" cy="190" r="1.3" stroke="black" stroke-width="1" fill="black" />
-                        <path id="smile" d="M78,193 a35,90 0 0,0 25,0" fill="transparent" stroke="black" stroke-width="2" />
-
-                        <ellipse id="hatMain" cx="90" cy="173" rx="20" ry="7" fill="red" />
-                        <ellipse id="hatTop" cx="90" cy="160" rx="7" ry="7" fill="red" />
-
-                        <g>
-                            <line id="arm1" x1="90" y1="220" x2="49" y2="253" stroke="#ffe5cc" stroke-width="4" />
-                            <line id="fingers1" x1="54" y1="253" x2="40" y2="253" stroke="#ffe5cc" stroke-width="6" />
-                            <line id="tshirtArm1" x1="90" y1="221" x2="65" y2="237" stroke="#ff5050" stroke-width="8" />
-                        </g>
-                        <g>
-                            <line id="arm2" x1="90" y1="220" x2="130" y2="253" stroke="#ffe5cc" stroke-width="4" />
-                            <line id="paintBrush" x1="128" y1="250" x2="140" y2="250" stroke="pink" stroke-width="6">
-                                <animate
-                                    attributeName="stroke"
-                                    values="pink;blue;pink;"
-                                    dur="10s"
-                                    repeatCount="indefinite"
-                                />
-                            </line>
-                            <line id="tshirtArm2" x1="90" y1="221" x2="110" y2="237" stroke="#ff5050" stroke-width="8" />
-                            <animateTransform attributeName="transform"
-                                attributeType="XML"
-                                type="rotate"
-                                from="0 90 220"
-                                to="45 90 220"
-                                dur="2s"
-                                repeatCount="indefinite" />
-                        </g>
-
-                        <line id="body" x1="90" y1="200" x2="90" y2="320" stroke="#ffe5cc" stroke-width="4" />
-                        <line id="shoe" x1="100" y1="320" x2="87" y2="320" stroke="#3366cc" stroke-width="7" />
-                        <line id="pants" x1="90" y1="255" x2="90" y2="310" stroke="#006600" stroke-width="6" />
-                        <line id="tshirt" x1="90" y1="218" x2="90" y2="257" stroke="#ff5050" stroke-width="8" />
-                    </g>
+                    <ellipse id="seat" cx="70" cy="220" rx="15" ry="3" stroke="black" stroke-width="3" />
                 </g>
+
+                <g className="temperatureMeasure">
+                    <rect x="250" y="200" width="15" height="45" fill="white" stroke="black" stroke-width="1" />
+
+                    <line x1="252" y1="222.5" x2="263" y2="222.5" stroke="black" stroke-width="1"/>
+                    <line x1="255" y1="211.25" x2="260" y2="211.25" stroke="black" stroke-width="1"/>
+                    <line x1="255" y1="205.75" x2="260" y2="205.75" stroke="black" stroke-width="1"/>
+                    <line x1="255" y1="217" x2="260" y2="217" stroke="black" stroke-width="1"/>
+
+                    <line x1="255" y1="228" x2="260" y2="228" stroke="black" stroke-width="1"/>
+                    <line x1="255" y1="233.75" x2="260" y2="233.75" stroke="black" stroke-width="1"/>
+                    <line x1="255" y1="238.25" x2="260" y2="238.25" stroke="black" stroke-width="1"/>
+
+
+                    <line x1="257.5" y1="201" x2="257.5" y2="244.5" stroke="red" stroke-width="4">
+                        <animate
+                            attributeName="stroke"
+                            values="red;blue;red;"
+                            dur="10s"
+                            repeatCount="indefinite"
+                        />
+                        <animateTransform attributeName="transform"
+                            attributeType="XML"
+                            type="translate"
+                            from="80 0"
+                            to="0 0"
+                            dur="10s"
+                            repeatCount="1"
+                        />
+                        <animateTransform attributeName="transform"
+                            attributeType="XML"
+                            keyTimes="0;0.5;1"
+                            values="0 35; 0 0; 0 35"
+                            type="translate"
+                            begin="4s"
+                            dur="10s"
+                            repeatCount="indefinite"
+                            calcMode="linear"
+                        />
+
+                    </line>
+                    <rect x="250" y="245.5" width="15" height="45" fill="#b3e6ff"/>
+                </g>
+                
+
             </svg>
 
         </div>
@@ -118,5 +120,5 @@ function Mbc() {
     );
 }
 
-export default Mbc;
+export default Tbc;
 
