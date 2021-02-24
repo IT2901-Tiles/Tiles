@@ -54,17 +54,29 @@
     position: absolute;
     top: 15%;
     font-size: 3vw;
+    transition-timing-function: ease-out;
 }
 
-#textNoCardChosen1 {
-    left: 31%;
+#textNoCardChosen1 { left: 31%; }
+
+#textNoCardChosen2 { left: 33%; }
+
+#textNoCardChosen3{ left: 27% }
+
+@media only screen and (max-width: 700px) {
+    #textNoCardChosen1 { left: 29%; } 
+    #textNoCardChosen2 { left: 31%; }
+    #textNoCardChosen3 { left: 25%; }
 }
 
-#textNoCardChosen2 {
-    left: 33%;
+@media only screen and (max-width: 630px) {
+    #textNoCardChosen1 { left: 26%; } 
+    #textNoCardChosen2 { left: 28%; }
+    #textNoCardChosen3 { left: 22%; }
 }
 
-#textNoCardChosen3{
-    left: 27%
+@media only screen and (max-width: 550px) {
+    #textNoCardChosen1 { left: 23%; } 
+    #textNoCardChosen2 { left: 25%; }
+    #textNoCardChosen3 { left: 17%; }
 }
-
