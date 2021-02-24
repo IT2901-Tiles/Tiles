@@ -41,6 +41,25 @@ function Mfv() {
                     <line id="shoe" x1="100" y1="320" x2="87" y2="320" stroke="#3366cc" stroke-width="7" />
                     <line id="pants" x1="90" y1="255" x2="90" y2="310" stroke="#006600" stroke-width="6" />
                     <line id="tshirt" x1="90" y1="218" x2="90" y2="257" stroke="#ff5050" stroke-width="8" />
+
+                    <animateTransform attributeName="transform"
+                            attributeType="XML"
+                            type="translate"
+                            from="80 0"
+                            to="0 0"
+                            dur="3s"
+                            repeatCount="1"
+                        />
+                        <animateTransform attributeName="transform"
+                            attributeType="XML"
+                            keyTimes="0;0.5;1"
+                            values="-20 0; 20 0; -20 0"
+                            type="translate"
+                            begin="4s"
+                            dur="3s"
+                            repeatCount="indefinite"
+                            calcMode="linear"
+                        />
                 </g>
 
                 <g className="chair">
