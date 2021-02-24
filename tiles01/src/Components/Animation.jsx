@@ -9,7 +9,9 @@ import Mpc from '../Animations/Mpc'
 import Muc from '../Animations/Muc'
 import Mfc from '../Animations/Mfc'
 import Tbc from '../Animations/Tbc'
-import Tpv from '../Animations/Tpv'
+import Tbv from '../Animations/Tbv'
+import Tpc from '../Animations/Tpc'
+import Muv from '../Animations/Muv'
 
 
 function Animation() {
@@ -29,6 +31,9 @@ function Animation() {
             <Muc />
             <Tbc />
             <Tpv/>
+            <Tbv />
+            <Tpc />
+            <Muv />
         </div>
     );
 }
