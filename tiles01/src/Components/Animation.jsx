@@ -13,6 +13,8 @@ import Tbv from '../Animations/Tbv'
 import Tpc from '../Animations/Tpc'
 import Tpv from '../Animations/Tpv'
 import Muv from '../Animations/Muv'
+import Tcv from '../Animations/Tcv'
+import Tcc from '../Animations/Tcc'
 
 
 function Animation() {
@@ -35,6 +37,8 @@ function Animation() {
             <Tbv />
             <Tpc />
             <Muv />
+            <Tcv />
+            <Tcc />
         </div>
     );
 }
