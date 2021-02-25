@@ -3,9 +3,16 @@ import LinkButton from './LinkButton';
 import FormFieldAnimationPage from './FormFieldAnimationPage'
 // Component for the preview of the animations + the selected cards. 
 // This component uses the grid-property in html and css
-
+import {Mbc,Mbv,Mcc,Mcv,Mfc,Mfv,Mpc,Mpv,Muc,Tbc} from '../Animations';
 function AnimationsPreview() {
+    let animationDictionary={
+        "drop":{"bike":{"color_change":null,"vibrate":null},"clothing":{"color_change":null,"vibrate":null},"furniture":{"color_change":null,"vibrate":null},"pen":{"color_change":null,"vibrate":null},"umbrella":{"color_change":null,"vibrate":null}},
+        "motion":{"bike":{"color_change":null,"vibrate":<Mbv/>},"clothing":{"color_change":null,"vibrate":null},"furniture":{"color_change":null,"vibrate":null},"pen":{"color_change":null,"vibrate":null},"umbrella":{"color_change":null,"vibrate":null}},
+        "temperature":{"bike":{"color_change":null,"vibrate":null},"clothing":{"color_change":null,"vibrate":null},"furniture":{"color_change":null,"vibrate":null},"pen":{"color_change":null,"vibrate":null},"umbrella":{"color_change":null,"vibrate":null}},
 
+    }
+    var animation=animationDictionary["motion"]["bike"]["vibrate"]
+    console.log(animation)
     return(
         <div className="gridAnimationsPage">
             <div className="gridAnimationItem3">
@@ -22,7 +29,7 @@ function AnimationsPreview() {
             </div>
             {/* The div below is where the animations will appear */}
             <div className="gridAnimationItem4">
-                    Area for the animations based off the selected cards
+                    {animation}
                     {/* Suggestion for text-area field */}
                     <FormFieldAnimationPage />
             </div>

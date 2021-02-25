@@ -11,6 +11,7 @@ function ChosenCardsPage(props) {
     const [CardThing,setCardThing] = useState(null);
     const [CardFeedback,setCardFeedback] = useState(null);
     console.log({CardTrigger}, props.location.state.card)
+    console.log(props.location.state.card)
     localStorage.setItem(props.location.state.category,props.location.state.card)
 
 
@@ -27,9 +28,7 @@ function ChosenCardsPage(props) {
             <LinkButton target="/categories" title="Feedback" category="feedback" size="Small"></LinkButton>
             <LinkButton target="/animation" title="RUN!" category="animation" size="Large"></LinkButton>
             <LinkButton target="/" title="Back"></LinkButton>
-            <img src={localStorage.getItem("trigger")}/>
-            <img src={localStorage.getItem("thing")}/>
-            <img src={localStorage.getItem("feedback")}/>
+
         </div>
     );
 }

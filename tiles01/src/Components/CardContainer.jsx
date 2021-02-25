@@ -28,15 +28,25 @@ function CardContainer(props) {
 
     //called when a card in the container is clicked, sets the card as active 
     function handleCardClick(newValue){
+        console.log(newValue)
         props.onSelect(newValue)
         setActiveCard(newValue.id)
     }
+    //gets card name from path
+    function getName(path){
+        console.log(path.default)
+        let index=path.default.indexOf(".")
+        return path.default.slice(14,index)
+    }
+
+
+
     //map function maps the files imported in listOfImages to Card components
     return (
         <div>
         
         {listOfImages.map(
-            (image,index) =>  <Card active={activeCard} onClick={handleCardClick} id={index} key={index} src={image.default}  />
+            (image,index) =>  <Card active={activeCard} name={getName(image)} onClick={handleCardClick} id={index} key={index} src={image.default}  />
         )}
         </div>
     );
