@@ -6,7 +6,7 @@ function Tpv (){
             <h1>Temperature, pen, vibrate</h1>
             <svg height="400" width="300">
                 <g id="thermometer">
-                    {/*The backgroun of the thermometer */ }
+                    {/*The background of the thermometer */ }
                     <rect x="75" y="80" width="37.5" height="120" fill="#b3e6ff" stroke="black" />
                     <circle cx="93" cy="200" r="30" fill="#b3e6ff" />
                     <line x1="85" y1="90" x2="102" y2="90" stroke="black" strokeWidth="1"/>
@@ -19,7 +19,7 @@ function Tpv (){
                     <line x1="85" y1="160" x2="102" y2="160" stroke="black" strokeWidth="1"/>
                     <line x1="85" y1="170" x2="102" y2="170" stroke="black" strokeWidth="1"/>
 
-                    {/*The Parts of the thermometer that are animated*/}
+                    {/*The parts of the thermometer that are animated*/}
                     <line x1="94" y1="200" x2="94" y2="150" stroke="black" strokeWidth="10">
                         <animate 
                             attributeName="y2"
