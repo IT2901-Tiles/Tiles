@@ -6,6 +6,10 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
+    position: relative;
+    padding-top: 2vh;
+    /* transition: ease all 0.1s; */
+    transition: linear all 0.1ms;
 }
 
 .gridAnimationItem3 {
@@ -19,9 +23,11 @@
     grid-area: 2 / 2 / span 4 / span 3;
     background-color: #FBF4D7;
     border-radius: 30px;
-    height: 35vw;
+    height: 32vw;
     /*margin: 10px;*/
     padding: 5px;
+    position: relative;
+    margin-right: 3%;
 }
 
 .gridAnimationItem5 {
@@ -46,4 +52,52 @@
             0px 7px 8px -4px rgba(0, 0, 0, 0.2);
 }
 
+/* Styling for saving text file  */
 
+.textAreaAnimationPage {
+    position: absolute;
+    bottom: 0px;
+    margin: 3%;
+    width: 97%;
+}
+
+#textBoxAnimationPage {
+    height: 5vh;
+    position: relative;
+    font-family: sans-serif;
+    resize: none;
+    width: 70%;
+    margin: 3px -1px;
+}
+
+/* Styling below prevents animationpage from going into topcomponent */
+
+@media only screen and (max-width: 800px) {
+    .gridAnimationsPage {
+        margin-top: 4vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .gridAnimationsPage {
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .gridAnimationsPage {
+        margin-top: 6vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .gridAnimationsPage {
+        margin-top: 7vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .gridAnimationsPage {
+        margin-top: 8vh;
+    }
+}

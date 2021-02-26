@@ -1,9 +1,16 @@
 import React from 'react';
 import LinkButton from '../Components/LinkButton'
+<<<<<<< HEAD
 import placeholderImage from '../images/blankImg.png';
+=======
+import TopContainer from '../Components/TopContainer';
+
+// function ChosenCardsPage(props) {
+>>>>>>> f305af9b00925a03b4c13b1c88a53a650ffd95b2
 
 function ChosenCardsPage(props) {
     localStorage.setItem(props.location.state.category,props.location.state.card)
+<<<<<<< HEAD
     let triggerChosen = false;
     let thingChosen = false;
     let feedbackChosen = false;
@@ -62,9 +69,16 @@ function ChosenCardsPage(props) {
         </div>
         </div>
         }
+=======
+
+>>>>>>> f305af9b00925a03b4c13b1c88a53a650ffd95b2
 
     return (
         <div className="Page">
+        <TopContainer
+            text = "Some text"
+        />
+
             <p>ChosenCardsPage</p>
             <LinkButton target="/categories" title="Trigger" category="trigger" size="Small"></LinkButton>
             <LinkButton target="/categories" title="Things" category="thing" size="Small"></LinkButton>
@@ -83,5 +97,6 @@ function ChosenCardsPage(props) {
         </div>
     );
 }
+//}
 
-export default ChosenCardsPage;
+export default ChosenCardsPage

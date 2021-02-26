@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Button.css';
+import '../CSS/Button.css';
 import Button from 'react-bootstrap/Button';
 
 //Button component 
@@ -13,13 +13,13 @@ import Button from 'react-bootstrap/Button';
 //options for categoryare: trigger, thing, feedback, animation
 
 function LinkButton(props) {
-    const [title, setTitle] = useState(props.title)
-    const [path, setPath] = useState(props.target)
-    const [category, setCategory] = useState(props.category)
-    const [size, setSize] = useState(props.size + "Button")
+    const [title] = useState(props.title)
+    const [path] = useState(props.target)
+    const [category] = useState(props.category)
+    const [size] = useState(props.size + "Button")
 
-    let colour = "#F08A00"
-    let fontColour = "#F3EAC2"
+    let colour = "#F08A00";
+    let fontColour = "#F3EAC2";
 
     if (category === "thing") {
         colour = "#D64539"
@@ -34,7 +34,8 @@ function LinkButton(props) {
         <Link
             to={{
                 pathname: path,
-                state: { category: category, card:props.card }
+                state: { category: category, card:props.card, color:colour}
+                // state: { category: category, color:colour }
             }}>
             <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary">{title}</Button>
         </Link>
