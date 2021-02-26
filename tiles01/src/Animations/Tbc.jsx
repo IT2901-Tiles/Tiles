@@ -54,24 +54,32 @@ function Tbc() {
                     <rect x="249" y="165" width="12" height="69" fill="white"/>
                     <circle cx="255" cy="240" r="11" fill="white" />
                     <line x1="251" y1="170" x2="259" y2="170" stroke="black" strokeWidth="1"/>
-                    <line x1="254" y1="175" x2="264" y2="175" stroke="black" strokeWidth="1"/>
-                    <line x1="254" y1="180" x2="264" y2="180" stroke="black" strokeWidth="1"/>
-                    <line x1="254" y1="185" x2="264" y2="185" stroke="black" strokeWidth="1"/>
-                    <line x1="254" y1="190" x2="222" y2="190" stroke="black" strokeWidth="1"/>
-                    <line x1="254" y1="195" x2="222" y2="195" stroke="black" strokeWidth="1"/>
-                    <line x1="254" y1="200" x2="222" y2="200" stroke="black" strokeWidth="1"/>
-                    <line x1="254" y1="205" x2="222" y2="205" stroke="black" strokeWidth="1"/>
-                    <line x1="254" y1="225" x2="222" y2="225" stroke="black" strokeWidth="1"/>
+                    <line x1="251" y1="175" x2="259" y2="175" stroke="black" strokeWidth="1"/>
+                    <line x1="251" y1="180" x2="259" y2="180" stroke="black" strokeWidth="1"/>
+                    <line x1="251" y1="188" x2="259" y2="188" stroke="black" strokeWidth="1"/>
+                    <line x1="251" y1="195" x2="259" y2="195" stroke="black" strokeWidth="1"/>
+                    <line x1="251" y1="203" x2="259" y2="203" stroke="black" strokeWidth="1"/>
+                    <line x1="251" y1="210" x2="259" y2="210" stroke="black" strokeWidth="1"/>
+                    <line x1="251" y1="218" x2="259" y2="218" stroke="black" strokeWidth="1"/>
+                    <line x1="251" y1="225" x2="259" y2="225" stroke="black" strokeWidth="1"/>
 
                     {/*The Parts of the thermometer that are animated*/}
                     <line x1="213.5" y1="160" x2="213.5" y2="110" stroke="black" strokeWidth="10">
+                     <animate 
+                        attributeName="y2"
+                        dur = "10s"
+                        repeatCount = "indefinite"
+                        values="145; 50; 145"
+                        keyTimes="0;0.5;1"
+                     />
+                    {/* <line x1="255" y1="240" x2="255" y2="170" stroke="black" strokeWidth="7">
                         <animate 
                             attributeName="y2"
                             dur = "10s"
                             repeatCount = "indefinite"
-                            values="145; 50; 145"
+                            values="170; 240; 170"
                             keyTimes="0;0.5;1"
-                        />
+                        /> */}
                         <animate 
                             attributeName = "stroke"
                             dur = "10s"
@@ -79,7 +87,7 @@ function Tbc() {
                             values="blue;red;blue;"
                         />
                     </line>
-                    <circle cx="213" cy="160" r="15" fill="black" >
+                    <circle cx="255" cy="240" r="7" fill="black" >
                         <animate
                             attributeName="fill"
                             values="blue;red;blue;"
