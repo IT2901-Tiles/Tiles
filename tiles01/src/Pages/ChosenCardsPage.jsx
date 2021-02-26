@@ -1,16 +1,10 @@
 import React from 'react';
 import LinkButton from '../Components/LinkButton'
-<<<<<<< HEAD
 import placeholderImage from '../images/blankImg.png';
-=======
-import TopContainer from '../Components/TopContainer';
-
-// function ChosenCardsPage(props) {
->>>>>>> f305af9b00925a03b4c13b1c88a53a650ffd95b2
+import TopContainer from '../Components/TopContainer'
 
 function ChosenCardsPage(props) {
     localStorage.setItem(props.location.state.category,props.location.state.card)
-<<<<<<< HEAD
     let triggerChosen = false;
     let thingChosen = false;
     let feedbackChosen = false;
@@ -49,7 +43,6 @@ function ChosenCardsPage(props) {
 
     function falseValue(cardType) {
         let classNameOfCard;
-        let showButtonOrNot;
         if (cardType === triggerChosenId) {
             classNameOfCard = triggerNotChosenId;
         } else if (cardType === thingChosenId) {
@@ -69,9 +62,6 @@ function ChosenCardsPage(props) {
         </div>
         </div>
         }
-=======
-
->>>>>>> f305af9b00925a03b4c13b1c88a53a650ffd95b2
 
     return (
         <div className="Page">
@@ -79,12 +69,11 @@ function ChosenCardsPage(props) {
             text = "Some text"
         />
 
-            <p>ChosenCardsPage</p>
+            {/* Remove these when the reset functionality is ready */}
             <LinkButton target="/categories" title="Trigger" category="trigger" size="Small"></LinkButton>
             <LinkButton target="/categories" title="Things" category="thing" size="Small"></LinkButton>
             <LinkButton target="/categories" title="Feedback" category="feedback" size="Small"></LinkButton>
             <LinkButton target="/animation" title="RUN!" category="animation" size="Large"></LinkButton>
-            <LinkButton target="/" title="Back"></LinkButton>
 
             <div className="chosenCardsGrid">
             <div className="chosenCardsGrid2">
@@ -97,6 +86,5 @@ function ChosenCardsPage(props) {
         </div>
     );
 }
-//}
 
 export default ChosenCardsPage
