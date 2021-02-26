@@ -7,8 +7,12 @@ function Mfv() {
             <h1>Motion, furniture, vibration</h1>
             <svg id="mpv" height="400" width="300">
                 <g className="background">
-                    <rect id="wall" width="300" height="400" fill="#739900" />
-                    <rect id="floor" x="0" y="300" width="300" height="100" fill="#800000" />
+                    <rect id="wall" width="300" height="400" fill="#a3c2c2" />
+                    <rect id="floor" x="0" y="300" width="300" height="100" fill="#006666" />
+                    <line id="lamp" x1="200" y1="0" x2="200" y2="50" stroke="black" stroke-width="3" />
+                    <line id="lamp1" x1="200" y1="50" x2="200" y2="58" stroke="black" stroke-width="6" />
+                    <circle id="lampBulb" cx="200" cy="68" r="10" stroke="black" stroke-width="1" fill="#a3c2c2" />
+                    <polygon id="light" points="199,59 201,59 205,70 195,70" stroke="#ffff66" fill="#ffff66"/>
                 </g>
 
                 <g className="person">
@@ -37,6 +41,25 @@ function Mfv() {
                     <line id="shoe" x1="100" y1="320" x2="87" y2="320" stroke="#3366cc" stroke-width="7" />
                     <line id="pants" x1="90" y1="255" x2="90" y2="310" stroke="#006600" stroke-width="6" />
                     <line id="tshirt" x1="90" y1="218" x2="90" y2="257" stroke="#ff5050" stroke-width="8" />
+
+                    <animateTransform attributeName="transform"
+                            attributeType="XML"
+                            type="translate"
+                            from="80 0"
+                            to="0 0"
+                            dur="3s"
+                            repeatCount="1"
+                        />
+                        <animateTransform attributeName="transform"
+                            attributeType="XML"
+                            keyTimes="0;0.5;1"
+                            values="-20 0; 20 0; -20 0"
+                            type="translate"
+                            begin="4s"
+                            dur="3s"
+                            repeatCount="indefinite"
+                            calcMode="linear"
+                        />
                 </g>
 
                 <g className="chair">
@@ -58,10 +81,10 @@ function Mfv() {
 
                     <animateTransform attributeName="transform"
                         attributeType="XML"
-                        type="translate"
-                        from="0 208 310"
-                        to="25 208 310"
-                        dur="1s"
+                        type="rotate"
+                        from="-10 225 310"
+                        to="10 225 310"
+                        dur="0.5s"
                         repeatCount="indefinite" />
                 </g>
 

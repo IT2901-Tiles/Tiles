@@ -8,6 +8,14 @@ import Mfv from '../Animations/Mfv'
 import Mpc from '../Animations/Mpc'
 import Muc from '../Animations/Muc'
 import Mfc from '../Animations/Mfc'
+import Tbc from '../Animations/Tbc'
+import Tbv from '../Animations/Tbv'
+import Tpc from '../Animations/Tpc'
+import Tpv from '../Animations/Tpv'
+import Muv from '../Animations/Muv'
+import Tcv from '../Animations/Tcv'
+import Tcc from '../Animations/Tcc'
+import Tuc from '../Animations/Tuc'
 
 
 function Animation() {
@@ -25,6 +33,14 @@ function Animation() {
             <Mcv />
             <Mfv />
             <Muc />
+            <Tbc />
+            <Tpv/>
+            <Tbv />
+            <Tpc />
+            <Muv />
+            <Tcv />
+            <Tcc />
+            <Tuc/>
         </div>
     );
 }
