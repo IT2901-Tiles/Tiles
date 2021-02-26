@@ -48,48 +48,44 @@ function Tbc() {
                     <line x1="70" y1="220" x2="100" y2="280" stroke="black" stroke-width="3" />
                     <ellipse id="seat" cx="70" cy="220" rx="15" ry="3" stroke="black" stroke-width="3" />
                 </g>
+                <g id="thermometer">
+                    {/*The background of the thermometer */ }
+                    <rect x="240" y="160" width="30" height="100" fill="#555555"/>
+                    <rect x="249" y="165" width="12" height="69" fill="white"/>
+                    <circle cx="255" cy="240" r="11" fill="white" />
+                    <line x1="251" y1="170" x2="259" y2="170" stroke="black" strokeWidth="1"/>
+                    <line x1="254" y1="175" x2="264" y2="175" stroke="black" strokeWidth="1"/>
+                    <line x1="254" y1="180" x2="264" y2="180" stroke="black" strokeWidth="1"/>
+                    <line x1="254" y1="185" x2="264" y2="185" stroke="black" strokeWidth="1"/>
+                    <line x1="254" y1="190" x2="222" y2="190" stroke="black" strokeWidth="1"/>
+                    <line x1="254" y1="195" x2="222" y2="195" stroke="black" strokeWidth="1"/>
+                    <line x1="254" y1="200" x2="222" y2="200" stroke="black" strokeWidth="1"/>
+                    <line x1="254" y1="205" x2="222" y2="205" stroke="black" strokeWidth="1"/>
+                    <line x1="254" y1="225" x2="222" y2="225" stroke="black" strokeWidth="1"/>
 
-                <g className="temperatureMeasure">
-                    <rect x="250" y="200" width="15" height="45" fill="white" stroke="black" stroke-width="1" />
-
-                    <line x1="252" y1="222.5" x2="263" y2="222.5" stroke="black" stroke-width="1"/>
-                    <line x1="255" y1="211.25" x2="260" y2="211.25" stroke="black" stroke-width="1"/>
-                    <line x1="255" y1="205.75" x2="260" y2="205.75" stroke="black" stroke-width="1"/>
-                    <line x1="255" y1="217" x2="260" y2="217" stroke="black" stroke-width="1"/>
-
-                    <line x1="255" y1="228" x2="260" y2="228" stroke="black" stroke-width="1"/>
-                    <line x1="255" y1="233.75" x2="260" y2="233.75" stroke="black" stroke-width="1"/>
-                    <line x1="255" y1="238.25" x2="260" y2="238.25" stroke="black" stroke-width="1"/>
-
-
-                    <line x1="257.5" y1="201" x2="257.5" y2="244.5" stroke="red" stroke-width="4">
-                        <animate
-                            attributeName="stroke"
-                            values="red;blue;red;"
-                            dur="10s"
-                            repeatCount="indefinite"
-                        />
-                        <animateTransform attributeName="transform"
-                            attributeType="XML"
-                            type="translate"
-                            from="80 0"
-                            to="0 0"
-                            dur="10s"
-                            repeatCount="1"
-                        />
-                        <animateTransform attributeName="transform"
-                            attributeType="XML"
+                    {/*The Parts of the thermometer that are animated*/}
+                    <line x1="213.5" y1="160" x2="213.5" y2="110" stroke="black" strokeWidth="10">
+                        <animate 
+                            attributeName="y2"
+                            dur = "10s"
+                            repeatCount = "indefinite"
+                            values="145; 50; 145"
                             keyTimes="0;0.5;1"
-                            values="0 35; 0 0; 0 35"
-                            type="translate"
-                            begin="4s"
-                            dur="10s"
-                            repeatCount="indefinite"
-                            calcMode="linear"
                         />
-
+                        <animate 
+                            attributeName = "stroke"
+                            dur = "10s"
+                            repeatCount="indefinite"
+                            values="blue;red;blue;"
+                        />
                     </line>
-                    <rect x="250" y="245.5" width="15" height="45" fill="#b3e6ff"/>
+                    <circle cx="213" cy="160" r="15" fill="black" >
+                        <animate
+                            attributeName="fill"
+                            values="blue;red;blue;"
+                            dur="10s"
+                            repeatCount="indefinite"/>
+                    </circle>
                 </g>
                 
 
