@@ -16,6 +16,9 @@ import Muv from '../Animations/Muv'
 import Tcv from '../Animations/Tcv'
 import Tcc from '../Animations/Tcc'
 import Tuc from '../Animations/Tuc'
+import Tfv from '../Animations/Tfv'
+import Tfc from '../Animations/Tfc'
+import Tuv from '../Animations/Tuv'
 
 
 function Animation() {
@@ -41,6 +44,9 @@ function Animation() {
             <Tcv />
             <Tcc />
             <Tuc/>
+            <Tfv/>
+            <Tfc/>
+            <Tuv/>
         </div>
     );
 }
