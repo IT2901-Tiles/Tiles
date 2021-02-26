@@ -16,7 +16,7 @@ function Cloud() {
             <line className="rain" x1="-55" y1="130" x2="-70" y2="160" stroke="#ababab" strokeWidth="7" />
             <animateTransform attributeName="transform"
                 attributeType="XML"
-                type="translate "
+                type="translate"
                 from="0 0"
                 to="500 0"
                 dur="13s"
