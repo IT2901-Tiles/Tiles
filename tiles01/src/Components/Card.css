@@ -1,7 +1,6 @@
 .card{
     width:15%;
     margin: 3%;
-    border-radius: 5%;
 }
 
 .card:hover, .chosenTrigger:hover, .chosenThing:hover, .chosenFeedback:hover, .noImgChosen:hover {
@@ -37,7 +36,6 @@
 .noImgChosen {
     border: #E53D2F; /* color as in the Figma protoype */
     border-style: solid;
-    border-radius: 5%;
     border-width: 0.9vw;
 }
 
@@ -47,7 +45,6 @@
 
 .chosenTrigger, .chosenThing, .chosenFeedback, .noImgChosen {
     height: 100%;
-    border-radius: 5%;
 }
 
 #textNoCardChosen1, #textNoCardChosen2, #textNoCardChosen3 {
