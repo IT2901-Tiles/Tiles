@@ -19,6 +19,8 @@ import Tuc from '../Animations/Tuc'
 import Tfv from '../Animations/Tfv'
 import Tfc from '../Animations/Tfc'
 import Tuv from '../Animations/Tuv'
+import Dbc from '../Animations/Dbc'
+import Dbv from '../Animations/Dbv'
 
 
 function Animation() {
@@ -47,6 +49,8 @@ function Animation() {
             <Tfv/>
             <Tfc/>
             <Tuv/>
+            <Dbc/>
+            <Dbv/>
         </div>
     );
 }
