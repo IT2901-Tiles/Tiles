@@ -9,24 +9,7 @@ function Muc() {
                 <g>
                     <rect id="sky" width="300" height="400" fill="#b3e6ff" />
                     <rect id="grass" x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-                    {/* <g className="cloud">
-                        <circle className="cloud" cx="-170" cy="80" r="35" fill="#ababab" />
-                        <circle className="cloud" cx="-130" cy="50" r="45" fill="#ababab" />
-                        <circle className="cloud" cx="-85" cy="50" r="30" fill="#ababab" />
-                        <circle className="cloud" cx="-60" cy="80" r="35" fill="#ababab" />
-                        <rect className="cloud" x="-170" y="75" width="110" height="40" fill="#ababab" />
-                        <line className="rain" x1="-175" y1="130" x2="-190" y2="160" stroke="#ababab" strokeWidth="7" />
-                        <line className="rain" x1="-135" y1="130" x2="-150" y2="160" stroke="#ababab" strokeWidth="7" />
-                        <line className="rain" x1="-95" y1="130" x2="-110" y2="160" stroke="#ababab" strokeWidth="7" />
-                        <line className="rain" x1="-55" y1="130" x2="-70" y2="160" stroke="#ababab" strokeWidth="7" />
-                        <animateTransform attributeName="transform"
-                            attributeType="XML"
-                            type="translate "
-                            from="0 0"
-                            to="500 0"
-                            dur="13s"
-                            repeatCount="indefinite" />
-                    </g> */}
+
                     <Cloud />
                 </g>
                 <g className="person">
