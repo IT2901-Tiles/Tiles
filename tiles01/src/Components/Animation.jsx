@@ -20,6 +20,9 @@ import Tfv from '../Animations/Tfv'
 import Tfc from '../Animations/Tfc'
 import Tuv from '../Animations/Tuv'
 import Dpc from '../Animations/Dpc'
+import Dbc from '../Animations/Dbc'
+import Dbv from '../Animations/Dbv'
+
 
 function Animation() {
 
@@ -47,6 +50,8 @@ function Animation() {
             <Tfv />
             <Tfc />
             <Tuv />
+            <Dbc />
+            <Dbv />
             <Dpc />
         </div>
     );
