@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
 import LinkButton from '../Components/LinkButton'
-import placeholderImage from '../images/blankImg.png';
+import placeholderImage from '../images/blankImg.png'
 import TopContainer from '../Components/TopContainer'
+import LinkToPage from '../Components/LinkToPage'
 
 function ChosenCardsPage(props) {
     localStorage.setItem(props.location.state.category,props.location.state.card)
@@ -14,6 +15,7 @@ function ChosenCardsPage(props) {
     let triggerChosenId = "trigger";
     let thingChosenId = "thing";
     let feedbackChosenId = "feedback";
+    let errorOccured = false;
 
     function CheckCards() {
         if ((localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null) && (localStorage.getItem("thing") === "null" || localStorage.getItem("thing") === null) && (localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null)) {
@@ -33,12 +35,14 @@ function ChosenCardsPage(props) {
             thingChosen = true;
             feedbackChosen = true;
         } else {
+            errorOccured = true;
             return <h1>Please try again, you probably have some cards that are checked off already (try unchecking all)</h1>
         }
     }
 
     function trueValue(cardType) {
-        return <img src={localStorage.getItem(cardType)} alt='Picture of a "{cardType}" card' className="chosenTrigger" />
+        let cardTypeName = cardType.charAt(0).toUpperCase()+cardType.substring(1)
+        return <LinkToPage target="/categories" title={cardTypeName} category={cardType} nameOfCardType={localStorage.getItem(cardType)}></LinkToPage>
     }
 
     function falseValue(cardType) {
@@ -68,13 +72,6 @@ function ChosenCardsPage(props) {
         <TopContainer
             text = "Some text"
         />
-
-            {/* Remove these when the reset functionality is ready */}
-            <LinkButton target="/categories" title="Trigger" category="trigger" size="Small"></LinkButton>
-            <LinkButton target="/categories" title="Things" category="thing" size="Small"></LinkButton>
-            <LinkButton target="/categories" title="Feedback" category="feedback" size="Small"></LinkButton>
-            <LinkButton target="/animation" title="RUN!" category="animation" size="Large"></LinkButton>
-
             <div className="chosenCardsGrid">
             <div className="chosenCardsGrid2">
             {CheckCards()}
