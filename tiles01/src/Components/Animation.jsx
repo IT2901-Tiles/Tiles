@@ -19,9 +19,12 @@ import Tuc from '../Animations/Tuc'
 import Tfv from '../Animations/Tfv'
 import Tfc from '../Animations/Tfc'
 import Tuv from '../Animations/Tuv'
+import Dpc from '../Animations/Dpc'
 import Dbc from '../Animations/Dbc'
 import Dbv from '../Animations/Dbv'
-
+import Dpv from '../Animations/Dpv'
+import Duv from '../Animations/Duv'
+import Duc from '../Animations/Duc'
 
 function Animation() {
 
@@ -39,18 +42,22 @@ function Animation() {
             <Mfv />
             <Muc />
             <Tbc />
-            <Tpv/>
+            <Tpv />
             <Tbv />
             <Tpc />
             <Muv />
             <Tcv />
             <Tcc />
-            <Tuc/>
-            <Tfv/>
-            <Tfc/>
-            <Tuv/>
-            <Dbc/>
-            <Dbv/>
+            <Tuc />
+            <Tfv />
+            <Tfc />
+            <Tuv />
+            <Dbc />
+            <Dbv />
+            <Dpc />
+            <Dpv />
+            <Duv />
+            <Duc />
         </div>
     );
 }
