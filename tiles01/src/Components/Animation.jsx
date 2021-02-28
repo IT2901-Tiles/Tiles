@@ -25,6 +25,11 @@ import Dbv from '../Animations/Dbv'
 import Dpv from '../Animations/Dpv'
 import Duv from '../Animations/Duv'
 import Duc from '../Animations/Duc'
+import Dcv from '../Animations/Dcv'
+import Dcc from '../Animations/Dcc'
+import Dfv from '../Animations/Dfv'
+import Dfc from '../Animations/Dfc'
+
 
 function Animation() {
 
@@ -58,6 +63,10 @@ function Animation() {
             <Dpv />
             <Duv />
             <Duc />
+            <Dcv/>
+            <Dcc/>
+            <Dfv/>
+            <Dfc/>
         </div>
     );
 }
