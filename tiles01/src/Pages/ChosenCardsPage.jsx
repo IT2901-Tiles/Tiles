@@ -15,8 +15,8 @@ function ChosenCardsPage(props) {
     let triggerChosenId = "trigger";
     let thingChosenId = "thing";
     let feedbackChosenId = "feedback";
-    let errorOccured = false;
-    let errorMessage = "Something went wrong! Try unchecking all cards."
+    let errorOccured = false; // value turns true if error occured 
+    let colorBorder; // color of border and font when no card is picked
 
     // This function checks which cards are checked off and sets a bool value
     function CheckCards() {
@@ -58,27 +58,37 @@ function ChosenCardsPage(props) {
         if (errorOccured) { // error-solution for now, this will be fixed
             return <LinkButton target="/categories" title={cardType} category={cardType} size="Small"></LinkButton>
         } else {
-            // Checks which type of card it is
+            // Checks which type of card it is + sets the color of the border
             let classNameOfCard;
             if (cardType === triggerChosenId) {
                 classNameOfCard = triggerNotChosenId;
+                colorBorder = "#F08A00";
             } else if (cardType === thingChosenId) {
                 classNameOfCard = thingNotChosenId;
+                colorBorder = "#E53D2F";
             } else if (cardType === feedbackChosenId) {
                 classNameOfCard = feedbackNotChosenId;
+                colorBorder = "#FFCD00";
             }
 
             // Returns the placeholder image and button
-            return <div className="wrapperCardNotChosen">
-            <img src={placeholderImage} alt="test" className="noImgChosen" />
-            <div id={classNameOfCard}>
+            // (fjern kommentar: kanskje litt dårlig navngivning på divene og kanskje unødvendig mange, men ble finest og mest responsivt med 2 diver)
+            return <div id="firstWrapperCardNotChosen"><div className="wrapperCardNotChosen">
+            <img src={placeholderImage} alt="test" className="noImgChosen" style={{ border: `${colorBorder}`, borderStyle: "solid", borderWidth: "0.9vw" }} />
+            <div id={classNameOfCard} style={{ color: `${colorBorder}`}}>
                 {cardType.charAt(0).toUpperCase() + cardType.substring(1)}
+                </div>
             <br/>
-            { ((cardType === triggerChosenId) && (!(thingChosen)) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Trigger" category="trigger" size="Small"></LinkButton> : <br/>}
-            { ((cardType === thingChosenId) && (triggerChosen) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Things" category="thing" size="Small"></LinkButton> : <br/>}
-            { ((cardType === feedbackChosenId) && (triggerChosen) && (thingChosen)) ? <LinkButton target="/categories" title="Feedback" category="feedback" size="Small"></LinkButton> : <br/>}
+            </div>
+            <div id="buttonChosenCardsPage">
+                 {/* Following code decides whether button is going to be enabled or not */}
+            { ((cardType === triggerChosenId) && (!(thingChosen)) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="trigger" size="Small" className="buttonChosenCardsPage"></LinkButton> : ""}
+            { ((cardType === thingChosenId) && (triggerChosen) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="thing" size="Small" className="buttonChosenCardsPage"></LinkButton> : ""}
+            { ((cardType === feedbackChosenId) && (triggerChosen) && (thingChosen)) ? <LinkButton target="/categories" title="Choose!" category="feedback" size="Small" className="buttonChosenCardsPage"></LinkButton> : ""}
+            
             </div>
             </div>
+
             }
         }
 
@@ -96,6 +106,8 @@ function ChosenCardsPage(props) {
             {(feedbackChosen) ? <div className="chosenCardContainer">{trueValue(feedbackChosenId)}</div> : falseValue(feedbackChosenId)}
             </div>
             </div>
+            <br/>
+            <LinkButton target="/animation" title="RUN!" category="animation" size="Large"></LinkButton>
         </div>
     );
 }
