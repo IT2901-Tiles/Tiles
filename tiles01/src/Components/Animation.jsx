@@ -22,6 +22,7 @@ import Tuv from '../Animations/Tuv'
 import Dpc from '../Animations/Dpc'
 import Dbc from '../Animations/Dbc'
 import Dbv from '../Animations/Dbv'
+import Dpv from '../Animations/Dpv';
 
 
 function Animation() {
@@ -53,6 +54,7 @@ function Animation() {
             <Dbc />
             <Dbv />
             <Dpc />
+            <Dpv />
         </div>
     );
 }
