@@ -12,7 +12,6 @@ function Dbv(){
                     <rect x="0" y="300" width="300" height="100" fill="#8ccd7e" />
                     <Sun/>
                     {/* Bike */}
-                    <g>
                     <g className="bike">
                         
                         <g className="wheel1">
@@ -36,7 +35,6 @@ function Dbv(){
                         <ellipse cx="70" cy="20" rx="15" ry="3" stroke="black" stroke-width="3" />
     
                         
-                    </g>
                     {/* Person */}
                     
                     <circle id="head" cx="90" cy="-50" r="20" stroke="#ffe5cc" stroke-width="1" fill="#ffe5cc" />
@@ -68,8 +66,8 @@ function Dbv(){
                             attributeName="transform"
                             attributeType="XML"
                             type="translate"
-                            values="0 0; 80 190; 200 190"
-                            keyTimes="0;0.5;1"
+                            values="0 0; 80 190; 200 190; 180 190; 200 180; 190 190;"
+                            keyTimes="0;0.5;0.7;0.8;0.9;1"
                             dur="2s"
                             repeatCount="indefinite"
                         />
