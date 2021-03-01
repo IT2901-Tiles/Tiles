@@ -90,9 +90,6 @@ function Tpv (){
 
                 </g>
 
-                
-
-
 
             </svg>
         </div>
@@ -100,4 +97,3 @@ function Tpv (){
 }
 
 export default Tpv;
-
