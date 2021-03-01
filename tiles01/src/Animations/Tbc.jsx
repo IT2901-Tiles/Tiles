@@ -29,7 +29,7 @@ function Tbc() {
                         <polygon points="80,240 140,220 100,280 50,280" stroke="red" stroke-width="3" fill="transparent">
                             <animate
                                 attributeName="stroke"
-                                values="red;blue;red;"
+                                values="blue;red;blue;"
                                 dur="10s"
                                 repeatCount="indefinite"
                             />
@@ -37,7 +37,7 @@ function Tbc() {
                         <line x1="138" y1="210" x2="160" y2="280" stroke="red" stroke-width="3">
                             <animate
                                 attributeName="stroke"
-                                values="red;blue;red;"
+                                values="blue;red;blue;"
                                 dur="10s"
                                 repeatCount="indefinite"
                             />
@@ -64,12 +64,12 @@ function Tbc() {
                     <line x1="251" y1="225" x2="259" y2="225" stroke="black" strokeWidth="1"/>
 
                     {/*The Parts of the thermometer that are animated*/}
-                    <line x1="213.5" y1="160" x2="213.5" y2="110" stroke="black" strokeWidth="10">
+                    <line x1="255" y1="240" x2="255" y2="300" stroke="black" strokeWidth="7">
                      <animate 
                         attributeName="y2"
                         dur = "10s"
                         repeatCount = "indefinite"
-                        values="145; 50; 145"
+                        values="240; 170; 240"
                         keyTimes="0;0.5;1"
                      />
                     {/* <line x1="255" y1="240" x2="255" y2="170" stroke="black" strokeWidth="7">
