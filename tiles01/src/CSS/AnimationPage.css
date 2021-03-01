@@ -70,34 +70,34 @@
     margin: 3px -1px;
 }
 
-/* Styling below prevents animationpage from going into topcomponent */
+/* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx */
 
 @media only screen and (max-width: 800px) {
-    .gridAnimationsPage {
-        margin-top: 4vh;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .gridAnimationsPage {
+    .gridAnimationsPage, .chosenCardsGrid {
         margin-top: 5vh;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .gridAnimationsPage {
+@media only screen and (max-width: 700px) {
+    .gridAnimationsPage, .chosenCardsGrid {
         margin-top: 6vh;
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .gridAnimationsPage {
+@media only screen and (max-width: 600px) {
+    .gridAnimationsPage, .chosenCardsGrid {
         margin-top: 7vh;
     }
 }
 
-@media only screen and (max-width: 400px) {
-    .gridAnimationsPage {
+@media only screen and (max-width: 500px) {
+    .gridAnimationsPage, .chosenCardsGrid {
         margin-top: 8vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .gridAnimationsPage, .chosenCardsGrid {
+        margin-top: 9vh;
     }
 }
