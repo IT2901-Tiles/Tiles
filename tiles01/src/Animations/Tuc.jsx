@@ -4,7 +4,7 @@ import Cloud from './Cloud';
 function Tuc(){
     return(
         <div className='tuc'>
-            <h1>Temperature, Umberella, Color Change</h1>
+            <h1>Temperature, Umbrella, Color Change</h1>
 
             <svg height="400" width="300">
                 <g> {/* Background */}
@@ -14,7 +14,7 @@ function Tuc(){
                 </g>
 
                 <g id="thermometer">
-                    {/*The backgroun of the thermometer */ }
+                    {/*The background of the thermometer */ }
                     <rect x="180" y="30" width="67.5" height="166" fill="#555555"/>
                     <rect x="200" y="40" width="27.5" height="120" fill="white"/>
                     <circle cx="213" cy="160" r="25" fill="white" />

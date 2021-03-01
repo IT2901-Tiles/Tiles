@@ -2,49 +2,45 @@ import React from 'react';
 
 function Temperature() {
     return (
-        // This part has a blue background for the outdoor animations
-            <g className="temperature">
-                <rect x="250" y="200" width="15" height="45" fill="white" stroke="black" stroke-width="1" />
+        <g id="thermometer">
+            {/*The background of the thermometer */ }
+            <rect x="180" y="30" width="67.5" height="166" fill="#555555"/>
+            <rect x="200" y="40" width="27.5" height="120" fill="white"/>
+            <circle cx="213" cy="160" r="25" fill="white" />
+            <line x1="205" y1="50" x2="222" y2="50" stroke="black" strokeWidth="1"/>
+            <line x1="205" y1="60" x2="222" y2="60" stroke="black" strokeWidth="1"/>
+            <line x1="205" y1="70" x2="222" y2="70" stroke="black" strokeWidth="1"/>
+            <line x1="205" y1="80" x2="222" y2="80" stroke="black" strokeWidth="1"/>
+            <line x1="205" y1="90" x2="222" y2="90" stroke="black" strokeWidth="1"/>
+            <line x1="205" y1="100" x2="222" y2="100" stroke="black" strokeWidth="1"/>
+            <line x1="205" y1="110" x2="222" y2="110" stroke="black" strokeWidth="1"/>
+            <line x1="205" y1="120" x2="222" y2="120" stroke="black" strokeWidth="1"/>
+            <line x1="205" y1="130" x2="222" y2="130" stroke="black" strokeWidth="1"/>
 
-                <line x1="252" y1="222.5" x2="263" y2="222.5" stroke="black" stroke-width="1"/>
-                <line x1="255" y1="211.25" x2="260" y2="211.25" stroke="black" stroke-width="1"/>
-                <line x1="255" y1="205.75" x2="260" y2="205.75" stroke="black" stroke-width="1"/>
-                <line x1="255" y1="217" x2="260" y2="217" stroke="black" stroke-width="1"/>
-
-                <line x1="255" y1="228" x2="260" y2="228" stroke="black" stroke-width="1"/>
-                <line x1="255" y1="233.75" x2="260" y2="233.75" stroke="black" stroke-width="1"/>
-                <line x1="255" y1="238.25" x2="260" y2="238.25" stroke="black" stroke-width="1"/>
-
-
-                <line x1="257.5" y1="201" x2="257.5" y2="244.5" stroke="red" stroke-width="4">
-                    <animate
-                        attributeName="stroke"
-                        values="red;blue;red;"
-                        dur="10s"
-                        repeatCount="indefinite"
-                    />
-                    <animateTransform attributeName="transform"
-                        attributeType="XML"
-                        type="translate"
-                        from="80 0"
-                        to="0 0"
-                        dur="10s"
-                        repeatCount="1"
-                    />
-                    <animateTransform attributeName="transform"
-                        attributeType="XML"
-                        keyTimes="0;0.5;1"
-                        values="0 35; 0 0; 0 35"
-                        type="translate"
-                        begin="4s"
-                        dur="10s"
-                        repeatCount="indefinite"
-                        calcMode="linear"
-                    />
-
-                </line>
-                <rect x="250" y="245.5" width="15" height="45" fill="#b3e6ff"/>
-            </g>
+            {/*The Parts of the thermometer that are animated*/}
+            <line x1="213.5" y1="160" x2="213.5" y2="110" stroke="black" strokeWidth="10">
+                <animate 
+                    attributeName="y2"
+                    dur = "10s"
+                    repeatCount = "indefinite"
+                    values="145; 50; 145"
+                    keyTimes="0;0.5;1"
+                />
+                <animate 
+                    attributeName = "stroke"
+                    dur = "10s"
+                    repeatCount="indefinite"
+                    values="blue;red;blue;"
+                />
+            </line>
+            <circle cx="213" cy="160" r="15" fill="black" >
+                <animate
+                    attributeName="fill"
+                    values="blue;red;blue;"
+                    dur="10s"
+                    repeatCount="indefinite"/>
+            </circle>
+        </g>
         
     );
 }
