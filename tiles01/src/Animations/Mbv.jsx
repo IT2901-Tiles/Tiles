@@ -5,7 +5,7 @@ import Sun from '../Animations/Sun';
 function Mbv() {
     return (
         <div>
-            <h1>Motion, bike, vibration</h1>
+            <h1>Motion, Bike, Vibration</h1>
             <svg height="400" width="300">
                 <g>
                     <rect id="sky" width="300" height="400" fill="#b3e6ff" />

@@ -4,7 +4,7 @@ import React from 'react';
 function Muv() {
     return (
         <div>
-            <h1>Motion, umbrella, vibrate</h1>
+            <h1>Motion, Umbrella, Vibration</h1>
             <svg height="400" width="300">
                 <g className="background">
                     <rect id="sky" width="300" height="400" fill="#b3e6ff" />

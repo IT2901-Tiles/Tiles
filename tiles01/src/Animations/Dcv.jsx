@@ -3,7 +3,7 @@ import React from 'react';
 function Dcv(){
     return(
         <div className='Dcv'>
-            <h1>Drop, Clothing, Vibrate</h1>
+            <h1>Drop, Clothing, Vibration</h1>
             <svg width="300" height="400">
                 {/* Background */}
                 <g>

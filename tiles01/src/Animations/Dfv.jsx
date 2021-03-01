@@ -3,7 +3,7 @@ import React from 'react';
 function Dfv(){
     return(
         <div className='Dfv'>
-            <h1>Drop, Furniture, Vibrate</h1>
+            <h1>Drop, Furniture, Vibration</h1>
             <svg width="300" height="400">
                 {/* Background */}
                 <g className="background">

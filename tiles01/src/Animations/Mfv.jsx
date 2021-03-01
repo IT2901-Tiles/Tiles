@@ -4,7 +4,7 @@ import React from 'react';
 function Mfv() {
     return (
         <div className="Mfv">
-            <h1>Motion, furniture, vibration</h1>
+            <h1>Motion, Furniture, Vibration</h1>
             <svg id="mpv" height="400" width="300">
                 <g className="background">
                     <rect id="wall" width="300" height="400" fill="#a3c2c2" />
@@ -87,6 +87,7 @@ function Mfv() {
                         dur="0.5s"
                         repeatCount="indefinite" />
                 </g>
+                
 
 
             </svg>
