@@ -40,13 +40,13 @@ function CardContainer(props) {
     }
 
 
-
     //map function maps the files imported in listOfImages to Card components
     return (
         <div>
         
         {listOfImages.map(
-            (image,index) =>  <Card active={activeCard} name={getName(image)} onClick={handleCardClick} id={index} key={index} src={image.default}  />
+            
+            (image,index) =>  <Card active={activeCard} name={getName(image)} onClick={handleCardClick} id={index} key={index} src={"/stuartgo"+image.default}  />
         )}
         </div>
     );
