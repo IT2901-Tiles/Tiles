@@ -1,6 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-function Cloud() {
+function Cloud(props) {
+    const [durTime] = useState(props.dur ? props.dur : "13s");
+    const [beginTime] = useState(props.begin ? props.begin: "0s");
+    
+    
     return (
         <g className="cloud">
             {/* <ellipse cx="200" cy="50" rx="70" ry="40" fill="#ababab" />
@@ -19,7 +23,8 @@ function Cloud() {
                 type="translate"
                 from="0 0"
                 to="500 0"
-                dur="13s"
+                begin = {beginTime}
+                dur= {durTime}
                 repeatCount="indefinite" />
         </g>
 
