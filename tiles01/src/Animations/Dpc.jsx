@@ -1,5 +1,6 @@
 import React from 'react';
 import BookShelf from './BookShelf';
+import Pen from './Pen';
 
 function Dpc() {
     return (
@@ -149,14 +150,24 @@ function Dpc() {
                                 d="m254.66 233.61c-2.3 2.34-7.51 6.59-2.95 9.68 2.53 1.72 6.18 6 6.74 6.74 6.7 4.95-1.12-0.88-5.29-9.56-0.95-2.96 1.5-4.37 1.5-6.86z"
                             />
                         </g>
-                        <g className="pen" transform="translate(-160,-210) scale(2)">
-                            <line id="pen1" x1="80" y1="260" x2="190" y2="140" stroke="#000000" strokeWidth="25" ><animate attributeName="stroke" values="black;red;red" dur="3s" repeatCount="indefinite" /></line>
-                            <line id="pen2" x1="195" y1="134.5" x2="208" y2="120.5" stroke="#000000" strokeWidth="25" ><animate attributeName="stroke" values="black;red;red" dur="3s" repeatCount="indefinite" /></line>
-                            <polygon id="pen3" points="64.5,258.5 83,276 50,292" fill="#000000"><animate attributeName="fill" values="black;red;red" dur="3s" repeatCount="indefinite" /></polygon>
-                            <polygon id="pen4" points="64.5,258.5 83,276 89.5,268.5 71,251" fill="#ffffff" />
-                            <polygon id="pen4" points="180.5,132 199,149 205,142 186.5,125" fill="#ffffff" />
-                            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="2 " to="2" dur="5s" repeatCount="indefinite" />
-                            <animateTransform attributeName="transform" attributeType="XML" type="translate" values="-95 -90; -100 95; -100 95" dur="3s" repeatCount="indefinite" additive="sum" />
+                        <g transform="translate(-160,-210) scale(2)">
+                            <Pen colour="black;red;red;" dur="3"/>
+                            <animateTransform 
+                                attributeName="transform" 
+                                attributeType="XML" 
+                                type="scale" 
+                                from="2" 
+                                to="2" 
+                                dur="5s" 
+                                repeatCount="indefinite" />
+                            <animateTransform 
+                                attributeName="transform" 
+                                attributeType="XML" 
+                                type="translate" 
+                                values="-95 -90; -100 95; -100 95" 
+                                dur="3s" 
+                                repeatCount="indefinite" 
+                                additive="sum" />
                         </g>
                         <g
                             id="layer1"

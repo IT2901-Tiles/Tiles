@@ -4,7 +4,6 @@ function Cloud(props) {
     const [durTime] = useState(props.dur ? props.dur : "13s");
     const [beginTime] = useState(props.begin ? props.begin: "0s");
     
-    
     return (
         <g className="cloud">
             {/* <ellipse cx="200" cy="50" rx="70" ry="40" fill="#ababab" />
@@ -21,7 +20,7 @@ function Cloud(props) {
             <animateTransform attributeName="transform"
                 attributeType="XML"
                 type="translate"
-                from="0 0"
+                from="0 0" 
                 to="500 0"
                 begin = {beginTime}
                 dur= {durTime}

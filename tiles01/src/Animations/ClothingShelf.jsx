@@ -1,10 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 
-function ClothingShelf (){
+function ClothingShelf (props){
+    const [colour] = useState(props.colour ? props.colour : "#663300");
+    const [durTime] = useState(props.dur ? props.dur : "0s") 
+
     return(
         <g className="clothingShelf">
-                    <rect y="50" width="130" height="250" fill="#663300" />
+                    <rect y="50" width="130" height="250" fill="#663300" >
+                            <animate
+                                attributeName="fill"
+                                values={colour}
+                                dur={durTime}
+                                repeatCount="indefinite"
+                            />
+                        </rect>
                     <rect x="9" y="64" width="111" height="56" fill="#331a00" />
                     <rect x="9" y="129" width="111" height="56" fill="#331a00" />
                     <rect x="9" y="194" width="111" height="56" fill="#331a00" />

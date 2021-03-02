@@ -1,4 +1,5 @@
 import React from 'react';
+import Chair from './Chair';
 import Lamp from './Lamp';
 
 function Dfc(){
@@ -6,7 +7,6 @@ function Dfc(){
         <div className='Dfc'>
             <h1>Drop, Furniture, Colour change</h1>
             <svg width="300" height="400">
-                {/* Background */}
                 <g className="background">
                     <rect id="wall" width="300" height="400" fill="#a3c2c2" />
                     <rect id="floor" x="0" y="300" width="300" height="100" fill="#006666" />
@@ -52,34 +52,8 @@ function Dfc(){
                         <line id="tshirtArm2" x1="140" y1="221" x2="165" y2="203" stroke="yellow" stroke-width="10" />
                     </g>
                  </g>
-                 <g className="chair">
-
-                    <line id="leftLeg1" x1="204" y1="250" x2="207" y2="270" stroke="#ff8c1a" stroke-width="4" />
-                    <line id="rightLeg1" x1="246" y1="250" x2="243" y2="270" stroke="#ff8c1a" stroke-width="4" />
-
-                    <line id="leftLeg2" x1="208" y1="270" x2="204" y2="310" stroke="#ff8c1a" stroke-width="5" />
-                    <line id="rightLeg2" x1="242" y1="270" x2="246" y2="310" stroke="#ff8c1a" stroke-width="5" />
-
-                    <line id="chairLine" x1="208" y1="280" x2="242" y2="280" stroke="#ff8c1a" stroke-width="4"/>
-                    <rect id="chairTop" x="200" y="222" width="50" height="30" fill="#ffe066">
-                        <animate 
-                        attributeName="fill" 
-                        values="#ffe066;#ffe066;green;green;green" 
-                        dur="5s" 
-                        repeatCount="indefinite" />
-                        </rect>
-                    <line id="seat" x1="198" y1="270" x2="252" y2="270" stroke="#ffe066" stroke-width="8">
-                    <animate 
-                        attributeName="stroke" 
-                        values="#ffe066;#ffe066;green;green;green" 
-                        dur="5s" 
-                        repeatCount="indefinite" />
-                        </line>
-
-                    <circle id="circleLeft1" cx="207" cy="230" r="2" stroke-width="1" fill="#ff8c1a" />
-                    <circle id="circleLeft2" cx="207" cy="244" r="2" stroke-width="1" fill="#ff8c1a" />
-                    <circle id="circleRight1" cx="243" cy="230" r="2" stroke-width="1" fill="#ff8c1a" />
-                    <circle id="circleRight2" cx="243" cy="244" r="2" stroke-width="1" fill="#ff8c1a" />
+                <g>
+                    <Chair colour="#ffe066;#ffe066;green;green;green" dur="5"/>
                     <animateTransform 
                         attributeName="transform" 
                         attributeType="XML" 
@@ -89,7 +63,7 @@ function Dfc(){
                         repeatCount="indefinite" 
                         additive="sum" />
 
-                </g>
+                 </g>
             </svg>
         </div>
     );
