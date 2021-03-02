@@ -4,7 +4,7 @@ import React from 'react';
 function Tfv (){
     return(
         <div className="tfv">
-            <h1>Temperature, furniture, vibration</h1>
+            <h1>Temperature, Furniture, Vibration</h1>
             <svg width="300" height="400">
                 <g className="background">
                     <rect id="wall" width="300" height="400" fill="#a3c2c2" />

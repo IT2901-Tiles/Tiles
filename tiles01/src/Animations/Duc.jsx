@@ -4,7 +4,7 @@ import Cloud from './Cloud'
 function Duc() {
     return (
         <div>
-            <h1>Drop, umbrella, color change</h1>
+            <h1>Drop, Umbrella, Colour change</h1>
             <svg height="400" width="300">
                 <g className="background">
                     <rect id="sky" width="300" height="400" fill="#b3e6ff" />

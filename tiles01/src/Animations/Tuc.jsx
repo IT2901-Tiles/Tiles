@@ -4,17 +4,17 @@ import Cloud from './Cloud';
 function Tuc(){
     return(
         <div className='tuc'>
-            <h1>Temperature, Umberella, Color Change</h1>
+            <h1>Temperature, Umbrella, Colour Change</h1>
 
             <svg height="400" width="300">
                 <g> {/* Background */}
                     <rect id="sky" width="300" height="400" fill="#b3e6ff" />
                     <rect id="grass" x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-                    <Cloud />
+                    <Cloud dur="10" begin="6s"/>
                 </g>
 
                 <g id="thermometer">
-                    {/*The backgroun of the thermometer */ }
+                    {/*The background of the thermometer */ }
                     <rect x="180" y="30" width="67.5" height="166" fill="#555555"/>
                     <rect x="200" y="40" width="27.5" height="120" fill="white"/>
                     <circle cx="213" cy="160" r="25" fill="white" />
@@ -104,10 +104,19 @@ function Tuc(){
                     <animate
                         xlinkHref = "#umbrella1"
                         attributeName="fill" 
-                        keyTimes="0;0.3;1"
-                        values="black; yellow; black" 
+                        keyTimes="0;0.2;0.4;0.6;1"
+                        values="blue; blue;yellow; yellow; blue" 
                         begin = "0s"
-                        dur="20s" 
+                        dur="10s" 
+                        repeatCount="indefinite" 
+                        />
+                    <animate
+                        xlinkHref = "#umbrella2"
+                        attributeName="fill" 
+                        keyTimes="0;0.2;0.4; 0.6;1"
+                        values="blue; blue;yellow; yellow; blue" 
+                        begin = "0s"
+                        dur="10s" 
                         repeatCount="indefinite" 
                         />
                     

@@ -3,7 +3,7 @@ import React from 'react';
 function Dpc() {
     return (
         <div>
-            <h1>Drop, pen/pencil, color change</h1>
+            <h1>Drop, Pen/pencil, Colour change</h1>
             <svg height="400" width="300">
                 <g>
                     <rect width="300" height="400" fill="#b3e6ff" />

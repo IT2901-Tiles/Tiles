@@ -3,7 +3,7 @@ import React from 'react';
 function Tpv (){
     return(
         <div className="tpv">
-            <h1>Temperature, pen, vibrate</h1>
+            <h1>Temperature, Pen/pencil, Vibration</h1>
             <svg height="400" width="300">
             {/* Background*/}
             <g>
@@ -34,7 +34,7 @@ function Tpv (){
                     </g>
                 </g>
                 <g id="thermometer">
-                    {/*The backgroun of the thermometer */ }
+                    {/*The background of the thermometer */ }
                     <rect x="180" y="30" width="67.5" height="166" fill="#555555"/>
                     <rect x="200" y="40" width="27.5" height="120" fill="white"/>
                     <circle cx="213" cy="160" r="25" fill="white" />
@@ -81,17 +81,14 @@ function Tpv (){
                     <animateTransform
                         attributeName="transform"
                         type="rotate"
-                        keyTimes = "0;0.05; 0.1;0.15;0.2;0.25;0.3; 1"
-                        values = "0 215 322.5; 10 215 322.5; -10 215 322.5;10 215 322.5; -10 215 322.5;10 215 322.5; 0 215 322.5;0 215 322.5"
+                        keyTimes = "0;0.025;0.05;0.075; 0.1;0.125; 0.15;0.175;0.2;0.225; 0.25; 0.275;0.3; 1"
+                        values = "10 215 322.5; 15 215 322.5; -15 215 322.5; 15 215 322.5; -15 215 322.5; 15 215 322.5;-15 215 322.5;15 215 322.5;-15 215 322.5;15 215 322.5; -15 215 322.5; 15 215 322.5; 10 215 322.5; 10 215 322.5"
                         begin = "3s"
                         dur="10s"
                         repeatCount= "indefinite"
                         />
 
                 </g>
-
-                
-
 
 
             </svg>
@@ -100,4 +97,3 @@ function Tpv (){
 }
 
 export default Tpv;
-

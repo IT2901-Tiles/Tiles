@@ -5,7 +5,7 @@ import Sun from '../Animations/Sun';
 function Tuv(){
     return(
         <div className='tuv'>
-            <h1>Temperature, Umberella, Vibrate</h1>
+            <h1>Temperature, Umbrella, Vibration</h1>
             <svg width="300" height="400">
                 <g> {/* Background */}
                     <rect id="sky" width="300" height="400" fill="#b3e6ff" />

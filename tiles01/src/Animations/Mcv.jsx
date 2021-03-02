@@ -7,7 +7,7 @@ function Mcv() {
 
     return (
         <div className="Mcv">
-            <h1>Motion, clothing, vibration</h1>
+            <h1>Motion, Clothing, Vibration</h1>
             <svg width="300" height="400">
                 <g>
                     <rect width="300" height="400" fill="#a3c2c2" />

@@ -4,7 +4,7 @@ import Sun from '../Animations/Sun';
 function Dbv(){
     return(
         <div className='Dbv'>
-            <h1>Drop, Bike, Vibrate</h1>
+            <h1>Drop, Bike, Vibration</h1>
                 <svg width="300" height="400">
                     {/* Background */}
                     <rect width="300" height="400" fill="#b3e6ff" />

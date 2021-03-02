@@ -5,7 +5,7 @@ import Sun from '../Animations/Sun';
 function Mpv() {
     return (
         <div className="Mpv">
-            <h1>Motion, pen/pencil, vibration</h1>
+            <h1>Motion, Pen/pencil, Vibration</h1>
             <svg id="mpv" height="400" width="300">
                 <g className="background">
                     <rect id="sky" width="300" height="400" fill="#b3e6ff" />

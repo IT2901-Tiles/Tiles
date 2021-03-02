@@ -3,7 +3,7 @@ import React from 'react';
 function Dpv() {
     return (
         <div>
-            <h1>Drop, pen/pencil, vibrate</h1>
+            <h1>Drop, Pen/pencil, Vibration</h1>
             <svg height="400" width="300">
                 <g>
                     <rect width="300" height="400" fill="#b3e6ff" />
