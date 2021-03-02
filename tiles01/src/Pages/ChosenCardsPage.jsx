@@ -82,9 +82,9 @@ function ChosenCardsPage(props) {
             </div>
             <div id="buttonChosenCardsPage">
                  {/* Following code decides whether button is going to be enabled or not */}
-            { ((cardType === triggerChosenId) && (!(thingChosen)) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="trigger" size="Small" className="buttonChosenCardsPage"></LinkButton> : ""}
-            { ((cardType === thingChosenId) && (triggerChosen) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="thing" size="Small" className="buttonChosenCardsPage"></LinkButton> : ""}
-            { ((cardType === feedbackChosenId) && (triggerChosen) && (thingChosen)) ? <LinkButton target="/categories" title="Choose!" category="feedback" size="Small" className="buttonChosenCardsPage"></LinkButton> : ""}
+            { ((cardType === triggerChosenId) && (!(thingChosen)) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="trigger" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
+            { ((cardType === thingChosenId) && (triggerChosen) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="thing" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
+            { ((cardType === feedbackChosenId) && (triggerChosen) && (thingChosen)) ? <LinkButton target="/categories" title="Choose!" category="feedback" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
             
             </div>
             </div>
