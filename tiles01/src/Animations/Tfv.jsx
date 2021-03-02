@@ -1,4 +1,5 @@
 import React from 'react';
+import Temperature from './Temperature';
 
 
 function Tfv (){
@@ -9,10 +10,10 @@ function Tfv (){
                 <g className="background">
                     <rect id="wall" width="300" height="400" fill="#a3c2c2" />
                     <rect id="floor" x="0" y="300" width="300" height="100" fill="#006666" />
-                    <line id="lamp" x1="200" y1="0" x2="200" y2="50" stroke="black" stroke-width="3" />
-                    <line id="lamp1" x1="200" y1="50" x2="200" y2="58" stroke="black" stroke-width="6" />
-                    <circle id="lampBulb" cx="200" cy="68" r="10" stroke="black" stroke-width="1" fill="#a3c2c2" />
-                    <polygon id="light" points="199,59 201,59 205,70 195,70" stroke="#ffff66" fill="#ffff66"/>
+                    <line id="lamp" x1="100" y1="0" x2="100" y2="50" stroke="black" stroke-width="3" />
+                    <line id="lamp1" x1="100" y1="50" x2="100" y2="58" stroke="black" stroke-width="6" />
+                    <circle id="lampBulb" cx="100" cy="68" r="10" stroke="black" stroke-width="1" fill="#a3c2c2" />
+                    <polygon id="light" points="99,59 101,59 105,70 95,70" stroke="#ffff66" fill="#ffff66"/>
                 </g>
                 <g className="chair">
 
@@ -41,8 +42,8 @@ function Tfv (){
                         repeatCount="indefinite" />
                 </g>
 
-                <g id="thermometer">
-                    {/*The backgroun of the thermometer */ }
+                {/* <g id="thermometer">
+                    {/*The backgroun of the thermometer 
                     <rect x="50" y="30" width="67.5" height="166" fill="#555555"/>
                     <rect x="70" y="40" width="27.5" height="120" fill="white"/>
                     <circle cx="83" cy="160" r="25" fill="white" />
@@ -56,7 +57,7 @@ function Tfv (){
                     <line x1="75" y1="120" x2="92" y2="120" stroke="black" strokeWidth="1"/>
                     <line x1="75" y1="130" x2="92" y2="130" stroke="black" strokeWidth="1"/>
 
-                    {/*The Parts of the thermometer that are animated*/}
+                    {/*The Parts of the thermometer that are animated
                     <line x1="83.5" y1="160" x2="83.5" y2="110" stroke="black" strokeWidth="10">
                         <animate 
                             attributeName="y2"
@@ -79,7 +80,9 @@ function Tfv (){
                             dur="10s"
                             repeatCount="indefinite"/>
                     </circle>
-                </g>
+                </g> */}
+
+                <Temperature/>
                 
             </svg>
 

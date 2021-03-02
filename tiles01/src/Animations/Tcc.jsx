@@ -1,4 +1,6 @@
 import React from 'react';
+import Cloud from './Cloud';
+import SmallTemperature from './SmallTemperature';
 
 
 function Tcc() {
@@ -9,19 +11,7 @@ function Tcc() {
                 <g className="background">
                     <rect id="sky" width="300" height="400" fill="#b3e6ff" />
                     <rect id="grass" x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-                    
-                    <g className="cloud">
-                        <circle className="cloud" cx="50" cy="80" r="35" fill="#ababab" />
-                        <circle className="cloud" cx="90" cy="50" r="45" fill="#ababab" />
-                        <circle className="cloud" cx="135" cy="50" r="30" fill="#ababab" />
-                        <circle className="cloud" cx="160" cy="80" r="35" fill="#ababab" />
-                        <rect className="cloud" x="50" y="75" width="110" height="40" fill="#ababab" />
-                        <line className="rain" x1="45" y1="130" x2="30" y2="160" stroke="#ababab" strokeWidth="7" />
-                        <line className="rain" x1="85" y1="130" x2="70" y2="160" stroke="#ababab" strokeWidth="7" />
-                        <line className="rain" x1="125" y1="130" x2="110" y2="160" stroke="#ababab" strokeWidth="7" />
-                        <line className="rain" x1="165" y1="130" x2="150" y2="160" stroke="#ababab" strokeWidth="7" />
-                        
-                    </g>
+                    <Cloud/>
                 </g>
 
 
@@ -82,46 +72,7 @@ function Tcc() {
                         <line id="shoe2" x1="120" y1="320" x2="135" y2="320" stroke="#3366cc" stroke-width="7" />
                     </g>
                 </g>
-
-                <g id="thermometer">
-                            {/*The background of the thermometer */ }
-                            <rect x="220" y="30" width="67.5" height="166" fill="#555555"/>
-                            <rect x="240" y="40" width="27.5" height="120" fill="white"/>
-                            <circle cx="253" cy="160" r="25" fill="white" />
-                            <line x1="245" y1="50" x2="262" y2="50" stroke="black" strokeWidth="1"/>
-                            <line x1="245" y1="60" x2="262" y2="60" stroke="black" strokeWidth="1"/>
-                            <line x1="245" y1="70" x2="262" y2="70" stroke="black" strokeWidth="1"/>
-                            <line x1="245" y1="80" x2="262" y2="80" stroke="black" strokeWidth="1"/>
-                            <line x1="245" y1="90" x2="262" y2="90" stroke="black" strokeWidth="1"/>
-                            <line x1="245" y1="100" x2="262" y2="100" stroke="black" strokeWidth="1"/>
-                            <line x1="245" y1="110" x2="262" y2="110" stroke="black" strokeWidth="1"/>
-                            <line x1="245" y1="120" x2="262" y2="120" stroke="black" strokeWidth="1"/>
-                            <line x1="245" y1="130" x2="262" y2="130" stroke="black" strokeWidth="1"/>
-
-                            {/*The Parts of the thermometer that are animated*/}
-                            <line x1="253.5" y1="160" x2="253.5" y2="110" stroke="black" strokeWidth="10">
-                                <animate 
-                                    attributeName="y2"
-                                    dur = "10s"
-                                    repeatCount = "indefinite"
-                                    values="145; 50; 145"
-                                    keyTimes="0;0.5;1"
-                                />
-                                <animate 
-                                    attributeName = "stroke"
-                                    dur = "10s"
-                                    repeatCount="indefinite"
-                                    values="blue;red;blue;"
-                                />
-                            </line>
-                            <circle cx="253" cy="160" r="15" fill="black" >
-                                <animate
-                                    attributeName="fill"
-                                    values="blue;red;blue;"
-                                    dur="10s"
-                                    repeatCount="indefinite"/>
-                            </circle>
-                        </g>
+                <SmallTemperature/>
 
             </svg>
 

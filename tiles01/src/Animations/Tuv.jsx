@@ -1,6 +1,7 @@
 import React from 'react';
 import Cloud from '../Animations/Cloud';
 import Sun from '../Animations/Sun';
+import SmallTemperature from './SmallTemperature';
 
 function Tuv(){
     return(
@@ -14,45 +15,7 @@ function Tuv(){
                     <Cloud/>
                 </g>
 
-                <g id="thermometer">
-                    {/*The background of the thermometer */ }
-                    <rect x="25" y="210" width="67.5" height="166" fill="#555555"/>
-                    <rect x="45" y="220" width="27.5" height="120" fill="white"/>
-                    <circle cx="58" cy="340" r="25" fill="white" />
-                    <line x1="50" y1="230" x2="67" y2="230" stroke="black" strokeWidth="1"/>
-                    <line x1="50" y1="240" x2="67" y2="240" stroke="black" strokeWidth="1"/>
-                    <line x1="50" y1="250" x2="67" y2="250" stroke="black" strokeWidth="1"/>
-                    <line x1="50" y1="260" x2="67" y2="260" stroke="black" strokeWidth="1"/>
-                    <line x1="50" y1="270" x2="67" y2="270" stroke="black" strokeWidth="1"/>
-                    <line x1="50" y1="280" x2="67" y2="280" stroke="black" strokeWidth="1"/>
-                    <line x1="50" y1="290" x2="67" y2="290" stroke="black" strokeWidth="1"/>
-                    <line x1="50" y1="300" x2="67" y2="300" stroke="black" strokeWidth="1"/>
-                    <line x1="50" y1="310" x2="67" y2="310" stroke="black" strokeWidth="1"/>
-
-                    {/*The Parts of the thermometer that are animated*/}
-                    <line x1="58.5" y1="340" x2="58.5" y2="310" stroke="black" strokeWidth="10">
-                        <animate 
-                            attributeName="y2"
-                            dur = "14s"
-                            repeatCount = "indefinite"
-                            values="250; 325; 250"
-                            keyTimes="0;0.5;1"
-                        />
-                        <animate 
-                            attributeName = "stroke"
-                            dur = "14s"
-                            repeatCount="indefinite"
-                            values="red;blue;red;"
-                        />
-                    </line>
-                    <circle cx="58" cy="340" r="15" fill="black" >
-                        <animate
-                            attributeName="fill"
-                            values="red;blue;red;"
-                            dur="14s"
-                            repeatCount="indefinite"/>
-                    </circle>
-                </g>
+                <SmallTemperature />
 
                 <g className="person">
                     <circle id="head" cx="140" cy="210" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />

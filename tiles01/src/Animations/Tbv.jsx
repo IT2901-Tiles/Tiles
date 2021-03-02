@@ -43,7 +43,6 @@ function Tbv() {
                             to="5 105 280"
                             dur="0.5s"
                             repeatCount="indefinite" />
-                   
                 </g>
                 <SmallTemperature/>
                 

@@ -12,6 +12,7 @@ function Tbc() {
                     <rect x="0" y="300" width="300" height="100" fill="#8ccd7e" />
                     <Sun/>
                 </g>
+                
                 <g className="bike">
                     <g className="wheel1">
                         <line x1="20" y1="255" x2="80" y2="308" stroke="black" stroke-width="3" />

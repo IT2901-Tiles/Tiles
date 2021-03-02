@@ -1,4 +1,5 @@
 import React from 'react';
+import SmallTemperature from './SmallTemperature';
 
 
 
@@ -63,8 +64,8 @@ function Tpc() {
                         
 
 
-                        <g id="thermometer">
-                            {/*The background of the thermometer */ }
+                        {/* <g id="thermometer">
+                            {/*The background of the thermometer 
                             <rect x="220" y="30" width="67.5" height="166" fill="#555555"/>
                             <rect x="240" y="40" width="27.5" height="120" fill="white"/>
                             <circle cx="253" cy="160" r="25" fill="white" />
@@ -78,7 +79,7 @@ function Tpc() {
                             <line x1="245" y1="120" x2="262" y2="120" stroke="black" strokeWidth="1"/>
                             <line x1="245" y1="130" x2="262" y2="130" stroke="black" strokeWidth="1"/>
 
-                            {/*The Parts of the thermometer that are animated*/}
+                            {/*The Parts of the thermometer that are animated
                             <line x1="253.5" y1="160" x2="253.5" y2="110" stroke="black" strokeWidth="10">
                                 <animate 
                                     attributeName="y2"
@@ -101,7 +102,9 @@ function Tpc() {
                                     dur="10s"
                                     repeatCount="indefinite"/>
                             </circle>
-                        </g>
+                        </g> */}
+
+                        <SmallTemperature/>
                     
                 </g>
                 
