@@ -1,5 +1,6 @@
 import React from 'react';
 import Temperature from './Temperature';
+import Lamp from './Lamp';
 
 
 function Tfv (){
@@ -10,10 +11,7 @@ function Tfv (){
                 <g className="background">
                     <rect id="wall" width="300" height="400" fill="#a3c2c2" />
                     <rect id="floor" x="0" y="300" width="300" height="100" fill="#006666" />
-                    <line id="lamp" x1="100" y1="0" x2="100" y2="50" stroke="black" stroke-width="3" />
-                    <line id="lamp1" x1="100" y1="50" x2="100" y2="58" stroke="black" stroke-width="6" />
-                    <circle id="lampBulb" cx="100" cy="68" r="10" stroke="black" stroke-width="1" fill="#a3c2c2" />
-                    <polygon id="light" points="99,59 101,59 105,70 95,70" stroke="#ffff66" fill="#ffff66"/>
+                    <Lamp/>
                 </g>
                 <g className="chair">
 
@@ -82,7 +80,7 @@ function Tfv (){
                     </circle>
                 </g> */}
 
-                <Temperature/>
+               <g transform="translate(-130, 0)"> <Temperature/></g>
                 
             </svg>
 

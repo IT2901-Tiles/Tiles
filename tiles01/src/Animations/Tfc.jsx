@@ -39,7 +39,7 @@ function Tfc (){
 
                     </g>
                 </g>
-                <Temperature/>
+                <g transform="translate(0, 20)"><Temperature/></g>
             </svg>
         </div>
     );

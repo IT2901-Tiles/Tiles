@@ -1,7 +1,7 @@
 import React from 'react';
 import Cloud from '../Animations/Cloud';
 import Sun from '../Animations/Sun';
-import SmallTemperature from './SmallTemperature';
+import Temperature from './Temperature';
 
 function Tuv(){
     return(
@@ -15,7 +15,7 @@ function Tuv(){
                     <Cloud/>
                 </g>
 
-                <SmallTemperature />
+                <g transform="translate(-155, 180)"><Temperature /></g>
 
                 <g className="person">
                     <circle id="head" cx="140" cy="210" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
