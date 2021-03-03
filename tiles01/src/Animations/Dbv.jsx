@@ -1,42 +1,42 @@
 import React from 'react';
 import Sun from '../Animations/Sun';
 
-function Dbv(){
-    return(
+function Dbv() {
+    return (
         <div className='Dbv'>
             <h1>Drop, Bike, Vibration</h1>
-                <svg width="300" height="400">
-                    {/* Background */}
-                    <rect width="300" height="400" fill="#b3e6ff" />
-                    <polygon points="0,300 0,160 150,300" fill="#8ccd7e" stroke-width="3" />
-                    <rect x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-                    <Sun/>
-                    {/* Bike */}
-                    <g className="bike">
-                        
-                        <g className="wheel1">
-                            <line x1="20" y1="55" x2="80" y2="108" stroke="black" stroke-width="3" />
-                            <line x1="60" y1="40" x2="40" y2="120" stroke="black" stroke-width="3" />
-                            <line x1="88" y1="68" x2="12" y2="95" stroke="black" stroke-width="3" />
-                        </g>
-                        <circle cx="50" cy="80" r="40" stroke="black" stroke-width="3" fill="transparent" />
-                        <g className="wheel2">
-                            <line x1="130" y1="55" x2="190" y2="108" stroke="black" stroke-width="3" />
-                            <line x1="170" y1="40" x2="150" y2="120" stroke="black" stroke-width="3" />
-                            <line x1="198" y1="68" x2="122" y2="95" stroke="black" stroke-width="3" />
-                        </g>
-                        <circle cx="160" cy="80" r="40" stroke="black" stroke-width="3" fill="transparent" />
-                        
-                        <polygon points="80,40 140,20 100,80 50,80" stroke="pink" stroke-width="3" fill="transparent"/>
-                        <line x1="138" y1="10" x2="160" y2="80" stroke="pink" stroke-width="3"/>
-            
-                        <line x1="128" y1="10" x2="150" y2="10" stroke="black" stroke-width="3" />
-                        <line x1="70" y1="20" x2="100" y2="80" stroke="black" stroke-width="3" />
-                        <ellipse cx="70" cy="20" rx="15" ry="3" stroke="black" stroke-width="3" />
-    
-                        
+            <svg width="300" height="400">
+                {/* Background */}
+                <rect width="300" height="400" fill="#b3e6ff" />
+                <polygon points="0,300 0,160 150,300" fill="#8ccd7e" stroke-width="3" />
+                <rect x="0" y="300" width="300" height="100" fill="#8ccd7e" />
+                <Sun />
+                {/* Bike */}
+                <g className="bike">
+
+                    <g className="wheel1">
+                        <line x1="20" y1="55" x2="80" y2="108" stroke="black" stroke-width="3" />
+                        <line x1="60" y1="40" x2="40" y2="120" stroke="black" stroke-width="3" />
+                        <line x1="88" y1="68" x2="12" y2="95" stroke="black" stroke-width="3" />
+                    </g>
+                    <circle cx="50" cy="80" r="40" stroke="black" stroke-width="3" fill="transparent" />
+                    <g className="wheel2">
+                        <line x1="130" y1="55" x2="190" y2="108" stroke="black" stroke-width="3" />
+                        <line x1="170" y1="40" x2="150" y2="120" stroke="black" stroke-width="3" />
+                        <line x1="198" y1="68" x2="122" y2="95" stroke="black" stroke-width="3" />
+                    </g>
+                    <circle cx="160" cy="80" r="40" stroke="black" stroke-width="3" fill="transparent" />
+
+                    <polygon points="80,40 140,20 100,80 50,80" stroke="pink" stroke-width="3" fill="transparent" />
+                    <line x1="138" y1="10" x2="160" y2="80" stroke="pink" stroke-width="3" />
+
+                    <line x1="128" y1="10" x2="150" y2="10" stroke="black" stroke-width="3" />
+                    <line x1="70" y1="20" x2="100" y2="80" stroke="black" stroke-width="3" />
+                    <ellipse cx="70" cy="20" rx="15" ry="3" stroke="black" stroke-width="3" />
+
+
                     {/* Person */}
-                    
+
                     <circle id="head" cx="90" cy="-50" r="20" stroke="#ffe5cc" stroke-width="1" fill="#ffe5cc" />
                     <circle id="eye1" cx="83" cy="-55" r="2" stroke="black" stroke-width="1" fill="black" />
                     <circle id="eye2" cx="97" cy="-55" r="2" stroke="black" stroke-width="1" fill="black" />
@@ -63,18 +63,18 @@ function Dbv(){
                     <line id="tshirt" x1="85" y1="-22" x2="70" y2="17" stroke="#ff5050" stroke-width="8" />
                     <line id="tshirtArm2" x1="83" y1="-19" x2="100" y2="-9" stroke="#ff5050" stroke-width="8" />
                     <animateTransform
-                            attributeName="transform"
-                            attributeType="XML"
-                            type="translate"
-                            values="0 0; 80 190; 200 190; 180 190; 200 180; 190 190;"
-                            keyTimes="0;0.5;0.7;0.8;0.9;1"
-                            dur="2s"
-                            repeatCount="indefinite"
-                        />
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        values="0 0; 80 190; 100 190; 90 190; 110 190; 100 190; 120 190; 110 190; 130 190; 120 190; 140 190; 130 190; 150 190; 140 190; 160 190;200 190;"
+                        keyTimes="0; 0.5; 0.53; 0.56; 0.59; 0.62; 0.65; 0.68; 0.71; 0.74; 0.77;0.80; 0.83; 0.86; 0.89; 1;"
+                        dur="3s"
+                        repeatCount="indefinite"
+                    />
                 </g>
 
-                </svg>
-            </div>
+            </svg>
+        </div>
     );
 }
 
