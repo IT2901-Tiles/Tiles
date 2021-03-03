@@ -1,5 +1,6 @@
 import React from 'react';
 import Sun from '../Animations/Sun';
+import Outdoors from './Outdoors';
 
 
 function Mpv() {
@@ -7,10 +8,8 @@ function Mpv() {
         <div className="Mpv">
             <h1>Motion, Pen/pencil, Vibration</h1>
             <svg id="mpv" height="400" width="300">
-                <g className="background">
-                    <rect id="sky" width="300" height="400" fill="#b3e6ff" />
-                    <rect id="grass" x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-                </g>
+                <Outdoors/>
+                <Sun/>
 
                 <g className="person">
                     <circle id="head" cx="90" cy="190" r="20" stroke="#ffe5cc" stroke-width="1" fill="#ffe5cc" />
@@ -68,7 +67,7 @@ function Mpv() {
 
                 </g>
 
-                <Sun/>
+                
             </svg>
 
 

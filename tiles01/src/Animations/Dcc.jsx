@@ -1,17 +1,15 @@
 import React from 'react';
 import ClothingShelf from './ClothingShelf';
+import Inside from './Inside';
 
 function Dcc(){
     return(
         <div className='Dcc'>
             <h1>Drop, Clothing, Colour Change</h1>
             <svg width="300" height="400">
-                {/* Background */}
-                <g>
-                    <rect width="300" height="400" fill="#a3c2c2" />
-                    <rect x="0" y="300" width="300" height="100" fill="#006666" />
-                    <ClothingShelf/>
-                </g>
+                <Inside/>
+                <ClothingShelf/>
+              
                 <g className="person">
                     <circle id="head" cx="140" cy="190" r="20" stroke="#ffe5cc" stroke-width="1" fill="#ffe5cc" />
                     <circle id="eye1" cx="133" cy="185" r="2" stroke="black" stroke-width="1" fill="black" />

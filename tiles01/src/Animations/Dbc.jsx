@@ -1,15 +1,16 @@
 import React from 'react';
 import Sun from '../Animations/Sun';
+import Outdoors from './Outdoors';
 
 function Dbc(){
     return(
         <div className='Dbc'>
             <h1>Drop, Bike, Colour Change</h1>
                 <svg width="300" height="400">
-                    {/* Background */}
-                    <rect width="300" height="400" fill="#b3e6ff" />
-                    <polygon points="0,300 0,160 150,300" fill="#8ccd7e" stroke-width="3" />
-                    <rect x="0" y="300" width="300" height="100" fill="#8ccd7e" />
+                    <g>
+                        <Outdoors/>
+                        <polygon points="0,300 0,160 150,300" fill="#8ccd7e" stroke-width="3" />
+                    </g>
                     <Sun/>
                     {/* Bike */}
                     <g className="bike">

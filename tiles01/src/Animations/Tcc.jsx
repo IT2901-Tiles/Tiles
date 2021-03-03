@@ -1,6 +1,7 @@
 import React from 'react';
 import Cloud from './Cloud';
 import SmallTemperature from './SmallTemperature';
+import Outdoors from './Outdoors';
 
 
 function Tcc() {
@@ -8,13 +9,8 @@ function Tcc() {
         <div>
             <h1>Temperature, Clothing, Colour change</h1>
             <svg width="300" height="400">
-                <g className="background">
-                    <rect id="sky" width="300" height="400" fill="#b3e6ff" />
-                    <rect id="grass" x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-                    <Cloud/>
-                </g>
-
-
+                <Outdoors/>
+                <Cloud/>
                 <g className="person">
                     <circle id="head" cx="140" cy="190" r="20" stroke="#ffe5cc" stroke-width="1" fill="#ffe5cc" />
                     <circle id="eye1" cx="133" cy="185" r="2" stroke="black" stroke-width="1" fill="black" />

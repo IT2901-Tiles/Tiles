@@ -2,6 +2,7 @@ import React from 'react';
 import Temperature from './Temperature';
 import Lamp from './Lamp';
 import Chair from './Chair';
+import Inside from './Inside';
 
 
 function Tfv (){
@@ -9,11 +10,8 @@ function Tfv (){
         <div className="tfv">
             <h1>Temperature, Furniture, Vibration</h1>
             <svg width="300" height="400">
-                <g className="background">
-                    <rect id="wall" width="300" height="400" fill="#a3c2c2" />
-                    <rect id="floor" x="0" y="300" width="300" height="100" fill="#006666" />
-                    <Lamp/>
-                </g>
+                <Inside/>
+                <Lamp/>
                 <g>
                     <Chair/>
                     <animateTransform attributeName="transform"
@@ -26,9 +24,7 @@ function Tfv (){
                         repeatCount="indefinite" />
                 </g>
                 <g transform="translate(-130, 0)"> <Temperature/></g>
-                
             </svg>
-
         </div>
     );
     

@@ -1,6 +1,7 @@
 import React from 'react';
 import Chair from './Chair';
 import Lamp from './Lamp';
+import Inside from './Inside';
 
 
 function Mfv() {
@@ -8,12 +9,8 @@ function Mfv() {
         <div className="Mfv">
             <h1>Motion, Furniture, Vibration</h1>
             <svg id="mpv" height="400" width="300">
-                <g className="background">
-                    <rect id="wall" width="300" height="400" fill="#a3c2c2" />
-                    <rect id="floor" x="0" y="300" width="300" height="100" fill="#006666" />
-                    <Lamp/>
-                </g>
-
+                <Inside/>
+                <Lamp/>
                 <g className="person">
                     <circle id="head" cx="90" cy="190" r="20" stroke="#ffe5cc" stroke-width="1" fill="#ffe5cc" />
                     <circle id="eye1" cx="83" cy="185" r="2" stroke="black" stroke-width="1" fill="black" />
@@ -70,15 +67,7 @@ function Mfv() {
                         dur="0.5s"
                         repeatCount="indefinite" />
                 </g>
-                
-
-
             </svg>
-
-
-
-
-
         </div>
     );
 }

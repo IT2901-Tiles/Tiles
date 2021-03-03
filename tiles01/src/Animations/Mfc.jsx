@@ -1,17 +1,14 @@
 import React from 'react';
 import ClothingShelf from './ClothingShelf';
+import Inside from './Inside';
 
 function Mfc() {
     return (
         <div>
             <h1>Motion, Furniture, Colour change</h1>
             <svg height="400" width="300">
-                <g>
-                    <rect width="300" height="400" fill="#a3c2c2" />
-                    <rect x="0" y="300" width="300" height="100" fill="#006666" />
-                    <ClothingShelf colour="#ff8c1a;#663300; #ff8c1a;" dur="10"/>
-                    
-                </g>
+                <Inside/>
+                <ClothingShelf colour="#ff8c1a;#663300; #ff8c1a;" dur="10"/>
 
                 <g className="person" transform="translate(220,0) scale(-1, 1)">
                     <circle id="head" cx="90" cy="190" r="20" stroke="#ffe5cc" stroke-width="1" fill="#ffe5cc" />

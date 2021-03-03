@@ -1,5 +1,6 @@
 import React from 'react';
 import Sun from '../Animations/Sun';
+import Outdoors from './Outdoors';
 
 
 function Mbv() {
@@ -7,11 +8,8 @@ function Mbv() {
         <div>
             <h1>Motion, Bike, Vibration</h1>
             <svg height="400" width="300">
-                <g>
-                    <rect id="sky" width="300" height="400" fill="#b3e6ff" />
-                    <rect id="grass" x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-                </g>
-                <g className="bike">
+               <Outdoors/>
+                 <g className="bike">
                     <g className="wheel1">
                         <line x1="20" y1="255" x2="80" y2="308" stroke="black" stroke-width="3" />
                         <line x1="60" y1="240" x2="40" y2="320" stroke="black" stroke-width="3" />

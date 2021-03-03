@@ -1,17 +1,15 @@
 import React from 'react';
 import Cloud from './Cloud';
+import Outdoors from './Outdoors';
 
 function Muc() {
     return (
         <div>
             <h1>Motion, Umbrella, Colour change</h1>
             <svg height="400" width="300">
-                <g>
-                    <rect id="sky" width="300" height="400" fill="#b3e6ff" />
-                    <rect id="grass" x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-
-                    <Cloud />
-                </g>
+                <Outdoors/>
+                <Cloud />
+                
                 <g className="person">
                     <circle id="head" cx="140" cy="210" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
                     <circle id="eye1" cx="133" cy="205" r="2" stroke="black" strokeWidth="1" fill="black" />
@@ -32,14 +30,6 @@ function Muc() {
                         <line id="arm2" x1="140" y1="235" x2="180" y2="260" stroke="#ffe5cc" strokeWidth="4" />
                         <line id="fingers2" x1="178" y1="260" x2="190" y2="260" stroke="#ffe5cc" strokeWidth="6" />
                         <line id="tshirtArm2" x1="141" y1="238" x2="170" y2="255" stroke="#ff5050" strokeWidth="8" />
-
-                        {/* <animateTransform attributeName="transform"
-                            attributeType="XML"
-                            type="rotate"
-                            from="90 140 220"
-                            to="0 140 220"
-                            dur="1s"
-                            repeatCount="indefinite" /> */}
                     </g>
                     <line id="body" x1="140" y1="220" x2="140" y2="275" stroke="#ffe5cc" strokeWidth="4" />
                     <line id="tshirt" x1="140" y1="238" x2="140" y2="277" stroke="#ff5050" strokeWidth="8" />
