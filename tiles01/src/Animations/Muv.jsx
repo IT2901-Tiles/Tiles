@@ -1,4 +1,5 @@
 import React from 'react';
+import Outdoors from './Outdoors';
 
 
 function Muv() {
@@ -6,11 +7,8 @@ function Muv() {
         <div>
             <h1>Motion, Umbrella, Vibration</h1>
             <svg height="400" width="300">
-                <g className="background">
-                    <rect id="sky" width="300" height="400" fill="#b3e6ff" />
-                    <rect id="grass" x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-                    
-                    <g className="cloud">
+                <Outdoors/>
+                <g className="cloud">
                         <circle className="cloud" cx="50" cy="80" r="35" fill="#ababab" />
                         <circle className="cloud" cx="90" cy="50" r="45" fill="#ababab" />
                         <circle className="cloud" cx="135" cy="50" r="30" fill="#ababab" />
@@ -39,7 +37,7 @@ function Muv() {
                             calcMode="linear"
                         />
                     </g>
-                </g>
+               
 
                 <g className="person">
                     <circle id="head" cx="140" cy="210" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />

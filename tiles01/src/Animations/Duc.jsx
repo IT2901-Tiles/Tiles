@@ -1,17 +1,14 @@
 import React from 'react';
 import Cloud from './Cloud'
+import Outdoors from './Outdoors';
 
 function Duc() {
     return (
         <div>
             <h1>Drop, Umbrella, Colour change</h1>
             <svg height="400" width="300">
-                <g className="background">
-                    <rect id="sky" width="300" height="400" fill="#b3e6ff" />
-                    <rect id="grass" x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-
-                    <Cloud />
-                </g>
+                <Outdoors/>
+                <Cloud />
 
                 <g className="person" transform="translate(-20, -20)">
                     <circle id="head" cx="140" cy="210" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />

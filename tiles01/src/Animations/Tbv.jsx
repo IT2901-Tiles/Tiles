@@ -1,5 +1,6 @@
 import React from 'react';
 import Sun from '../Animations/Sun';
+import Outdoors from './Outdoors';
 import SmallTemperature from './SmallTemperature';
 
 
@@ -8,11 +9,9 @@ function Tbv() {
         <div>
             <h1>Temperature, Bike, Vibration</h1>
             <svg height="400" width="300">
-                <g className="background">
-                    <rect width="300" height="400" fill="#b3e6ff" />
-                    <rect x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-                    <Sun/>
-                </g>
+                <Outdoors/>
+                <Sun/>
+               
 
                 <g className="bike">
                     <g className="wheel1">

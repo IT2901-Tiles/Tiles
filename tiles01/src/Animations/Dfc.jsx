@@ -1,5 +1,6 @@
 import React from 'react';
 import Chair from './Chair';
+import Inside from './Inside';
 import Lamp from './Lamp';
 
 function Dfc(){
@@ -7,11 +8,8 @@ function Dfc(){
         <div className='Dfc'>
             <h1>Drop, Furniture, Colour change</h1>
             <svg width="300" height="400">
-                <g className="background">
-                    <rect id="wall" width="300" height="400" fill="#a3c2c2" />
-                    <rect id="floor" x="0" y="300" width="300" height="100" fill="#006666" />
-                    <Lamp/>
-                </g>
+                <Inside/>  
+                <Lamp/>
                
                 <g className="person">
                     <circle id="head" cx="140" cy="190" r="20" stroke="#ffe5cc" stroke-width="1" fill="#ffe5cc" />

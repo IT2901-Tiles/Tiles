@@ -1,6 +1,7 @@
 import React from 'react';
 import Cloud from '../Animations/Cloud';
 import Sun from '../Animations/Sun';
+import Outdoors from './Outdoors';
 import Temperature from './Temperature';
 
 function Tuv(){
@@ -8,13 +9,10 @@ function Tuv(){
         <div className='tuv'>
             <h1>Temperature, Umbrella, Vibration</h1>
             <svg width="300" height="400">
-                <g> {/* Background */}
-                    <rect id="sky" width="300" height="400" fill="#b3e6ff" />
-                    <rect id="grass" x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-                    <Sun/>
-                    <Cloud/>
-                </g>
-
+                <Outdoors/>
+                <Sun/>
+                <Cloud/>
+                
                 <g transform="translate(-155, 180)"><Temperature /></g>
 
                 <g className="person">

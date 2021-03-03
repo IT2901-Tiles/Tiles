@@ -1,5 +1,6 @@
 import React from 'react';
 import ClothingShelf from './ClothingShelf';
+import Inside from './Inside';
 import SmallTemperature from './SmallTemperature';
 
 
@@ -12,10 +13,7 @@ function Tcv() {
         <div className="Tcv">
             <h1>Temperature, Clothing, Vibration</h1>
             <svg width="300" height="400">
-
-                <rect id="wall" width="300" height="400" fill="#a3c2c2" />
-                <rect id="floor" x="0" y="300" width="300" height="100" fill="#006666" />
-                
+                <Inside/>
                 <ClothingShelf/>
 
                 <g className="person">

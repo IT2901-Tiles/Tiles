@@ -1,5 +1,6 @@
 import React from 'react';
 import Cloud from './Cloud';
+import Outdoors from './Outdoors';
 import Temperature from './Temperature'
 
 function Tuc(){
@@ -8,12 +9,8 @@ function Tuc(){
             <h1>Temperature, Umbrella, Colour Change</h1>
 
             <svg height="400" width="300">
-                <g> {/* Background */}
-                    <rect id="sky" width="300" height="400" fill="#b3e6ff" />
-                    <rect id="grass" x="0" y="300" width="300" height="100" fill="#8ccd7e" />
-                    <Cloud dur="10" begin="6s"/>
-                </g>
-
+                <Outdoors/>
+                <Cloud dur="10" begin="6s"/>
                 <Temperature/>
 
                 
