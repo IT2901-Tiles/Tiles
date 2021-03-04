@@ -3,10 +3,11 @@ import LinkButton from './LinkButton';
 import FormFieldAnimationPage from './FormFieldAnimationPage'
 // Component for the preview of the animations + the selected cards. 
 // This component uses the grid-property in html and css
-import {Mbc,Mbv,Mcc,Mcv,Mfc,Mfv,Mpc,Mpv,Muc,Tbc,Tbv,Dbc,Dbv,Muv,Tcc,Tfc,Tfv,Tpc,Tpv,Tcv,Tuc,Tuv} from '../Animations';
+import {Mbc,Mbv,Mcc,Mcv,Mfc,Mfv,Mpc,Mpv,Muc,Tbc,Tbv,Dbc,Dbv,Muv,Tcc,Tfc,Tfv,Tpc,Tpv,Tcv,Tuc,Tuv,Dcc,Dcv,Dfc,Dfv,Dpc,Dpv,Duc,Duv} from '../Animations';
 function AnimationsPreview() {
+    //dictionary used to find the correct animation
     let animationDictionary={
-        "drop":{"bike":{"color_change":<Dbc/>,"vibrate":<Dbv/>},"clothing":{"color_change":null,"vibrate":null},"furniture":{"color_change":null,"vibrate":null},"pen":{"color_change":null,"vibrate":null},"umbrella":{"color_change":null,"vibrate":null}},
+        "drop":{"bike":{"color_change":<Dbc/>,"vibrate":<Dbv/>},"clothing":{"color_change":<Dcc/>,"vibrate":<Dcv/>},"furniture":{"color_change":<Dfc/>,"vibrate":<Dfv/>},"pen":{"color_change":<Dpc/>,"vibrate":<Dpv/>},"umbrella":{"color_change":<Duc/>,"vibrate":<Duv/>}},
         "motion":{"bike":{"color_change":<Mbc/>,"vibrate":<Mbv/>},"clothing":{"color_change":<Mcc/>,"vibrate":<Mcv/>},"furniture":{"color_change":<Mfc/>,"vibrate":<Mfv/>},"pen":{"color_change":<Mpc/>,"vibrate":<Mpv/>},"umbrella":{"color_change":<Muc/>,"vibrate":<Muv/>}},
         "temperature":{"bike":{"color_change":<Tbc/>,"vibrate":<Tbv/>},"clothing":{"color_change":<Tcc/>,"vibrate":<Tcv/>},"furniture":{"color_change":<Tfc/>,"vibrate":<Tfv/>},"pen":{"color_change":<Tpc/>,"vibrate":<Tpv/>},"umbrella":{"color_change":<Tuc/>,"vibrate":<Tuv/>}},
 
@@ -22,8 +23,9 @@ function AnimationsPreview() {
         
     }
     getCardName(localStorage.getItem("trigger"))
+    //select the correct animation based on the selected cards
     var animation=animationDictionary[getCardName(localStorage.getItem("trigger"))][getCardName(localStorage.getItem("thing"))][getCardName(localStorage.getItem("feedback"))]
-    console.log(animation)
+    
     return(
         <div className="gridAnimationsPage">
             <div className="gridAnimationItem3">

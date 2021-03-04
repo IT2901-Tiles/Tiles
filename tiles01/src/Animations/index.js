@@ -12,6 +12,14 @@ export {default as Muv} from "./Muv"
 
 export {default as Dbc} from "./Dbc"
 export {default as Dbv} from "./Dbv"
+export {default as Dcc} from "./Dcc"
+export {default as Dcv} from "./Dcv"
+export {default as Dfc} from "./Dfc"
+export {default as Dfv} from "./Dfv"
+export {default as Dpc} from "./Dpc"
+export {default as Dpv} from "./Dpv"
+export {default as Duc} from "./Duc"
+export {default as Duv} from "./Duv"
 
 
 

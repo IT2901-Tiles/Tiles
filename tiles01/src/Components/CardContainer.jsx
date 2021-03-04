@@ -46,7 +46,7 @@ function CardContainer(props) {
         
         {listOfImages.map(
             
-            (image,index) =>  <Card active={activeCard} name={getName(image)} onClick={handleCardClick} id={index} key={index} src={"/stuartgo"+image.default}  />
+            (image,index) =>  <Card active={activeCard} name={getName(image)} onClick={handleCardClick} id={index} key={index} src={image.default}  />
         )}
         </div>
     );
