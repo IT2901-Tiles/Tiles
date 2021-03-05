@@ -1,6 +1,7 @@
 import React from 'react';
 import Cloud from './Cloud'
 import Outdoors from './Outdoors';
+import ClosedUmbrella from './ClosedUmbrella';
 
 function Duc() {
     return (
@@ -46,15 +47,16 @@ function Duc() {
                     </g>
                 </g>
 
-                <g className="umbrella">
-                    <line id="line" x1="184" y1="265" x2="184" y2="170" stroke="#000000" strokeWidth="2" />
-                    <path id="umbrellaLeft" d="m 170,247 L184 247 L184,120;m 170,247 L184 247 L184,120" fill="black" ><animate attributeName="fill" values="black;black;yellow;yellow;yellow" dur="5s" repeatCount="indefinite" /></path>
-                    <path id="umbrellaRight" d="m 198 247 L184,247 L184,120;m 198 247 L184,247 L184,120" fill="black"><animate attributeName="fill" values="black;black;yellow;yellow;yellow" dur="5s" repeatCount="indefinite" /></path>
-                    <circle id="top" cx="184" cy="115" r="2" fill="black" ><animate attributeName="fill" values="black;black;yellow;yellow;yellow" dur="5s" repeatCount="indefinite" /></circle>
-                    <path id="smile" d="M183.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="black" strokeWidth="2" />
-                    <animateTransform attributeName="transform" attributeType="XML" type="translate" values="-20 -30; -20 100; -20 100" dur="5s" repeatCount="indefinite" />
+                <g>
+                    <ClosedUmbrella colour="black;black;yellow;yellow;yellow" dur="5"/>
+                    <animateTransform 
+                        attributeName="transform" 
+                        attributeType="XML" 
+                        type="translate" 
+                        values="-20 -30; -20 100; -20 100"
+                        dur="5s" 
+                        repeatCount="indefinite" />
                 </g>
-
             </svg >
 
 

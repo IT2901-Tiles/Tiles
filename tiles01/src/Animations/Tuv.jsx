@@ -3,6 +3,7 @@ import Cloud from '../Animations/Cloud';
 import Sun from '../Animations/Sun';
 import Outdoors from './Outdoors';
 import Temperature from './Temperature';
+import OpenUmbrella from './OpenUmbrella';
 
 function Tuv(){
     return(
@@ -52,12 +53,7 @@ function Tuv(){
                     </g>
                 </g>
                 <g>
-                    <line className="umbrella" x1="184" y1="265" x2="184" y2="170" stroke="#000000" strokeWidth="2" />
-                    <path id="umbrella11" className="umbrella" d="m 90,170 L185,170 L185,120 Q 184,100 90,170" fill="#000000" />
-                    <path id="umbrella12" className="umbrella" d="m 280,170 L183,170 L183,120 Q 184,100 280,170" fill="#000000" />
-                    <circle id="umbrella13" className="umbrella" cx="184" cy="115" r="2" fill="#0000000"/>
-                    <path id="smile" d="M183.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="#000000" strokeWidth="2" />
-                    <path id="smile" d="M183.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="#000000" strokeWidth="2" />
+                    <OpenUmbrella/>
                     <animateTransform
                         attributeName="transform"
                         attributeType="XML"
@@ -67,7 +63,17 @@ function Tuv(){
                         begin="4s"
                         dur="13s"
                         repeatCount="indefinite" />
-                </g >
+
+                </g>
+                {/* <g>
+                    <line className="umbrella" x1="184" y1="265" x2="184" y2="170" stroke="#000000" strokeWidth="2" />
+                    <path id="umbrella11" className="umbrella" d="m 90,170 L185,170 L185,120 Q 184,100 90,170" fill="#000000" />
+                    <path id="umbrella12" className="umbrella" d="m 280,170 L183,170 L183,120 Q 184,100 280,170" fill="#000000" />
+                    <circle id="umbrella13" className="umbrella" cx="184" cy="115" r="2" fill="#0000000"/>
+                    <path id="smile" d="M183.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="#000000" strokeWidth="2" />
+                    <path id="smile" d="M183.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="#000000" strokeWidth="2" />
+                    
+                </g > */}
 
                 
             </svg>

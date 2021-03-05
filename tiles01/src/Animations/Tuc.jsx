@@ -1,7 +1,8 @@
 import React from 'react';
 import Cloud from './Cloud';
 import Outdoors from './Outdoors';
-import Temperature from './Temperature'
+import Temperature from './Temperature';
+import OpenUmbrella from './OpenUmbrella';
 
 function Tuc(){
     return(
@@ -12,8 +13,6 @@ function Tuc(){
                 <Outdoors/>
                 <Cloud dur="10" begin="6s"/>
                 <Temperature/>
-
-                
                 <g className="person">
                     <circle id="head" cx="40" cy="210" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
                     <circle id="eye1" cx="33" cy="205" r="2" stroke="black" strokeWidth="1" fill="black" />
@@ -54,38 +53,10 @@ function Tuc(){
 
                     </g>
                 </g>
-
-
-                <g> 
-                    <line className="umbrella" x1="84" y1="265" x2="84" y2="170" stroke="#000000" strokeWidth="2" />
-                    <path id="umbrellaHandle" d="M 83.6,263.3 a20,90 0 0,0 15,0" fill="transparent"  stroke="#000000" strokeWidth="2" />
-                    <path id="umbrella1" className="umbrella" d="m 5,170 L85,170 L85,120 Q 84,100 5,170" fill="black" />
-                    <path id="umbrella2" className="umbrella" d="M 180,170 L 83,170 L 83,120 Q 84,100 170,170" fill="black" /> 
-                    <animate
-                        xlinkHref = "#umbrella1"
-                        attributeName="fill" 
-                        keyTimes="0;0.2;0.4;0.6;1"
-                        values="blue; blue;yellow; yellow; blue" 
-                        begin = "0s"
-                        dur="10s" 
-                        repeatCount="indefinite" 
-                        />
-                    <animate
-                        xlinkHref = "#umbrella2"
-                        attributeName="fill" 
-                        keyTimes="0;0.2;0.4; 0.6;1"
-                        values="blue; blue;yellow; yellow; blue" 
-                        begin = "0s"
-                        dur="10s" 
-                        repeatCount="indefinite" 
-                        />
-                    
-                    
+                <g transform="translate(-100, 0)">
+                    <OpenUmbrella colour="blue; blue;yellow; yellow; blue" dur="10"/>
                 </g>
-
             </svg>
-
-
         </div>
     )
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 import Outdoors from './Outdoors';
+import Cloud from './Cloud';
+import ClosedUmbrella from './ClosedUmbrella';
 
 
 function Muv() {
@@ -8,37 +10,7 @@ function Muv() {
             <h1>Motion, Umbrella, Vibration</h1>
             <svg height="400" width="300">
                 <Outdoors/>
-                <g className="cloud">
-                        <circle className="cloud" cx="50" cy="80" r="35" fill="#ababab" />
-                        <circle className="cloud" cx="90" cy="50" r="45" fill="#ababab" />
-                        <circle className="cloud" cx="135" cy="50" r="30" fill="#ababab" />
-                        <circle className="cloud" cx="160" cy="80" r="35" fill="#ababab" />
-                        <rect className="cloud" x="50" y="75" width="110" height="40" fill="#ababab" />
-                        <line className="rain" x1="45" y1="130" x2="30" y2="160" stroke="#ababab" strokeWidth="7" />
-                        <line className="rain" x1="85" y1="130" x2="70" y2="160" stroke="#ababab" strokeWidth="7" />
-                        <line className="rain" x1="125" y1="130" x2="110" y2="160" stroke="#ababab" strokeWidth="7" />
-                        <line className="rain" x1="165" y1="130" x2="150" y2="160" stroke="#ababab" strokeWidth="7" />
-                        <animateTransform attributeName="transform"
-                            attributeType="XML"
-                            type="translate"
-                            from="80 0"
-                            to="0 0"
-                            dur="3s"
-                            repeatCount="1"
-                        />
-                        <animateTransform attributeName="transform"
-                            attributeType="XML"
-                            keyTimes="0;0.5;1"
-                            values="-20 0; 20 0; -20 0"
-                            type="translate"
-                            begin="4s"
-                            dur="3s"
-                            repeatCount="indefinite"
-                            calcMode="linear"
-                        />
-                    </g>
-               
-
+                <Cloud/>
                 <g className="person">
                     <circle id="head" cx="140" cy="210" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
                     <circle id="eye1" cx="133" cy="205" r="2" stroke="black" strokeWidth="1" fill="black" />
@@ -75,12 +47,8 @@ function Muv() {
                     </g>
                 </g>
 
-                <g className="umbrella">
-                    <line id="line" x1="184" y1="265" x2="184" y2="170" stroke="#000000" strokeWidth="2" />
-                    <path id="umbrellaLeft" d="m 170,247 L184 247 L184,120;m 170,247 L184 247 L184,120" fill="black" />
-                    <path id="umbrellaRight" d="m 198 247 L184,247 L184,120;m 198 247 L184,247 L184,120" fill="black" />
-                    <circle id="top" cx="184" cy="115" r="2" fill="black"/>
-                    <path id="smile" d="M183.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="black" strokeWidth="2" />
+                <g>
+                    <ClosedUmbrella/>
                     <animateTransform attributeName="transform"
                         attributeType="XML"
                         type="rotate"
@@ -88,12 +56,8 @@ function Muv() {
                         to="5 183 247"
                         dur="0.1s"
                         repeatCount="indefinite" />
-                    
-                </g>
-
+                </g>   
             </svg >
-
-
         </div >
     );
 }

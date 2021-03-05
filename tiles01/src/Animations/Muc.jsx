@@ -57,8 +57,21 @@ function Muc() {
                     <animate xlinkHref="#umbrella11" attributeName="fill" attributeType="XML" values="black;black;black;yellow;yellow;yellow;black" dur="20s" repeatCount="indefinite" additive="sum" />
                     <animate xlinkHref="#umbrella12" attributeName="d" attributeType="XML" values="m 198 247 L184,247 L184,120;m 198 247 L184,247 L184,120;m 280,170 L183,170 L183,120 Q 184,100 280,170;m 280,170 L183,170 L183,120 Q 184,100 280,170;m 198 247 L184,247 L184,120" dur="20s" repeatCount="indefinite" />
                     <animate xlinkHref="#umbrella12" attributeName="fill" attributeType="XML" values="black;black;black;yellow;yellow;yellow;black" dur="20s" repeatCount="indefinite" additive="sum" />
-                    <circle id="umbrella13" className="umbrella" cx="184" cy="115" r="2" fill="#0000000" ><animate attributeName="cy" attributeType="XML" values="120;120;115;115;120;120" keyTimes="0;0.375;0.37501;0.875;0.8751;1" dur="20s" repeatCount="indefinite" /><animate attributeName="fill" attributeType="XML" values="black;black;black;yellow;yellow;yellow;black" dur="20s" repeatCount="indefinite" additive="sum" /></circle>
-                    <path id="smile" d="M183.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="#000000" strokeWidth="2" />
+                    <circle id="umbrella13" className="umbrella" cx="184" cy="115" r="2" fill="#0000000" >
+                        <animate 
+                            attributeName="cy" 
+                            attributeType="XML" 
+                            values="120;120;115;115;120;120" 
+                            keyTimes="0;0.375;0.37501;0.875;0.8751;1" 
+                            dur="20s" 
+                            repeatCount="indefinite" />
+                        <animate 
+                            attributeName="fill" 
+                            attributeType="XML" 
+                            values="black;black;black;yellow;yellow;yellow;black" 
+                            dur="20s" 
+                            repeatCount="indefinite" 
+                            additive="sum" /></circle>
                     <path id="smile" d="M183.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="#000000" strokeWidth="2" />
                 </g >
 
