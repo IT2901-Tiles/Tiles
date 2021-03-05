@@ -1,44 +1,17 @@
 import React from 'react';
 import ClothingShelf from './ClothingShelf';
 import Inside from './Inside';
-import PersonArmsUp from './PersonArmsUp';
 import SmallTemperature from './SmallTemperature';
 
-
-
 function Tcv() {
-
-
-
     return (
         <div className="Tcv">
             <h1>Temperature, Clothing, Vibration</h1>
             <svg width="300" height="400">
                 <Inside/>
                 <ClothingShelf/>
-                <g>
-                    <PersonArmsUp/>
-                    <animateTransform attributeName="transform"
-                            attributeType="XML"
-                            type="translate"
-                            from="80 0"
-                            to="0 0"
-                            dur="3s"
-                            repeatCount="1"
-                        />
-                        <animateTransform attributeName="transform"
-                            attributeType="XML"
-                            keyTimes="0;0.5;1"
-                            values="-2 0; 2 0; -2 0"
-                            type="translate"
-                            begin="4s"
-                            dur="1s"
-                            repeatCount="indefinite"
-                            calcMode="linear"
-                        />
-                </g>
 
-                {/* <g className="person">
+                <g className="person">
                     <circle id="head" cx="140" cy="190" r="20" stroke="#ffe5cc" stroke-width="1" fill="#ffe5cc" />
                     <circle id="eye1" cx="133" cy="185" r="2" stroke="black" stroke-width="1" fill="black" />
                     <circle id="eye2" cx="147" cy="185" r="2" stroke="black" stroke-width="1" fill="black" />
@@ -74,9 +47,26 @@ function Tcv() {
                         <line id="tshirt" x1="140" y1="218" x2="140" y2="257" stroke="#ff5050" stroke-width="10" />
                         <line id="tshirtArm1" x1="140" y1="221" x2="115" y2="203" stroke="#ff5050" stroke-width="10" />
                         <line id="tshirtArm2" x1="140" y1="221" x2="165" y2="203" stroke="#ff5050" stroke-width="10" />
-                        
-                    </g> 
-                </g>*/}
+                        <animateTransform attributeName="transform"
+                            attributeType="XML"
+                            type="translate"
+                            from="80 0"
+                            to="0 0"
+                            dur="3s"
+                            repeatCount="1"
+                        />
+                        <animateTransform attributeName="transform"
+                            attributeType="XML"
+                            keyTimes="0;0.5;1"
+                            values="-2 0; 2 0; -2 0"
+                            type="translate"
+                            begin="4s"
+                            dur="1s"
+                            repeatCount="indefinite"
+                            calcMode="linear"
+                        />
+                    </g>
+                </g>
                 <SmallTemperature/>
             </svg>
         </div>
