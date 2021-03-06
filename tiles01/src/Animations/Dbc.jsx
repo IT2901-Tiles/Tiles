@@ -30,7 +30,8 @@ function Dbc() {
                     <polygon points="80,40 140,20 100,80 50,80" stroke="pink" strokeWidth="3" fill="transparent">
                         <animate
                             attributeName="stroke"
-                            values="pink;blue;"
+                            values="pink;pink;blue;blue;"
+                            keyTimes="0;0.4;0.41;1"
                             dur="2s"
                             repeatCount="indefinite"
                         />
@@ -38,7 +39,8 @@ function Dbc() {
                     <line x1="138" y1="10" x2="160" y2="80" stroke="pink" strokeWidth="3">
                         <animate
                             attributeName="stroke"
-                            values="pink;blue;"
+                            values="pink;pink;blue;blue;"
+                            keyTimes="0;0.4;0.41;1"
                             dur="2s"
                             repeatCount="indefinite"
                         />

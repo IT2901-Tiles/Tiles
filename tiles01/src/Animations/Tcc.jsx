@@ -10,10 +10,11 @@ function Tcc() {
         <div>
             <h1>Temperature, Clothing, Colour change</h1>
             <svg width="300" height="400">
-                <Outdoors/>
-                <Cloud/>
-                <PersonArmsUp colour="blue;red;blue" dur="10"/>
-                <SmallTemperature/>
+                <Outdoors />
+                <Cloud />
+                <PersonArmsUp colour="blue;blue;red;red;blue;blue"
+                    keyTimes="0;0.3;0.31;0.7;0.71;1" dur="10" />
+                <SmallTemperature />
 
             </svg>
 

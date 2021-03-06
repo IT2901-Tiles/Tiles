@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 
 function PersonArmsUp(props) {
     const [colour] = useState(props.colour ? props.colour : "yellow");
-    const [durTime] = useState(props.dur ? props.dur : "0s")
+    const [durTime] = useState(props.dur ? props.dur : "0s");
+    const [keyTimes] = useState(props.keyTimes ? props.keyTimes : "1")
 
     return (
         <g className="PersonArmsUp">
@@ -45,6 +46,7 @@ function PersonArmsUp(props) {
                         attributeName="stroke"
                         values={colour}
                         dur={durTime}
+                        keyTimes={keyTimes}
                         repeatCount="indefinite"
                     />
                 </line>
@@ -53,6 +55,7 @@ function PersonArmsUp(props) {
                         attributeName="stroke"
                         values={colour}
                         dur={durTime}
+                        keyTimes={keyTimes}
                         repeatCount="indefinite"
                     />
                 </line>
@@ -61,6 +64,7 @@ function PersonArmsUp(props) {
                         attributeName="stroke"
                         values={colour}
                         dur={durTime}
+                        keyTimes={keyTimes}
                         repeatCount="indefinite"
                     />
                 </line>

@@ -147,14 +147,14 @@ function Dpc() {
                             />
                         </g>
                         <g transform="translate(-160,-210) scale(2)">
-                            <Pen colour="black;red;red;" dur="3" />
+                            <Pen colour="black;black;red;red;" keyTimes="0;0.4;0.41;1" dur="3" />
                             <animateTransform
                                 attributeName="transform"
                                 attributeType="XML"
                                 type="scale"
                                 from="2"
                                 to="2"
-                                dur="5s"
+                                dur="4s"
                                 repeatCount="indefinite" />
                             <animateTransform
                                 attributeName="transform"

@@ -10,10 +10,10 @@ function Mpc() {
             <svg height="400" width="300">
                 <g>
                     <rect width="300" height="400" fill="#b3e6ff" />
-                    <BookShelf/>
-                    <Desk/>
+                    <BookShelf />
+                    <Desk />
                     <g>
-                        <Pen colour="black;green;red;black" dur="8"/>
+                        <Pen colour="black;black;green;green;red;red" keyTimes="0;0.3;0.31;0.6;0.61;1" dur="8" />
                         <animateTransform attributeName="transform"
                             attributeType="XML"
                             dur="13s"

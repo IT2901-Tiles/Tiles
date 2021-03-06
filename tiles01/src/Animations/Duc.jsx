@@ -48,7 +48,7 @@ function Duc() {
                 </g>
 
                 <g>
-                    <ClosedUmbrella colour="black;black;yellow;yellow;yellow" dur="5" />
+                    <ClosedUmbrella colour="black;black;yellow;yellow" keyTimes="0;0.3;0.31;1" dur="5" />
                     <animateTransform
                         attributeName="transform"
                         attributeType="XML"

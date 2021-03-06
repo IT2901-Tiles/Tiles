@@ -8,7 +8,7 @@ function Mfc() {
             <h1>Motion, Furniture, Colour change</h1>
             <svg height="400" width="300">
                 <Inside />
-                <ClothingShelf colour="#ff8c1a;#663300; #ff8c1a;" dur="10" />
+                <ClothingShelf colour="#ff8c1a;#ff8c1a;#663300; #663300;#ff8c1a;" keyTimes="0;0.5;0.51; 0.99;1" dur="10" />
 
                 <g className="person" transform="translate(220,0) scale(-1, 1)">
                     <circle className="head" cx="90" cy="190" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
@@ -38,7 +38,8 @@ function Mfc() {
                         <line className="paintBrush" x1="128" y1="250" x2="140" y2="250" stroke="pink" strokeWidth="6">
                             <animate
                                 attributeName="stroke"
-                                values=" #ff8c1a;#663300; #ff8c1a;"
+                                values="#663300; #663300;#ff8c1a;#ff8c1a"
+                                keyTimes="0;0.5;0.51;1"
                                 dur="10s"
                                 repeatCount="indefinite"
                             />

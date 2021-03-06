@@ -28,7 +28,8 @@ function Tbc() {
                         <polygon points="80,240 140,220 100,280 50,280" stroke="red" strokeWidth="3" fill="transparent">
                             <animate
                                 attributeName="stroke"
-                                values="blue;red;blue;"
+                                values="blue;blue;red;red;blue;blue"
+                                keyTimes="0;0.3;0.31;0.7;0.71;1"
                                 dur="10s"
                                 repeatCount="indefinite"
                             />
@@ -36,7 +37,8 @@ function Tbc() {
                         <line x1="138" y1="210" x2="160" y2="280" stroke="red" strokeWidth="3">
                             <animate
                                 attributeName="stroke"
-                                values="blue;red;blue;"
+                                values="blue;blue;red;red;blue;blue"
+                                keyTimes="0;0.3;0.31;0.7;0.71;1"
                                 dur="10s"
                                 repeatCount="indefinite"
                             />
