@@ -5,7 +5,6 @@ import Inside from './Inside';
 function Mfc() {
     return (
         <div>
-            <h1>Motion, Furniture, Colour change</h1>
             <svg height="400" width="300">
                 <Inside />
                 <ClothingShelf colour="#ff8c1a;#ff8c1a;#663300; #663300;" keyTimes="0;0.5;0.51;1" dur="5" />

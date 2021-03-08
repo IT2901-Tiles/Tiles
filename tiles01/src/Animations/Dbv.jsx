@@ -5,7 +5,6 @@ import Outdoors from './Outdoors';
 function Dbv() {
     return (
         <div className='Dbv'>
-            <h1>Drop, Bike, Vibration</h1>
             <svg width="300" height="400">
                 <g>
                     <Outdoors />

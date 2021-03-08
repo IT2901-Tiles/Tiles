@@ -6,7 +6,6 @@ import PersonArmsUp from './PersonArmsUp';
 function Dcc() {
     return (
         <div className='Dcc'>
-            <h1>Drop, Clothing, Colour Change</h1>
             <svg width="300" height="400">
                 <Inside />
                 <ClothingShelf />

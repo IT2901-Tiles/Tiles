@@ -4,29 +4,28 @@ import Inside from './Inside';
 import Lamp from './Lamp';
 import PersonArmsUp from './PersonArmsUp';
 
-function Dfv(){
-    return(
+function Dfv() {
+    return (
         <div className='Dfv'>
-            <h1>Drop, Furniture, Vibration</h1>
             <svg width="300" height="400">
-                <Inside/>
-                <Lamp/>
-                <PersonArmsUp/>
+                <Inside />
+                <Lamp />
+                <PersonArmsUp />
                 <g>
-                    <Chair/>
+                    <Chair />
                     <animateTransform attributeName="transform"
-                        attributeType="XML" 
-                        type="rotate" 
-                        values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;2;0;2;0;2;0;2;0;2;0;2;0;2;0;2;0;2;0;2;0;2;0;2" 
-                        dur="5s" 
+                        attributeType="XML"
+                        type="rotate"
+                        values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;2;0;2;0;2;0;2;0;2;0;2;0;2;0;2;0;2;0;2;0;2;0;2"
+                        dur="5s"
                         repeatCount="indefinite" />
-                    <animateTransform 
-                        attributeName="transform" 
-                        attributeType="XML" 
-                        type="translate" 
-                        values="-20 -50; -20 50; -20 50" 
-                        dur="5s" 
-                        repeatCount="indefinite" 
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        values="-20 -50; -20 50; -20 50"
+                        dur="5s"
+                        repeatCount="indefinite"
                         additive="sum" />
                 </g>
             </svg>

@@ -8,7 +8,6 @@ import PersonUmbrella from './PersonUmbrella';
 function Muv() {
     return (
         <div>
-            <h1>Motion, Umbrella, Vibration</h1>
             <svg height="400" width="300">
                 <Outdoors />
                 <Cloud />

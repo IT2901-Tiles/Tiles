@@ -7,7 +7,6 @@ import Outdoors from './Outdoors';
 function Mbv() {
     return (
         <div>
-            <h1>Motion, Bike, Vibration</h1>
             <svg height="400" width="300">
                 <Outdoors />
                 <g className="bike">
@@ -49,7 +48,7 @@ function Mbv() {
 
                     <ellipse cx="70" cy="220" rx="15" ry="3" stroke="black" strokeWidth="3" />
                 </g>
-                
+
 
                 <g className="person">
                     <circle className="head" cx="90" cy="150" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
@@ -85,7 +84,7 @@ function Mbv() {
                     <line className="pants" x1="70" y1="215" x2="95" y2="270" stroke="#006600" strokeWidth="6" />
                     <line className="tshirt" x1="85" y1="178" x2="70" y2="217" stroke="#ff5050" strokeWidth="8" />
                     <line className="tshirtArm2" x1="83" y1="181" x2="100" y2="191" stroke="#ff5050" strokeWidth="8" />
-                </g> 
+                </g>
                 <Sun />
 
 

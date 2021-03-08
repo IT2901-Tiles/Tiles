@@ -9,7 +9,6 @@ import PersonUmbrella from './PersonUmbrella';
 function Tuv() {
     return (
         <div className='tuv'>
-            <h1>Temperature, Umbrella, Vibration</h1>
             <svg width="300" height="400">
                 <Outdoors />
                 <Sun />
@@ -17,7 +16,7 @@ function Tuv() {
 
                 <g transform="translate(-155, 180)"><Temperature /></g>
 
-                <PersonUmbrella/>
+                <PersonUmbrella />
                 <g>
                     <OpenUmbrella />
                     <animateTransform

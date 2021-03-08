@@ -9,7 +9,6 @@ import Temperature from './Temperature';
 function Tpc() {
     return (
         <div>
-            <h1>Temperature, Pen/pencil, Colour change</h1>
             <svg height="400" width="300">
                 <g>
                     <rect id="wall" width="300" height="400" fill="#b3e6ff" />

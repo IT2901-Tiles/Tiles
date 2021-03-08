@@ -8,7 +8,6 @@ import PersonArmsUp from './PersonArmsUp';
 function Tcc() {
     return (
         <div>
-            <h1>Temperature, Clothing, Colour change</h1>
             <svg width="300" height="400">
                 <Outdoors />
                 <Cloud />

@@ -6,7 +6,6 @@ import Outdoors from './Outdoors';
 function Mpv() {
     return (
         <div className="Mpv">
-            <h1>Motion, Pen/pencil, Vibration</h1>
             <svg id="mpv" height="400" width="300">
                 <Outdoors />
                 <Sun />

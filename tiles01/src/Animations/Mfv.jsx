@@ -7,7 +7,6 @@ import Inside from './Inside';
 function Mfv() {
     return (
         <div className="Mfv">
-            <h1>Motion, Furniture, Vibration</h1>
             <svg id="mpv" height="400" width="300">
                 <Inside />
                 <Lamp />

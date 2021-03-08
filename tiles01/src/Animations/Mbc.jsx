@@ -5,7 +5,6 @@ import Outdoors from './Outdoors';
 function Mbc() {
     return (
         <div>
-            <h1>Motion, Bike, Colour change</h1>
             <svg height="400" width="300">
                 <Outdoors />
                 <Sun />

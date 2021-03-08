@@ -6,7 +6,6 @@ import Temperature from './Temperature';
 function Tpv() {
     return (
         <div className="tpv">
-            <h1>Temperature, Pen/pencil, Vibration</h1>
             <svg height="400" width="300">
                 {/* Background*/}
                 <g>

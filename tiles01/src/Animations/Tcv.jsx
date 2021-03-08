@@ -6,7 +6,6 @@ import SmallTemperature from './SmallTemperature';
 function Tcv() {
     return (
         <div className="Tcv">
-            <h1>Temperature, Clothing, Vibration</h1>
             <svg width="300" height="400">
                 <Inside />
                 <ClothingShelf />

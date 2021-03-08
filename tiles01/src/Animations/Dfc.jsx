@@ -7,7 +7,6 @@ import PersonArmsUp from './PersonArmsUp';
 function Dfc() {
     return (
         <div className='Dfc'>
-            <h1>Drop, Furniture, Colour change</h1>
             <svg width="300" height="400">
                 <Inside />
                 <Lamp />

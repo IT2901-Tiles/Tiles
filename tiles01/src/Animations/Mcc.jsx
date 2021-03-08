@@ -3,7 +3,6 @@ import React from 'react';
 function Mcc() {
     return (
         <div>
-            <h1>Motion, Clothing, Colour change</h1>
             <svg width="300" height="400">
                 <g>
                     <rect width="300" height="400" fill="#a3c2c2" />

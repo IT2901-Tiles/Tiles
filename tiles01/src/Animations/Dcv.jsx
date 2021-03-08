@@ -6,7 +6,6 @@ import PersonArmsUp from './PersonArmsUp';
 function Dcv() {
     return (
         <div className='Dcv'>
-            <h1>Drop, Clothing, Vibration</h1>
             <svg width="300" height="400">
                 <Inside />
                 <ClothingShelf />

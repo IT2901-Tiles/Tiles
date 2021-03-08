@@ -7,12 +7,11 @@ import PersonUmbrella from './PersonUmbrella';
 function Duv() {
     return (
         <div>
-            <h1>Drop, Umbrella, Vibration</h1>
             <svg height="400" width="300">
                 <Outdoors />
                 <Cloud />
                 <g transform="translate(-20, -20)">
-                    <PersonUmbrella/>
+                    <PersonUmbrella />
                 </g>
                 <g>
                     <ClosedUmbrella colour="black; black;black; black; black" dur="10" />

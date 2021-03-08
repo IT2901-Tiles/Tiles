@@ -6,7 +6,6 @@ import PersonUmbrella from './PersonUmbrella';
 function Muc() {
     return (
         <div>
-            <h1>Motion, Umbrella, Colour change</h1>
             <svg height="400" width="300">
                 <Outdoors />
                 <Cloud />

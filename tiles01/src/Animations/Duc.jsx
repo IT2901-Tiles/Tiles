@@ -7,12 +7,11 @@ import PersonUmbrella from './PersonUmbrella';
 function Duc() {
     return (
         <div>
-            <h1>Drop, Umbrella, Colour change</h1>
             <svg height="400" width="300">
                 <Outdoors />
                 <Cloud />
                 <g transform="translate(-20, -20)">
-                    <PersonUmbrella/>
+                    <PersonUmbrella />
                 </g>
                 <g>
                     <ClosedUmbrella colour="black;black;yellow;yellow" keyTimes="0;0.3;0.31;1" dur="5" />
