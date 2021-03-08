@@ -37,36 +37,36 @@ function Animation() {
 
     return (
         <div className="Animation">
-            <Mfc />
-            <Mbv />
-            <Mbc />
-            <Mcc />
-            <Mpv />
-            <Mpc />
-            <Mcv />
-            <Mfv />
-            <Muc />
-            <Tbc />
-            <Tpv />
-            <Tbv />
-            <Tpc />
-            <Muv />
-            <Tcv />
-            <Tcc />
-            <Tuc />
-            <Tfv />
-            <Tfc />
-            <Tuv />
             <Dbc />
             <Dbv />
+            <Dcc />
+            <Dcv />
+            <Dfc />
+            <Dfv />
             <Dpc />
             <Dpv />
-            <Duv />
             <Duc />
-            <Dcv />
-            <Dcc />
-            <Dfv />
-            <Dfc />
+            <Duv />
+            <Mbc />
+            <Mbv />
+            <Mcc />
+            <Mcv />
+            <Mfc />
+            <Mfv />
+            <Mpc />
+            <Mpv />
+            <Muc />
+            <Muv />
+            <Tbc />
+            <Tbv />
+            <Tcc />
+            <Tcv />
+            <Tfc />
+            <Tfv />
+            <Tpc />
+            <Tpv />
+            <Tuc />
+            <Tuv />
         </div>
     );
 }

@@ -10,7 +10,7 @@ function Muc() {
             <svg height="400" width="300">
                 <Outdoors />
                 <Cloud />
-                <PersonUmbrella/>
+                <PersonUmbrella />
                 <g>
                     <line className="umbrella" x1="184" y1="265" x2="184" y2="170" stroke="#000000" strokeWidth="2" />
                     <path id="umbrellaMucLeft" className="umbrella" d="m 90,170 L185,170 L185,120 Q 184,100 90,170" fill="#000000" />
@@ -35,7 +35,7 @@ function Muc() {
                             dur="20s"
                             repeatCount="indefinite"
                             additive="sum" /></circle>
-                    <path className="smile" d="M183.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="#000000" strokeWidth="2" />
+                    <path className="umbrella" d="M183.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="#000000" strokeWidth="2" />
                 </g >
 
             </svg >

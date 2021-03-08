@@ -14,13 +14,14 @@ function Muv() {
                 <Cloud />
                 <PersonUmbrella />
 
+
                 <g>
                     <line className="umbrella" x1="184" y1="265" x2="184" y2="170" stroke="#000000" strokeWidth="2" />
-                    <path id="umbrellaMucLeft" className="umbrella" d="m 90,170 L185,170 L185,120 Q 184,100 90,170" fill="#000000" />
-                    <path id="umbrellaMucRight" className="umbrella" d="m 280,170 L183,170 L183,120 Q 184,100 280,170" fill="#000000" />
-                    <animate xlinkHref="#umbrellaMucLeft" attributeName="d" attributeType="XML" values="m 170,247 L184 247 L184,120;m 170,247 L184 247 L184,120;m 90,170 L185,170 L185,120 Q 184,100 90,170;m 90,170 L185,170 L185,120 Q 184,100 90,170;m 170,247 L184 247 L184,120" dur="20s" repeatCount="indefinite" />
-                    <animate xlinkHref="#umbrellaMucRight" attributeName="d" attributeType="XML" values="m 198 247 L184,247 L184,120;m 198 247 L184,247 L184,120;m 280,170 L183,170 L183,120 Q 184,100 280,170;m 280,170 L183,170 L183,120 Q 184,100 280,170;m 198 247 L184,247 L184,120" dur="20s" repeatCount="indefinite" />
-                    <circle id="umbrellaMucTop" className="umbrella" cx="184" cy="115" r="2" fill="#0000000" >
+                    <path id="umbrellaMuvLeft" className="umbrella" d="m 90,170 L185,170 L185,120 Q 184,100 90,170" fill="#000000" />
+                    <path id="umbrellaMuvRight" className="umbrella" d="m 280,170 L183,170 L183,120 Q 184,100 280,170" fill="#000000" />
+                    <animate xlinkHref="#umbrellaMuvLeft" attributeName="d" attributeType="XML" values="m 170,247 L184 247 L184,120;m 170,247 L184 247 L184,120;m 90,170 L185,170 L185,120 Q 184,100 90,170;m 90,170 L185,170 L185,120 Q 184,100 90,170;m 170,247 L184 247 L184,120" dur="20s" repeatCount="indefinite" />
+                    <animate xlinkHref="#umbrellaMuvRight" attributeName="d" attributeType="XML" values="m 198 247 L184,247 L184,120;m 198 247 L184,247 L184,120;m 280,170 L183,170 L183,120 Q 184,100 280,170;m 280,170 L183,170 L183,120 Q 184,100 280,170;m 198 247 L184,247 L184,120" dur="20s" repeatCount="indefinite" />
+                    <circle id="umbrellaMuvTop" className="umbrella" cx="184" cy="115" r="2" fill="#0000000" >
                         <animate
                             attributeName="cy"
                             attributeType="XML"
@@ -38,17 +39,6 @@ function Muv() {
                         dur="20s"
                         repeatCount="indefinite" />
                 </g >
-
-                {/* <g>
-                    <ClosedUmbrella colour="black; black;black; black; black" dur="10" />
-                    <animateTransform attributeName="transform"
-                        attributeType="XML"
-                        type="rotate"
-                        from="-5 183 247"
-                        to="5 183 247"
-                        dur="0.1s"
-                        repeatCount="indefinite" />
-                </g> */}
             </svg >
         </div >
     );
