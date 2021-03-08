@@ -57,8 +57,7 @@ function Tcv() {
                         />
                         <animateTransform attributeName="transform"
                             attributeType="XML"
-                            keyTimes="0;0.5;1"
-                            values="-2 0; 2 0; -2 0"
+                            values="-2 0; 2 0; -2 0; 2 0; -2 0;"
                             type="translate"
                             begin="4s"
                             dur="1s"

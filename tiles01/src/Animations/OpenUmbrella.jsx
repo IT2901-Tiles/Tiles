@@ -11,7 +11,6 @@ function OpenUmbrella(props) {
             <path id="umbrella11" className="umbrella" d="m 90,170 L185,170 L185,120 Q 184,100 90,170" fill="#000000">
                 <animate
                     attributeName="fill"
-                    keyTimes="0;0.2;0.4;0.6;1"
                     values={colour}
                     dur={durTime}
                     keyTimes={keyTimes}
@@ -22,7 +21,6 @@ function OpenUmbrella(props) {
             <path id="umbrella12" className="umbrella" d="m 280,170 L183,170 L183,120 Q 184,100 280,170" fill="#000000">
                 <animate
                     attributeName="fill"
-                    keyTimes="0;0.2;0.4; 0.6;1"
                     values={colour}
                     dur={durTime}
                     keyTimes={keyTimes}

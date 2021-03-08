@@ -27,22 +27,29 @@ function Mpv() {
                         <line className="tshirtArm1" x1="90" y1="221" x2="65" y2="237" stroke="#ff5050" strokeWidth="8" />
                     </g>
 
-                    <line className="arm2" x1="90" y1="220" x2="130" y2="230" stroke="#ffe5cc" strokeWidth="4" />
-                    <line className="tshirtArm2" x1="90" y1="222" x2="110" y2="226" stroke="#ff5050" strokeWidth="8" />
-
                     <g>
-                        <polygon className="penTop" points="133,215 130,220 134,221" fill="yellow" />
-                        <line className="penMain" x1="132" y1="220" x2="127" y2="235" stroke="black" strokeWidth="4" />
+                        <line className="arm2" x1="90" y1="220" x2="130" y2="230" stroke="#ffe5cc" strokeWidth="4" />
+                        <line className="tshirtArm2" x1="90" y1="222" x2="110" y2="226" stroke="#ff5050" strokeWidth="8" />
+                        <g>
+                            <polygon className="penTop" points="133,215 130,220 134,221" fill="yellow" />
+                            <line className="penMain" x1="132" y1="220" x2="127" y2="235" stroke="black" strokeWidth="4" />
 
 
+                            <animateTransform attributeName="transform"
+                                attributeType="XML"
+                                type="rotate"
+                                values="0 127 235;15 127 235;0 127 235"
+                                dur="0.2s"
+                                repeatCount="indefinite" />
+                        </g>
                         <animateTransform attributeName="transform"
                             attributeType="XML"
                             type="rotate"
-                            from="0 127 235"
-                            to="25 127 235"
-                            dur="0.2s"
+                            values="-20 90 220;10 90 220;-20 90 220"
+                            dur="3s"
                             repeatCount="indefinite" />
                     </g>
+
 
                     <line className="body" x1="90" y1="200" x2="90" y2="320" stroke="#ffe5cc" strokeWidth="4" />
                     <line className="shoe" x1="100" y1="320" x2="87" y2="320" stroke="#3366cc" strokeWidth="7" />
