@@ -4,6 +4,9 @@ import "../CSS/AnimationPage.css"
 import { Link } from 'react-router-dom';
 import TopContainer from '../Components/TopContainer'
 import LinkButton from '../Components/LinkButton'
+import Animation from '../Components/Animation';
+
+
 
 
 function AnimationPage() {
