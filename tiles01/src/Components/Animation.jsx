@@ -37,7 +37,7 @@ function Animation() {
 
     return (
         <div className="Animation">
-            {/* <Mfc />
+            <Mfc />
             <Mbv />
             <Mbc />
             <Mcc />
@@ -49,9 +49,9 @@ function Animation() {
             <Tbc />
             <Tpv />
             <Tbv />
-            <Tpc /> */}
+            <Tpc />
             <Muv />
-            {/* <Tcv />
+            <Tcv />
             <Tcc />
             <Tuc />
             <Tfv />
@@ -66,7 +66,7 @@ function Animation() {
             <Dcv />
             <Dcc />
             <Dfv />
-            <Dfc /> */}
+            <Dfc />
         </div>
     );
 }
