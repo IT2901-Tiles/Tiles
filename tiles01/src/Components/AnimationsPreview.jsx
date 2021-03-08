@@ -24,7 +24,7 @@ function AnimationsPreview() {
             <div className="gridAnimationItem4">
                     Area for the animations based off the selected cards
                     {/* Suggestion for text-area field */}
-                    <FormFieldAnimationPage />
+                    <FormFieldAnimationPage triggerCard="test" thingCard="test" feedbackCard="test" /> 
             </div>
             {/* "Try again!"-button */}
             <div className="gridAnimationItem5">
