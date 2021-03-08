@@ -97,6 +97,7 @@ function ChosenCardsPage(props) {
         <TopContainer
             text = "Some text"
         />
+
             <div className="chosenCardsGrid">
             <div className="chosenCardsGrid2">
             {CheckCards()}
@@ -106,8 +107,12 @@ function ChosenCardsPage(props) {
             {(feedbackChosen) ? <div className="chosenCardContainer">{trueValue(feedbackChosenId)}</div> : falseValue(feedbackChosenId)}
             </div>
             </div>
+
+
+
             <br/>
             <LinkButton target="/animation" title="RUN!" category="animation" size="Large"></LinkButton>
+
         </div>
     );
 }
