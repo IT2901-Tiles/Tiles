@@ -27,16 +27,18 @@ function Mbc() {
                         <polygon points="80,240 140,220 100,280 50,280" stroke="pink" strokeWidth="3" fill="transparent">
                             <animate
                                 attributeName="stroke"
-                                values="pink;blue;pink;"
-                                dur="10s"
+                                values="pink;pink;blue;blue"
+                                keyTimes="0;0.5;0.51;1"
+                                dur="7s"
                                 repeatCount="indefinite"
                             />
                         </polygon>
                         <line x1="138" y1="210" x2="160" y2="280" stroke="pink" strokeWidth="3">
                             <animate
                                 attributeName="stroke"
-                                values="pink;blue;pink;"
-                                dur="10s"
+                                values="pink;pink;blue;blue;"
+                                keyTimes="0;0.5;0.51;1"
+                                dur="7s"
                                 repeatCount="indefinite"
                             />
                         </line>
@@ -68,8 +70,8 @@ function Mbc() {
                             <line className="paintBrush" x1="128" y1="250" x2="140" y2="250" stroke="pink" strokeWidth="6">
                                 <animate
                                     attributeName="stroke"
-                                    values="pink;blue;pink;"
-                                    dur="10s"
+                                    values="blue;blue;pink;pink"
+                                    keyTimes="0;0.5;0.51;1" dur="7s"
                                     repeatCount="indefinite"
                                 />
                             </line>

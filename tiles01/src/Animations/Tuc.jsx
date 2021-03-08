@@ -16,7 +16,7 @@ function Tuc() {
                 <Temperature />
                 <g transform="translate(-100, 0)"><PersonUmbrella /></g>
                 <g transform="translate(-100, 0)">
-                    <OpenUmbrella colour="blue; blue;yellow; yellow; blue" dur="10" />
+                    <OpenUmbrella colour="blue; blue;yellow; yellow; blue;blue" keyTimes="0;0.3;0.31;0.7;0.71;1" dur="10" />
                 </g>
             </svg>
         </div>

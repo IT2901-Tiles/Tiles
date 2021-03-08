@@ -40,16 +40,8 @@ function Mfv() {
 
                     <animateTransform attributeName="transform"
                         attributeType="XML"
-                        type="translate"
-                        from="80 0"
-                        to="0 0"
-                        dur="3s"
-                        repeatCount="1"
-                    />
-                    <animateTransform attributeName="transform"
-                        attributeType="XML"
                         keyTimes="0;0.5;1"
-                        values="-20 0; 20 0; -20 0"
+                        values="-20 0; 45 0; -20 0"
                         type="translate"
                         begin="4s"
                         dur="3s"

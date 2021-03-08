@@ -21,7 +21,7 @@ function Dcv() {
                         attributeName="transform"
                         attributeType="XML"
                         type="translate"
-                        values="0 0; 0 100; 0 100; -3 100; 3 100; -3 100; 3 100;"
+                        values="0 0; 0 25;0 50; 0 75; 0 100; 0 100; -3 100; 3 100; -3 100; 3 100; -3 100; 3 100; -3 100; 3 100;-3 100;3 100;-3 100;3 100;-3 100;3 100;-3 100;3 100"
                         dur="5s"
                         repeatCount="indefinite" />
 

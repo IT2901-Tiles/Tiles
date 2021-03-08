@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 function ClosedUmbrella(props) {
     const [colour] = useState(props.colour ? props.colour : "#black");
     const [durTime] = useState(props.dur ? props.dur : "0s")
+    const [keyTimes] = useState(props.keyTimes ? props.keyTimes : "1")
 
     return (
         <g className="ClosedUmbrella">
@@ -12,6 +13,7 @@ function ClosedUmbrella(props) {
                     attributeName="fill"
                     values={colour}
                     dur={durTime}
+                    keyTimes={keyTimes}
                     repeatCount="indefinite" />
             </path>
             <circle id="top" cx="184" cy="115" r="2" fill="black" >
@@ -19,6 +21,7 @@ function ClosedUmbrella(props) {
                     attributeName="fill"
                     values={colour}
                     dur={durTime}
+                    keyTimes={keyTimes}
                     repeatCount="indefinite" />
             </circle>
             <path id="smile" d="M183.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="black" strokeWidth="2" />

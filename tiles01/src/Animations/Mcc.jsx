@@ -30,8 +30,9 @@ function Mcc() {
                         <line className="tshirtArm1" x1="140" y1="221" x2="115" y2="203" stroke="#ff5050" strokeWidth="8">
                             <animate
                                 attributeName="stroke"
-                                values="#ff5050;orange;yellow;#ff5050"
-                                dur="10s"
+                                values="#ff5050;#ff5050;yellow;yellow"
+                                keyTimes="0;0.5;0.51;1"
+                                dur="5s"
                                 repeatCount="indefinite"
                             />
                         </line>
@@ -49,8 +50,9 @@ function Mcc() {
                         <line className="tshirtArm2" x1="140" y1="221" x2="165" y2="203" stroke="#ff5050" strokeWidth="8">
                             <animate
                                 attributeName="stroke"
-                                values="#ff5050;orange;yellow;#ff5050"
-                                dur="10s"
+                                values="#ff5050;#ff5050;yellow;yellow"
+                                keyTimes="0;0.5;0.51;1"
+                                dur="5s"
                                 repeatCount="indefinite"
                             />
                         </line>
@@ -66,8 +68,9 @@ function Mcc() {
                     <line className="tshirt" x1="140" y1="218" x2="140" y2="257" stroke="#ff5050" strokeWidth="8">
                         <animate
                             attributeName="stroke"
-                            values="#ff5050;orange;yellow;#ff5050"
-                            dur="10s"
+                            values="#ff5050;#ff5050;yellow;yellow"
+                            keyTimes="0;0.5;0.51;1"
+                            dur="5s"
                             repeatCount="indefinite"
                         />
                     </line>
