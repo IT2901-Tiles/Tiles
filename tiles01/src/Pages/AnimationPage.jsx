@@ -1,17 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Animation from '../Components/Animation';
-
+import AnimationsPreview from "../Components/AnimationsPreview"
+import "../CSS/AnimationPage.css"
+import TopContainer from '../Components/TopContainer'
 
 
 function AnimationPage() {
     return (
-        <div className="Page">
-            <p>AnimationPage</p>
-            <Animation></Animation>
-            
-            <Link to="/cards"><p>Back</p></Link>
-
+        <div className="Page">      
+            <TopContainer
+                text="some text that will be shown in the instruction box"
+            />
+            <AnimationsPreview /> 
         </div>
     );
 }

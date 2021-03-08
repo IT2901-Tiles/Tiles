@@ -1,0 +1,103 @@
+/* CSS-styling for the components/page of AnimationPage.jsx - feel free to incorporate this in a common CSS-file */
+
+/* The styling below belongs to the grid-outline of AnimationsPreview.jsx */
+
+.gridAnimationsPage {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    position: relative;
+    padding-top: 2vh;
+    /* transition: ease all 0.1s; */
+    transition: linear all 0.1ms;
+}
+
+.gridAnimationItem3 {
+    grid-area: 2 / 1 / span 1 / span 1;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto; /* remove one "auto" if we decide to go with 4 cards instad of 3 */
+}
+
+.gridAnimationItem4 {
+    grid-area: 2 / 2 / span 4 / span 3;
+    background-color: #FBF4D7;
+    border-radius: 30px;
+    height: 32vw;
+    /*margin: 10px;*/
+    padding: 5px;
+    position: relative;
+    margin-right: 3%;
+}
+
+.gridAnimationItem5 {
+    grid-area: 3 / 1 / span 3 / span 1;
+    /*margin: 10px;*/
+    height: 2vw;
+}
+
+/* Styling of the cards */
+.card1AnimationsPage, .card2AnimationsPage, .card3AnimationsPage {
+    margin-top: 3vw;
+    margin: 3px;
+}
+
+.triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
+    height: 20vw;
+}
+
+.triggerAnimationsPage:hover, .thingAnimationsPage:hover, .feedbackAnimationsPage:hover {
+    box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+            0px 5px 22px 4px rgba(0, 0, 0, 0.12),
+            0px 7px 8px -4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for saving text file  */
+
+.textAreaAnimationPage {
+    position: absolute;
+    bottom: 0px;
+    margin: 3%;
+    width: 97%;
+}
+
+#textBoxAnimationPage {
+    height: 5vh;
+    position: relative;
+    font-family: sans-serif;
+    resize: none;
+    width: 70%;
+    margin: 3px -1px;
+}
+
+/* Styling below prevents animationpage from going into topcomponent */
+
+@media only screen and (max-width: 800px) {
+    .gridAnimationsPage {
+        margin-top: 4vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .gridAnimationsPage {
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .gridAnimationsPage {
+        margin-top: 6vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .gridAnimationsPage {
+        margin-top: 7vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .gridAnimationsPage {
+        margin-top: 8vh;
+    }
+}
