@@ -22,7 +22,9 @@ function AnimationsPreview() {
         return cardname
         
     }
-    getCardName(localStorage.getItem("trigger"))
+    let triggerName = getCardName(localStorage.getItem("trigger"))
+    let thingName = getCardName(localStorage.getItem("thing"))
+    let feedbackName = getCardName(localStorage.getItem("feedback"))
     //select the correct animation based on the selected cards
     var animation=animationDictionary[getCardName(localStorage.getItem("trigger"))][getCardName(localStorage.getItem("thing"))][getCardName(localStorage.getItem("feedback"))]
     
@@ -44,11 +46,7 @@ function AnimationsPreview() {
             <div className="gridAnimationItem4">
                     {animation}
                     {/* Suggestion for text-area field */}
-<<<<<<< HEAD
-                    <FormFieldAnimationPage triggerCard="test" thingCard="test" feedbackCard="test" /> 
-=======
-                    {/*<FormFieldAnimationPage />*/}
->>>>>>> 606a6630ebc0738906b64a6450b504dfa08bb1bd
+                    <FormFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> 
             </div>
             {/* "Try again!"-button */}
             <div className="gridAnimationItem5">
