@@ -30,9 +30,9 @@
     grid-area: 1 / 2 / 1 / 4;
     display: grid;
     grid-template-columns: auto auto auto; /* remove one "auto" if we decide to go with 4 cards instad of 3 */
-    background-color: #FBF4D7;
     border-radius: 20px; /* same border radius as other elements */
     padding: 3%;
+    background-color: #FBF4D7;
 }
 
 .wrapperCardNotChosen {
@@ -79,5 +79,25 @@
     position: relative;
     left: 25%;
     width: 50%;
-    top: -65px;
+    top: -85px;
+}
+
+/** Responsive design for buttons **/
+
+@media only screen and (max-width: 700px) {
+    #buttonChosenCardsPage {
+        top: -65%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #buttonChosenCardsPage {
+        top: -60%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #buttonChosenCardsPage {
+        top: -55%;
+    }
 }
