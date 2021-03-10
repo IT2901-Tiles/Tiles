@@ -27,11 +27,7 @@ function FormFieldAnimationPage(props) {
     // Will fix the position when the animations are ready
     return (
         <div className="textAreaAnimationPage">
-            <label>Your idea:
-                <br/>
-                <textarea id="textBoxAnimationPage" onChange={newInput => setInput(newInput.target.value)}/>
-                <br/>
-                </label>
+            <textarea id="textBoxAnimationPage" placeholder="Write your idea here..." onChange={newInput => setInput(newInput.target.value)}/>
                 <button onClick={downloadFile} className="textButtonAnimationPage">Save</button>
         </div>
     );

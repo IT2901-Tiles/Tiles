@@ -55,7 +55,7 @@
 /* Styling for saving text file  */
 
 .textAreaAnimationPage {
-    position: absolute;
+    position: relative;
     bottom: 0px;
     margin: 3%;
     width: 97%;
@@ -66,8 +66,32 @@
     position: relative;
     font-family: sans-serif;
     resize: none;
-    width: 70%;
+    width: 80%;
     margin: 3px -1px;
+    border-radius: 5px;
+    background-image: url('../images/edit-pen.png'); /* icon from: https://uxwing.com/edit-pen-icon/ (free to use and no attributions required) */
+    background-position: 10px 10px; /* placement of the pen-icon in the textarea */
+    background-size: 10px;
+    padding-left: 25px;
+    padding-top: 7px;
+    background-repeat: no-repeat;
+    font-family: 'Comic Neue', sans-serif;;
+}
+
+.textAreaAnimationPage textarea { /* border color for textarea */
+    border: 1px solid #F08A00;
+}
+
+.textAreaAnimationPage #textBoxAnimationPage:focus { /* shadow for border when user is actively using textarea */
+    border: 1px solid #F08A00;
+    box-shadow: 0 0 0 0.2rem rgba(180, 102, 0, 0.25);
+}
+
+.textButtonAnimationPage {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 30px;
 }
 
 /* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx */
