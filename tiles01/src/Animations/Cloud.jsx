@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-function Cloud() {
+function Cloud(props) {
+    const [durTime] = useState(props.dur ? props.dur : "13s");
+    const [beginTime] = useState(props.begin ? props.begin: "0s");
+    
     return (
         <g className="cloud">
-            {/* <ellipse cx="200" cy="50" rx="70" ry="40" fill="#ababab" />
-                    <ellipse cx="120" cy="60" rx="60" ry="35" fill="#ababab" /> */}
             <circle className="cloud" cx="-170" cy="80" r="35" fill="#ababab" />
             <circle className="cloud" cx="-130" cy="50" r="45" fill="#ababab" />
             <circle className="cloud" cx="-85" cy="50" r="30" fill="#ababab" />
@@ -17,9 +18,10 @@ function Cloud() {
             <animateTransform attributeName="transform"
                 attributeType="XML"
                 type="translate"
-                from="0 0"
+                from="0 0" 
                 to="500 0"
-                dur="13s"
+                begin = {beginTime}
+                dur= {durTime}
                 repeatCount="indefinite" />
         </g>
 
