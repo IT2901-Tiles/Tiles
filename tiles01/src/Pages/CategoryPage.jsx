@@ -9,6 +9,7 @@ import LinkButton from '../Components/LinkButton';
 import CardContainer from "../Components/CardContainer";
 //Css imports
 import "../CSS/CardContainer.css";
+import CharThinking from '../Components/CharThinking';
 
 function CategoryPage(props) {
     console.log({props},"categorypage")
@@ -44,7 +45,7 @@ function CategoryPage(props) {
             </div>
 
             
-
+            <CharThinking/>
         </div>
     );
 }

@@ -19,6 +19,14 @@ function CharNormal() {
                     <polygon id="eyeL" points="75 44, 68 56, 82 56" fill="black"/>
                     <polygon id="eyeR" points="97 44, 90 56, 104 56" fill="black"/>
                 </g>
+                <g className="leftArm"> 
+                    <circle id="shoulderL" cx="53.5" cy="86" r="5" fill="grey" stroke="black" />
+                    <rect id="overarmL" x="50" y="93" height="16" width="7" fill="grey" stroke="black"/>
+                    <circle id="elbowL" cx="53.5" cy="115.5" r="5" fill="grey" stroke="black" />
+                    <rect id="underarmL" x="31" y="113" height="7" width="16" fill="grey" stroke="black" transform="rotate(20 53.5 115.5)"/>
+                    <rect id="handLL" x="16" y="112" height="5" width="13" fill="grey" stroke="black" transform="rotate(10 53.5 115.5)"/>
+                    <rect id="handLR" x="17" y="117" height="5" width="13" fill="grey" stroke="black" transform="rotate(35 53.5 115.5)"/>
+                </g>  
             </svg>
         </div>
     )

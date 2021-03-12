@@ -17,9 +17,18 @@ function CharHappy() {
 
 
                 </g>
-                <path id="eyeL" d="M.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="black" strokeWidth="2" />
+               
+                    <path d="M 72 53 q 6 -11 11 0" stroke="black" stroke-width="3" fill="none"/>
+                    <path d="M 90 53 q 6 -11 11 0" stroke="black" stroke-width="3" fill="none"/>
                 
-                   
+                <g className="leftArm"> 
+                    <circle id="shoulderL" cx="53.5" cy="86" r="5" fill="grey" stroke="black" />
+                    <rect id="overarmL" x="50" y="93" height="16" width="7" fill="grey" stroke="black"/>
+                    <circle id="elbowL" cx="53.5" cy="115.5" r="5" fill="grey" stroke="black" />
+                    <rect id="underarmL" x="31" y="113" height="7" width="16" fill="grey" stroke="black" transform="rotate(20 53.5 115.5)"/>
+                    <rect id="handLL" x="16" y="112" height="5" width="13" fill="grey" stroke="black" transform="rotate(10 53.5 115.5)"/>
+                    <rect id="handLR" x="17" y="117" height="5" width="13" fill="grey" stroke="black" transform="rotate(35 53.5 115.5)"/>
+                </g>  
             </svg>
         </div>
     )
