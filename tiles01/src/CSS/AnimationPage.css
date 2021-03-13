@@ -7,33 +7,29 @@
     grid-template-columns: auto auto auto auto;
     width: 100%;
     position: relative;
-    padding-top: 2vh;
-    /* transition: ease all 0.1s; */
+    padding-top: 1vh;
     transition: linear all 0.1ms;
 }
 
-.gridAnimationItem3 {
+.gridAnimationItem1 {
     grid-area: 2 / 1 / span 1 / span 1;
     margin: 10px;
     display: grid;
     grid-template-columns: auto auto auto; /* remove one "auto" if we decide to go with 4 cards instad of 3 */
 }
 
-.gridAnimationItem4 {
-    grid-area: 2 / 2 / span 4 / span 3;
+.gridAnimationItem2 {
+    grid-area: 2 / 2 / span 10 / span 10;
     background-color: #FBF4D7;
     border-radius: 30px;
     height: 32vw;
-    /*margin: 10px;*/
     padding: 5px;
     position: relative;
     margin-right: 3%;
 }
 
-.gridAnimationItem5 {
+.gridAnimationItem3 {
     grid-area: 3 / 1 / span 3 / span 1;
-    /*margin: 10px;*/
-    height: 2vw;
 }
 
 /* Styling of the cards */
@@ -43,32 +39,60 @@
 }
 
 .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
-    height: 20vw;
+    height: 16vw;
 }
 
-.triggerAnimationsPage:hover, .thingAnimationsPage:hover, .feedbackAnimationsPage:hover {
+.triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
     box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
             0px 5px 22px 4px rgba(0, 0, 0, 0.12),
             0px 7px 8px -4px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling for saving text file  */
+.triggerAnimationsPage:hover, .thingAnimationsPage:hover, .feedbackAnimationsPage:hover {
+    opacity: 0.8;
+}
+
+/* Styling for saving text file, in FormFieldAnimation.jsx */
 
 .textAreaAnimationPage {
-    position: absolute;
+    position: relative;
     bottom: 0px;
     margin: 3%;
-    width: 97%;
+    display: flex;
+    align-items: center;
 }
 
 #textBoxAnimationPage {
-    height: 5vh;
+    height: 6vh;
     position: relative;
     font-family: sans-serif;
     resize: none;
-    width: 70%;
+    width: 80%;
     margin: 3px -1px;
+    border-radius: 5px;
+    background-image: url('../images/edit-pen.png'); /* icon from: https://uxwing.com/edit-pen-icon/ (free to use and no attributions required) */
+    background-position: 10px 10px; /* placement of the pen-icon in the textarea */
+    background-size: 10px;
+    padding-left: 25px;
+    padding-top: 7px;
+    background-repeat: no-repeat;
+    font-family: 'Comic Neue', sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
 }
+
+.textAreaAnimationPage textarea { /* border color for textarea */
+    border: 1px solid #F08A00;
+}
+
+.textAreaAnimationPage #textBoxAnimationPage:focus { /* shadow for border when user is actively using textarea */
+    border: 1px solid #F08A00;
+    box-shadow: 0 0 0 0.2rem rgba(180, 102, 0, 0.25);
+}
+
+.textButtonAnimationPage {
+    width: 50%;
+} 
 
 /* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx */
 
@@ -76,11 +100,28 @@
     .gridAnimationsPage, .chosenCardsGrid {
         margin-top: 5vh;
     }
+    
+    #textBoxAnimationPage {
+        width: 90%;
+    }
+
+    .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
+        height: 15vw;
+    }
+
 }
 
 @media only screen and (max-width: 700px) {
     .gridAnimationsPage, .chosenCardsGrid {
         margin-top: 6vh;
+    }
+
+    #textBoxAnimationPage {
+        width: 88%;
+    }
+
+    .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
+        height: 14vw;
     }
 }
 
@@ -88,16 +129,37 @@
     .gridAnimationsPage, .chosenCardsGrid {
         margin-top: 7vh;
     }
+
+    #textBoxAnimationPage {
+        width: 86%;
+    }
+
+    .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
+        height: 13vw;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .gridAnimationsPage, .chosenCardsGrid {
         margin-top: 8vh;
     }
+
+    
+    #textBoxAnimationPage {
+        width: 84%;
+    }
+
+    .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
+        height: 12vw;
+    }
 }
 
 @media only screen and (max-width: 400px) {
     .gridAnimationsPage, .chosenCardsGrid {
         margin-top: 9vh;
+    }
+
+    .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
+        height: 11vw;
     }
 }

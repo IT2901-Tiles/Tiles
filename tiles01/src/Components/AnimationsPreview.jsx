@@ -22,13 +22,15 @@ function AnimationsPreview() {
         return cardname
         
     }
-    getCardName(localStorage.getItem("trigger"))
+    let triggerName = getCardName(localStorage.getItem("trigger"))
+    let thingName = getCardName(localStorage.getItem("thing"))
+    let feedbackName = getCardName(localStorage.getItem("feedback"))
     //select the correct animation based on the selected cards
     var animation=animationDictionary[getCardName(localStorage.getItem("trigger"))][getCardName(localStorage.getItem("thing"))][getCardName(localStorage.getItem("feedback"))]
     
     return(
         <div className="gridAnimationsPage">
-            <div className="gridAnimationItem3">
+            <div className="gridAnimationItem1">
                 <div className="card1AnimationsPage">
                     {/* Checking if the user has picked a card or not */}
                     {localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null ? <p>No "trigger" card chosen.</p> : <img src={localStorage.getItem("trigger")} className="triggerAnimationsPage" alt="A 'trigger' card" />}
@@ -41,14 +43,14 @@ function AnimationsPreview() {
                 </div>
             </div>
             {/* The div below is where the animations will appear */}
-            <div className="gridAnimationItem4">
+            <div className="gridAnimationItem2">
                     {animation}
                     {/* Suggestion for text-area field */}
-                    {/*<FormFieldAnimationPage />*/}
             </div>
             {/* "Try again!"-button */}
-            <div className="gridAnimationItem5">
-                <LinkButton title="Try again!" target="/" size="Large" category="animation"></LinkButton>
+            <div className="gridAnimationItem3">
+            <FormFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* The textarea */}
+                <LinkButton title="Try again!" target="/" size="Large" category="animation"></LinkButton> {/* "Try Again!" button */}
             </div>
         </div>
     )
