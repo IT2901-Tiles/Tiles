@@ -6,6 +6,22 @@
   padding-left: 1%;
 }
 
+.Logo{
+  background-color : #E53D2FEE;
+  color: #F3EAC2;
+  border-radius: 2.5vw;
+  font-family: 'Roboto';
+  text-shadow: 2px 2px #252525ab;
+  border: 0.25px solid #72140C;
+  box-shadow: 1px 1px 3px #000000AA;
+}
+
+.Logo h1{
+  padding: 0;
+  position: center;
+  margin: 3vh 0;
+}
+
 
 .TopContainer .Logo {
     width: 19rem;

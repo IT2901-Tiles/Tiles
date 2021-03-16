@@ -40,30 +40,31 @@ p{
 /* MAIN PAGE */ 
 .mainPage .Logo{
   padding: 0.5vw 2em;
-  width: 35%;
+  width: 25vw;
   margin: 5% auto 3%;
-  font-size: 2.5rem;
+  font-size: 2vw;
   z-index: 1;
 }
 
 .mainPage .infoBox{
   background-color: rgba(108, 143, 143, 0.589);
   font-family: 'Comic Neue', cursive;
-  font-size: 1.5rem;
+  font-size: 2vw;
   color: #F3EAC2;
   padding: 1%;
   border-radius: 20px;
-  width: 70%;  
-  margin: 3% auto;
+  width: 70vw;  
+  margin: 3vh auto 10vh;
   text-shadow: 2px 2px #252525ab;
 }
 
 /** Test IMG **/
 .mainPage .img1{
-  float: left;
-  width: 30vw;
-  padding-left: 0;
-  padding-bottom: 10vw;
+  position: absolute;
+  z-index: -1;
+  width: 25vw;
+  bottom: 0;
+  left: 0;
 }
 
 .mainPage .img2 {
