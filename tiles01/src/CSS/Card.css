@@ -67,11 +67,12 @@
     top: 15%;
     font-size: 2vw;
     transition-timing-function: ease-out;
+    font-family: 'Comic Neue', sans-serif;
 }
 
 #textNoCardChosen1 { left: 36%; }
 
-#textNoCardChosen2 { left: 39%; }
+#textNoCardChosen2 { left: 38%; }
 
 #textNoCardChosen3{ left: 32% }
 
