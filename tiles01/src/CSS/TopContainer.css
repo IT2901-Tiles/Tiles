@@ -11,7 +11,7 @@
   color: #F3EAC2;
   border-radius: 2.5vw;
   font-family: 'Roboto';
-  text-shadow: 2px 2px #252525ab;
+  text-shadow: 0.25vw 0.25vw #252525ab;
   border: 0.25px solid #72140C;
   box-shadow: 1px 1px 3px #000000AA;
 }
@@ -24,21 +24,29 @@
 
 
 .TopContainer .Logo {
-    width: 19rem;
-    position: fixed;
-    font-size: x-large;
+    width: 20vw;
+    float: left;
+    font-size: 1.5vw;
+    margin-left: 2vw;
   }
   
 .TopContainer .infoBox{
     background-color: rgba(108, 143, 143, 0.589);
     font-family: 'Comic Neue', cursive;
+    font-size: 1.5vw;
     color: #F3EAC2;
-    border-radius: 20px;
-    text-shadow: 2px 2px #252525ab;
-    width: 60%;
-    height: 3.7rem;
-    position: fixed;
-    left: 21rem;
+    border-radius: 2.5vh;
+    text-shadow: 0.20vw 0.20vw #252525ab;
+    width: 60vw;
+    position: absolute;
+    right: 15vw;
     padding: 1.5% 0;
+  }
+
+  @media screen and (max-width:850px){
+    .TopContainer .infoBox{
+      font-size: 1vw;
+      
+    }
   }
   
