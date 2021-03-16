@@ -97,7 +97,7 @@
 /* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx (.chosenCardsGrid) */
 @media only screen and (max-width: 1000px) {
     .gridAnimationsPage {
-        margin-top: 3vh;
+        margin-top: 2vh;
     }
 
     .chosenCardsGrid {
@@ -106,10 +106,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .gridAnimationsPage {
-        margin-top: 4vh;
-    }
-
     .chosenCardsGrid {
         margin-top: 6vh;
     }
@@ -117,10 +113,6 @@
 
 
 @media only screen and (max-width: 800px) {
-    .gridAnimationsPage {
-        margin-top: 5vh;
-    }
-    
     #textBoxAnimationPage {
         width: 90%;
     }
@@ -136,10 +128,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-    .gridAnimationsPage {
-        margin-top: 6vh;
-    }
-
     #textBoxAnimationPage {
         width: 88%;
     }
@@ -154,10 +142,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .gridAnimationsPage {
-        margin-top: 7vh;
-    }
-
     #textBoxAnimationPage {
         width: 86%;
     }
@@ -168,11 +152,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .gridAnimationsPage {
-        margin-top: 8vh;
-    }
-
-    
     #textBoxAnimationPage {
         width: 84%;
     }
@@ -183,11 +162,13 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .gridAnimationsPage {
-        margin-top: 9vh;
-    }
 
     .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
         height: 11vw;
     }
+}
+
+/** animation **/
+.Dbc {
+    height: 80%;
 }

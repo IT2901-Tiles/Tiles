@@ -23,7 +23,7 @@
     background-color: #F08A00;
     border: solid 4px #00000035;
     border-radius: 20px;
-    font-size: 1vw;
+    font-size: 1.5vw;
     width: 80%;
     max-width: 150px;
     /*min-width: 180px;*/
@@ -33,6 +33,11 @@
     text-shadow: 2px 2px rgb(0,0,0,0.1);
     box-shadow: 2px 3px 1.5px 2px rgb(0,0,0,0.25);
     position: relative;
+  }
+
+  .textButtonAnimationPage {
+    color: #FBF4D7;
+    font-size: 2vw;
   }
 
   .SmallButton:hover, .textButtonAnimationPage:hover {
@@ -82,9 +87,13 @@
 }
 
 
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 500px) {
   .chosenCardsButton {
       height: 40px
+  }
+
+  .textButtonAnimationPage {
+    font-size: 1.25vw;
   }
 }
 
