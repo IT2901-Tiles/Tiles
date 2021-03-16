@@ -12,6 +12,7 @@ html, body {
 
 html{
   background-color: #68C2C4;
+  text-align: center;
 }
 h1{
   color: #F3EAC2;
@@ -38,10 +39,11 @@ p{
 
 /* MAIN PAGE */ 
 .mainPage .Logo{
-  padding: 1px 2em;
+  padding: 0.5vw 2em;
   width: 35%;
   margin: 5% auto 3%;
   font-size: 2.5rem;
+  z-index: 1;
 }
 
 .mainPage .infoBox{
@@ -56,63 +58,29 @@ p{
   text-shadow: 2px 2px #252525ab;
 }
 
-/*** IMG ON MAIN PAGE ***/ 
-.mainPage .motionCard {
-  width: 20%;
-  transform: rotate(15deg);
+/** Test IMG **/
+.mainPage .img1{
+  float: left;
+  width: 30vw;
+  padding-left: 0;
+  padding-bottom: 10vw;
+}
+
+.mainPage .img2 {
   position: absolute;
   z-index: -1;
-  right: 90%;
-  top: 50%;
+  width: 25vw;
+  top: 0;
+  right: 0;
 }
 
-.mainPage .colorChangeCard{
-  width: 20%;
-  transform: rotate(25deg);
-  position: absolute;
-  z-index: 1;
-  right: 80%;
-  top: 62%;
+@media screen and (max-width:850px){
+  .img1, .img2{
+    display: none;
+  }
 }
 
-.mainPage .bikeCard{
-  width: 20%;
-  transform: rotate(35deg);
-  position: absolute;
-  z-index: +1;
-  right: 75%;
-  top: 74%;
-}
-/* **TOP** */ 
-.mainPage .dropCardTop{
-  width: 20%;
-  transform: rotate(25deg);
-  position: absolute;
-  z-index: +1;
-  left: 92%;
-  bottom: 70%;
-}
-
-.mainPage .colorChangeCardTop{
-  width: 20%;
-  transform: rotate(30deg);
-  position: absolute;
-  z-index: 1;
-  left: 84%;
-  bottom: 70%;
-}
-
-.mainPage .motionCardTop{
-  width: 20%;
-  transform: rotate(35deg);
-  position: absolute;
-  z-index: -1;
-  left: 77%;
-  bottom: 80%;
-}
-
-
-/*PRE DEFINDED DESIGN KAN SLETTES? */
+/*PRE DEFINDED DESIGN KAN SLETTES? 
 
 .App {
   text-align: center;
@@ -153,3 +121,4 @@ p{
     transform: rotate(360deg);
   }
 }
+*/
