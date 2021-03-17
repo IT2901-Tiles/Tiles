@@ -22,7 +22,7 @@
     grid-area: 2 / 2 / span 10 / span 10;
     background-color: #FBF4D7;
     border-radius: 30px;
-    height: 32vw;
+    height: 75vh;
     padding: 5px;
     position: relative;
     margin-right: 3%;
@@ -92,7 +92,25 @@
 
 .textButtonAnimationPage {
     width: 50%;
-} 
+}
+
+/* Styling for audio recording*/
+
+ .AudioAreaAnimationPage {
+    margin-bottom: 20px;
+}
+
+.AudioAreaAnimationPage .Audio audio{
+    width: 90%;
+}
+
+.AudioAreaAnimationPage div Button{
+    width: 90px;
+    height: 40px;
+    margin:1px;
+    border-radius: 10px;
+}
+
 
 /* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx (.chosenCardsGrid) */
 @media only screen and (max-width: 1000px) {
@@ -117,6 +135,10 @@
         width: 90%;
     }
 
+    .AudioAreaAnimationPage .Audio {
+        width: 90%;
+    }
+
     .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
         height: 15vw;
     }
@@ -129,6 +151,10 @@
 
 @media only screen and (max-width: 700px) {
     #textBoxAnimationPage {
+        width: 88%;
+    }
+
+    .AudioAreaAnimationPage .Audio {
         width: 88%;
     }
 
@@ -146,13 +172,26 @@
         width: 86%;
     }
 
+    .AudioAreaAnimationPage .Audio {
+        width: 86%;
+    }
+
     .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
         height: 13vw;
     }
 }
 
 @media only screen and (max-width: 500px) {
+    .gridAnimationsPage, .chosenCardsGrid {
+        margin-top: 8vh;
+    }
+
+
     #textBoxAnimationPage {
+        width: 84%;
+    }
+
+    .AudioAreaAnimationPage .Audio {
         width: 84%;
     }
 
@@ -166,9 +205,4 @@
     .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
         height: 11vw;
     }
-}
-
-/** animation **/
-.Dbc {
-    height: 80%;
 }
