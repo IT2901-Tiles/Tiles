@@ -23,10 +23,9 @@
     background-color: #F08A00;
     border: solid 4px #00000035;
     border-radius: 20px;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     width: 80%;
     max-width: 150px;
-    /*min-width: 180px;*/
     height: 8vh;
     max-height: 80px;
     font-family: 'Comic Neue', sans-serif;
@@ -36,7 +35,6 @@
   }
 
   .textButtonAnimationPage {
-    color: #FBF4D7;
     font-size: 2vw;
   }
 
@@ -59,7 +57,6 @@
   font-size: 1rem;
   width: 80%;
   max-width: 150px;
-  /*min-width: 180px;*/
   height: 8vh;
   max-height: 80px;
   font-family: 'Comic Neue', sans-serif;
@@ -81,6 +78,27 @@ Button:disabled:hover{
 
   box-shadow:  2px 3px 1.5px 2px rgb(0,0,0,0.25);
   filter: brightness(100%);
+}
+
+/** styling try again button (used in AnimationsPreview.jsx) **/
+.tryagainButton { /* same as LargeButton, but some modifications in size etc */
+  background-color: #F08A00;
+  border: solid 5px #00000035;
+  border-radius: 20px;
+  font-size: 2.5vw;
+  width: 20vw;
+  min-width: 180px;
+  height: 9vh;
+  min-height: 60px;
+  margin: 10px;
+  font-family: 'Comic Neue', sans-serif;
+  text-shadow: 2px 2px rgb(0,0,0,0.1);
+  box-shadow: 4px 6px 3px 4px rgb(0,0,0,0.25);
+}
+
+.tryagainButton:hover {
+  box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 19px 52px 0 rgba(0,0,0,0.19);
+  opacity: 0.9;
 }
 
 /* following code ensures that "Choose!" buttons on the ChosenCardsPage.jsx does not go outside the box */
