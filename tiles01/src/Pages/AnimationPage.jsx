@@ -14,7 +14,7 @@ function AnimationPage() {
         <div className="Page">
             <div className="Page">
                 <TopContainer
-                    text="some text that will be shown in the instruction box"
+                    text="Wow! Look at the amazing creation you have created! If you would like to try again you can touch the Try again! button!"
                 />
                 <AnimationsPreview />
 

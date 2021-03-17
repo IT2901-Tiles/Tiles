@@ -19,11 +19,22 @@ function CategoryPage(props) {
 
 
     //Make the category titles first letter upper case, and ads an s to the thing(s) category
+    // AND Set the text of the info-box based on the category
     let categoryName = category;
-    if (categoryName === "thing"){
+    let categoryInfoText = "Choose 1 card from this pile to ";
+    if (category === "thing"){
         categoryName = "things";
+        categoryInfoText += "select a thing to preform the action on"
+    }else if(category === "feedback"){
+        categoryInfoText += "get some feedback after the trigger"
+    }else{
+        categoryInfoText += "trigger some action"
     }
     categoryName = categoryName[0].toUpperCase()+categoryName.substring(1);
+
+    
+    
+    
 
     //Function triggered when a card is selected
     function onCardClick(newValue){
@@ -35,7 +46,7 @@ function CategoryPage(props) {
         <div className="Page">
 
         <TopContainer
-            text = "some text that will be shown in the instruction box"
+            text = {categoryInfoText}
         />
             <div className="CardContainer">
                     <div className="CardContainerTitle" style={styling}> {categoryName}</div>
