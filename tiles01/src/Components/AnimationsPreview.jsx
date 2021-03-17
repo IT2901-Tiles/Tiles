@@ -31,7 +31,7 @@ function AnimationsPreview() {
 
     return (
         <div className="gridAnimationsPage">
-            <div className="gridAnimationItem3">
+            <div className="gridAnimationItem1">
                 <div className="card1AnimationsPage">
                     {/* Checking if the user has picked a card or not */}
                     {localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null ? <p>No "trigger" card chosen.</p> : <img src={localStorage.getItem("trigger")} className="triggerAnimationsPage" alt="A 'trigger' card" />}
@@ -44,15 +44,15 @@ function AnimationsPreview() {
                 </div>
             </div>
             {/* The div below is where the animations will appear */}
-            <div className="gridAnimationItem4">
+            <div className="gridAnimationItem2">
                 {animation}
                 {/* Suggestion for text-area field */}
-                {/*<FormFieldAnimationPage />*/}
-                <AudioFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} />
             </div>
             {/* "Try again!"-button */}
-            <div className="gridAnimationItem5">
-                <LinkButton title="Try again!" target="/" size="Large" category="animation"></LinkButton>
+            <div className="gridAnimationItem3">
+                <FormFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* The textarea */}
+                <AudioFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* Audio recording */}
+                <LinkButton title="Try again!" target="/" size="Large" category="animation"></LinkButton> {/* "Try Again!" button */}
             </div>
         </div>
     )

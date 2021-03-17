@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import MicRecorder from 'mic-recorder-to-mp3'
 import "../CSS/Button.css"
+import Button from 'react-bootstrap/Button';
+
 const Mp3Recorder = new MicRecorder({ bitRate: 128 })
 
 function AudioFieldAnimationPage(props) {
@@ -98,27 +100,18 @@ function AudioFieldAnimationPage(props) {
     })
 
     return (
-        <div className="textAreaAnimationPage">
-            <button
-                onClick={startRecording}
-                className="SmallButton"
-                disabled={isRecording}
-            >
-                Record
-        </button>
-            <button
-                onClick={stopRecording}
-                className="SmallButton"
-                disabled={!isRecording}
-            >
-                Stop
-        </button>
-            <button onClick={dowloadRecording} className="SmallButton" disabled={audio === ''}>Download</button>
-            <audio
-                // ref="audioSource"
+        <div className="AudioAreaAnimationPage">
+            <div className="Audio"><audio
+                //ref="audioSource"
+                //initialAudio="test.mp3"
                 controls="controls"
-                src={blobURL || ""}
-            />
+                src={blobURL || "default.mp3"}
+            /></div>
+            <div className="AudioButtons">
+                <Button onClick={startRecording} className="SmallButton" disabled={isRecording}>Record</Button>
+                <Button onClick={stopRecording} className="SmallButton" disabled={!isRecording}>Stop</Button>
+                <Button onClick={dowloadRecording} className="SmallButton" disabled={audio === ''}>Download</Button>
+            </div>
         </div>
     );
 }

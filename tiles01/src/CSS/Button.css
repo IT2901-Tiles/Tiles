@@ -65,6 +65,17 @@
   opacity: 0.8;
 }
 
+/*Styling of disabled buttons*/
+Button:disabled{
+  opacity: 0.85;
+}
+
+Button:disabled:hover{
+
+  box-shadow:  2px 3px 1.5px 2px rgb(0,0,0,0.25);
+  filter: brightness(100%);
+}
+
 /* following code ensures that "Choose!" buttons on the ChosenCardsPage.jsx does not go outside the box */
 @media only screen and (max-width: 700px) {
   .chosenCardsButton {
