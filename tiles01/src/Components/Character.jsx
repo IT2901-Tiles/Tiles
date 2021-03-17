@@ -20,13 +20,6 @@ function Character(){
                 <g className="BodyParts">
                     <rect id="neck" x="80" y="73" height="8" width="15" fill="grey" stroke="black"/>
                     <rect id="body" x="60" y="83" height="35" width="55" fill="grey" stroke="black"/>
-                    
-                    <circle id="shoulderR" cx="121.5" cy="86" r="5" fill="grey" stroke="black" />           
-                     <rect id="overarmR" x="118" y="93" height="16" width="7" fill="grey" stroke="black"/>
-                    <circle id="elbowR" cx="121.5" cy="115.5" r="5" fill="grey" stroke="black" />
-                    <rect id="underarmR" x="128" y="113" height="7" width="16" fill="grey" stroke="black" transform="rotate(-20 121.5 115.5)"/>
-                    <rect id="handRL" x="140" y="103" height="5" width="13" fill="grey" stroke="black" transform="rotate(-30 140 101)"/>
-                    <rect id="handRR" x="145" y="107" height="5" width="13" fill="grey" stroke="black" transform="rotate(10 145 107)"/>
                 </g>
         </g>
         
