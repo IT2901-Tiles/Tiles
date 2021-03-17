@@ -8,13 +8,52 @@ function CharHappy() {
             <svg height="150" width="165">
                 <Character/> 
                 <g className="LightBulb">
-                    <line id="lightStick1" x1="77" y1="4" x2="82" y2="9" stroke="black" strokeWidth="2"/>
-                    <line id="lightStick2" x1="83" y1="2" x2="85" y2="8" stroke="yellow" strokeWidth="2"/>
-                    <line id="lightStick3" x1="91" y1="2" x2="89" y2="8" stroke="black" strokeWidth="2"/>
-                    <line id="lightStick4" x1="97" y1="4" x2="93" y2="9" stroke="yellow" strokeWidth="2"/>
-                    <circle id="lightBulb" cx="87.5" cy="15" r="5" fill="yellow" stroke="black"/>
+                    <line id="lightStick1" x1="77" y1="4" x2="82" y2="9" stroke="black" strokeWidth="2">¨
+                        <animate
+                            attributeName = "stroke"
+                            keyTimes="0;0.25;0.5;0.75;1"
+                            values="black;yellow;yellow;black;black"
+                            dur="0.75s"                        
+                            repeatCount="indefinite" 
+                        />
+                    </line>
+                    <line id="lightStick2" x1="83" y1="2" x2="85" y2="8" stroke="yellow" strokeWidth="2">
+                        <animate
+                            attributeName = "stroke"
+                            keyTimes="0;0.25;0.5;0.75;1"
+                            values="yellow;yellow;yellow;black;black"
+                            dur="0.75s"                        
+                            repeatCount="indefinite" 
+                            />
+                    </line>
+                    <line id="lightStick3" x1="91" y1="2" x2="89" y2="8" stroke="black" strokeWidth="2">
+                        <animate
+                            attributeName = "stroke"
+                            keyTimes="0;0.25;0.5;0.75;1"
+                            values="black;yellow;yellow;black;black"
+                            dur="0.75s"                        
+                            repeatCount="indefinite"
+                            />
+                    </line>
+                    <line id="lightStick4" x1="97" y1="4" x2="93" y2="9" stroke="yellow" strokeWidth="2">
+                        <animate
+                            attributeName = "stroke"
+                            keyTimes="0;0.25;0.5;0.75;1"
+                            values="yellow;yellow;yellow;black;black"
+                            dur="0.75s"                        
+                            repeatCount="indefinite" 
+                        />
+                    </line>
+                    <circle id="lightBulb" cx="87.5" cy="15" r="5" fill="yellow" stroke="black">
+                        <animate
+                            attributeName = "fill"
+                            keyTimes="0;0.25;0.5;0.75;1"
+                            values="yellow;yellow;yellow;#ffcc00;#ffcc00"
+                            dur="0.5s"                        
+                            repeatCount="indefinite" 
+                            />
+                    </circle>
                     <line id="lightStickMain" x1="87.5" y1="20" x2="87.5" y2="28" stroke="black" strokeWidth="2"/>
-
 
                 </g>
                
