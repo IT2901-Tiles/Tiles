@@ -22,7 +22,7 @@
     grid-area: 2 / 2 / span 10 / span 10;
     background-color: #FBF4D7;
     border-radius: 30px;
-    height: 32vw;
+    height: 75vh;
     padding: 5px;
     position: relative;
     margin-right: 3%;
@@ -92,7 +92,25 @@
 
 .textButtonAnimationPage {
     width: 50%;
-} 
+}
+
+/* Styling for audio recording*/
+
+ .AudioAreaAnimationPage {
+    margin-bottom: 20px;
+}
+
+.AudioAreaAnimationPage .Audio audio{
+    width: 90%;
+}
+
+.AudioAreaAnimationPage div Button{
+    width: 90px;
+    height: 40px;
+    margin:1px;
+    border-radius: 10px;
+}
+
 
 /* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx */
 
@@ -100,8 +118,12 @@
     .gridAnimationsPage, .chosenCardsGrid {
         margin-top: 5vh;
     }
-    
+
     #textBoxAnimationPage {
+        width: 90%;
+    }
+
+    .AudioAreaAnimationPage .Audio {
         width: 90%;
     }
 
@@ -120,6 +142,10 @@
         width: 88%;
     }
 
+    .AudioAreaAnimationPage .Audio {
+        width: 88%;
+    }
+
     .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
         height: 14vw;
     }
@@ -134,6 +160,10 @@
         width: 86%;
     }
 
+    .AudioAreaAnimationPage .Audio {
+        width: 86%;
+    }
+
     .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
         height: 13vw;
     }
@@ -144,8 +174,12 @@
         margin-top: 8vh;
     }
 
-    
+
     #textBoxAnimationPage {
+        width: 84%;
+    }
+
+    .AudioAreaAnimationPage .Audio {
         width: 84%;
     }
 
