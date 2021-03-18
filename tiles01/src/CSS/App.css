@@ -114,10 +114,17 @@ p{
 /* Character CSS*/ 
 .CharNormal, .CharThinking, .CharHappy{
     position: absolute;
-    left: 85%;
-    top: 1%;
+    left: 76vw;
+    top: 10.8vh;
+    transform: scale(2);
 }
 
+.mainPage .CharNormal{
+  position: absolute;
+  left: 75%;
+  top:72%;
+  transform: scale(6);
+}
 
 /*PRE DEFINDED DESIGN KAN SLETTES? */
 

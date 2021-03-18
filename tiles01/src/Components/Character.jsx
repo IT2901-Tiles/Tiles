@@ -4,7 +4,6 @@ function Character(){
     return(
        
         <g className="whole">
-                <rect height="100%" width="100%" fill="#68C2C4" stroke="black"/> {/*Denne skal fjernes seinere */}
 
                 <g className="HeadParts">
                     <rect id="head" x="60" y="36" height="35" width="55" fill="grey" stroke="black"/>
