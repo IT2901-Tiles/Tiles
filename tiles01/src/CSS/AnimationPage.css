@@ -112,6 +112,14 @@
     border-radius: 10px;
 }
 
+svg{
+    height: 100%;
+}
+
+.gridAnimationItem2 div{
+    height: 100%;
+}
+
 /* The Try Again button */
 #tryagainButton {
     height: 10px;
