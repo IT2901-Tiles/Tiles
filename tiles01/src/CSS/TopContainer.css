@@ -40,7 +40,11 @@
     width: 60vw;
     position: absolute;
     right: 15vw;
-    padding: 1.5% 0;
+    padding: 1.8vh 0;
+  }
+
+.TopContainer .infoBox p {
+  padding: 0 10vw;
   }
 
   @media screen and (max-width:850px){

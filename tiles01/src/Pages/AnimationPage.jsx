@@ -11,7 +11,7 @@ import Animation from '../Components/Animation';
 function AnimationPage() {
     return (
 
-        <div className="Page">
+        <div className="Page AnimationPage">
             <div className="Page">
                 <TopContainer
                     text="Wow! Look at the amazing creation you have created! If you would like to try again you can touch the Try again! button!"
