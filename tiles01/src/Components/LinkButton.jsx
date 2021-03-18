@@ -30,11 +30,13 @@ function LinkButton(props) {
         colour = "#84AD64"
     }
 
+    console.log("c " + colour)
+
     return (
         <Link
             to={{
                 pathname: path,
-                state: { category: category, card:props.card, color:colour}
+                state: { category: category, color: colour, card: props.card }
                 // state: { category: category, color:colour }
             }}>
             <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary">{title}</Button>
