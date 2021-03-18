@@ -111,6 +111,13 @@ p{
   bottom: 80%;
 }
 
+/* Character CSS*/ 
+.CharNormal, .CharThinking, .CharHappy{
+    position: absolute;
+    left: 85%;
+    top: 1%;
+}
+
 
 /*PRE DEFINDED DESIGN KAN SLETTES? */
 
