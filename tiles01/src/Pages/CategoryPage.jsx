@@ -9,6 +9,7 @@ import LinkButton from '../Components/LinkButton';
 import CardContainer from "../Components/CardContainer";
 //Css imports
 import "../CSS/CardContainer.css";
+import CharThinking from '../Components/CharThinking';
 
 function CategoryPage(props) {
     console.log({ props }, "categorypage")
@@ -42,8 +43,8 @@ function CategoryPage(props) {
                 <CardContainer category={props.location.state.category} onSelect={onCardClick} />
                 <LinkButton target="/cards" title="Choose" size="Small" category={props.location.state.category} card={Card}></LinkButton>
             </div>
-
-
+            
+            <CharThinking/>
 
         </div>
     );

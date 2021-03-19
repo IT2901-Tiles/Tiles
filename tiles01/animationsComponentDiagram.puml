@@ -1,0 +1,157 @@
+@startuml animationsComponentDiagram
+
+folder Animations{
+ component ReusableAnimationsComponents {
+        component BookShelf
+        component Chair 
+        component ClosedUmbrella
+        component ClothingShelf 
+        component Cloud 
+        component Desk
+        component Inside
+        component Lamp
+        component OpenUmbrella
+        component Outdoors
+        component Pen 
+        component PersonArmsUp 
+        component PersonUmbrella
+        component SmallTemperature
+        component Sun 
+        component Temperature 
+    }
+
+    component AnimationsFromCards{
+        [Dbc]
+        [Dbv]
+        [Dcc]
+        [Dcv]
+        [Dfc]
+        [Dfv]
+        [Dpc]
+        [Dpv]
+        [Duc]
+        [Duv]
+        [Mbc]
+        [Mbv]
+        [Mcc]
+        [Mcv]
+        [Mfc]
+        [Mfv]
+        [Mpc]
+        [Mpv]
+        [Muc]
+        [Muv]
+        [Tbc]
+        [Tbv]
+        [Tcc]
+        [Tcv]
+        [Tfc]
+        [Tfv]
+        [Tpc]
+        [Tpv]
+        [Tuc]
+        [Tuv]
+    }
+}
+
+    Dbc <.. Sun
+    Dbc <.. Outdoors
+    Dbv <... Sun
+    Dbv <... Outdoors
+    Dcc <.. ClothingShelf
+    Dcc <.. Inside
+    Dcc <.. PersonArmsUp
+    Dcv <... ClothingShelf
+    Dcv <... Inside
+    Dcv <... PersonArmsUp
+    Dfc <.. Chair
+    Dfc <.... Inside
+    Dfc <.. Lamp
+    Dfc <.... PersonArmsUp
+    Dfv <... Chair
+    Dfv <..... Inside
+    Dfv <... Lamp
+    Dfv <..... PersonArmsUp
+    Dpc <.. BookShelf
+    Dpc <.. Desk
+    Dpc <.. Pen
+    Dpv <... BookShelf
+    Dpv <... Desk
+    Dpv <... Pen
+    Duc <..... Cloud
+    Duc <..... Outdoors
+    Duc <.. ClosedUmbrella
+    Duc <.. PersonUmbrella
+    Duv <..... Cloud
+    Duv <..... Outdoors
+    Duv <... ClosedUmbrella
+    Duv <... PersonUmbrella
+    Mbc <..... Sun
+    Mbc <..... Outdoors
+    Mbv <..... Sun
+    Mbv <..... Outdoors
+    Mcv <.... ClothingShelf
+    Mcv <...... Inside
+    Mfc <..... ClothingShelf
+    Mfc <....... Inside
+    Mfv <.... Chair 
+    Mfv <.... Lamp 
+    Mfv <....... Inside 
+    Mpc <..... BookShelf
+    Mpc <..... Desk 
+    Mpc <..... Pen
+    Mpv <..... Sun
+    Mpv <..... Outdoors
+    Muc <..... Cloud
+    Muc <..... Outdoors
+    Muc <..... PersonUmbrella
+    Muv <..... Outdoors
+    Muv <..... Cloud
+    Muv <..... PersonUmbrella
+    'Muv <..... ClosedUmbrella'
+    Tbc <..... Sun
+    Tbc <..... Outdoors
+    Tbc <..... SmallTemperature
+    Tbv <..... Sun
+    Tbv <..... Outdoors
+    Tbv <..... SmallTemperature
+    Tcc <..... Cloud
+    Tcc <..... SmallTemperature
+    Tcc <..... Outdoors
+    Tcc <....... PersonArmsUp
+    Tcv <...... ClothingShelf
+    Tcv <......... Inside
+    Tcv <..... SmallTemperature
+    Tfc <....... ClothingShelf
+    Tfc <.......... Inside
+    Tfc <..... SmallTemperature
+    Tfv <..... Temperature
+    Tfv <..... Lamp
+    Tfv <..... Chair
+    Tfv <........... Inside
+    Tpc <..... BookShelf
+    Tpc <..... Desk
+    Tpc <..... Pen
+    Tpc <..... Temperature
+    Tpv <..... BookShelf
+    Tpv <..... Desk
+    Tpv <..... Temperature
+    Tuc <..... Cloud
+    Tuc <..... Outdoors
+    Tuc <..... OpenUmbrella
+    Tuc <..... Temperature
+    Tuc <..... PersonUmbrella
+    Tuv <..... Cloud
+    Tuv <..... Sun
+    Tuv <..... Outdoors
+    Tuv <..... OpenUmbrella
+    Tuv <..... Temperature
+    Tuv <..... PersonUmbrella    
+
+
+
+
+    component AnimationsPreview
+    AnimationsFromCards ......> AnimationsPreview
+
+@enduml
