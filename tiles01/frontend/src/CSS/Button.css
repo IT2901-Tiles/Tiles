@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+.LargeButton {
+    background-color: #F08A00;
+    border: solid 5px #00000035;
+    border-radius: 20px;
+    font-size: 2.5rem;
+    width: 20vw;
+    min-width: 180px;
+    height: 13vh;
+    min-height: 70px;
+    font-family: 'Comic Neue', sans-serif;
+    text-shadow: 2px 2px rgb(0,0,0,0.1);
+    box-shadow: 4px 6px 3px 4px rgb(0,0,0,0.25);
+  }
+
+  .LargeButton:hover{
+    box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 19px 52px 0 rgba(0,0,0,0.19);
+    filter: brightness(110%);
+  }
+
+  .SmallButton, .textButtonAnimationPage {
+    background-color: #F08A00;
+    border: solid 4px #00000035;
+    border-radius: 20px;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 150px;
+    /*min-width: 180px;*/
+    height: 8vh;
+    max-height: 80px;
+    font-family: 'Comic Neue', sans-serif;
+    text-shadow: 2px 2px rgb(0,0,0,0.1);
+    box-shadow: 2px 3px 1.5px 2px rgb(0,0,0,0.25);
+  }
+
+  .SmallButton:hover, .textButtonAnimationPage:hover {
+    box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 19px 52px 0 rgba(0,0,0,0.19);
+    filter: brightness(110%);
+  }
+
+/** an extra class for the buttons on the 404 page to make the Large buttons wider**/
+  .wider {
+    width: 25rem;
+    font-size: 2rem;
+  }
+
+/** Styling for the buttons (for choosing cards) on the chosen cards page, these have no brightness but are the same as the small button essentially**/
+.chosenCardsButton {
+  background-color: #F08A00;
+  border: solid 4px #00000035;
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 150px;
+  height: 8vh;
+  max-height: 80px;
+  font-family: 'Comic Neue', sans-serif;
+  text-shadow: 2px 2px rgb(0,0,0,0.1);
+  box-shadow: 2px 3px 1.5px 2px rgb(0,0,0,0.25);
+}
+
+.chosenCardsButton:hover {
+  box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 19px 52px 0 rgba(0,0,0,0.19);
+  opacity: 0.8;
+}
+
+/* following code ensures that "Choose!" buttons on the ChosenCardsPage.jsx does not go outside the box */
+@media only screen and (max-width: 700px) {
+  .chosenCardsButton {
+      font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .chosenCardsButton {
+      font-size: 0.60rem;
+  }
+}
