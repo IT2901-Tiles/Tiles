@@ -5,7 +5,7 @@ import Inside from './Inside';
 function Mfc() {
     return (
         <div>
-            <svg height="400" width="300">
+            <svg viewBox="0 0 300 400">
                 <Inside />
                 <ClothingShelf colour="#ff8c1a;#ff8c1a;#663300; #663300;" keyTimes="0;0.5;0.51;1" dur="5" />
 

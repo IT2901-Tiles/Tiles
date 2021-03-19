@@ -6,23 +6,24 @@
 .CardContainer{
     background-color:#FBF4D7;
     color: black;
-    margin: 1% 3%;
-    height:32rem;
+    margin: 1vh 3vw;
+    height: 70vh;
     position:relative;
 }
 
 .CardContainerTitle {
     transform-origin: 0% 0%;
     transform: rotate(-90deg) ;
-    height: 2rem;
+    height: 2vh;
     background-color: #FBF4D7;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.1ex;
     position: absolute;
-    font-size: 2rem;
+    font-size: 5vh;
     left: -2%;
     bottom: 35%;
-    padding: 0.5% 1%;
+    padding: 1vh 1vw;
     z-index: 1;
 }
+
 

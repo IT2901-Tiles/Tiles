@@ -3,7 +3,7 @@ import React from 'react';
 function Mcc() {
     return (
         <div>
-            <svg width="300" height="400">
+            <svg viewBox="0 0 300 400">
                 <g>
                     <rect width="300" height="400" fill="#a3c2c2" />
                     <rect x="0" y="300" width="300" height="100" fill="#d2a679" />

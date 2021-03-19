@@ -8,7 +8,7 @@ import PersonArmsUp from './PersonArmsUp';
 function Tcc() {
     return (
         <div>
-            <svg width="300" height="400">
+            <svg viewBox="0 0 300 400">
                 <Outdoors />
                 <Cloud />
                 <PersonArmsUp colour="blue;blue;red;red;blue;blue"

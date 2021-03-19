@@ -52,7 +52,7 @@ function AnimationsPreview() {
             <div className="gridAnimationItem3">
                 <FormFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* The textarea */}
                 <AudioFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* Audio recording */}
-                <LinkButton title="Try again!" target="/" size="Large" category="animation"></LinkButton> {/* "Try Again!" button */}
+                <LinkButton title="Try again!" target="/" size="tryagain" category="animation" id="tryagainButton"></LinkButton> {/* "Try Again!" button */}
             </div>
         </div>
     )

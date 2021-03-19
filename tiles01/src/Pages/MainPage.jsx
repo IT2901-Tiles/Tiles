@@ -4,33 +4,23 @@ import Logo from "../Components/Logo";
 import LinkButton from '../Components/LinkButton';
 import CharNormal from "../Components/CharNormal";
 //img imports
-import motionCard from "./../images/triggers/motion.png"
-import colorChangeCard from "./../images/feedbacks/color_change.png"
-import bikeCard from "./../images/things/bike.png"
-import dropCard from "./../images/triggers/drop.png"
+import img1 from "./../images/img1.png"
+import img2 from "./../images/img2.png"
 
 function MainPage() {
 
     return (
-            <div className="Page mainPage">
-                <div>
-                    <img className="motionCardTop"  alt="The motion card" src={motionCard} />
-                    <img className="colorChangeCardTop" alt="ColorChangeCard" src={colorChangeCard}/>
-                    <img className="dropCardTop" alt="Drop card" src={dropCard} />
-                </div>
-                <Logo/>
-                <div className="infoBox">
-                    <p>Welcome to the Tiles Internet of Things Invention! <br/>
-                    Let’s create some smart creations! </p>
-                </div>
-                <LinkButton title="Let's begin!" target="/cards" size="Large"></LinkButton>
-                <div>
-                    <img className="motionCard"  alt="The motion card" src={motionCard} />
-                    <img className="colorChangeCard" alt="ColorChangeCard" src={colorChangeCard}/>
-                    <img className="bikeCard" alt="Bike card" src={bikeCard} />
-                </div>
-                <CharNormal/>
-            </div>  
+        <div className="Page mainPage">
+            <Logo/>
+            <img className="img2" src={img2} alt="stack of cards2"/>
+            <div className="infoBox">
+                <p>Welcome to the Tiles Internet of Things Invention! <br/>
+                Let’s create some smart creations! </p>
+            </div>
+            <LinkButton title="Let's begin!" target="/cards" size="Large"></LinkButton>
+            <img class="mainPage img1" src={img1} alt="stack of cards"/>
+            <CharNormal/>
+        </div>
     );
 }
 

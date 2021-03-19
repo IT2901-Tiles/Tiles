@@ -9,7 +9,7 @@ import PersonUmbrella from './PersonUmbrella';
 function Tuv() {
     return (
         <div className='tuv'>
-            <svg width="300" height="400">
+            <svg viewBox="0 0 300 400">
                 <Outdoors />
                 <Sun />
                 <Cloud />

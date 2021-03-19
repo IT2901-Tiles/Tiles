@@ -12,6 +12,7 @@ html, body {
 
 html{
   background-color: #68C2C4;
+  text-align: center;
 }
 h1{
   color: #F3EAC2;
@@ -22,93 +23,42 @@ p{
   font-family: 'Comic Neue', cursive;
 }
 
-/*
-.Button {
-  /*MÅ FIKSES NÅR COMPONENT STYLINGEN ER OPPE OG GÅR*/
-  /*background-color: #F08A00;
-  border: solid 5px #C67200;  
-  border-radius: 20px;
-  /* width: 25%; */
-  /*margin: 10% auto;
-  font-size: 1.5rem;
-  padding: auto 5%;
-  width: 15%;
-  
-}*/
-
 /* MAIN PAGE */ 
 .mainPage .Logo{
-  padding: 1px 2em;
-  width: 35%;
+  padding: 0.5vw 2em;
+  width: 25vw;
   margin: 5% auto 3%;
-  font-size: 2.5rem;
+  font-size: 2vw;
+  z-index: 1;
 }
 
 .mainPage .infoBox{
   background-color: rgba(108, 143, 143, 0.589);
   font-family: 'Comic Neue', cursive;
-  font-size: 1.5rem;
+  font-size: 2vw;
   color: #F3EAC2;
   padding: 1%;
   border-radius: 20px;
-  width: 70%;  
-  margin: 3% auto;
+  width: 70vw;  
+  margin: 3vh auto 10vh;
   text-shadow: 2px 2px #252525ab;
 }
 
-/*** IMG ON MAIN PAGE ***/ 
-.mainPage .motionCard {
-  width: 20%;
-  transform: rotate(15deg);
+/** Design img on first page **/
+.mainPage .img1{
   position: absolute;
   z-index: -1;
-  right: 90%;
-  top: 50%;
+  width: 25vw;
+  bottom: 0;
+  left: 0;
 }
 
-.mainPage .colorChangeCard{
-  width: 20%;
-  transform: rotate(25deg);
-  position: absolute;
-  z-index: 1;
-  right: 80%;
-  top: 62%;
-}
-
-.mainPage .bikeCard{
-  width: 20%;
-  transform: rotate(35deg);
-  position: absolute;
-  z-index: +1;
-  right: 75%;
-  top: 74%;
-}
-/* **TOP** */ 
-.mainPage .dropCardTop{
-  width: 20%;
-  transform: rotate(25deg);
-  position: absolute;
-  z-index: +1;
-  left: 92%;
-  bottom: 70%;
-}
-
-.mainPage .colorChangeCardTop{
-  width: 20%;
-  transform: rotate(30deg);
-  position: absolute;
-  z-index: 1;
-  left: 84%;
-  bottom: 70%;
-}
-
-.mainPage .motionCardTop{
-  width: 20%;
-  transform: rotate(35deg);
+.mainPage .img2 {
   position: absolute;
   z-index: -1;
-  left: 77%;
-  bottom: 80%;
+  width: 25vw;
+  top: 0;
+  right: 0;
 }
 
 /* Character CSS*/ 
@@ -147,34 +97,11 @@ svg {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width:850px){
+  .img1, .img2{
+    display: none;
   }
 }

@@ -7,8 +7,8 @@
     grid-template-columns: auto auto auto auto;
     width: 100%;
     position: relative;
-    padding-top: 1vh;
-    transition: linear all 0.1ms;
+    /* padding-top: 1vh; */
+    transition: ease-out 0.1ms;
 }
 
 .gridAnimationItem1 {
@@ -16,10 +16,11 @@
     margin: 10px;
     display: grid;
     grid-template-columns: auto auto auto; /* remove one "auto" if we decide to go with 4 cards instad of 3 */
+    height: 13vw;
 }
 
 .gridAnimationItem2 {
-    grid-area: 2 / 2 / span 10 / span 10;
+    grid-area: 2 / 2 / span 3 / span 3;
     background-color: #FBF4D7;
     border-radius: 30px;
     height: 75vh;
@@ -29,7 +30,7 @@
 }
 
 .gridAnimationItem3 {
-    grid-area: 3 / 1 / span 3 / span 1;
+    grid-area: 3 / 1 / span 6 / span 1;
 }
 
 /* Styling of the cards */
@@ -39,7 +40,7 @@
 }
 
 .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
-    height: 16vw;
+    height: 13vw;
 }
 
 .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
@@ -57,7 +58,7 @@
 .textAreaAnimationPage {
     position: relative;
     bottom: 0px;
-    margin: 3%;
+    margin: 1%;
     display: flex;
     align-items: center;
 }
@@ -111,14 +112,38 @@
     border-radius: 10px;
 }
 
+svg{
+    height: 100%;
+}
 
-/* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx */
+.gridAnimationItem2 div{
+    height: 100%;
+}
 
-@media only screen and (max-width: 800px) {
-    .gridAnimationsPage, .chosenCardsGrid {
-        margin-top: 5vh;
+/* The Try Again button */
+#tryagainButton {
+    height: 10px;
+}
+
+/* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx (.chosenCardsGrid) */
+@media only screen and (max-width: 1000px) {
+    .gridAnimationsPage {
+        margin-top: 2vh;
     }
 
+    .chosenCardsGrid {
+        margin-top: 4vh;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .chosenCardsGrid {
+        margin-top: 5vh;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
     #textBoxAnimationPage {
         width: 90%;
     }
@@ -127,17 +152,9 @@
         width: 90%;
     }
 
-    .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
-        height: 15vw;
-    }
-
 }
 
 @media only screen and (max-width: 700px) {
-    .gridAnimationsPage, .chosenCardsGrid {
-        margin-top: 6vh;
-    }
-
     #textBoxAnimationPage {
         width: 88%;
     }
@@ -152,10 +169,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .gridAnimationsPage, .chosenCardsGrid {
-        margin-top: 7vh;
-    }
-
     #textBoxAnimationPage {
         width: 86%;
     }
@@ -169,12 +182,7 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .gridAnimationsPage, .chosenCardsGrid {
-        margin-top: 8vh;
-    }
-
-
+@media screen and (max-width: 500px) {
     #textBoxAnimationPage {
         width: 84%;
     }
@@ -188,10 +196,7 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
-    .gridAnimationsPage, .chosenCardsGrid {
-        margin-top: 9vh;
-    }
+@media screen and (max-width: 400px) {
 
     .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
         height: 11vw;
