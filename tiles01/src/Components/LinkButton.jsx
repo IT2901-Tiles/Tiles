@@ -30,7 +30,6 @@ function LinkButton(props) {
         colour = "#84AD64"
     }
 
-    console.log("c " + colour)
 
     return (
         <Link
