@@ -4,7 +4,6 @@ import "../CSS/AnimationPage.css"
 import { Link } from 'react-router-dom';
 import TopContainer from '../Components/TopContainer'
 import Animation from '../Components/Animation';
-import CharHappy from '../Components/CharHappy';
 
 
 
@@ -18,7 +17,6 @@ function AnimationPage() {
                     text="some text that will be shown in the instruction box"
                 />
                 <AnimationsPreview />
-                <CharHappy />
 
             </div>
         </div>

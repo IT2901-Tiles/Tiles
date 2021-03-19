@@ -2,7 +2,6 @@ import React from 'react';
 //Component imports
 import Logo from "../Components/Logo";
 import LinkButton from '../Components/LinkButton';
-import CharNormal from "../Components/CharNormal";
 //img imports
 import motionCard from "./../images/triggers/motion.png"
 import colorChangeCard from "./../images/feedbacks/color_change.png"
@@ -29,8 +28,7 @@ function MainPage() {
                     <img className="colorChangeCard" alt="ColorChangeCard" src={colorChangeCard}/>
                     <img className="bikeCard" alt="Bike card" src={bikeCard} />
                 </div>
-                <CharNormal/>
-            </div>  
+            </div>
     );
 }
 
