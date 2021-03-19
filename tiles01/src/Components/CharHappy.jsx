@@ -5,7 +5,7 @@ function CharHappy() {
     return (
         <div className='CharHappy'>
 
-            <svg height="150" width="165">
+            <svg viewBox="0 0 165 150">
                 <Character/> 
                 <g className="LightBulb">
                     <line id="lightStick1" x1="77" y1="4" x2="82" y2="9" stroke="black" strokeWidth="2">¨

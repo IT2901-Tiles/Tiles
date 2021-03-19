@@ -5,7 +5,7 @@ function CharNormal() {
     return (
         <div className='CharNormal'>
 
-            <svg height="150" width="165">
+            <svg viewBox="0 0 165 150">
                 <Character/> 
                 <g className="LightBulb">
                     <g className ="lightShine">
