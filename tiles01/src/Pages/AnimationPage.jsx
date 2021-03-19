@@ -15,7 +15,7 @@ function AnimationPage() {
         <div className="Page AnimationPage">
             <div className="Page">
                 <TopContainer
-                    text="Wow! Look at the amazing creation you have created! If you would like to try again you can touch the Try again! button!"
+                    text='Wow! Look at the amazing creation you have created! If you would like to try again you can click the "Try again!" button!'
                 />
                 <AnimationsPreview />
                 <CharHappy />
