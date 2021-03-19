@@ -5,7 +5,6 @@ import TopContainer from '../Components/TopContainer'
 import LinkToPage from '../Components/LinkToPage'
 
 function ChosenCardsPage(props) {
-    localStorage.setItem(props.location.state.category,props.location.state.card)
     let triggerChosen = false;
     let thingChosen = false;
     let feedbackChosen = false;
@@ -46,9 +45,9 @@ function ChosenCardsPage(props) {
     // If bool value is true, then this function is returned. This returns the image and uses the LinkToPage-component
     function trueValue(cardType) {
         if (errorOccured) { // error-solution for now, this will be fixed more professionally later on
-            return <LinkButton target="/categories" title={cardType.charAt(0).toUpperCase+cardType.substring(1)} category={cardType} size="Small"></LinkButton>
+            return <LinkButton target="/categories" title={cardType.charAt(0).toUpperCase + cardType.substring(1)} category={cardType} size="Small"></LinkButton>
         } else {
-            let cardTypeName = cardType.charAt(0).toUpperCase()+cardType.substring(1)
+            let cardTypeName = cardType.charAt(0).toUpperCase() + cardType.substring(1)
             return <LinkToPage target="/categories" title={cardTypeName} category={cardType} nameOfCardType={localStorage.getItem(cardType)} classNameCard={"chosen" + cardTypeName}></LinkToPage>
         }
     }
@@ -74,43 +73,43 @@ function ChosenCardsPage(props) {
             // Returns the placeholder image and button
             // (fjern kommentar: kanskje litt dårlig navngivning på divene og kanskje unødvendig mange, men ble finest og mest responsivt med 2 diver)
             return <div id="firstWrapperCardNotChosen"><div className="wrapperCardNotChosen">
-            <img src={placeholderImage} alt="test" className="noImgChosen" style={{ border: `${colorBorder}`, borderStyle: "solid", borderWidth: "0.65vw" }} />
-            <div id={classNameOfCard} style={{ color: `${colorBorder}`}}>
-                {cardType.charAt(0).toUpperCase() + cardType.substring(1)}
+                <img src={placeholderImage} alt="test" className="noImgChosen" style={{ border: `${colorBorder}`, borderStyle: "solid", borderWidth: "0.65vw" }} />
+                <div id={classNameOfCard} style={{ color: `${colorBorder}` }}>
+                    {cardType.charAt(0).toUpperCase() + cardType.substring(1)}
                 </div>
-            <br/>
+                <br />
             </div>
-            <div id="buttonChosenCardsPage">
-                 {/* Following code decides whether button is going to be enabled or not */}
-            { ((cardType === triggerChosenId) && (!(thingChosen)) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="trigger" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
-            { ((cardType === thingChosenId) && (triggerChosen) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="thing" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
-            { ((cardType === feedbackChosenId) && (triggerChosen) && (thingChosen)) ? <LinkButton target="/categories" title="Choose!" category="feedback" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
-            
-            </div>
+                <div id="buttonChosenCardsPage">
+                    {/* Following code decides whether button is going to be enabled or not */}
+                    {((cardType === triggerChosenId) && (!(thingChosen)) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="trigger" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
+                    {((cardType === thingChosenId) && (triggerChosen) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="thing" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
+                    {((cardType === feedbackChosenId) && (triggerChosen) && (thingChosen)) ? <LinkButton target="/categories" title="Choose!" category="feedback" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
+
+                </div>
             </div>
 
-            }
         }
+    }
 
     return (
         <div className="Page">
-        <TopContainer
-            text = "Some text"
-        />
+            <TopContainer
+                text="Some text"
+            />
 
             <div className="chosenCardsGrid">
-            <div className="chosenCardsGrid2">
-            {CheckCards()}
-            {/* If-else statements to check the bool-variables */}
-            {(triggerChosen) ? <div className="chosenCardContainer">{trueValue(triggerChosenId)}</div> : falseValue(triggerChosenId)}
-            {(thingChosen) ? <div className="chosenCardContainer">{trueValue(thingChosenId)}</div> : falseValue(thingChosenId)}
-            {(feedbackChosen) ? <div className="chosenCardContainer">{trueValue(feedbackChosenId)}</div> : falseValue(feedbackChosenId)}
+                <div className="chosenCardsGrid2">
+                    {CheckCards()}
+                    {/* If-else statements to check the bool-variables */}
+                    {(triggerChosen) ? <div className="chosenCardContainer">{trueValue(triggerChosenId)}</div> : falseValue(triggerChosenId)}
+                    {(thingChosen) ? <div className="chosenCardContainer">{trueValue(thingChosenId)}</div> : falseValue(thingChosenId)}
+                    {(feedbackChosen) ? <div className="chosenCardContainer">{trueValue(feedbackChosenId)}</div> : falseValue(feedbackChosenId)}
+                </div>
             </div>
-            </div>
 
 
 
-            <br/>
+            <br />
             <LinkButton target="/animation" title="RUN!" category="animation" size="Large"></LinkButton>
 
         </div>

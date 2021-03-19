@@ -11,42 +11,46 @@ import CardContainer from "../Components/CardContainer";
 import "../CSS/CardContainer.css";
 
 function CategoryPage(props) {
-    console.log({props},"categorypage")
-    const [Card,setCard] = useState(null);
-    const [category] = useState(props.location.state.category)
-    var styling = {color : "#68C2C4" };  
-    styling.color = props.location.state.color; 
+    console.log({ props }, "categorypage")
+    //const [category, setCategory] = useState(props.location.state.category)
+    let category
+    { props.location.state ? (category = props.location.state.category) : category = "trigger" }
+    const [card, setCard] = useState(localStorage.getItem(category));
+    var styling = { color: "#68C2C4" };
+    { props.location.state ? (styling.color = props.location.state.color) : styling.color = "#F08A00" }
 
 
     //Make the category titles first letter upper case, and ads an s to the thing(s) category
     let categoryName = category;
-    if (categoryName === "thing"){
+    if (categoryName === "thing") {
         categoryName = "things";
     }
-    categoryName = categoryName[0].toUpperCase()+categoryName.substring(1);
+    categoryName = categoryName[0].toUpperCase() + categoryName.substring(1);
 
     //Function triggered when a card is selected
-    function onCardClick(newValue){
+    function onCardClick(newValue) {
         console.log(newValue)
         setCard(newValue.src)
+
     }
 
     return (
         <div className="Page">
 
-        <TopContainer
-            text = "some text that will be shown in the instruction box"
-        />
+            <TopContainer
+                text="some text that will be shown in the instruction box"
+            />
             <div className="CardContainer">
-                    <div className="CardContainerTitle" style={styling}> {categoryName}</div>
-                     <CardContainer category={props.location.state.category} onSelect={onCardClick}/>
-                <LinkButton target="/cards" title="Choose" size="Small" category={props.location.state.category} card={Card}></LinkButton>
+                <div className="CardContainerTitle" style={styling}> {categoryName}</div>
+                <CardContainer category={category} onSelect={onCardClick} />
+                <LinkButton target="/cards" title="Choose" size="Small" category={category} onClick={localStorage.setItem(category, card)} ></LinkButton>
             </div>
 
-            
+
 
         </div>
     );
 }
 
 export default CategoryPage;
+
