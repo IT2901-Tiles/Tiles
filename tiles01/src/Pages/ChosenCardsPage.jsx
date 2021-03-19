@@ -3,8 +3,6 @@ import LinkButton from '../Components/LinkButton'
 import placeholderImage from '../images/blankImg.png'
 import TopContainer from '../Components/TopContainer'
 import LinkToPage from '../Components/LinkToPage'
-import Character from '../Components/Character'
-import CharNormal from '../Components/CharNormal'
 
 function ChosenCardsPage(props) {
     localStorage.setItem(props.location.state.category, props.location.state.card)
@@ -114,7 +112,7 @@ function ChosenCardsPage(props) {
 
             <br />
             <LinkButton target="/animation" title="RUN!" category="animation" size="Large"></LinkButton>
-            <CharNormal/>
+
         </div>
     );
 }
