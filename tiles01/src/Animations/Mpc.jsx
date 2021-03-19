@@ -6,7 +6,7 @@ import Pen from './Pen';
 function Mpc() {
     return (
         <div>
-            <svg height="400" width="300">
+            <svg viewBox="0 0 300 400">
                 <g>
                     <rect width="300" height="400" fill="#b3e6ff" />
                     <BookShelf />

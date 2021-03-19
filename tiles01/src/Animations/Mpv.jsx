@@ -6,7 +6,7 @@ import Outdoors from './Outdoors';
 function Mpv() {
     return (
         <div className="Mpv">
-            <svg id="mpv" height="400" width="300">
+            <svg id="mpv" viewBox="0 0 300 400">
                 <Outdoors />
                 <Sun />
 
