@@ -95,7 +95,7 @@ function ChosenCardsPage(props) {
     }
 
     return (
-        <div className="Page">
+        <div className="Page ChosenCardsPage">
 
         <TopContainer
             text = "Press the Choose button to select a card from this category!"

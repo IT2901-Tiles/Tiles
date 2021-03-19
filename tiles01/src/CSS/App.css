@@ -62,29 +62,55 @@ p{
 }
 
 /* Character CSS*/ 
-.CharNormal, .CharThinking, .CharHappy{
-    position: absolute;
-    left: 80vw;
-    top: 2.4vh;
-    /*transform: scale(1.3);*/
-}
-
-.mainPage .CharNormal{
-  position: absolute;
-  left: 75vw;
-  top:72vh;
-  transform: scale(2.7);
-}
 
 svg {
   height: 100%;
 }
 
-.CharHappy {
-  height: 25vh;
+.mainPage .CharNormal{
+  position: absolute;
+  left: 60vw;
+  top:50vh;
+  height: 56vh;
+  /*transform: scale(2.7);*/
 }
 
+/* on category page*/
+.CharThinking{
+    position: relative;
+    left: 38vw;
+    bottom: 90vh;
+    height: 17vh;
+    margin: 6.5vh 4vw;
+}
 
+.ChosenCardsPage .CharNormal{
+  position: absolute;
+  height: 15vw;
+  top: -6%;
+  right: 5%;
+  margin: 6.5vh 4vw;
+}
+
+.AnimationPage .CharHappy{
+  position: absolute;
+  height: 13vw;
+  top: -5.5%;
+  right: 5%;
+  margin: 6.5vh 4vw;
+  
+}
+
+@media screen and (max-width: 850px){
+  .ChosenCardsPage .CharNormal{
+    top: -3%;
+  }
+
+  .AnimationPage .CharHappy{
+    top: -3.5%;
+    right: 4%;
+  }
+}
 
 
 /*PRE DEFINDED DESIGN KAN SLETTES? */
