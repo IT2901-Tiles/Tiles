@@ -4,6 +4,7 @@ import "../CSS/AnimationPage.css"
 import { Link } from 'react-router-dom';
 import TopContainer from '../Components/TopContainer'
 import Animation from '../Components/Animation';
+import CharHappy from '../Components/CharHappy';
 
 
 
@@ -17,6 +18,7 @@ function AnimationPage() {
                     text="Wow! Look at the amazing creation you have created! If you would like to try again you can touch the Try again! button!"
                 />
                 <AnimationsPreview />
+                <CharHappy />
 
             </div>
         </div>

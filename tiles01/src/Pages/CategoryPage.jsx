@@ -9,19 +9,21 @@ import LinkButton from '../Components/LinkButton';
 import CardContainer from "../Components/CardContainer";
 //Css imports
 import "../CSS/CardContainer.css";
+import CharThinking from '../Components/CharThinking';
 
 function CategoryPage(props) {
-    console.log({props},"categorypage")
-    const [Card,setCard] = useState(null);
+    console.log({ props }, "categorypage")
     const [category] = useState(props.location.state.category)
-    var styling = {color : "#68C2C4" };  
-    styling.color = props.location.state.color; 
+    const [Card, setCard] = useState(localStorage.getItem(category));
+    var styling = { color: "#68C2C4" };
+    styling.color = props.location.state.color;
 
 
     //Make the category titles first letter upper case, and ads an s to the thing(s) category
     // AND Set the text of the info-box based on the category
     let categoryName = category;
     let categoryInfoText = "Choose 1 card from this pile to ";
+  
     if (category === "thing"){
         categoryName = "things";
         categoryInfoText += "select a thing to preform the action on"
@@ -30,21 +32,18 @@ function CategoryPage(props) {
     }else{
         categoryInfoText += "trigger some action"
     }
-    categoryName = categoryName[0].toUpperCase()+categoryName.substring(1);
+    categoryName = categoryName[0].toUpperCase() + categoryName.substring(1);
 
-    
-    
-    
+ 
 
     //Function triggered when a card is selected
-    function onCardClick(newValue){
+    function onCardClick(newValue) {
         console.log(newValue)
         setCard(newValue.src)
     }
 
     return (
         <div className="Page">
-
         <TopContainer
             text = {categoryInfoText}
         />
@@ -53,8 +52,8 @@ function CategoryPage(props) {
                      <CardContainer category={props.location.state.category} onSelect={onCardClick}/>
                 <LinkButton target="/cards" title="Choose" size="Small" category={props.location.state.category} card={Card} className="chooseCardsButton"></LinkButton>
             </div>
-
             
+            <CharThinking/>
 
         </div>
     );

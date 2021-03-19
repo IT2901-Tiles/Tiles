@@ -3,9 +3,11 @@ import LinkButton from '../Components/LinkButton'
 import placeholderImage from '../images/blankImg.png'
 import TopContainer from '../Components/TopContainer'
 import LinkToPage from '../Components/LinkToPage'
+import Character from '../Components/Character'
+import CharNormal from '../Components/CharNormal'
 
 function ChosenCardsPage(props) {
-    localStorage.setItem(props.location.state.category,props.location.state.card)
+    localStorage.setItem(props.location.state.category, props.location.state.card)
     let triggerChosen = false;
     let thingChosen = false;
     let feedbackChosen = false;
@@ -46,9 +48,9 @@ function ChosenCardsPage(props) {
     // If bool value is true, then this function is returned. This returns the image and uses the LinkToPage-component
     function trueValue(cardType) {
         if (errorOccured) { // error-solution for now, this will be fixed more professionally later on
-            return <LinkButton target="/categories" title={cardType.charAt(0).toUpperCase+cardType.substring(1)} category={cardType} size="Small"></LinkButton>
+            return <LinkButton target="/categories" title={cardType.charAt(0).toUpperCase + cardType.substring(1)} category={cardType} size="Small"></LinkButton>
         } else {
-            let cardTypeName = cardType.charAt(0).toUpperCase()+cardType.substring(1)
+            let cardTypeName = cardType.charAt(0).toUpperCase() + cardType.substring(1)
             return <LinkToPage target="/categories" title={cardTypeName} category={cardType} nameOfCardType={localStorage.getItem(cardType)} classNameCard={"chosen" + cardTypeName}></LinkToPage>
         }
     }
@@ -78,41 +80,42 @@ function ChosenCardsPage(props) {
             <div id={classNameOfCard} style={{ color: `${colorBorder}`}}>
                 {classNameOfCard === thingNotChosenId ? cardType.charAt(0).toUpperCase() + cardType.substring(1) + "s" : cardType.charAt(0).toUpperCase() + cardType.substring(1)}
                 </div>
-            <br/>
+                <br />
             </div>
-            <div id="buttonChosenCardsPage">
-                 {/* Following code decides whether button is going to be enabled or not */}
-            { ((cardType === triggerChosenId) && (!(thingChosen)) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="trigger" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
-            { ((cardType === thingChosenId) && (triggerChosen) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="thing" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
-            { ((cardType === feedbackChosenId) && (triggerChosen) && (thingChosen)) ? <LinkButton target="/categories" title="Choose!" category="feedback" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
-            
-            </div>
+                <div id="buttonChosenCardsPage">
+                    {/* Following code decides whether button is going to be enabled or not */}
+                    {((cardType === triggerChosenId) && (!(thingChosen)) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="trigger" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
+                    {((cardType === thingChosenId) && (triggerChosen) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="thing" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
+                    {((cardType === feedbackChosenId) && (triggerChosen) && (thingChosen)) ? <LinkButton target="/categories" title="Choose!" category="feedback" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
+
+                </div>
             </div>
 
-            }
         }
+    }
 
     return (
         <div className="Page">
+
         <TopContainer
             text = "Press the Choose button to select a card from this category!"
         />
 
             <div className="chosenCardsGrid">
-            <div className="chosenCardsGrid2">
-            {CheckCards()}
-            {/* If-else statements to check the bool-variables */}
-            {(triggerChosen) ? <div className="chosenCardContainer">{trueValue(triggerChosenId)}</div> : falseValue(triggerChosenId)}
-            {(thingChosen) ? <div className="chosenCardContainer">{trueValue(thingChosenId)}</div> : falseValue(thingChosenId)}
-            {(feedbackChosen) ? <div className="chosenCardContainer">{trueValue(feedbackChosenId)}</div> : falseValue(feedbackChosenId)}
+                <div className="chosenCardsGrid2">
+                    {CheckCards()}
+                    {/* If-else statements to check the bool-variables */}
+                    {(triggerChosen) ? <div className="chosenCardContainer">{trueValue(triggerChosenId)}</div> : falseValue(triggerChosenId)}
+                    {(thingChosen) ? <div className="chosenCardContainer">{trueValue(thingChosenId)}</div> : falseValue(thingChosenId)}
+                    {(feedbackChosen) ? <div className="chosenCardContainer">{trueValue(feedbackChosenId)}</div> : falseValue(feedbackChosenId)}
+                </div>
             </div>
-            </div>
 
 
 
-            <br/>
+            <br />
             <LinkButton target="/animation" title="RUN!" category="animation" size="Large"></LinkButton>
-
+            <CharNormal/>
         </div>
     );
 }

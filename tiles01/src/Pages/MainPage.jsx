@@ -2,6 +2,7 @@ import React from 'react';
 //Component imports
 import Logo from "../Components/Logo";
 import LinkButton from '../Components/LinkButton';
+import CharNormal from "../Components/CharNormal";
 //img imports
 import img1 from "./../images/img1.png"
 import img2 from "./../images/img2.png"
@@ -17,9 +18,8 @@ function MainPage() {
                 Let’s create some smart creations! </p>
             </div>
             <LinkButton title="Let's begin!" target="/cards" size="Large"></LinkButton>
-            <div>
-            </div>
             <img class="mainPage img1" src={img1} alt="stack of cards"/>
+            <CharNormal/>
         </div>
     );
 }
