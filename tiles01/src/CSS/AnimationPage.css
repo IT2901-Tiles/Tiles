@@ -14,7 +14,7 @@
 .gridAnimationItem1 {
     grid-area: 2 / 1 / span 1 / span 1;
     /*margin: 10px;*/
-    margin: 2vw;
+    margin: 2vw 2vw 0 2vw;
     display: grid;
     grid-template-columns: auto auto auto; /* remove one "auto" if we decide to go with 4 cards instad of 3 */
     height: 13vw;
@@ -25,9 +25,9 @@
     background-color: #FBF4D7;
     /*border-radius: 30px;*/
     border-radius: 5%;
-    height: 75vh;
+    height: 70vh;
     /*padding: 5px;*/
-    padding: 5vh;
+    padding: 5vh 0;
     position: relative;
     margin-right: 3%;
 }
@@ -115,19 +115,19 @@
     box-shadow: 0 0 0 0.2rem rgba(180, 102, 0, 0.25);
 }
 
-.textButtonAnimationPage {
+/*.textButtonAnimationPage {
     /*width: 50%;*/
-    width: 15vw;
+   /* width: 15vw;
     height: 5.5vh;
     color: #F3EAC2;
     margin-right: 2vw; 
-}
+}*/
 
 /* Styling for audio recording*/
 
  .AudioAreaAnimationPage {
     /*margin-bottom: 20px;*/
-    margin-bottom: 10vw;
+    margin-bottom: 3vw;
 }
 
 .AudioAreaAnimationPage .Audio audio{
@@ -135,15 +135,16 @@
     margin: 0;
 }
 
-.AudioAreaAnimationPage div Button{
+.AudioAreaAnimationPage div Button, .textButtonAnimationPage{
     /*width: 90px;
     height: 40px;
     margin:1px;
     border-radius: 10px;*/
-    width: 17vw;
-    height: 5vh;
+    width: 12vw;
+    height: 8vh;
     margin: 1vw;
-    border-radius: 1vw;
+    font-size: 2vw;
+    border-radius: 1.5vw;
     color: #F3EAC2;
 }
 
@@ -184,6 +185,10 @@ svg{
         width: 90%;
     }*/
 
+    .textAreaAnimationPage{
+        display: none;
+    }
+
     .AudioAreaAnimationPage .Audio {
         transform: scale(0.7);
         margin: 0;
@@ -195,6 +200,10 @@ svg{
 
     .gridAnimationItem1 img{
         height: 20vh;
+    }
+
+    .tryAgainButton{
+        margin-top: 0;
     }
 
 

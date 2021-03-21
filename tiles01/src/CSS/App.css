@@ -71,7 +71,8 @@ svg {
   position: absolute;
   left: 60vw;
   top:50vh;
-  height: 56vh;
+  /*height: 56vh;*/
+  height: 37vw;
   /*transform: scale(2.7);*/
 }
 
