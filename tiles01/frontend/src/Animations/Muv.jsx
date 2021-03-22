@@ -7,7 +7,7 @@ import PersonUmbrella from './PersonUmbrella';
 
 function Muv() {
     return (
-        <div>
+        <div className="Muv">
             <svg height="400" width="300">
                 <Outdoors />
                 <Cloud />

@@ -18,7 +18,6 @@ function AnimationsPreview() {
         let indexstartname = path.lastIndexOf("/") + 1
         let filename = path.slice(indexstartname)
         let indexendname = filename.indexOf(".")
-        console.log(indexendname)
         let cardname = filename.slice(0, indexendname)
         return cardname
 

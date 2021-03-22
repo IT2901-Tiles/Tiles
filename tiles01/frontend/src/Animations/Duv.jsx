@@ -6,7 +6,7 @@ import PersonUmbrella from './PersonUmbrella';
 
 function Duv() {
     return (
-        <div>
+        <div className="Duv">
             <svg height="400" width="300">
                 <Outdoors />
                 <Cloud />

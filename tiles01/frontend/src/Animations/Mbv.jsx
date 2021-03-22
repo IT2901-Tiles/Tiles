@@ -6,7 +6,7 @@ import Outdoors from './Outdoors';
 
 function Mbv() {
     return (
-        <div>
+        <div className="Mbv">
             <svg height="400" width="300">
                 <Outdoors />
                 <g className="bike">

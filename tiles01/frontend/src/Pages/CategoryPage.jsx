@@ -11,8 +11,6 @@ import CardContainer from "../Components/CardContainer";
 import "../CSS/CardContainer.css";
 
 function CategoryPage(props) {
-    console.log({ props }, "categorypage")
-    //const [category, setCategory] = useState(props.location.state.category)
     let category
     { props.location.state ? (category = props.location.state.category) : category = "trigger" }
     const [card, setCard] = useState(localStorage.getItem(category));
@@ -29,7 +27,6 @@ function CategoryPage(props) {
 
     //Function triggered when a card is selected
     function onCardClick(newValue) {
-        console.log(newValue)
         setCard(newValue.src)
 
     }

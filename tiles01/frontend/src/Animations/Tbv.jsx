@@ -6,7 +6,7 @@ import SmallTemperature from './SmallTemperature';
 
 function Tbv() {
     return (
-        <div>
+        <div className="Tbv">
             <svg height="400" width="300">
                 <Outdoors />
                 <Sun />

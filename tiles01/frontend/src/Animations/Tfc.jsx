@@ -6,7 +6,7 @@ import Temperature from './Temperature';
 
 function Tfc() {
     return (
-        <div className="tfv">
+        <div className="Tfv">
             <svg width="300" height="400">
                 <Inside />
                 <ClothingShelf colour="blue;blue;red;red;blue;blue"

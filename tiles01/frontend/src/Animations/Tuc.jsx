@@ -7,7 +7,7 @@ import PersonUmbrella from './PersonUmbrella';
 
 function Tuc() {
     return (
-        <div className='tuc'>
+        <div className='Tuc'>
 
             <svg height="400" width="300">
                 <Outdoors />

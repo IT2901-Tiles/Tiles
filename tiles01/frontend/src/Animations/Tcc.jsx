@@ -7,7 +7,7 @@ import PersonArmsUp from './PersonArmsUp';
 
 function Tcc() {
     return (
-        <div>
+        <div className="Tcc">
             <svg width="300" height="400">
                 <Outdoors />
                 <Cloud />

@@ -6,7 +6,7 @@ import PersonUmbrella from './PersonUmbrella';
 
 function Duc() {
     return (
-        <div>
+        <div className="Duc">
             <svg height="400" width="300">
                 <Outdoors />
                 <Cloud />
