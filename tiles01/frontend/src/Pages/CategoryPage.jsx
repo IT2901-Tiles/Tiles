@@ -12,10 +12,12 @@ import "../CSS/CardContainer.css";
 
 function CategoryPage(props) {
     console.log({ props }, "categorypage")
-    const [category] = useState(props.location.state.category)
-    const [Card, setCard] = useState(localStorage.getItem(category));
+    //const [category, setCategory] = useState(props.location.state.category)
+    let category
+    { props.location.state ? (category = props.location.state.category) : category = "trigger" }
+    const [card, setCard] = useState(localStorage.getItem(category));
     var styling = { color: "#68C2C4" };
-    styling.color = props.location.state.color;
+    { props.location.state ? (styling.color = props.location.state.color) : styling.color = "#F08A00" }
 
 
     //Make the category titles first letter upper case, and ads an s to the thing(s) category
@@ -29,6 +31,7 @@ function CategoryPage(props) {
     function onCardClick(newValue) {
         console.log(newValue)
         setCard(newValue.src)
+
     }
 
     return (
@@ -39,8 +42,8 @@ function CategoryPage(props) {
             />
             <div className="CardContainer">
                 <div className="CardContainerTitle" style={styling}> {categoryName}</div>
-                <CardContainer category={props.location.state.category} onSelect={onCardClick} />
-                <LinkButton target="/cards" title="Choose" size="Small" category={props.location.state.category} card={Card}></LinkButton>
+                <CardContainer category={category} onSelect={onCardClick} />
+                <LinkButton target="/cards" title="Choose" size="Small" category={category} onClick={localStorage.setItem(category, card)} ></LinkButton>
             </div>
 
 
@@ -50,3 +53,4 @@ function CategoryPage(props) {
 }
 
 export default CategoryPage;
+

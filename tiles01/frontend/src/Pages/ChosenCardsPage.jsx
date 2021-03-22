@@ -5,7 +5,6 @@ import TopContainer from '../Components/TopContainer'
 import LinkToPage from '../Components/LinkToPage'
 
 function ChosenCardsPage(props) {
-    localStorage.setItem(props.location.state.category, props.location.state.card)
     let triggerChosen = false;
     let thingChosen = false;
     let feedbackChosen = false;
