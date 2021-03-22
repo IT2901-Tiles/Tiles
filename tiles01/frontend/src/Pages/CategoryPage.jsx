@@ -20,9 +20,9 @@ function CategoryPage(props) {
 
     //Make the category titles first letter upper case, and ads an s to the thing(s) category
     let categoryName = category;
-    if (categoryName === "thing") {
-        categoryName = "things";
-    }
+    // if (categoryName === "thing") {
+    //     categoryName = "things";
+    // }
     categoryName = categoryName[0].toUpperCase() + categoryName.substring(1);
 
     //Function triggered when a card is selected

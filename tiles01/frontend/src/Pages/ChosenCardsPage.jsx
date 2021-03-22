@@ -12,26 +12,26 @@ function ChosenCardsPage(props) {
     let thingNotChosenId = "textNoCardChosen2";
     let feedbackNotChosenId = "textNoCardChosen3";
     let triggerChosenId = "trigger";
-    let thingChosenId = "thing";
+    let thingChosenId = "things";
     let feedbackChosenId = "feedback";
     let errorOccured = false; // value turns true if error occured 
     let colorBorder; // color of border and font when no card is picked
 
     // This function checks which cards are checked off and sets a bool value
     function CheckCards() {
-        if ((localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null) && (localStorage.getItem("thing") === "null" || localStorage.getItem("thing") === null) && (localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null)) {
+        if ((localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null) && (localStorage.getItem("things") === "null" || localStorage.getItem("things") === null) && (localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null)) {
             triggerChosen = false;
             thingChosen = false;
             feedbackChosen = false;
-        } else if ((!(localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null)) && (localStorage.getItem("thing") === "null" || localStorage.getItem("thing") === null) && (localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null)) {
+        } else if ((!(localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null)) && (localStorage.getItem("things") === "null" || localStorage.getItem("things") === null) && (localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null)) {
             triggerChosen = true;
             thingChosen = false;
             feedbackChosen = false;
-        } else if ((!(localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null)) && (!(localStorage.getItem("thing") === "null" || localStorage.getItem("thing") === null)) && (localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null)) {
+        } else if ((!(localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null)) && (!(localStorage.getItem("things") === "null" || localStorage.getItem("things") === null)) && (localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null)) {
             triggerChosen = true;
             thingChosen = true;
             feedbackChosen = false;
-        } else if ((!(localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null)) && (!(localStorage.getItem("thing") === "null" || localStorage.getItem("thing") === null)) && (!(localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null))) {
+        } else if ((!(localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null)) && (!(localStorage.getItem("things") === "null" || localStorage.getItem("things") === null)) && (!(localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null))) {
             triggerChosen = true;
             thingChosen = true;
             feedbackChosen = true;
@@ -82,7 +82,7 @@ function ChosenCardsPage(props) {
                 <div id="buttonChosenCardsPage">
                     {/* Following code decides whether button is going to be enabled or not */}
                     {((cardType === triggerChosenId) && (!(thingChosen)) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="trigger" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
-                    {((cardType === thingChosenId) && (triggerChosen) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="thing" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
+                    {((cardType === thingChosenId) && (triggerChosen) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="things" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
                     {((cardType === feedbackChosenId) && (triggerChosen) && (thingChosen)) ? <LinkButton target="/categories" title="Choose!" category="feedback" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
 
                 </div>

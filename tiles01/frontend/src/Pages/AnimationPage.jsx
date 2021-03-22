@@ -1,9 +1,7 @@
 import React from 'react';
 import AnimationsPreview from "../Components/AnimationsPreview"
 import "../CSS/AnimationPage.css"
-import { Link } from 'react-router-dom';
 import TopContainer from '../Components/TopContainer'
-import Animation from '../Components/Animation';
 
 
 

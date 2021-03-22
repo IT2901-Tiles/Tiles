@@ -21,7 +21,7 @@ function LinkButton(props) {
     let colour = "#F08A00";
     let fontColour = "#F3EAC2";
 
-    if (category === "thing") {
+    if (category === "things") {
         colour = "#D64539"
     } else if (category === "feedback") {
         colour = "#FFCD00"

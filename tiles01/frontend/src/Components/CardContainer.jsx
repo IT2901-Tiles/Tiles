@@ -8,7 +8,7 @@ function importAll(r) {
 
 //paths tp where the different image sets are
 var cardPaths = {
-    "thing": require.context("./../images/things", false, /\.(png|jpe?g|svg)$/),
+    "things": require.context("./../images/things", false, /\.(png|jpe?g|svg)$/),
     "trigger": require.context("./../images/triggers", false, /\.(png|jpe?g|svg)$/),
     "feedback": require.context("./../images/feedbacks", false, /\.(png|jpe?g|svg)$/)
 }

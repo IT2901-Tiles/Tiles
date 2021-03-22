@@ -23,10 +23,10 @@ function AnimationsPreview() {
 
     }
     let triggerName = getCardName(localStorage.getItem("trigger"))
-    let thingName = getCardName(localStorage.getItem("thing"))
+    let thingName = getCardName(localStorage.getItem("things"))
     let feedbackName = getCardName(localStorage.getItem("feedback"))
     //select the correct animation based on the selected cards
-    var animation = animationDictionary[getCardName(localStorage.getItem("trigger"))][getCardName(localStorage.getItem("thing"))][getCardName(localStorage.getItem("feedback"))]
+    var animation = animationDictionary[getCardName(localStorage.getItem("trigger"))][getCardName(localStorage.getItem("things"))][getCardName(localStorage.getItem("feedback"))]
 
     return (
         <div className="gridAnimationsPage">
@@ -36,7 +36,7 @@ function AnimationsPreview() {
                     {localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null ? <p>No "trigger" card chosen.</p> : <img src={localStorage.getItem("trigger")} className="triggerAnimationsPage" alt="A 'trigger' card" />}
                 </div>
                 <div className="card2AnimationsPage">
-                    {localStorage.getItem("thing") === "null" || localStorage.getItem("thing") === null ? <p>No "thing" card chosen.</p> : <img src={localStorage.getItem("thing")} className="thingAnimationsPage" alt="A 'thing' card" />}
+                    {localStorage.getItem("things") === "null" || localStorage.getItem("things") === null ? <p>No "thing" card chosen.</p> : <img src={localStorage.getItem("things")} className="thingAnimationsPage" alt="A 'thing' card" />}
                 </div>
                 <div className="card3AnimationsPage">
                     {localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null ? <p>No "feedback" card chosen.</p> : <img src={localStorage.getItem("feedback")} className="feedbackAnimationsPage" alt="A 'feedback' card" />}
