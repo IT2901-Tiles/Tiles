@@ -12,12 +12,12 @@ function FormFieldAnimationPage(props) {
     function downloadFile() {
         let userInputValue // will change depending on the user writes something or not 
         if (document.getElementById("textBoxAnimationPage").value === "") { // if user does not write anything in the textarea
-            userInputValue = "Oops! Looks like no brilliant ideas were written down..." 
+            userInputValue = "Oops! Looks like no brilliant ideas were written down..."
         } else { // if the user writes something in the textare
             userInputValue = document.getElementById("textBoxAnimationPage").value
         }
         const htmlElement = document.createElement("a") // creates an "a" element in the html page, where we'll "store" the value of the user input
-        const valueInput = new Blob([outputStandardText + userInputValue], {type: 'text/plain'}) // value of txt file must be passed in the first parameter of Blob
+        const valueInput = new Blob([outputStandardText + userInputValue], { type: 'text/plain' }) // value of txt file must be passed in the first parameter of Blob
         htmlElement.href = URL.createObjectURL(valueInput)
         htmlElement.download = "tiles.txt"
         document.body.appendChild(htmlElement)
@@ -28,8 +28,8 @@ function FormFieldAnimationPage(props) {
     // Will fix the position when the animations are ready
     return (
         <div className="textAreaAnimationPage">
-            <textarea id="textBoxAnimationPage" placeholder="Write your idea here..." onChange={newInput => setInput(newInput.target.value)}/>
-                <button onClick={downloadFile} className="textButtonAnimationPage">Save</button>
+            <textarea id="textBoxAnimationPage" placeholder="Write your idea here..." onChange={newInput => setInput(newInput.target.value)} />
+            <button onClick={downloadFile} className="textButtonAnimationPage">Save</button>
         </div>
     );
 }
