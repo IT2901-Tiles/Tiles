@@ -3,12 +3,19 @@ import LinkButton from '../Components/LinkButton'
 import placeholderImage from '../images/blankImg.png'
 import TopContainer from '../Components/TopContainer'
 import LinkToPage from '../Components/LinkToPage'
-
+import { useHistory } from "react-router-dom";
+import { useState } from 'react';
 function ChosenCardsPage(props) {
-    localStorage.setItem(props.location.state.category, props.location.state.card)
-    let triggerChosen = false;
-    let thingChosen = false;
-    let feedbackChosen = false;
+    try {
+        localStorage.setItem(props.location.state.category, props.location.state.card)
+    } catch (error) {
+        console.log("no cards chosen")
+    }
+    
+    var triggerChosen = ! ["null",null].includes(localStorage.getItem("trigger"))
+    var thingChosen = ! ["null",null].includes(localStorage.getItem("thing"))
+    var feedbackChosen = ! ["null",null].includes(localStorage.getItem("feedback"))
+    console.log(thingChosen)
     let triggerNotChosenId = "textNoCardChosen1";
     let thingNotChosenId = "textNoCardChosen2";
     let feedbackNotChosenId = "textNoCardChosen3";
@@ -17,30 +24,9 @@ function ChosenCardsPage(props) {
     let feedbackChosenId = "feedback";
     let errorOccured = false; // value turns true if error occured 
     let colorBorder; // color of border and font when no card is picked
-
+    const [buttonActive, setButtonActive] = useState(triggerChosen && thingChosen && feedbackChosen);
     // This function checks which cards are checked off and sets a bool value
-    function CheckCards() {
-        if ((localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null) && (localStorage.getItem("thing") === "null" || localStorage.getItem("thing") === null) && (localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null)) {
-            triggerChosen = false;
-            thingChosen = false;
-            feedbackChosen = false;
-        } else if ((!(localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null)) && (localStorage.getItem("thing") === "null" || localStorage.getItem("thing") === null) && (localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null)) {
-            triggerChosen = true;
-            thingChosen = false;
-            feedbackChosen = false;
-        } else if ((!(localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null)) && (!(localStorage.getItem("thing") === "null" || localStorage.getItem("thing") === null)) && (localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null)) {
-            triggerChosen = true;
-            thingChosen = true;
-            feedbackChosen = false;
-        } else if ((!(localStorage.getItem("trigger") === "null" || localStorage.getItem("trigger") === null)) && (!(localStorage.getItem("thing") === "null" || localStorage.getItem("thing") === null)) && (!(localStorage.getItem("feedback") === "null" || localStorage.getItem("feedback") === null))) {
-            triggerChosen = true;
-            thingChosen = true;
-            feedbackChosen = true;
-        } else {
-            // if none of the above are true, then errorOccurs variable is set to true and this is used in the return statement
-            errorOccured = true;
-        }
-    }
+    
 
 
     // If bool value is true, then this function is returned. This returns the image and uses the LinkToPage-component
@@ -91,7 +77,11 @@ function ChosenCardsPage(props) {
 
         }
     }
+ 
 
+    
+    
+    console.log(buttonActive)
     return (
         <div className="Page">
             <TopContainer
@@ -100,7 +90,7 @@ function ChosenCardsPage(props) {
 
             <div className="chosenCardsGrid">
                 <div className="chosenCardsGrid2">
-                    {CheckCards()}
+                
                     {/* If-else statements to check the bool-variables */}
                     {(triggerChosen) ? <div className="chosenCardContainer">{trueValue(triggerChosenId)}</div> : falseValue(triggerChosenId)}
                     {(thingChosen) ? <div className="chosenCardContainer">{trueValue(thingChosenId)}</div> : falseValue(thingChosenId)}
@@ -111,10 +101,11 @@ function ChosenCardsPage(props) {
 
 
             <br />
-            <LinkButton target="/animation" title="RUN!" category="animation" size="Large"></LinkButton>
-
+            <LinkButton target="/animation" title="RUN!" category="animation" size="Large" active={buttonActive} buttonError={"Please select one card in each category"}   ></LinkButton>
         </div>
     );
 }
+//checks if cards have been selected
+
 
 export default ChosenCardsPage

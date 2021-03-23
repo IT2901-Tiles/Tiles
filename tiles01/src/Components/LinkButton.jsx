@@ -14,13 +14,13 @@ import Button from 'react-bootstrap/Button';
 
 function LinkButton(props) {
     const [title] = useState(props.title)
-    const [path] = useState(props.target)
+    var [path] = useState(props.target)
     const [category] = useState(props.category)
     const [size] = useState(props.size + "Button")
-
+    const [active,setActive] = useState(props.active);
     let colour = "#F08A00";
     let fontColour = "#F3EAC2";
-
+   
     if (category === "thing") {
         colour = "#D64539"
     } else if (category === "feedback") {
@@ -29,18 +29,28 @@ function LinkButton(props) {
     } else if (category === "animation") {
         colour = "#84AD64"
     }
+    if( props.active === false){
+        colour="grey"
+        return <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary" onClick={()=>alert(props.buttonError)} >{title}</Button>
+    }
+    
 
-
+    
+    
+    
     return (
         <Link
-            to={{
-                pathname: path,
-                state: { category: category, color: colour, card: props.card }
-                // state: { category: category, color:colour }
-            }}>
-            <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary">{title}</Button>
+        to={{
+            pathname: path,
+            state: { category: category, color: colour, card: props.card }
+            // state: { category: category, color:colour }
+        }} >
+            <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary" onClick={props.onClick} >{title}</Button>
         </Link>
     );
 }
+
+
+
 
 export default LinkButton;
