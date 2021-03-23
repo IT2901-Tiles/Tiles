@@ -25,15 +25,16 @@
     /*border-radius: 30px;*/
     border-radius: 5%;
     height: 70vh;
-    /*padding: 5px;*/
-    padding: 5vh 0;
+    padding: 5px;
+    /* padding: 5vh 0; */
+    padding: 3px;
     position: relative;
     margin-right: 3%;
 }
 
 .gridAnimationItem3 {
     grid-area: 3 / 1 / span 6 / span 1;
-    margin-right: 1.5vw;
+    /* margin-right: 1.5vw; */
 }
 
 /* Styling of the cards */
@@ -87,7 +88,7 @@
 }
 
 .textAreaAnimationPage textarea { /* border color for textarea */
-    border: 1% solid #F08A00;
+
     border: 0.5vh solid  #F08A00;
 }
 
@@ -130,7 +131,8 @@ svg{
 
 .gridAnimationItem2 div{
     height: 100%;
-}
+    margin: 5px;
+} 
 
 /* The Try Again button */
 #tryagainButton {
@@ -140,37 +142,66 @@ svg{
 /* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx (.chosenCardsGrid) */
 @media only screen and (max-width: 1000px) {
     .gridAnimationsPage {
-        margin-top: 2vh;
+        margin-top: 26px;
     }
 
     .chosenCardsGrid {
-        margin-top: 4vh;
+        margin-top: 26px;
     }
+
+    svg{
+        height: 95%;
+    }
+
+
 }
 
 @media only screen and (max-width: 900px) {
-    .chosenCardsGrid {
-        margin-top: 5vh;
+    .gridAnimationsPage {
+        margin-top: 30px;
     }
+
+    .chosenCardsGrid {
+        margin-top: 30px;
+    }
+
+    svg{
+        height: 90%;
+    }
+
 }
 
 
 @media only screen and (max-width: 800px) {
+    .gridAnimationsPage {
+        margin-top: 44px;
+    }
+
+    .chosenCardsGrid {
+        margin-top: 44px;
+    }
+
+
    #textBoxAnimationPage {
         width: 90%;
     }
-/* 
-    .AudioAreaAnimationPage .Audio {
-        transform: scale(0.7);
-        margin: 0;
-    } */
 
-    .gridAnimationItem1{
-        margin: 0 2vw;
+    svg{
+        height: 85%;
     }
+ 
 }
 
 @media only screen and (max-width: 700px) {
+    .gridAnimationsPage {
+        margin-top: 50px;
+    }
+
+    .chosenCardsGrid {
+        margin-top: 30px;
+    }
+
+
     #textBoxAnimationPage {
         width: 88%;
     }
@@ -182,9 +213,18 @@ svg{
     .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
         height: 14vw;
     }
+
+    svg{
+        height: 80%;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
+    /* .gridAnimationsPage {
+        margin-top: vh;
+    } */
+
     #textBoxAnimationPage {
         width: 86%;
     }
@@ -195,6 +235,10 @@ svg{
 
     .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
         height: 13vw;
+    }
+
+    svg{
+        height: 75%;
     }
 }
 

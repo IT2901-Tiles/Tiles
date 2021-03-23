@@ -68,50 +68,143 @@ svg {
 }
 
 .mainPage .CharNormal{
-  position: absolute;
-  left: 60vw;
-  top:50vh;
-  /*height: 56vh;*/
-  height: 37vw;
-  /*transform: scale(2.7);*/
+    position: absolute;
+    left: 60vw;
+    top:50vh;
+    /*height: 56vh;*/
+    height: 37vw;
+    /*transform: scale(2.7);*/
 }
 
 /* on category page*/
 .CharThinking{
-    position: relative;
-    left: 38vw;
-    bottom: 90vh;
-    height: 17vh;
-    margin: 6.5vh 4vw;
+    position: absolute;
+    right: 5%;
+    /* bottom: 90vh; */
+    height: 13vw;
+    /* margin: 6.5vh 4vw; */
 }
+
 
 .CharNormal{ 
   position: absolute;
   height: 15vw;
-  top: -6%;
+  /* top: -6%; */
   right: 5%;
-  margin: 6.5vh 4vw;
+  /* margin: 6.5vh 4vw; */
 }
 
+/* animation page */ 
 .CharHappy{
   position: absolute;
   height: 13vw;
   top: -5.5%;
   right: 5%;
-  margin: 6.5vh 4vw;
+  /* margin: 6.5vh 4vw; */
+  /* top: 8px; */
   
 }
-/* 
-@media screen and (max-width: 850px){
+
+/* Placement of the character on chosencardspage and animationspage */
+
+@media screen and (min-width: 1001px){
   .ChosenCardsPage .CharNormal{
-    top: -3%;
+    top: 7px;
+    right: 10%;
+  } 
+
+  .AnimationPage .CharHappy{
+    top: 10px;
+    right: 4%;
+  }
+
+  .CharThinking {
+    top: 39px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .ChosenCardsPage .CharNormal{
+    top: 23px;
+    right: 10%;
+  } 
+
+  .AnimationPage .CharHappy{
+    top: 36px;
+    right: 4%;
+  }
+
+  .CharThinking {
+    top: 47px;
+  }
+
+}
+
+
+@media screen and (max-width: 900px){
+  .ChosenCardsPage .CharNormal{
+    top: 32px;
   }
 
   .AnimationPage .CharHappy{
-    top: -3.5%;
-    right: 4%;
+    top: 44px;
   }
-} */
+
+  .CharThinking {
+    top: 50px;
+  }
+} 
+
+@media screen and (max-width: 800px){
+  .ChosenCardsPage .CharNormal{
+    top: 50px;
+  }
+
+  .AnimationPage .CharHappy{
+    top: 59px;
+  } 
+
+  .CharThinking {
+    top: 53px;
+  }
+
+}  
+
+/* Removes character when screen is to narrow */
+@media screen and (max-width: 710px){
+  .mainPage .CharNormal{
+    display: none;
+  }
+
+  .ChosenCardsPage .CharNormal{
+    display: none;
+  }
+
+  .AnimationPage .CharHappy{
+    display: none;
+  }
+
+  .CharThinking {
+    display: none;
+  }
+}
+
+
+/* Makes sure that the character is not visible on mobile, it was too messy */
+@media screen and (max-width: 850px) and (max-height: 400px) {
+  .mainPage .CharNormal{
+    display: none;
+  }
+
+  .ChosenCardsPage .CharNormal{
+    display: none;
+  }
+
+  .AnimationPage .CharHappy{
+    display: none;
+  } 
+
+}
 
 
 /*PRE DEFINDED DESIGN KAN SLETTES? */

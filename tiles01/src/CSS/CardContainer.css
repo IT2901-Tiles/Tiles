@@ -6,7 +6,7 @@
 .CardContainer{
     background-color:#FBF4D7;
     color: black;
-    margin: 1vh 3vw;
+    margin: 30px 3vw;
     height: 70vh;
     position:relative;
 }
@@ -19,11 +19,17 @@
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.1ex;
     position: absolute;
-    font-size: 5vh;
+    font-size: 3vw;
     left: -2%;
     bottom: 35%;
     padding: 1vh 1vw;
     z-index: 1;
 }
 
+/* Avoid the .CardContainer from overlapping other objects */
+@media screen and (max-width: 1000px){
+    .CardContainer {
+        margin-top: 35px;
+    }
+}
 

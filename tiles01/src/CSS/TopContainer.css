@@ -47,10 +47,24 @@
   padding: 0 10vw;
   }
 
-  /* @media screen and (max-width:850px){
-    .TopContainer .infoBox{
-      font-size: 2vw;
-      
-    }
+@media screen and (max-width: 800px){
+  .TopContainer .infoBox {
+    font-size: 1.75vw;
   }
-   */
+
+  .TopContainer .Logo {
+    font-size: 1.75vw;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .TopContainer .infoBox {
+    font-size: 2vw;
+  }
+
+  .TopContainer .Logo {
+    font-size: 2vw;
+  }
+}
+
+  

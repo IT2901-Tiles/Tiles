@@ -28,7 +28,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
-    margin-top: 2vh;
+    margin-top: 20px;
 }
 
 .chosenCardsGrid2 {
@@ -94,6 +94,7 @@
     #buttonChosenCardsPage {
         top: -65%;
     }
+
 }
 
 @media only screen and (max-width: 600px) {
