@@ -28,7 +28,7 @@ function FormFieldAnimationPage(props) {
     return (
         <div className="textAreaAnimationPage">
             <textarea id="textBoxAnimationPage" placeholder="Write your idea here..." onChange={newInput => setInput(newInput.target.value)} />
-            <button onClick={downloadFile} className="textButtonAnimationPage">Save</button>
+            <button onClick={downloadFile} className="textButtonAnimationPage">Download</button>
         </div>
     );
 }

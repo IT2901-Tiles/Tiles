@@ -13,8 +13,7 @@
 
 .gridAnimationItem1 {
     grid-area: 2 / 1 / span 1 / span 1;
-    /*margin: 10px;*/
-    margin: 2vw 2vw 0 2vw;
+    margin: 0 10px 10px 10px;
     display: grid;
     grid-template-columns: auto auto auto; /* remove one "auto" if we decide to go with 4 cards instad of 3 */
     height: 13vw;
@@ -69,40 +68,22 @@
 }
 
 #textBoxAnimationPage {
-   /* height: 6vh;
+    height: 6vh;
     position: relative;
     font-family: sans-serif;
     resize: none;
     width: 80%;
     margin: 3px -1px;
     border-radius: 5px;
-    background-image: url('../images/edit-pen.png'); // icon from: https://uxwing.com/edit-pen-icon/ (free to use and no attributions required) 
-    background-position: 10px 10px; // placement of the pen-icon in the textarea 
+    background-image: url('../images/edit-pen.png'); /* icon from: https://uxwing.com/edit-pen-icon/ (free to use and no attributions required) */ 
+    background-position: 10px 10px; /* placement of the pen-icon in the textarea */ 
     background-size: 10px;
     padding-left: 25px;
     padding-top: 7px;
     background-repeat: no-repeat;
     font-family: 'Comic Neue', sans-serif;
     margin-right: 10px;
-    margin-left: 10px;*/
-
-    height: 6vh;
-    position: relative;
-    font-family: sans-serif;
-    font-size: 1vw;
-    resize: none;
-    width: 30vw;
-    margin: 3%;
-    border-radius: 1.5vh;
-    background-image: url('../images/edit-pen.png'); /* icon from: https://uxwing.com/edit-pen-icon/ (free to use and no attributions required) */
-    background-position: 3% 15%; /* placement of the pen-icon in the textarea */
-    background-size: 1.4vh;
-    padding-left: 5%;
-    padding-top: 1%;
-    background-repeat: no-repeat;
-    font-family: 'Comic Neue', sans-serif;
-    margin-right: 1.4vw;
-    margin-left: 2.9vw;
+    margin-left: 10px;
 }
 
 .textAreaAnimationPage textarea { /* border color for textarea */
@@ -115,38 +96,33 @@
     box-shadow: 0 0 0 0.2rem rgba(180, 102, 0, 0.25);
 }
 
-/*.textButtonAnimationPage {
-    /*width: 50%;*/
-   /* width: 15vw;
-    height: 5.5vh;
+.textButtonAnimationPage {
+    width: 25%;
     color: #F3EAC2;
     margin-right: 2vw; 
-}*/
+}
 
 /* Styling for audio recording*/
 
  .AudioAreaAnimationPage {
-    /*margin-bottom: 20px;*/
-    margin-bottom: 3vw;
+    margin-bottom: 10px;
 }
 
 .AudioAreaAnimationPage .Audio audio{
-    width: 40vw;
-    margin: 0;
+    width: 80%;
 }
 
 .AudioAreaAnimationPage div Button, .textButtonAnimationPage{
-    /*width: 90px;
+    width: 90px;
     height: 40px;
-    margin:1px;
-    border-radius: 10px;*/
-    width: 12vw;
-    height: 8vh;
+    border-radius: 10px;
+    width: 10vw;
+    height: 6vh;
     margin: 1vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border-radius: 1.5vw;
     color: #F3EAC2;
-}
+} 
 
 svg{
     height: 100%;
@@ -158,8 +134,7 @@ svg{
 
 /* The Try Again button */
 #tryagainButton {
-    /*height: 10px;*/
-    height: 10vh;
+    height: 10px;
 }
 
 /* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx (.chosenCardsGrid) */
@@ -181,35 +156,20 @@ svg{
 
 
 @media only screen and (max-width: 800px) {
-   /* #textBoxAnimationPage {
+   #textBoxAnimationPage {
         width: 90%;
-    }*/
-
-    .textAreaAnimationPage{
-        display: none;
     }
-
+/* 
     .AudioAreaAnimationPage .Audio {
         transform: scale(0.7);
         margin: 0;
-    }
+    } */
 
     .gridAnimationItem1{
         margin: 0 2vw;
     }
-
-    .gridAnimationItem1 img{
-        height: 20vh;
-    }
-
-    .tryAgainButton{
-        margin-top: 0;
-    }
-
-
-
 }
-/*
+
 @media only screen and (max-width: 700px) {
     #textBoxAnimationPage {
         width: 88%;
@@ -257,4 +217,4 @@ svg{
     .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
         height: 11vw;
     }
-}*/
+}

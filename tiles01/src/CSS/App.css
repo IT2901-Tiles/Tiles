@@ -85,7 +85,7 @@ svg {
     margin: 6.5vh 4vw;
 }
 
-.ChosenCardsPage .CharNormal{
+.CharNormal{ 
   position: absolute;
   height: 15vw;
   top: -6%;
@@ -93,7 +93,7 @@ svg {
   margin: 6.5vh 4vw;
 }
 
-.AnimationPage .CharHappy{
+.CharHappy{
   position: absolute;
   height: 13vw;
   top: -5.5%;
@@ -101,7 +101,7 @@ svg {
   margin: 6.5vh 4vw;
   
 }
-
+/* 
 @media screen and (max-width: 850px){
   .ChosenCardsPage .CharNormal{
     top: -3%;
@@ -111,7 +111,7 @@ svg {
     top: -3.5%;
     right: 4%;
   }
-}
+} */
 
 
 /*PRE DEFINDED DESIGN KAN SLETTES? */
@@ -125,10 +125,4 @@ svg {
   height: 40vmin;
   pointer-events: none;
 
-}
-
-@media screen and (max-width:850px){
-  .img1, .img2{
-    display: none;
-  }
 }
