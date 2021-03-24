@@ -21,9 +21,9 @@
     position: relative;
 }
 
-/* STYLES FOR ChosenCardsPage.jsx */
+/** STYLES FOR ChosenCardsPage.jsx **/
 
-/** Styles for the grids and wrappers **/
+/* Styles for the grids and wrappers */
 .chosenCardsGrid {
     display: grid;
     grid-template-columns: auto auto auto auto;

@@ -26,7 +26,7 @@ function CategoryPage(props) {
   
     if (category === "thing"){
         categoryName = "things";
-        categoryInfoText += "select a thing to preform the action on"
+        categoryInfoText += "select a thing to perform the action on"
     }else if(category === "feedback"){
         categoryInfoText += "get some feedback after the trigger"
     }else{
