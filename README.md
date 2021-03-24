@@ -12,16 +12,17 @@
 4. Open http://localhost:8484/ in your preferred browser
 
 
-###Project title
+### Project title
 A little info about your project and/ or overview that explains what the project is about.
 
-###Motivation
+### Motivation
 A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
 
-Build status
+### Build status
 Build status of continus integration i.e. travis, appveyor etc. Ex. -
 
-Build Status Windows Build Status
+![image](https://user-images.githubusercontent.com/42800220/112276548-2ab35e00-8c81-11eb-958a-b3e1985c2a21.png)
+
 
 Code style
 If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
