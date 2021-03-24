@@ -1,4 +1,5 @@
 # Tiles
+A little info about your project and/ or overview that explains what the project is about.
 
 ### How to run the application
 
@@ -11,11 +12,6 @@
     2. Run <code>npm start</code>
 4. Open http://localhost:8484/ in your preferred browser
 
-
-TEEEESTTTT heiheihheieheheie
-
-Project title
-A little info about your project and/ or overview that explains what the project is about.
 
 Motivation
 A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
