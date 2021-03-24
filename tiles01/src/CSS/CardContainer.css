@@ -7,8 +7,10 @@
     background-color:#FBF4D7;
     color: black;
     margin: 30px 3vw;
-    height: 70vh;
-    position:relative;
+    height: 100%;
+    /* min-height: 600px; */
+    position: relative;
+    padding-bottom: 2vw;
 }
 
 .CardContainerTitle {
@@ -22,14 +24,6 @@
     font-size: 3vw;
     left: -2%;
     bottom: 35%;
-    padding: 1vh 1vw;
+    padding: 12px 12px;
     z-index: 1;
 }
-
-/* Avoid the .CardContainer from overlapping other objects */
-@media screen and (max-width: 1000px){
-    .CardContainer {
-        margin-top: 35px;
-    }
-}
-

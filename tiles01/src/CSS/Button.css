@@ -19,17 +19,15 @@
     filter: brightness(110%);
   }
 
-  .SmallButton, .textButtonAnimationPage {
+  .SmallButton {
     background-color: #F08A00;
     border: solid 0.6vh #00000035;
-    /*border-radius: 20px;*/
-    border-radius: 1vw;
+    border-radius: 20px;
     font-size: 2vw;
     width: 80%;
     width: 13vw;
-    /*max-width: 150px;*/
     height: 8vh;
-    /*max-height: 80px;*/
+    min-height: 40px;
     font-family: 'Comic Neue', sans-serif;
     text-shadow: 2px 2px rgb(0,0,0,0.1);
     box-shadow: 2px 3px 1.5px 2px rgb(0,0,0,0.25);
@@ -37,7 +35,15 @@
   }
 
   .textButtonAnimationPage {
+    background-color: #F08A00;
+    border: solid 0.6vh #00000035;
+    border-radius: 20px;
     font-size: 2vw;
+    font-family: 'Comic Neue', sans-serif;
+    text-shadow: 2px 2px rgb(0,0,0,0.1);
+    box-shadow: 2px 3px 1.5px 2px rgb(0,0,0,0.25);
+    position: relative;
+    min-height: 40px;
   }
 
   .SmallButton:hover, .textButtonAnimationPage:hover {

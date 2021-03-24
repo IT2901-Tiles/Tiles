@@ -5,7 +5,7 @@ function CharThinking() {
     return (
         <div className='CharThinking'>
 
-            <svg viewBox="0 0 165 150">
+            <svg viewBox="0 0 165 150" className="svgCharacter">
                 <Character/> 
                 <g className="LightBulb">
                     <g className="LightBulbAnimation">

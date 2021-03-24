@@ -7,7 +7,9 @@
 html, body {
   margin: 0; 
   height: 100%; 
-  overflow: hidden;
+  overflow: auto;
+  overflow-x: hidden; /* Avoiding horizontal scrollbars */
+  *overflow-x: hidden; /* IE-support */
 }
 
 html{
@@ -63,22 +65,23 @@ p{
 
 /* Character CSS*/ 
 
-svg {
+/* .svgCharacter {
   height: 100%;
-}
+  width: 100%;
+  position: absolute;
+} */
 
 .mainPage .CharNormal{
-    position: absolute;
-    left: 60vw;
-    top:50vh;
-    /*height: 56vh;*/
-    height: 37vw;
-    /*transform: scale(2.7);*/
+    position: relative;
+    left: 40vw;
+    top: -12vw;
+    z-index: -1;
+    height: 30vw;
 }
 
 /* on category page*/
 .CharThinking{
-    position: absolute;
+    position: relative;
     right: 5%;
     /* bottom: 90vh; */
     height: 13vw;
@@ -87,16 +90,15 @@ svg {
 
 
 .CharNormal{ 
-  position: absolute;
-  height: 15vw;
-  /* top: -6%; */
-  right: 5%;
-  /* margin: 6.5vh 4vw; */
+  position: relative;
+  height: 14vw;
+  top: -45vw;
+  left: 32%;
 }
 
 /* animation page */ 
 .CharHappy{
-  position: absolute;
+  position: relative;
   height: 13vw;
   top: -5.5%;
   right: 5%;
@@ -107,10 +109,10 @@ svg {
 
 /* Placement of the character on chosencardspage and animationspage */
 
-@media screen and (min-width: 1001px){
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
   .ChosenCardsPage .CharNormal{
-    top: 7px;
-    right: 10%;
+    top: -48vw;
+    left: 32%;
   } 
 
   .AnimationPage .CharHappy{
@@ -125,8 +127,8 @@ svg {
 
 @media screen and (max-width: 1000px){
   .ChosenCardsPage .CharNormal{
-    top: 23px;
-    right: 10%;
+    top: -49vw;
+    left: 32%;
   } 
 
   .AnimationPage .CharHappy{
@@ -143,7 +145,8 @@ svg {
 
 @media screen and (max-width: 900px){
   .ChosenCardsPage .CharNormal{
-    top: 32px;
+    top: -50vw;
+    left: 32%;
   }
 
   .AnimationPage .CharHappy{
@@ -157,7 +160,8 @@ svg {
 
 @media screen and (max-width: 800px){
   .ChosenCardsPage .CharNormal{
-    top: 50px;
+    top: -51vw;
+    left: 32%;
   }
 
   .AnimationPage .CharHappy{

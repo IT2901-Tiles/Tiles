@@ -1,7 +1,7 @@
 .card{
     width: 13vw;
     height: auto;
-    margin: 6vh 2vw;
+    margin: 4vw 2vw;
 }
 
 .card:hover {
@@ -28,15 +28,18 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
-    margin-top: 20px;
+
 }
 
 .chosenCardsGrid2 {
     grid-area: 1 / 2 / 1 / 4;
     display: grid;
     grid-template-columns: auto auto auto; /* remove one "auto" if we decide to go with 4 cards instad of 3 */
-    border-radius: 2vh; /* same border radius as other elements */
-    padding: 5vh 10vw;
+    border-radius: 15px;
+    padding-top: 3.5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 3.5vw;
     background-color: #FBF4D7;
 }
 
@@ -95,12 +98,27 @@
         top: -65%;
     }
 
+    .card {
+        width: 17vw;
+    }
+
+    .wrapperCardNotChosen {
+        height: 23.7vw; /* Must be 1.3vw smaller than chosenCardContainer smaller due to the border */
+    }
+    
+    .chosenCardContainer, #firstWrapperCardNotChosen {
+        height: 24vw;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     #buttonChosenCardsPage {
         top: -60%;
     }
+
+    /* .card {
+        width: 21vw;
+    } */
 }
 
 @media only screen and (max-width: 500px) {
