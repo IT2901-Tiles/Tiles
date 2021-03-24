@@ -1,7 +1,22 @@
 # Tiles
 
-### How to run the application
+### Name
+[A little info about your project and/ or overview that explains what the project is about.]
 
+### Motivation
+[A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.]
+
+### Features
+[What makes your project stand out?]
+
+### Badges
+[On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.]
+
+### Visuals
+[Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.]
+[bilde kommer]
+
+### How to run the application
 1. <code>git clone https://github.com/IT2901-Tiles/Tiles.git</code>
 2. Navigate to the tiles01/frotend folder.
     1. Run <code>npm install</code>
@@ -11,61 +26,22 @@
     2. Run <code>npm start</code>
 4. Open http://localhost:8484/ in your preferred browser
 
+### Usage
+[Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.]
+![image](https://user-images.githubusercontent.com/42800220/112293477-7a4e5580-8c92-11eb-93dc-c10c757f1d7b.png)
 
-### Project title
-A little info about your project and/ or overview that explains what the project is about.
+### Roadmap
+[If you have ideas for releases in the future, it is a good idea to list them in the README.]
 
-### Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
+### Contributing
+[Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Please make sure to update tests as appropriate.]
 
-### Build status
-Build status of continus integration i.e. travis, appveyor etc. Ex. -
-
-![image](https://user-images.githubusercontent.com/42800220/112276548-2ab35e00-8c81-11eb-958a-b3e1985c2a21.png)
-
-
-### Code style
-If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
-
-![image](https://user-images.githubusercontent.com/42800220/112276713-546c8500-8c81-11eb-902d-1d9ecf3d751f.png)
+### Authors and acknowledgment
+[Show your appreciation to those who have contributed to the project.]
 
 
-### Screenshots
-[bilder kommer]
+### License
+[[MIT](https://choosealicense.com/licenses/mit/)]
 
-### Tech/framework used
-Ex. -
 
-Built with
-
-Electron
-
-### Features
-What makes your project stand out?
-
-### Code Example
-Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
-### Installation
-Provide step by step series of examples and explanations about how to get a development env running.
-
-### API Reference
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-### Tests
-Describe and show how to run the tests with code examples.
-
-### How to use?
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
-
-### Contribute
-Let people know how they can contribute into your project. A contributing guideline will be a big plus.
-
-### Credits
-[Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project.]
-
-Anything else that seems useful
-License
-A short snippet describing the license (MIT, Apache etc)
-
-MIT © Yourname
