@@ -12,11 +12,10 @@ function ChosenCardsPage(props) {
     } catch (error) {
         console.log("no cards chosen")
     }
-    
-    var triggerChosen = ! ["null",null].includes(localStorage.getItem("trigger"))
-    var thingChosen = ! ["null",null].includes(localStorage.getItem("things"))
-    var feedbackChosen = ! ["null",null].includes(localStorage.getItem("feedback"))
-    console.log(thingChosen)
+
+    var triggerChosen = !["null", null].includes(localStorage.getItem("trigger"))
+    var thingChosen = !["null", null].includes(localStorage.getItem("things"))
+    var feedbackChosen = !["null", null].includes(localStorage.getItem("feedback"))
 
     let triggerNotChosenId = "textNoCardChosen1";
     let thingNotChosenId = "textNoCardChosen2";
@@ -28,7 +27,7 @@ function ChosenCardsPage(props) {
     let colorBorder; // color of border and font when no card is picked
     const [buttonActive, setButtonActive] = useState(triggerChosen && thingChosen && feedbackChosen);
     // This function checks which cards are checked off and sets a bool value
-   
+
 
     // If bool value is true, then this function is returned. This returns the image and uses the LinkToPage-component
     function trueValue(cardType) {
@@ -78,11 +77,6 @@ function ChosenCardsPage(props) {
 
         }
     }
- 
-
-    
-    
-    console.log(buttonActive)
     return (
         <div className="Page">
             <TopContainer
@@ -91,7 +85,7 @@ function ChosenCardsPage(props) {
 
             <div className="chosenCardsGrid">
                 <div className="chosenCardsGrid2">
-                
+
                     {/* If-else statements to check the bool-variables */}
                     {(triggerChosen) ? <div className="chosenCardContainer">{trueValue(triggerChosenId)}</div> : falseValue(triggerChosenId)}
                     {(thingChosen) ? <div className="chosenCardContainer">{trueValue(thingChosenId)}</div> : falseValue(thingChosenId)}
