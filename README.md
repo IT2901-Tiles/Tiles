@@ -1,5 +1,4 @@
 # Tiles
-A little info about your project and/ or overview that explains what the project is about.
 
 ### How to run the application
 
@@ -13,7 +12,10 @@ A little info about your project and/ or overview that explains what the project
 4. Open http://localhost:8484/ in your preferred browser
 
 
-Motivation
+###Project title
+A little info about your project and/ or overview that explains what the project is about.
+
+###Motivation
 A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
 
 Build status
