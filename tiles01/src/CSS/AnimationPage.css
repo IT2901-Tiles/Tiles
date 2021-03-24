@@ -25,9 +25,9 @@
     /*border-radius: 30px;*/
     border-radius: 15px;
     height: 70vh;
-    padding: 5px;
     /* padding: 5vh 0; */
     padding: 3px;
+    padding-bottom: 2%;
     position: relative;
     margin-right: 3%;
 }
@@ -140,11 +140,6 @@ svg {
     margin: 5px;
 } 
 
-/* The Try Again button */
-#tryagainButton {
-    height: 10px;
-}
-
 /* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx (.chosenCardsGrid) */
 @media only screen and (max-width: 1000px) {
     .gridAnimationsPage {
@@ -155,7 +150,7 @@ svg {
         margin-top: 20px;
     }
 
-    svg{
+    svg {
         height: 95%;
     }
 

@@ -45,7 +45,7 @@ p{
 }
 
 /** Images on the MainPage (cards), placement **/
-.mainPage .img1{
+.mainPage .img1 {
   position: absolute;
   z-index: -1;
   width: 25vw;
@@ -62,81 +62,68 @@ p{
 }
 
 /** Character CSS **/ 
+.svgCharacterNormal {
+  position: absolute;
+  bottom: 40%;
+  left: 0;
+}
 
 .mainPage .CharNormal{
-    position: relative;
-    left: 40vw;
-    top: -12vw;
-    z-index: -1;
-    height: 30vw;
+  position: relative;
+  height: 30vw;
 }
 
 /* On category page */
 .CharThinking{
-    position: relative;
-    right: 5%;
+    position: absolute;
+    top: 4%;
     height: 13vw;
+    left: 80%;
 }
 
 /* On ChosenCardsPage and MainPage */
 .CharNormal{ 
-  position: relative;
-  height: 14vw;
-  top: -590px;
-  left: 33.5%;
+  position: absolute;
+  height: 13vw;
+  top: 1%;
+  left: 75%;
 }
 
 /* On animation page */ 
 .CharHappy{
-  position: relative;
+  position: absolute;
   height: 13vw;
-  top: -45vw;
-  left: 35%;  
+  top: 1%;
+  left: 80%;  
 }
 
 /* Placement of the character on the different screen sizes */
 
 @media screen and (min-width: 1101px) {
   .ChosenCardsPage .CharNormal{
-    top: -590px;
+    top: 1.5%;
   } 
 
   .AnimationPage .CharHappy{
-    top: -530px;
+    top: 1.5%;
   }
 
   .CharThinking {
-    top: 39px;
+    top: 4.5%;
   }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1100px) {
-  .ChosenCardsPage .CharNormal{
-    top: -530px;
-  } 
-
-  .AnimationPage .CharHappy{
-    top: -520px;
-  }
-
-  .CharThinking {
-    top: 39px;
-  }
-}
-
-/* CONTINUED: Placement of the character */
 @media screen and (max-width: 999px) {
   .ChosenCardsPage .CharNormal {
-    top: -46.5vw;
-    left: 33%;
+    top: 3.5%;
   } 
 
   .AnimationPage .CharHappy {
-    top: -510px;
+    top: 3.5%;
   }
 
   .CharThinking {
-    top: 47px;
+    top: 5.3%;
   }
 
 }
@@ -144,51 +131,24 @@ p{
 
 @media screen and (max-width: 900px) {
   .ChosenCardsPage .CharNormal {
-    top: -47vw;
-    left: 33%;
+    top: 4%;
   }
 
   .AnimationPage .CharHappy {
-    top: -500px;
-  }
-
-  .CharThinking {
-    top: 50px;
+    top: 4%;
   }
 
 }
 
-@media screen and (max-width: 850px) {
-  .ChosenCardsPage .CharNormal {
-    top: -47.5vw;
-    left: 33%;
-  }
-
-  .AnimationPage .CharHappy {
-    top: -490px;
-  } 
-
-  .CharThinking {
-    top: 53px;
-  }
-
-}  
-
 @media screen and (max-width: 800px) {
   .ChosenCardsPage .CharNormal {
-    top: -48vw;
-    left: 33%;
+    top: 4.5%;
   }
 
   .AnimationPage .CharHappy {
-    top: -480px;
-  } 
-
-  .CharThinking {
-    top: 53px;
+    top: 4.5%;
   }
-
-}  
+} 
 
 /* Removes character when screen is to narrow, and enabling the scrolling functionality for screens that are narrow */
 @media screen and (max-width: 710px) {
@@ -216,7 +176,7 @@ p{
 }
 
 
-/* Makes sure that the character is not visible on mobile */
+/* Makes sure that the character is not visible on mobile (will still be visible on tablets) - too many elements*/
 @media screen and (max-width: 850px) and (max-height: 400px) {
   .mainPage .CharNormal {
     display: none;
