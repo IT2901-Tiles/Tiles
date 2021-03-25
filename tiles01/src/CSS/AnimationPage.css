@@ -56,10 +56,6 @@
             0px 7px 8px -4px rgba(0, 0, 0, 0.2);
 }
 
-.triggerAnimationsPage:hover, .thingAnimationsPage:hover, .feedbackAnimationsPage:hover {
-    opacity: 0.8;
-}
-
 /* Styling for saving text file, in FormFieldAnimation.jsx */
 
 .textAreaAnimationPage {
