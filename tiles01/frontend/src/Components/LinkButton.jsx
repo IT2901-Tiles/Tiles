@@ -30,9 +30,10 @@ function LinkButton(props) {
     } else if (category === "animation") {
         colour = "#84AD64"
     }
-    if( props.active === false){
-        colour="grey"
-        return <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary" onClick={()=>alert(props.buttonError)} >{title}</Button>
+    console.log(props.disabled)
+    if( props.disabled === true){
+        console.log("fuck")
+        return <Button style={{ backgroundColor: colour, color: fontColour }} disabled={true} className={size} variant="primary"  >{title}</Button>
     }
     
 

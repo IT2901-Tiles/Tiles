@@ -44,7 +44,7 @@ function CategoryPage(props) {
                 <div className="CardContainerTitle" style={styling}> {categoryName}</div>
 
                 <CardContainer category={props.location.state.category} onSelect={onCardClick} />
-                <LinkButton target="/cards" title="Choose" size="Small" category={props.location.state.category} onClick={localStorage.setItem(category, card)} card={card} active={cardSelected} buttonError={"Please select a card"} ></LinkButton>
+                <LinkButton target="/cards" title="Choose" size="Small" category={props.location.state.category} onClick={localStorage.setItem(category, card)} card={card} disabled={!cardSelected}  ></LinkButton>
 
             </div>
 
