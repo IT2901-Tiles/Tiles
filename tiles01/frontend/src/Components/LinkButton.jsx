@@ -32,7 +32,6 @@ function LinkButton(props) {
     }
     console.log(props.disabled)
     if( props.disabled === true){
-        console.log("fuck")
         return <Button style={{ backgroundColor: colour, color: fontColour }} disabled={true} className={size} variant="primary"  >{title}</Button>
     }
     
