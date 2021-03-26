@@ -17,8 +17,10 @@ function AnimationPage() {
                 <TopContainer
                     text='Wow! Look at the amazing creation you have created! If you would like to try again you can click the "Try again!" button!'
                 />
+                <div id="charHappyWrapper">
+                    <CharHappy />
+                </div>
                 <AnimationsPreview />
-                <CharHappy />
 
             </div>
         </div>

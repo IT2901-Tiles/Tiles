@@ -100,6 +100,9 @@ function ChosenCardsPage(props) {
         <TopContainer
             text = "Press the Choose button to select a card from this category!"
         />
+        <div className="charNormalWrapper">
+            <CharNormal/>
+        </div>
 
             <div className="chosenCardsGrid">
                 <div className="chosenCardsGrid2">
@@ -115,7 +118,6 @@ function ChosenCardsPage(props) {
 
             <br />
             <LinkButton target="/animation" title="RUN!" category="animation" size="Large"></LinkButton>
-            <CharNormal/>
         </div>
     );
 }

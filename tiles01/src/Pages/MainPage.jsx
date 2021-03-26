@@ -10,7 +10,7 @@ import img2 from "./../images/img2.png"
 function MainPage() {
 
     return (
-        <div className="Page mainPage">
+        <div className="Page mainPage" id="mainPage">
             <Logo/>
             <img className="img2" src={img2} alt="stack of cards2"/>
             <div className="infoBox">
@@ -19,7 +19,9 @@ function MainPage() {
             </div>
             <LinkButton title="Let's begin!" target="/cards" size="Large"></LinkButton>
             <img class="mainPage img1" src={img1} alt="stack of cards"/>
-            <CharNormal/>
+            <div className="charNormalWrapper">
+                <CharNormal />
+            </div>
         </div>
     );
 }

@@ -28,7 +28,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 0.45vw;
 }
 
 .chosenCardsGrid2 {
@@ -91,8 +91,9 @@
     top: -85px;
 }
 
-/** Responsive design for buttons **/
+/** Responsive design for buttons and cards **/
 
+/* Enlargens cards on Category page and ChosenCardspage*/
 @media only screen and (max-width: 700px) {
     #buttonChosenCardsPage {
         top: -65%;
@@ -115,10 +116,6 @@
     #buttonChosenCardsPage {
         top: -60%;
     }
-
-    /* .card {
-        width: 21vw;
-    } */
 }
 
 @media only screen and (max-width: 500px) {

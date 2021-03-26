@@ -7,7 +7,9 @@
 html, body {
   margin: 0; 
   height: 100%; 
-  overflow: hidden;
+  overflow: auto;
+  overflow-x: hidden; /* Avoiding horizontal scrollbars */
+  *overflow-x: hidden; /* IE-support */
 }
 
 html{
@@ -70,130 +72,94 @@ p{
 */
 
 /* MainPage */ 
-.mainPage .CharNormal{
-  position: relative;
-  height: 30vw;
+.charNormalWrapper {
+  height: 0;
+  width: 0;
 } 
 
+.charNormal {
+  position: relative;
+  top: -45vw;
+  height: 19vw;
+}  
+
 /* On category page */
+#charThinkingWrapper {
+  height: 0;
+  height: 0;
+}
+
 .CharThinking{
-    position: relative;
-    top: -4%;
-    height: 13vw;
-    left: 80%;
-    z-index: 2;
+  position: relative;
+  height: 13vw;
+  top: -7vw;
+  left: 38vw;
 }
 
 /* On ChosenCardsPage */
 .CharNormal{ 
   position: relative;
   height: 13vw;
-  top: -46.5vw;
-  left: 33vw;
-  margin-top: 20px;
-  /*left: 75%;
-  z-index: 2; */
+  left: 75vw;
+  top: -10vw;
 }
 
-/* On animation page */ 
+/* On animation page */
+#charHappyWrapper {
+  height: 0;
+  width: 0;
+}
+
 .CharHappy{
   position: relative;
   height: 13vw;
-  top: -70vw;
-  left: 33vw;
+  top: -10vw;
+  left: 80vw;
 }
 
 /* Placement of the character on the different screen sizes */
 
-@media screen and (min-width: 1101px) and (max-width: 1200px) {
-  /* .ChosenCardsPage .CharNormal{
-    position: relative;
-    height: 13vw;
-    top: -44.5vw;
-    left: 33vw;
-  }  */
-
-  /* .AnimationPage .CharHappy{
-    top: 1.5%;
-  } */
-
-  .CharThinking {
-    top: 4.5%;
-  }
-}
-
-@media screen and (max-width: 999px) {
-  /* .ChosenCardsPage .CharNormal {
-    position: relative;
-    height: 13vw;
-    top: -44.5vw;
-    left: 33vw;
-  }  */
-
-  /* .AnimationPage .CharHappy {
-    top: 3.5%;
-  } */
-
-  .CharThinking {
-    top: 5.3%;
+@media screen and (max-width: 1000px) {
+  .CharNormal{ 
+    padding-top: 0.7vw;
   }
 
-}
-
-@media screen and (max-width: 950px) {
-  /* .ChosenCardsPage .CharNormal {
-    position: relative;
-    height: 13vw;
-    top: -44.5vw;
-    left: 33vw;
-  } */
-/* 
   .AnimationPage .CharHappy {
-    top: 4%;
-  } */
+    padding-top: 1.5vw;
+  }
 
+  .CharThinking {
+    padding-top: 0.5vw;
+  }
 }
-
 
 @media screen and (max-width: 900px) {
-  /* .ChosenCardsPage .CharNormal {
-    position: relative;
-    height: 13vw;
-    top: -44.5vw;
-    left: 33vw;
-  } */
+  .CharNormal{ 
+    padding-top: 0.9vw;
+  }
 
-  /* .AnimationPage .CharHappy {
-    top: 4%;
-  } */
+  .AnimationPage .CharHappy {
+    padding-top: 1.7vw;
+  }
 
+  .CharThinking {
+    padding-top: 1vw;
+  }
 }
 
-@media screen and (max-width: 850px) {
-  /* .ChosenCardsPage .CharNormal {
-    position: relative;
-    height: 13vw;
-    top: -44.5vw;
-    left: 33vw;
-  } */
-
-  /* .AnimationPage .CharHappy {
-    top: 4.5%;
-  } */
-} 
-
 @media screen and (max-width: 800px) {
-  /* .ChosenCardsPage .CharNormal {
-    position: relative;
-    height: 13vw;
-    top: -44.5vw;
-    left: 33vw;
-  } */
+  .CharNormal{ 
+    padding-top: 1.5vw;
+  }
 
-  /* .AnimationPage .CharHappy {
-    top: 4.5%;
-  } */
-} 
+  .AnimationPage .CharHappy {
+    padding-top: 2.3vw;
+  }
+
+  .CharThinking {
+    padding-top: 1.5vw;
+  }
+}
 
 /* Removes character when screen is to narrow, and enabling the scrolling functionality for screens that are narrow or short */
 @media screen and (max-width: 710px) {
@@ -213,20 +179,18 @@ p{
     display: none;
   }
 
-  body {
+  /* body {
     overflow: auto;
-    overflow-x: hidden; /* Avoiding horizontal scrollbars */
-    *overflow-x: hidden; /* IE-support */
-  }
+    overflow-x: hidden; /* Avoiding horizontal scrollbars 
+  } */
 }
 
-@media screen and (max-height: 710px) {
+/* @media screen and (max-height: 710px) {
   body {
     overflow: auto;
-    overflow-x: hidden; /* Avoiding horizontal scrollbars */
-    *overflow-x: hidden; /* IE-support */
+    overflow-x: hidden; /* Avoiding horizontal scrollbars 
   }
-}
+} */
 
 
 /* Makes sure that the character is not visible on most mobile devices (will still be visible on tablets) - too many elements*/

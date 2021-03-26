@@ -136,15 +136,11 @@ svg {
     margin: 5px;
 } 
 
-/* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx (.chosenCardsGrid) */
+/* Styling below prevents animationpage from going into TopContainer, also including elements from ChosenCardsPage.jsx (.chosenCardsGrid) */
 @media only screen and (max-width: 1000px) {
     .gridAnimationsPage {
-        margin-top: 20px;
+        margin-top: 1vw;
     }
-
-    /* .chosenCardsGrid {
-        margin-top: 20px;
-    }  */
 
     svg {
         height: 95%;
@@ -184,6 +180,6 @@ svg {
 
 @media screen and (max-width: 400px) {
     .gridAnimationsPage {
-        margin-top: 25px;
+        margin-top: 2.5vw;
     }
 }
