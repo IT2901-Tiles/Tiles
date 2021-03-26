@@ -45,10 +45,8 @@ Please make sure to update tests as appropriate.
 Thanks to our product owner Giulia Cosentino, our supervisor Marius Sjøberg, NTNU for giving us this project and the group members Millie Burhol Austad, Gunvor Huso, Emilie Kalleberg, Stuart Gallina Ottersen, Karen Villmones, Anne Mosvold Ørke and Malin Holte.
 
 ### License
-[[MIT](https://choosealicense.com/licenses/mit/)]
+The source code for the site is licensed under the [MIT license](https://choosealicense.com/licenses/mit/)]
 
-MIT License
-
-Copyright (c) [year] [fullname]
+Copyright (c) [2021] [Stuart Gallina with others]
 
 
