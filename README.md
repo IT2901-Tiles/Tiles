@@ -1,16 +1,15 @@
 # Tiles
 
 ### Tiles
-[A little info about your project and/ or overview that explains what the project is about.]
-Our project is a digital interface to be used in innovation workshops for children (age 8-12) based on a card deck called \emph{Tiles}. The Tiles card deck consists of 110 unique cards, which are sectioned into different categories. Following, the categories are "Things", "Sensors", "Feedback", "Human Actions", "Personas", "Missions", "Scenarios" and "Services". The overall idea is to enable innovative thinking processes by using combinations of these cards in a workshop-like manner. These innovative ideas can be for example Internet of Things (IoT) items, that can be produced later. The different combinations of the cards are going to give the users an interactive metaphor, which in our case will be animations. 
+Our project is a digital interface to be used in innovation workshops for children (age 8-12) based on a card deck called Tiles. The Tiles card deck consists of 110 unique cards, which are sectioned into different categories. The overall idea is to enable innovative thinking processes by using combinations of these cards in a workshop-like manner. These innovative ideas can be for example Internet of Things (IoT) items, that can be produced later. The different combinations of the cards are going to give the users an interactive metaphor, which in our case will be animations. The users can be able to save their ideas as both text or audio.
 
-A physical interface for this idea already exists, however, our project task is mainly about digitising this interface. In addition to digitising the already existing physical interface, the group will ensure that the target group is satisfied and able to use the interface in a convenient and effective way. The target group here is children in primary and secondary school, and we will discuss the different considerations and alterations that were made throughout the development process to accommodate for this. 
 
-### Motivation
-[A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.]
+### Background and Motivation 
+A physical interface for this idea already exists (http://inven.tools/), but this is a more complex application, since this is targeted at youths. Our project task is mainly about digitising this interface. In addition to digitising the already existing physical interface, the group will ensure that the children are satisfied and able to use the interface in a convenient and effective way. Together with our costumer we thought that smaller children have a lot of great and innovative ideas that might be useful in the future of Internet of Things. With this in mind, it was fun to develop this application.
 
 ### Features
 [What makes your project stand out?]
+ 
 
 ### Badges
 [On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.]
