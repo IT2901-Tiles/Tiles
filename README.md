@@ -37,14 +37,18 @@ Our project has been limited in the number of cards we chose to include, because
 * Make it possible for children to work together to come up with better ideas.
 
 ### Contributing
-[Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-Please make sure to update tests as appropriate.]
+Pull requests are welcome for someone that has ideas. For major changes, please open an issue first to discuss what you would like to change.
+Please make sure to update tests as appropriate.
 
 ### Authors and acknowledgment
 [Show your appreciation to those who have contributed to the project.]
-
+Thanks to our product owner Giulia Cosentino, our supervisor Marius Sjøberg, NTNU for giving us this project and the group members Millie Burhol Austad, Gunvor Huso, Emilie Kalleberg, Stuart Gallina Ottersen, Karen Villmones, Anne Mosvold Ørke and Malin Holte.
 
 ### License
 [[MIT](https://choosealicense.com/licenses/mit/)]
+
+MIT License
+
+Copyright (c) [year] [fullname]
 
 
