@@ -27,11 +27,14 @@ The user will be start on a front page with the possibility to start picking out
 4. Open http://localhost:8484/ in your preferred browser
 
 ### Usage
-[Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.]
-![image](https://user-images.githubusercontent.com/42800220/112293477-7a4e5580-8c92-11eb-93dc-c10c757f1d7b.png)
+As a child you pick out the cards "temperature", "umbrella", "color change" for example. The animation shows this combination. As a child you think this is an amazing and innovative idea, because the umbrella will change colour and show that the temperature drops. He or she will then write this idea as a text file and save it in the database, or download it to his/her local computer.
+![image](https://user-images.githubusercontent.com/42800220/112612078-ccbc7d00-8e1e-11eb-8a65-ecbc16612f4c.png)
 
 ### Roadmap
-[If you have ideas for releases in the future, it is a good idea to list them in the README.]
+Our project has been limited in the number of cards we chose to include, because developing all the animations from scratch takes a lot of time. There are also other ideas for releases in the future, some of them are listed below.
+* Add more cards, so there can be more animations. This can spark the childrens creativity even more.
+* Let the children be able to log in with their own user. Then it will not breach GDPR to let them record and save the audio in the database, and not just download it.
+* Make it possible for children to work together to come up with better ideas.
 
 ### Contributing
 [Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
