@@ -5,18 +5,18 @@ Our project is a digital interface to be used in innovation workshops for childr
 
 
 ### Background and Motivation 
-A physical interface for this idea already exists (http://inven.tools/), but this is a more complex application, since this is targeted at youths. Our project task is mainly about digitising this interface. In addition to digitising the already existing physical interface, the group will ensure that the children are satisfied and able to use the interface in a convenient and effective way. Together with our costumer we thought that smaller children have a lot of great and innovative ideas that might be useful in the future of Internet of Things. With this in mind, it was fun to develop this application.
+A physical interface for this idea already exists (http://inven.tools/), but this is a more complex application, since this is targeted at youths. Our project task is mainly about digitising this interface. In addition to digitising the already existing physical interface, the group will ensure that the children are satisfied and able to use the interface in a convenient and effective way. Together with our costumer we thought that smaller children have a lot of great and innovative ideas that might be useful in the future of Internet of Things. With this in mind, it was fun to develop the application.
 
 ### Features
-[What makes your project stand out?]
+Unique for this project is the way the application is organised. The children only have to pick out three cards and then an animation is automatically generated based on the combination of these cards. With this in mind, they can experiment with different cards. They are also able to record their idea as audio for themselves. We think that this can help them come up with innovative ideas and to think outside the box.
  
 
 ### Badges
-[On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.]
+[sette inn bilder av testene??]
 
 ### Visuals
 [Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.]
-[bilde kommer]
+The user will be directed to a front page with the possibility to start picking out cards. When they have chosen three cards they can "make" the animation. The picture below shows how this pages looks. This is where the children can save their idea as text in the database or record an audio file and download it to their computer.
 ![image](https://user-images.githubusercontent.com/42800220/112601270-89f4a800-8e12-11eb-9f4f-509a407c10f0.png)
 
 
