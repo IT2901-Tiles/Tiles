@@ -1,8 +1,10 @@
 # Tiles
 
-[Anne tar de 5 under her]
-### Name
+### Tiles
 [A little info about your project and/ or overview that explains what the project is about.]
+Our project is a digital interface to be used in innovation workshops for children (age 8-12) based on a card deck called \emph{Tiles}. The Tiles card deck consists of 110 unique cards, which are sectioned into different categories. Following, the categories are "Things", "Sensors", "Feedback", "Human Actions", "Personas", "Missions", "Scenarios" and "Services". The overall idea is to enable innovative thinking processes by using combinations of these cards in a workshop-like manner. These innovative ideas can be for example Internet of Things (IoT) items, that can be produced later. The different combinations of the cards are going to give the users an interactive metaphor, which in our case will be animations. 
+
+A physical interface for this idea already exists, however, our project task is mainly about digitising this interface. In addition to digitising the already existing physical interface, the group will ensure that the target group is satisfied and able to use the interface in a convenient and effective way. The target group here is children in primary and secondary school, and we will discuss the different considerations and alterations that were made throughout the development process to accommodate for this. 
 
 ### Motivation
 [A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.]
@@ -16,6 +18,8 @@
 ### Visuals
 [Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.]
 [bilde kommer]
+![image](https://user-images.githubusercontent.com/42800220/112601270-89f4a800-8e12-11eb-9f4f-509a407c10f0.png)
+
 
 ### How to run the application
 1. <code>git clone https://github.com/IT2901-Tiles/Tiles.git</code>
