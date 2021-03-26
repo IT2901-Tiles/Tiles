@@ -3,7 +3,7 @@
     font-family: 'Comic Neue', cursive;
     font-family: 'Roboto', sans-serif;
     */
-/* Selector css */
+/** Selector css */
 html, body {
   margin: 0; 
   height: 100%; 
@@ -64,23 +64,17 @@ p{
 }
 
 /** Character CSS **/ 
-/* .svgCharacterNormal {
-  position: absolute;
-  bottom: 40%;
-  left: 0;
-}
-*/
-
 /* MainPage */ 
-.charNormalWrapper {
+#charNormalMainWrapper {
   height: 0;
   width: 0;
 } 
 
-.charNormal {
+.svgCharacterNormalMainPage {
   position: relative;
-  top: -45vw;
-  height: 19vw;
+  width: 33vw;
+  top: -14vw;
+  left: 65vw;
 }  
 
 /* On category page */
@@ -97,6 +91,11 @@ p{
 }
 
 /* On ChosenCardsPage */
+#charNormalWrapper {
+  height: 0;
+  width: 0;
+} 
+
 .CharNormal{ 
   position: relative;
   height: 13vw;
@@ -179,19 +178,10 @@ p{
     display: none;
   }
 
-  /* body {
-    overflow: auto;
-    overflow-x: hidden; /* Avoiding horizontal scrollbars 
-  } */
-}
-
-/* @media screen and (max-height: 710px) {
-  body {
-    overflow: auto;
-    overflow-x: hidden; /* Avoiding horizontal scrollbars 
+  .svgCharacterNormalMainPage {
+    display: none;
   }
-} */
-
+}
 
 /* Makes sure that the character is not visible on most mobile devices (will still be visible on tablets) - too many elements*/
 @media screen and (max-width: 850px) and (max-height: 400px) {
@@ -205,7 +195,11 @@ p{
 
   .AnimationPage .CharHappy {
     display: none;
-  } 
+  }
+
+  .svgCharacterNormalMainPage {
+    display: none;
+  }
 
 }
 

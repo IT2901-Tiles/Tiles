@@ -2,7 +2,7 @@ import React from 'react';
 //Component imports
 import Logo from "../Components/Logo";
 import LinkButton from '../Components/LinkButton';
-import CharNormal from "../Components/CharNormal";
+import CharNormalMainPage from "../Components/CharNormalMainPage";
 //img imports
 import img1 from "./../images/img1.png"
 import img2 from "./../images/img2.png"
@@ -10,7 +10,7 @@ import img2 from "./../images/img2.png"
 function MainPage() {
 
     return (
-        <div className="Page mainPage" id="mainPage">
+        <div className="Page mainPage">
             <Logo/>
             <img className="img2" src={img2} alt="stack of cards2"/>
             <div className="infoBox">
@@ -19,8 +19,8 @@ function MainPage() {
             </div>
             <LinkButton title="Let's begin!" target="/cards" size="Large"></LinkButton>
             <img class="mainPage img1" src={img1} alt="stack of cards"/>
-            <div className="charNormalWrapper">
-                <CharNormal />
+            <div id="charNormalMainWrapper">
+                <CharNormalMainPage />
             </div>
         </div>
     );
