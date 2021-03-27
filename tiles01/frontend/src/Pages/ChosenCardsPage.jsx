@@ -25,7 +25,7 @@ function ChosenCardsPage(props) {
     let feedbackChosenId = "feedback";
     let errorOccured = false; // value turns true if error occured 
     let colorBorder; // color of border and font when no card is picked
-    const [buttonActive, setButtonActive] = useState(triggerChosen && thingChosen && feedbackChosen);
+    const buttonActive = triggerChosen && thingChosen && feedbackChosen
     // This function checks which cards are checked off and sets a bool value
 
 
@@ -77,6 +77,7 @@ function ChosenCardsPage(props) {
 
         }
     }
+
     return (
         <div className="Page">
             <TopContainer
@@ -96,7 +97,7 @@ function ChosenCardsPage(props) {
 
 
             <br />
-            <LinkButton target="/animation" title="RUN!" category="animation" size="Large" active={buttonActive} buttonError={"Please select one card in each category"}   ></LinkButton>
+            <LinkButton target="/animation" title="RUN!" category="animation" size="Large" disabled={!buttonActive}    ></LinkButton>
         </div>
     );
 }

@@ -69,13 +69,14 @@
 
 /*Styling of disabled buttons*/
 Button:disabled{
-  opacity: 0.85;
+  color: rgb(101, 109, 109) !important;
+  filter:  grayscale(70%);
 }
 
 Button:disabled:hover{
-
+  color: rgb(101, 109, 109) !important;
   box-shadow:  2px 3px 1.5px 2px rgb(0,0,0,0.25);
-  filter: brightness(100%);
+  filter: grayscale(70%) brightness(100%);
 }
 
 /* following code ensures that "Choose!" buttons on the ChosenCardsPage.jsx does not go outside the box */

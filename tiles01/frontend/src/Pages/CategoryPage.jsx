@@ -33,7 +33,11 @@ function CategoryPage(props) {
                 <div className="CardContainerTitle" style={styling}> {category[0].toUpperCase() + category.substring(1)}</div>
 
                 <CardContainer category={category} onSelect={onCardClick} />
-                <LinkButton target="/cards" title="Choose" size="Small" category={category} onClick={localStorage.setItem(category, card)} card={card} active={cardSelected} buttonError={"Please select a card"} ></LinkButton>
+                <LinkButton target="/cards" title="Choose" size="Small" category={category} onClick={localStorage.setItem(category, card)} card={card} disabled={!cardSelected}  ></LinkButton>
+
+                
+                
+
 
             </div>
         </div>
