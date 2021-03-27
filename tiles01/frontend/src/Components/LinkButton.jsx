@@ -17,7 +17,7 @@ function LinkButton(props) {
     var [path] = useState(props.target)
     const [category] = useState(props.category)
     const [size] = useState(props.size + "Button")
-    const [active,setActive] = useState(props.active);
+    const [active, setActive] = useState(props.active);
     let colour = "#F08A00";
     let fontColour = "#F3EAC2";
 
@@ -30,22 +30,22 @@ function LinkButton(props) {
     } else if (category === "animation") {
         colour = "#84AD64"
     }
-    console.log(props.disabled)
-    if( props.disabled === true){
-        return <Button style={{ backgroundColor: colour, color: fontColour }} disabled={true} className={size} variant="primary"  >{title}</Button>
+    if (props.active === false) {
+        colour = "grey"
+        return <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary" onClick={() => alert(props.buttonError)} >{title}</Button>
     }
-    
 
-    
-    
-    
+
+
+
+
     return (
         <Link
-        to={{
-            pathname: path,
-            state: { category: category, color: colour, card: props.card }
-            // state: { category: category, color:colour }
-        }} >
+            to={{
+                pathname: path,
+                state: { category: category, color: colour, card: props.card }
+                // state: { category: category, color:colour }
+            }} >
             <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary" onClick={props.onClick} >{title}</Button>
         </Link>
     );
