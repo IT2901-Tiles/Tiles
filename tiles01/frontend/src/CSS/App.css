@@ -1,62 +1,63 @@
-/* MAIN DESIGN */ 
+/* MAIN DESIGN */
 /* OUR FONTS: 
     font-family: 'Comic Neue', cursive;
     font-family: 'Roboto', sans-serif;
     */
 /*Selector css*/
-html, body {
-  margin: 0; 
-  height: 100%; 
+html,
+body {
+  margin: 0;
+  height: 100%;
   overflow: hidden;
 }
 
-html{
-  background-color: #68C2C4;
+html {
+  background-color: #68c2c4;
 }
-h1{
-  color: #F3EAC2;
-  font-family: 'Roboto', sans-serif;
+h1 {
+  color: #f3eac2;
+  font-family: "Roboto", sans-serif;
 }
 
-p{
-  font-family: 'Comic Neue', cursive;
+p {
+  font-family: "Comic Neue", cursive;
 }
 
 /*
 .Button {
   /*MÅ FIKSES NÅR COMPONENT STYLINGEN ER OPPE OG GÅR*/
-  /*background-color: #F08A00;
+/*background-color: #F08A00;
   border: solid 5px #C67200;  
   border-radius: 20px;
   /* width: 25%; */
-  /*margin: 10% auto;
+/*margin: 10% auto;
   font-size: 1.5rem;
   padding: auto 5%;
   width: 15%;
   
 }*/
 
-/* MAIN PAGE */ 
-.mainPage .Logo{
+/* MAIN PAGE */
+.mainPage .Logo {
   padding: 1px 2em;
   width: 35%;
   margin: 5% auto 3%;
   font-size: 2.5rem;
 }
 
-.mainPage .infoBox{
+.mainPage .infoBox {
   background-color: rgba(108, 143, 143, 0.589);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Comic Neue", cursive;
   font-size: 1.5rem;
-  color: #F3EAC2;
+  color: #f3eac2;
   padding: 1%;
   border-radius: 20px;
-  width: 70%;  
+  width: 70%;
   margin: 3% auto;
   text-shadow: 2px 2px #252525ab;
 }
 
-/*** IMG ON MAIN PAGE ***/ 
+/*** IMG ON MAIN PAGE ***/
 .mainPage .motionCard {
   width: 20%;
   transform: rotate(15deg);
@@ -66,7 +67,7 @@ p{
   top: 50%;
 }
 
-.mainPage .colorChangeCard{
+.mainPage .colorChangeCard {
   width: 20%;
   transform: rotate(25deg);
   position: absolute;
@@ -75,7 +76,7 @@ p{
   top: 62%;
 }
 
-.mainPage .bikeCard{
+.mainPage .bikeCard {
   width: 20%;
   transform: rotate(35deg);
   position: absolute;
@@ -83,8 +84,8 @@ p{
   right: 75%;
   top: 74%;
 }
-/* **TOP** */ 
-.mainPage .dropCardTop{
+/* **TOP** */
+.mainPage .dropCardTop {
   width: 20%;
   transform: rotate(25deg);
   position: absolute;
@@ -93,7 +94,7 @@ p{
   bottom: 70%;
 }
 
-.mainPage .colorChangeCardTop{
+.mainPage .colorChangeCardTop {
   width: 20%;
   transform: rotate(30deg);
   position: absolute;
@@ -102,7 +103,7 @@ p{
   bottom: 70%;
 }
 
-.mainPage .motionCardTop{
+.mainPage .motionCardTop {
   width: 20%;
   transform: rotate(35deg);
   position: absolute;
@@ -111,12 +112,11 @@ p{
   bottom: 80%;
 }
 
-
 /*PRE DEFINDED DESIGN KAN SLETTES? */
 
 .App {
   text-align: center;
-  font-family: 'Comic Neue', sans-serif;
+  font-family: "Comic Neue", sans-serif;
 }
 
 .App-logo {

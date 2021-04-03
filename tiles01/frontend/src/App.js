@@ -1,6 +1,6 @@
 //CSS import
 import './CSS/App.css';
-import React from 'react';
+import React, {useState} from 'react';
 import {
   //MemoryRouter as Router,
   BrowserRouter as Router,
@@ -14,8 +14,31 @@ import CategoryPage from './Pages/CategoryPage';
 import AnimationPage from './Pages/AnimationPage';
 import NotFoundPage from './Pages/NotFoundPage';
 
-function App() {
+function App() {  
+
+  const [chosenCards, setChosenCards] = useState({
+    trigger: null, 
+    things: null, 
+    feedback: null
+  })
+  const updateCard = (category, newCard) => {
+    if (category === "trigger"){
+        setChosenCards({...chosenCards, trigger: newCard})
+    }else if (category === "things"){
+      setChosenCards({...chosenCards, things: newCard})
+    }else if (category === "feedback"){
+      setChosenCards({...chosenCards, feedback: newCard})
+    }
+  }
+
+  const context = {
+    ...chosenCards,
+    updateCard
+  }
+
+  
   return (
+    <CardsContext.Provider value={context}>
     <div className="App">
       <Router >
         <Switch>
@@ -28,7 +51,17 @@ function App() {
         </Switch>
       </Router>
     </div >
+    </CardsContext.Provider>
   );
 }
 
 export default App;
+
+export const CardsContext = React.createContext(
+  {
+    trigger: null,
+    things: null,
+    feedback: null,
+    updateCard: (category, newCard)=>{}
+  }
+)

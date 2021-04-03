@@ -12,12 +12,6 @@ var cardPaths = {
     "trigger": require.context("./../images/triggers", false, /\.(png|jpe?g|svg)$/),
     "feedback": require.context("./../images/feedbacks", false, /\.(png|jpe?g|svg)$/)
 }
-//props:
-//category: the category of the cardcontainer, used to find the cards
-//onSelect: function to pass selected card to CategoryPage,
-//variables:
-//image: the image file
-//index: the index of the image file in listOfImages
 
 function CardContainer(props) {
     const listOfImages = importAll(cardPaths[props.category]);

@@ -3,9 +3,6 @@ import AnimationsPreview from "../Components/AnimationsPreview"
 import "../CSS/AnimationPage.css"
 import TopContainer from '../Components/TopContainer'
 
-
-
-
 function AnimationPage() {
     return (
 
