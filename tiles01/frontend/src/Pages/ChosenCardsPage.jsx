@@ -9,7 +9,6 @@ import {CardsContext} from '../App.js'
 
 function ChosenCardsPage(props) {
     const cardsContext = useContext(CardsContext)
-
     const triggerChosen = !["null", null].includes(cardsContext.trigger)
     const thingChosen = !["null", null].includes(cardsContext.things)
     const feedbackChosen = !["null", null].includes(cardsContext.feedback)
@@ -21,7 +20,6 @@ function ChosenCardsPage(props) {
     let colorBorder; // color of border and font when no card is picked
     const buttonActive = triggerChosen && thingChosen && feedbackChosen
     // This function checks which cards are checked off and sets a bool value
-
 
     // If bool value is true, then this function is returned. This returns the image and uses the LinkToPage-component
     function trueValue(category) {
@@ -73,14 +71,12 @@ function ChosenCardsPage(props) {
     }
 
     return (
-        
         <div className="Page">
             <TopContainer
                 text="Some text"
             />
             <div className="chosenCardsGrid">
                 <div className="chosenCardsGrid2">
-
                     {/* If-else statements to check the bool-variables */}
                     {(triggerChosen) ? <div className="chosenCardContainer">{trueValue(trigger)}</div> : falseValue(trigger)}
                     {(thingChosen) ? <div className="chosenCardContainer">{trueValue(things)}</div> : falseValue(things)}

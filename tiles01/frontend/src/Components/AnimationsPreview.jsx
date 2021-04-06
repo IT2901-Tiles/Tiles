@@ -15,7 +15,7 @@ function AnimationsPreview() {
     const cardsContext = useContext(CardsContext)
 
     //Redirect if cards are not chosen
-    if (cardsContext.trigger === "null" || cardsContext.things === "null" || cardsContext.feedback === "null") {
+    if (cardsContext.trigger === null || cardsContext.things === null || cardsContext.feedback === null) {
         return < Redirect to="/404" />
     }
     //dictionary used to find the correct animation
@@ -43,28 +43,12 @@ function AnimationsPreview() {
 
     //resets cards when try again is clicked
     function resetCards() {
-        console.log("HER")
-        cardsContext.updateCard("trigger", "");
-        console.log("context")
-        console.log(cardsContext.trigger)
-        console.log(cardsContext.things)
-        console.log(cardsContext.feedback)
-        cardsContext.updateCard("things", "");
-        console.log("context")
-        console.log(cardsContext.trigger)
-        console.log(cardsContext.things)
-        console.log(cardsContext.feedback)
-        cardsContext.updateCard("feedback", "");
-        console.log("context")
-        console.log(cardsContext.trigger)
-        console.log(cardsContext.things)
-        console.log(cardsContext.feedback)
+        cardsContext.resetCard()
     }
-
 
     return (
         <div className="gridAnimationsPage">
-            <div className="gridAnimationItem1">
+            <div className="gridAnimationCards">
                 <div className="card1AnimationsPage">
                     <img src={cardsContext.trigger} className="triggerAnimationsPage" alt="A 'trigger' card" />
                 </div>
@@ -76,12 +60,12 @@ function AnimationsPreview() {
                 </div>
             </div>
             {/* The div below is where the animations will appear */}
-            <div className="gridAnimationItem2">
+            <div className="gridAnimationAnimation">
                 {animation}
                 {/* Suggestion for text-area field */}
             </div>
             {/* "Try again!"-button */}
-            <div className="gridAnimationItem3">
+            <div className="gridAnimationSaving">
                 <FormFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* The textarea */}
                 <AudioFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* Audio recording */}
                 <LinkButton title="Try again!" target="/cards" size="Large" category="animation" onClick={resetCards} ></LinkButton> {/* "Try Again!" button */}

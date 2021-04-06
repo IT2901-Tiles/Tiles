@@ -30,10 +30,15 @@ function App() {
       setChosenCards({...chosenCards, feedback: newCard})
     }
   }
+  const resetCard = () => {
+    console.log("reset cards")
+    setChosenCards({trigger: null, things: null, feedback: null})
+  }
 
   const context = {
     ...chosenCards,
-    updateCard
+    updateCard,
+    resetCard
   }
 
   
@@ -62,6 +67,7 @@ export const CardsContext = React.createContext(
     trigger: null,
     things: null,
     feedback: null,
-    updateCard: (category, newCard)=>{}
+    updateCard: (category, newCard)=>{},
+    resetCard: ()=>{}
   }
 )

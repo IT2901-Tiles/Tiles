@@ -17,18 +17,16 @@ function CategoryPage(props) {
     const [card, setCard] = useState(cardsContext.category);
     var styling = { color: "#68C2C4" };
     { props.location.state ? (styling.color = props.location.state.color) : styling.color = "#F08A00" }
-    var cardSelected = !["null", null].includes(card)
+    var cardSelected = !(card == null)
 
     //Function triggered when a card is selected
     function onCardClick(newValue) {
         setCard(newValue.src)
-
     }
     return (
         <CardsContext.Consumer>
         {({trigger, things, feedback, updateCard}) =>
         <div className="Page">
-
             <TopContainer
                 text="some text that will be shown in the instruction box"
             />

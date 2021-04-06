@@ -12,7 +12,6 @@ function AnimationPage() {
                     text="some text that will be shown in the instruction box"
                 />
                 <AnimationsPreview />
-
             </div>
         </div>
     );
