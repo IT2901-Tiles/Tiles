@@ -7,39 +7,47 @@
     grid-template-columns: auto auto auto auto;
     width: 100%;
     position: relative;
-    padding-top: 1vh;
-    transition: linear all 0.1ms;
+    /* padding-top: 1vh; */
+    transition: ease-out 0.1ms;
 }
 
 .gridAnimationItem1 {
     grid-area: 2 / 1 / span 1 / span 1;
-    margin: 10px;
+    margin: 0 5px 5px 5px;
     display: grid;
     grid-template-columns: auto auto auto; /* remove one "auto" if we decide to go with 4 cards instad of 3 */
+    height: 13vw;
 }
 
 .gridAnimationItem2 {
-    grid-area: 2 / 2 / span 10 / span 10;
+    grid-area: 2 / 2 / span 3 / span 3;
     background-color: #FBF4D7;
-    border-radius: 30px;
-    height: 75vh;
-    padding: 5px;
+    /*border-radius: 30px;*/
+    border-radius: 15px;
+    height: 70vh;
+    /* padding: 5vh 0; */
+    padding: 3px;
+    padding-bottom: 2%;
     position: relative;
     margin-right: 3%;
 }
 
 .gridAnimationItem3 {
-    grid-area: 3 / 1 / span 3 / span 1;
+    grid-area: 3 / 1 / span 6 / span 1;
+    /* margin-right: 1.5vw; */
+    margin-top: 1vw;
 }
 
 /* Styling of the cards */
 .card1AnimationsPage, .card2AnimationsPage, .card3AnimationsPage {
     margin-top: 3vw;
-    margin: 3px;
+    /*margin: 3px;*/
+    margin: 0;
 }
 
 .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
-    height: 16vw;
+    height: 14vw;
+    min-height: 70px;
 }
 
 .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
@@ -52,144 +60,126 @@
 
 .textAreaAnimationPage {
     position: relative;
-    bottom: 0px;
-    margin: 3%;
+    bottom: 0;
+    margin-left: 6%;
+    margin-right: 5%;
     display: flex;
     align-items: center;
 }
 
 #textBoxAnimationPage {
     height: 6vh;
+    min-height: 30px;
     position: relative;
     font-family: sans-serif;
     resize: none;
-    width: 80%;
+    width: 70%;
     margin: 3px -1px;
     border-radius: 5px;
-    background-image: url('../images/edit-pen.png'); /* icon from: https://uxwing.com/edit-pen-icon/ (free to use and no attributions required) */
-    background-position: 10px 10px; /* placement of the pen-icon in the textarea */
+    background-image: url('../images/edit-pen.png'); /* icon from: https://uxwing.com/edit-pen-icon/ (free to use and no attributions required) */ 
+    background-position: 10px 10px; /* placement of the pen-icon in the textarea */ 
     background-size: 10px;
     padding-left: 25px;
     padding-top: 7px;
     background-repeat: no-repeat;
     font-family: 'Comic Neue', sans-serif;
-    margin-right: 10px;
-    margin-left: 10px;
+    /* margin-right: 10px;
+    margin-left: 10px; */
 }
 
 .textAreaAnimationPage textarea { /* border color for textarea */
-    border: 1px solid #F08A00;
+
+    border: 0.5vh solid  #F08A00;
 }
 
 .textAreaAnimationPage #textBoxAnimationPage:focus { /* shadow for border when user is actively using textarea */
-    border: 1px solid #F08A00;
+    border: 1% solid #F08A00;
     box-shadow: 0 0 0 0.2rem rgba(180, 102, 0, 0.25);
 }
 
 .textButtonAnimationPage {
-    width: 50%;
+    width: 25%;
+    color: #F3EAC2;
+    margin-right: 2vw; 
 }
 
 /* Styling for audio recording*/
 
  .AudioAreaAnimationPage {
-    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
 }
 
 .AudioAreaAnimationPage .Audio audio{
-    width: 90%;
+    width: 99%;
 }
 
-.AudioAreaAnimationPage div Button{
+.AudioAreaAnimationPage div Button, .textButtonAnimationPage{
     width: 90px;
     height: 40px;
-    margin:1px;
     border-radius: 10px;
+    width: 10vw;
+    height: 6vh;
+    margin: 1vw;
+    font-size: 1.5vw;
+    border-radius: 1.5vw;
+    color: #F3EAC2;
+} 
+
+svg {
+    height: 100%;
+}
+
+.gridAnimationItem2 div{
+    height: 100%;
+    margin: 5px;
+} 
+
+/* Styling below prevents animationpage from going into TopContainer, also including elements from ChosenCardsPage.jsx (.chosenCardsGrid) */
+@media only screen and (max-width: 1000px) {
+    .gridAnimationsPage {
+        margin-top: 1vw;
+    }
+
+    svg {
+        height: 95%;
+    }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+    svg {
+        height: 90%;
+    }
+
 }
 
 
-/* Styling below prevents animationpage from going into topcomponent, also including elements from ChosenCardsPage.jsx */
-
 @media only screen and (max-width: 800px) {
-    .gridAnimationsPage, .chosenCardsGrid {
-        margin-top: 5vh;
+    svg {
+        height: 85%;
     }
-
-    #textBoxAnimationPage {
-        width: 90%;
-    }
-
-    .AudioAreaAnimationPage .Audio {
-        width: 90%;
-    }
-
-    .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
-        height: 15vw;
-    }
-
+ 
 }
 
 @media only screen and (max-width: 700px) {
-    .gridAnimationsPage, .chosenCardsGrid {
-        margin-top: 6vh;
+    svg {
+        height: 80%;
     }
 
-    #textBoxAnimationPage {
-        width: 88%;
-    }
-
-    .AudioAreaAnimationPage .Audio {
-        width: 88%;
-    }
-
-    .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
-        height: 14vw;
-    }
 }
 
 @media only screen and (max-width: 600px) {
-    .gridAnimationsPage, .chosenCardsGrid {
-        margin-top: 7vh;
-    }
-
-    #textBoxAnimationPage {
-        width: 86%;
-    }
-
-    .AudioAreaAnimationPage .Audio {
-        width: 86%;
-    }
-
-    .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
-        height: 13vw;
+    svg {
+        height: 75%;
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .gridAnimationsPage, .chosenCardsGrid {
-        margin-top: 8vh;
-    }
 
-
-    #textBoxAnimationPage {
-        width: 84%;
-    }
-
-    .AudioAreaAnimationPage .Audio {
-        width: 84%;
-    }
-
-    .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
-        height: 12vw;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .gridAnimationsPage, .chosenCardsGrid {
-        margin-top: 9vh;
-    }
-
-    .triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
-        height: 11vw;
+@media screen and (max-width: 400px) {
+    .gridAnimationsPage {
+        margin-top: 2.5vw;
     }
 }

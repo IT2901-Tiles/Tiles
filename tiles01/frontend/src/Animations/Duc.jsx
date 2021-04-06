@@ -6,8 +6,8 @@ import PersonUmbrella from './PersonUmbrella';
 
 function Duc() {
     return (
-        <div className="Duc">
-            <svg height="400" width="300">
+        <div>
+            <svg viewBox="0 0 300 400">
                 <Outdoors />
                 <Cloud />
                 <g transform="translate(-20, -20)">
