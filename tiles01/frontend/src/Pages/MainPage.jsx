@@ -4,8 +4,8 @@ import Logo from "../Components/Logo";
 import LinkButton from '../Components/LinkButton';
 import CharNormalMainPage from "../Components/CharNormalMainPage";
 //img imports
-import img1 from "./../images/img1.png"
-import img2 from "./../images/img2.png"
+import img1 from "../images/img1.png"
+import img2 from "../images/img2.png"
 
 function MainPage() {
 

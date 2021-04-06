@@ -7,6 +7,7 @@ import { useState } from 'react';
 import TopContainer from '../Components/TopContainer';
 import LinkButton from '../Components/LinkButton';
 import CardContainer from "../Components/CardContainer";
+import CharThinking from "../Components/CharThinking";
 //Css imports
 import "../CSS/CardContainer.css";
 
@@ -15,6 +16,17 @@ function CategoryPage(props) {
     { props.location.state ? (category = props.location.state.category) : category = "trigger" }
     const [card, setCard] = useState(localStorage.getItem(category));
     var styling = { color: "#68C2C4" };
+
+    let categoryInfoText = "Choose 1 card from this pile to ";
+  
+    if (category === "things"){
+        categoryInfoText += "select a thing to perform the action on"
+    } else if (category === "feedback"){
+        categoryInfoText += "get some feedback after the trigger"
+    } else {
+        categoryInfoText += "trigger some action"
+    }
+
     { props.location.state ? (styling.color = props.location.state.color) : styling.color = "#F08A00" }
     var cardSelected = !["null", null].includes(card)
 
