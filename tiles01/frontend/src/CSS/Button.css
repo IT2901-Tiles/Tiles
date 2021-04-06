@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+.LargeButton {
+    background-color: #F08A00;
+    border: solid 5px #00000035;
+    border-radius: 20px;
+    font-size: 2.5vw;
+    width: 20vw;
+    min-width: 180px;
+    height: 13vh;
+    min-height: 70px;
+    font-family: 'Comic Neue', sans-serif;
+    text-shadow: 2px 2px rgb(0,0,0,0.1);
+    box-shadow: 4px 6px 3px 4px rgb(0,0,0,0.25);
+  }
+
+  .LargeButton:hover{
+    box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 19px 52px 0 rgba(0,0,0,0.19);
+    filter: brightness(110%);
+  }
+
+  .SmallButton {
+    background-color: #F08A00;
+    border: solid 0.6vh #00000035;
+    border-radius: 20px;
+    font-size: 2vw;
+    width: 80%;
+    width: 13vw;
+    height: 8vh;
+    min-height: 40px;
+    font-family: 'Comic Neue', sans-serif;
+    text-shadow: 2px 2px rgb(0,0,0,0.1);
+    box-shadow: 2px 3px 1.5px 2px rgb(0,0,0,0.25);
+    position: relative;
+  }
+
+  .textButtonAnimationPage {
+    background-color: #F08A00;
+    border: solid 0.6vh #00000035;
+    border-radius: 20px;
+    font-size: 2vw;
+    font-family: 'Comic Neue', sans-serif;
+    text-shadow: 2px 2px rgb(0,0,0,0.1);
+    box-shadow: 2px 3px 1.5px 2px rgb(0,0,0,0.25);
+    position: relative;
+    min-height: 40px;
+  }
+
+  .SmallButton:hover, .textButtonAnimationPage:hover {
+    box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 19px 52px 0 rgba(0,0,0,0.19);
+    filter: brightness(110%);
+  }
+
+/** an extra class for the buttons on the 404 page to make the Large buttons wider**/
+  .wider {
+    width: 25rem;
+    font-size: 2rem;
+  }
+
+/** Styling for the buttons (for choosing cards) on the chosen cards page, these have no brightness but are the same as the small button essentially**/
+.chosenCardsButton {
+  background-color: #F08A00;
+  border: solid 4px #00000035;
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 150px;
+  height: 8vh;
+  max-height: 80px;
+  font-family: 'Comic Neue', sans-serif;
+  text-shadow: 2px 2px rgb(0,0,0,0.1);
+  box-shadow: 2px 3px 1.5px 2px rgb(0,0,0,0.25);
+}
+.inactive{
+  pointer-events: none;
+}
+.chosenCardsButton:hover {
+  box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 19px 52px 0 rgba(0,0,0,0.19);
+  opacity: 0.8;
+}
+
+/*Styling of disabled buttons*/
+Button:disabled{
+  color: rgb(101, 109, 109) !important;
+  filter:  grayscale(70%);
+}
+
+Button:disabled:hover{
+  color: rgb(101, 109, 109) !important;
+  box-shadow:  2px 3px 1.5px 2px rgb(0,0,0,0.25);
+  filter: grayscale(70%) brightness(100%);
+}
+
+/** styling try again button (used in AnimationsPreview.jsx) **/
+.tryagainButton { /* same as LargeButton, but some modifications in size etc */
+  background-color: #F08A00;
+  border: solid 5px #00000035;
+  border-radius: 20px;
+  font-size: 2.5vw;
+  width: 20vw;
+  min-width: 180px;
+  height: 9vh;
+  min-height: 60px;
+  font-family: 'Comic Neue', sans-serif;
+  text-shadow: 2px 2px rgb(0,0,0,0.1);
+  box-shadow: 4px 6px 3px 4px rgb(0,0,0,0.25);
+}
+
+.tryagainButton:hover {
+  box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 19px 52px 0 rgba(0,0,0,0.19);
+  opacity: 0.9;
+}
+
+/* following code ensures that "Choose!" buttons on the ChosenCardsPage.jsx does not go outside the box */
+@media only screen and (max-width: 800px) {
+  .chosenCardsButton {
+      height: 7.5vh;
+      font-size: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .chosenCardsButton {
+      height: 40px
+  }
+}
+
+
+@media only screen and (max-height: 500px) {
+  .chosenCardsButton {
+      height: 40px
+  }
+
+  .textButtonAnimationPage {
+    font-size: 1.25vw;
+  }
+}
+
+/** Following code provides responsiveness to the "general" (overall) buttons **/
+@media only screen and (max-width: 1200px) { 
+  .LargeButton {
+    height: 12vh;
+  }
+} 
+
+@media only screen and (max-width: 1000px) { 
+  .LargeButton {
+    height: 11vh;
+    font-size: 3vw;
+  }
+} 
+
+@media only screen and (max-width: 800px) { 
+  .LargeButton {
+    height: 9vh;
+    font-size: 3.5vw;
+  }
+} 
+
+@media only screen and (max-width: 800px) { 
+  .LargeButton {
+    height: 10vh;
+    font-size: 3.5vw;
+  }
+}
+
+@media only screen and (max-height: 600px) { 
+  .LargeButton {
+    height: 50px;
+  }
+} 
