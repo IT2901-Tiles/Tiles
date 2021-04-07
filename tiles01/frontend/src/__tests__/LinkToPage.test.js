@@ -1,0 +1,22 @@
+import {configure, shallow} from "enzyme"
+import Adapter from 'enzyme-adapter-react-16';
+import {cleanup} from '@testing-library/react';
+import LinkToPage from '../Components/LinkToPage';
+
+afterEach(() => {
+    cleanup();
+});
+
+configure({
+    adapter: new Adapter()
+});
+
+describe('LinkToPage', () => {
+    const wrapper = shallow(<LinkToPage/>)
+    it('contains a link element', () => {
+        expect(wrapper.find('Link')).toHaveLength(1);
+    });
+    it('contains an img element', () => {
+        expect(wrapper.find('img')).toHaveLength(1);
+    });
+});
