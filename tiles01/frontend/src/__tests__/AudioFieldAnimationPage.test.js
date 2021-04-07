@@ -12,8 +12,9 @@ configure({
 });
 
 describe('AudioFieldAnimationPage component', () => {
-    it('disables the button', () => {
-        const wrapper = shallow(<AudioFieldAnimationPage/>)  
+    const wrapper = shallow(<AudioFieldAnimationPage/>)
+    it('renders three buttons', () => {
+        expect(wrapper.find('Button')).toHaveLength(3);
     });
 });
 
