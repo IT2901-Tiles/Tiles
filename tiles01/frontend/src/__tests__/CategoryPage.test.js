@@ -11,6 +11,14 @@ configure({
     adapter: new Adapter()
 });
 
+// describe('Category page', () => {
+//     const wrapper = shallow(<CategoryPage/>);
+//     it('renders a card', () => {
+//         wrapper.find('CardContainer').simulate('select');
+//         expect(wrapper.find('CardContainer')).toHaveLength(1);
+//     });
+// });
+
 // describe('Animation page', () => {
 //     it('renders correctly', () => {
 //         shallow(<CategoryPage/>);
