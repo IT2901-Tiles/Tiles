@@ -11,8 +11,12 @@ configure({
     adapter: new Adapter()
 });
 
-describe('Animation page', () => {
+describe('ChosenCards Page', () => {
+    const wrapper = shallow(<ChosenCardsPage/>)
     it('renders correctly', () => {
         shallow(<ChosenCardsPage/>);
-    })
+    });
+    it('renders two LinkButton elements', () => {
+        expect(wrapper.find('LinkButton')).toHaveLength(2);
+    });
 });
