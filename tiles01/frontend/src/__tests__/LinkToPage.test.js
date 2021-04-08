@@ -20,3 +20,4 @@ describe('LinkToPage', () => {
         expect(wrapper.find('img')).toHaveLength(1);
     });
 });
+

@@ -12,7 +12,11 @@ configure({
 });
 
 describe('Animation page', () => {
-    it('renders correctly', () => {
-        shallow(<AnimationPage/>);
-    })
+    const wrapper = shallow(<AnimationPage/>);
+    it('renders a TopContainer', () => {
+        expect(wrapper.find('TopContainer')).toHaveLength(1);
+    });
+    it('renders an AnimationsPreview', () => {
+        expect(wrapper.find('AnimationsPreview')).toHaveLength(1);
+    });
 });

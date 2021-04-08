@@ -2,6 +2,8 @@ import {configure, shallow} from "enzyme"
 import Adapter from 'enzyme-adapter-react-16';
 import MainPage from '../Pages/MainPage';
 import {cleanup} from '@testing-library/react';
+import renderer from 'react-test-renderer';
+import {BrowserRouter as Router} from "react-router-dom";
 
 afterEach(() => {
     cleanup();
@@ -14,7 +16,8 @@ configure({
 describe('Animation page', () => {
     const wrapper = shallow(<MainPage/>)
     it('renders correctly', () => {
-        shallow(<MainPage/>);
+        const tree = renderer.create(<Router><MainPage/></Router>).toJSON();
+        expect(tree).toMatchSnapshot();
     });
     it('renders a LinkButton', () => {
         expect(wrapper.find('LinkButton')).toHaveLength(1);

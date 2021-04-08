@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Animation page renders correctly 1`] = `
+<div
+  className="Page mainPage"
+>
+  <div>
+    <img
+      alt="The motion card"
+      className="motionCardTop"
+      src="motion.png"
+    />
+    <img
+      alt="ColorChangeCard"
+      className="colorChangeCardTop"
+      src="color_change.png"
+    />
+    <img
+      alt="Drop card"
+      className="dropCardTop"
+      src="drop.png"
+    />
+  </div>
+  <div
+    className="Logo"
+    style={
+      Object {
+        "backgroundColor": "#E53D2FEE",
+        "border": "0.25px solid #72140C",
+        "borderRadius": "30px",
+        "boxShadow": "1px 1px 3px #000000AA",
+        "color": "#F3EAC2",
+        "fontFamily": "Roboto",
+        "textShadow": "2px 2px #252525ab",
+      }
+    }
+  >
+    <h1
+      style={
+        Object {
+          "margin": "15px 0",
+          "padding": "0",
+          "position": "center",
+        }
+      }
+    >
+      TILES
+    </h1>
+  </div>
+  <div
+    className="infoBox"
+  >
+    <p>
+      Welcome to the Tiles Internet of Things Invention! 
+      <br />
+      Let’s create some smart creations! 
+    </p>
+  </div>
+  <a
+    href="/cards"
+    onClick={[Function]}
+  >
+    <button
+      className="LargeButton btn btn-primary"
+      disabled={false}
+      style={
+        Object {
+          "backgroundColor": "#F08A00",
+          "color": "#F3EAC2",
+        }
+      }
+      type="button"
+    >
+      Let's begin!
+    </button>
+  </a>
+  <div>
+    <img
+      alt="The motion card"
+      className="motionCard"
+      src="motion.png"
+    />
+    <img
+      alt="ColorChangeCard"
+      className="colorChangeCard"
+      src="color_change.png"
+    />
+    <img
+      alt="Bike card"
+      className="bikeCard"
+      src="bike.png"
+    />
+  </div>
+</div>
+`;
