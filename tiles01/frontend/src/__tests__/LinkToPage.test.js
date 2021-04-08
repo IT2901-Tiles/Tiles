@@ -2,6 +2,8 @@ import {configure, shallow} from "enzyme"
 import Adapter from 'enzyme-adapter-react-16';
 import {cleanup} from '@testing-library/react';
 import LinkToPage from '../Components/LinkToPage';
+import renderer from 'react-test-renderer';
+import {BrowserRouter as Router} from "react-router-dom";
 
 afterEach(() => {
     cleanup();
@@ -13,6 +15,10 @@ configure({
 
 describe('LinkToPage', () => {
     const wrapper = shallow(<LinkToPage/>)
+    it('renders correctly', () => {
+        const tree = renderer.create(<Router><LinkToPage/></Router>).toJSON();
+        expect(tree).toMatchSnapshot();
+    });
     it('contains a link element', () => {
         expect(wrapper.find('Link')).toHaveLength(1);
     });

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkButton renders correctly 1`] = `
+<a
+  href="/"
+  onClick={[Function]}
+>
+  <button
+    className="undefinedButton btn btn-primary"
+    disabled={false}
+    style={
+      Object {
+        "backgroundColor": "#F08A00",
+        "color": "#F3EAC2",
+      }
+    }
+    type="button"
+  />
+</a>
+`;

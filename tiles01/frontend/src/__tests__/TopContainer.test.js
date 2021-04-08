@@ -2,6 +2,7 @@ import {configure, shallow} from "enzyme"
 import Adapter from 'enzyme-adapter-react-16';
 import {cleanup} from '@testing-library/react';
 import TopContainer from '../Components/TopContainer';
+import renderer from 'react-test-renderer';
 
 afterEach(() => {
     cleanup();
@@ -13,6 +14,10 @@ configure({
 
 describe('TopContainer with no props', () => {
     const wrapper = shallow(<TopContainer/>)
+    it('renders correctly', () => {
+        const tree = renderer.create(<TopContainer/>).toJSON();
+        expect(tree).toMatchSnapshot();
+    });
     it('contains a Logo element', () => {
         expect(wrapper.find('Logo')).toHaveLength(1);
     });

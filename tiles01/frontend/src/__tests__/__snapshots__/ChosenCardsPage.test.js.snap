@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChosenCards Page renders correctly 1`] = `
+<div
+  className="Page"
+>
+  <div
+    className="TopContainer"
+  >
+    <div
+      className="Logo"
+      style={
+        Object {
+          "backgroundColor": "#E53D2FEE",
+          "border": "0.25px solid #72140C",
+          "borderRadius": "30px",
+          "boxShadow": "1px 1px 3px #000000AA",
+          "color": "#F3EAC2",
+          "fontFamily": "Roboto",
+          "textShadow": "2px 2px #252525ab",
+        }
+      }
+    >
+      <h1
+        style={
+          Object {
+            "margin": "15px 0",
+            "padding": "0",
+            "position": "center",
+          }
+        }
+      >
+        TILES
+      </h1>
+    </div>
+    <div
+      className="infoBox"
+    >
+      <p>
+        Some text
+      </p>
+    </div>
+  </div>
+  <div
+    className="chosenCardsGrid"
+  >
+    <div
+      className="chosenCardsGrid2"
+    >
+      <div
+        id="firstWrapperCardNotChosen"
+      >
+        <div
+          className="wrapperCardNotChosen"
+        >
+          <img
+            alt="test"
+            className="noImgChosen"
+            src="blankImg.png"
+            style={
+              Object {
+                "border": "#F08A00",
+                "borderStyle": "solid",
+                "borderWidth": "0.65vw",
+              }
+            }
+          />
+          <div
+            id="textNoCardChosen1"
+            style={
+              Object {
+                "color": "#F08A00",
+              }
+            }
+          >
+            Trigger
+          </div>
+          <br />
+        </div>
+        <div
+          id="buttonChosenCardsPage"
+        >
+          <a
+            href="/categories"
+            onClick={[Function]}
+          >
+            <button
+              className="chosenCardsButton btn btn-primary"
+              disabled={false}
+              style={
+                Object {
+                  "backgroundColor": "#F08A00",
+                  "color": "#F3EAC2",
+                }
+              }
+              type="button"
+            >
+              Choose!
+            </button>
+          </a>
+          
+          
+        </div>
+      </div>
+      <div
+        id="firstWrapperCardNotChosen"
+      >
+        <div
+          className="wrapperCardNotChosen"
+        >
+          <img
+            alt="test"
+            className="noImgChosen"
+            src="blankImg.png"
+            style={
+              Object {
+                "border": "#E53D2F",
+                "borderStyle": "solid",
+                "borderWidth": "0.65vw",
+              }
+            }
+          />
+          <div
+            id="textNoCardChosen2"
+            style={
+              Object {
+                "color": "#E53D2F",
+              }
+            }
+          >
+            Things
+          </div>
+          <br />
+        </div>
+        <div
+          id="buttonChosenCardsPage"
+        >
+          
+          
+          
+        </div>
+      </div>
+      <div
+        id="firstWrapperCardNotChosen"
+      >
+        <div
+          className="wrapperCardNotChosen"
+        >
+          <img
+            alt="test"
+            className="noImgChosen"
+            src="blankImg.png"
+            style={
+              Object {
+                "border": "#FFCD00",
+                "borderStyle": "solid",
+                "borderWidth": "0.65vw",
+              }
+            }
+          />
+          <div
+            id="textNoCardChosen3"
+            style={
+              Object {
+                "color": "#FFCD00",
+              }
+            }
+          >
+            Feedback
+          </div>
+          <br />
+        </div>
+        <div
+          id="buttonChosenCardsPage"
+        >
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <button
+    className="LargeButton btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "color": "#F3EAC2",
+      }
+    }
+    type="button"
+  >
+    RUN!
+  </button>
+</div>
+`;
