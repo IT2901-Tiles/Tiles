@@ -12,7 +12,7 @@ Unique for this project is the way the application is organised. The children on
 ### Badges
 [sette inn bilder av testene?? Bruke denne linken som hjelp: https://www.makeareadme.com/#suggestions-for-a-good-readme]
 
-### Visuals and usage
+### Visuals and Usage
 The user will start on a front page with the possibility to start picking out cards. The user must choose three cards, one from each category, before it is possible to push the "Run!" button. As a child you pick out the cards "temperature", "umbrella" and "color change" for example. The animation will then display this combination of cards. In this example animation the umbrella will change colour when the temperature drops. The children might find this idea really innovative and quite fun. The user can then write this idea as a text file or record an audio file and download it to their local computer.
 The gif below shows this process.
 
@@ -38,7 +38,7 @@ Our project has been limited in the number of cards we chose to include, because
 Pull requests are welcome for everyone that has ideas. For major changes, please open an issue first to discuss what you would like to change.
 Please make sure to update tests as appropriate.
 
-### Authors and acknowledgment
+### Authors and Acknowledgment
 Thanks to our product owner Giulia Cosentino, our supervisor Marius Sjøberg, NTNU for giving us this project and the group members Millie Burhol Austad, Gunvor Huso, Emilie Kalleberg, Stuart Gallina Ottersen, Karen Villmones, Anne Mosvold Ørke and Malin Holte.
 
 ### License
