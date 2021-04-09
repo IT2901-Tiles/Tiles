@@ -166,3 +166,23 @@ Button:disabled{
     height: 50px;
   }
 } 
+
+/* Styling for the Mute button on AudioOnAnimations.jsx */
+#muteButton {
+  background-color: #F08A00;
+  border: solid 0.6vh #00000035;
+  border-radius: 20px;
+  font-size: 1vw;
+  width: 10vw;
+  height: 5vh;
+  min-height: 40px;
+  font-family: 'Comic Neue', sans-serif;
+  text-shadow: 2px 2px rgb(0,0,0,0.1);
+  box-shadow: 2px 3px 1.5px 2px rgb(0,0,0,0.25);
+  position: relative;
+}
+
+#muteButton:hover {
+  box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 19px 52px 0 rgba(0,0,0,0.19);
+  filter: brightness(110%);
+}
