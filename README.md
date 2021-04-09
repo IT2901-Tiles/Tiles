@@ -17,6 +17,13 @@ The user will start on a front page with the possibility to start picking out ca
 The picture below shows how this pages looks. 
 ![image](https://user-images.githubusercontent.com/42800220/112612078-ccbc7d00-8e1e-11eb-8a65-ecbc16612f4c.png)
 
+
+
+https://user-images.githubusercontent.com/42800220/114178074-7df20580-993d-11eb-8aff-8db7906e8d1f.mov
+
+
+
+
 ### How to run the application
 1. <code>git clone https://github.com/IT2901-Tiles/Tiles.git</code>
 2. Navigate to the tiles01/frotend folder.
