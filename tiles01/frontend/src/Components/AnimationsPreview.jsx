@@ -9,13 +9,13 @@ import {
 // Component for the preview of the animations + the selected cards. 
 // This component uses the grid-property in html and css
 import { Mbc, Mbv, Mcc, Mcv, Mfc, Mfv, Mpc, Mpv, Muc, Tbc, Tbv, Dbc, Dbv, Muv, Tcc, Tfc, Tfv, Tpc, Tpv, Tcv, Tuc, Tuv, Dcc, Dcv, Dfc, Dfv, Dpc, Dpv, Duc, Duv } from '../Animations';
-import {CardsContext} from '../App.js'
 
 function AnimationsPreview() {
-    const cardsContext = useContext(CardsContext)
-
+    const trigger = "trigger";
+    const things = "things";
+    const feedback = "feedback";
     //Redirect if cards are not chosen
-    if (cardsContext.trigger === null || cardsContext.things === null || cardsContext.feedback === null) {
+    if (localStorage.getItem(trigger) === (null || "null") ||localStorage.getItem(things) === (null || "null") ||localStorage.getItem(feedback) === (null || "null")) {
         return < Redirect to="/404" />
     }
     //dictionary used to find the correct animation
@@ -35,28 +35,23 @@ function AnimationsPreview() {
 
     }
 
-    const triggerName = getCardName(cardsContext.trigger)
-    const thingName = getCardName(cardsContext.things)
-    const feedbackName = getCardName(cardsContext.feedback)
+    const triggerName = getCardName(localStorage.getItem(trigger))
+    const thingName = getCardName(localStorage.getItem(things))
+    const feedbackName = getCardName(localStorage.getItem(feedback))
     //select the correct animation based on the selected cards
     const animation = animationDictionary[triggerName][thingName][feedbackName]
-
-    //resets cards when try again is clicked
-    function resetCards() {
-        cardsContext.resetCard()
-    }
 
     return (
         <div className="gridAnimationsPage">
             <div className="gridAnimationCards">
                 <div className="card1AnimationsPage">
-                    <img src={cardsContext.trigger} className="triggerAnimationsPage" alt="A 'trigger' card" />
+                    <img src={localStorage.getItem(trigger)} className="triggerAnimationsPage" alt="A 'trigger' card" />
                 </div>
                 <div className="card2AnimationsPage">
-                    <img src={cardsContext.things} className="thingAnimationsPage" alt="A 'thing' card" />
+                    <img src={localStorage.getItem(things)} className="thingAnimationsPage" alt="A 'thing' card" />
                 </div>
                 <div className="card3AnimationsPage">
-                    <img src={cardsContext.feedback} className="feedbackAnimationsPage" alt="A 'feedback' card" />
+                    <img src={localStorage.getItem(feedback)} className="feedbackAnimationsPage" alt="A 'feedback' card" />
                 </div>
             </div>
             {/* The div below is where the animations will appear */}
@@ -75,3 +70,10 @@ function AnimationsPreview() {
 }
 
 export default AnimationsPreview
+
+//resets cards when
+export function resetCards() {
+    localStorage.setItem('trigger', null);
+    localStorage.setItem('things', null);
+    localStorage.setItem('feedback', null);
+}

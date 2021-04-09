@@ -8,24 +8,20 @@ import LinkButton from '../Components/LinkButton';
 import CardContainer from "../Components/CardContainer";
 //Css imports
 import "../CSS/CardContainer.css";
-import {CardsContext} from '../App.js'
 
 function CategoryPage(props) {
-    const cardsContext = useContext(CardsContext)
     let category
     { props.location.state ? (category = props.location.state.category) : category = "trigger" }
-    const [card, setCard] = useState(cardsContext.category);
+    const [card, setCard] = useState(localStorage.getItem(category));
     var styling = { color: "#68C2C4" };
     { props.location.state ? (styling.color = props.location.state.color) : styling.color = "#F08A00" }
-    var cardSelected = !(card == null)
-
+    var cardSelected = !(card == (null || "null"))
+    console.log(cardSelected)
     //Function triggered when a card is selected
     function onCardClick(newValue) {
         setCard(newValue.src)
     }
     return (
-        <CardsContext.Consumer>
-        {({trigger, things, feedback, updateCard}) =>
         <div className="Page">
             <TopContainer
                 text="some text that will be shown in the instruction box"
@@ -34,11 +30,9 @@ function CategoryPage(props) {
                 <div className="CardContainerTitle" style={styling}> {category[0].toUpperCase() + category.substring(1)}</div>
 
                 <CardContainer category={category} onSelect={onCardClick} />
-                <LinkButton target="/cards" title="Choose" size="Small" category={category} onClick={() => updateCard(category, card)} card={card} disabled={!cardSelected}  ></LinkButton>
+                <LinkButton target="/cards" title="Choose" size="Small" category={category} onClick={() => {localStorage.setItem(category, card)}} card={card} disabled={!cardSelected}  ></LinkButton>
             </div>
         </div>
-        }
-        </CardsContext.Consumer>
     );
 }
 

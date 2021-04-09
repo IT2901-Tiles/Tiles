@@ -7,6 +7,7 @@ import motionCard from "./../images/triggers/motion.png"
 import colorChangeCard from "./../images/feedbacks/color_change.png"
 import bikeCard from "./../images/things/bike.png"
 import dropCard from "./../images/triggers/drop.png"
+import {resetCards} from "../Components/AnimationsPreview";
 
 function MainPage() {
 
@@ -22,7 +23,7 @@ function MainPage() {
                     <p>Welcome to the Tiles Internet of Things Invention! <br/>
                     Let’s create some smart creations! </p>
                 </div>
-                <LinkButton title="Let's begin!" target="/cards" size="Large"></LinkButton>
+                <LinkButton title="Let's begin!" target="/cards" onClick={() => resetCards()}size="Large"></LinkButton>
                 <div>
                     <img className="motionCard"  alt="The motion card" src={motionCard} />
                     <img className="colorChangeCard" alt="ColorChangeCard" src={colorChangeCard}/>

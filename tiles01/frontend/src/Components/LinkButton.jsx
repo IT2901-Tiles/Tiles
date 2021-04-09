@@ -14,7 +14,7 @@ import Button from 'react-bootstrap/Button';
 
 function LinkButton(props) {
     const [title] = useState(props.title)
-    var [path] = useState(props.target)
+    const [path] = useState(props.target)
     const [category] = useState(props.category)
     const [size] = useState(props.size + "Button")
     let colour = "#F08A00";
@@ -29,15 +29,9 @@ function LinkButton(props) {
     } else if (category === "animation") {
         colour = "#84AD64"
     }
-    //console.log(props.disabled)
     if( props.disabled === true){
         return <Button style={{ backgroundColor: colour, color: fontColour }} disabled={true} className={size} variant="primary"  >{title}</Button>
     }
-    
-
-    
-    
-    
     return (
         <Link
         to={{
@@ -45,7 +39,7 @@ function LinkButton(props) {
             state: { category: category, color: colour, card: props.card }
             // state: { category: category, color:colour }
         }} >
-            <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary" onClick={props.onClick} >{title}</Button>
+            <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary" onClick={props.onClick}>{title}</Button>
         </Link>
     );
 }

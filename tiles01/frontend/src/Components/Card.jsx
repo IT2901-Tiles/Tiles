@@ -7,7 +7,7 @@ function Card(props) {
         props.onClick(event.target)
     }
 
-    var imageClass = "card"
+    let imageClass = "card"
     if (parseInt(props.active) === parseInt(props.id)) {
         imageClass = "card card-active"
 

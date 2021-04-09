@@ -16,34 +16,7 @@ import NotFoundPage from './Pages/NotFoundPage';
 
 function App() {  
 
-  const [chosenCards, setChosenCards] = useState({
-    trigger: null, 
-    things: null, 
-    feedback: null
-  })
-  const updateCard = (category, newCard) => {
-    if (category === "trigger"){
-        setChosenCards({...chosenCards, trigger: newCard})
-    }else if (category === "things"){
-      setChosenCards({...chosenCards, things: newCard})
-    }else if (category === "feedback"){
-      setChosenCards({...chosenCards, feedback: newCard})
-    }
-  }
-  const resetCard = () => {
-    console.log("reset cards")
-    setChosenCards({trigger: null, things: null, feedback: null})
-  }
-
-  const context = {
-    ...chosenCards,
-    updateCard,
-    resetCard
-  }
-
-  
   return (
-    <CardsContext.Provider value={context}>
     <div className="App">
       <Router >
         <Switch>
@@ -56,7 +29,6 @@ function App() {
         </Switch>
       </Router>
     </div >
-    </CardsContext.Provider>
   );
 }
 

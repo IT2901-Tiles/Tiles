@@ -3,19 +3,16 @@ import LinkButton from '../Components/LinkButton'
 import placeholderImage from '../images/blankImg.png'
 import TopContainer from '../Components/TopContainer'
 import LinkToPage from '../Components/LinkToPage'
-import {CardsContext} from '../App.js'
-
-
 
 function ChosenCardsPage(props) {
-    const cardsContext = useContext(CardsContext)
-    const triggerChosen = !["null", null].includes(cardsContext.trigger)
-    const thingChosen = !["null", null].includes(cardsContext.things)
-    const feedbackChosen = !["null", null].includes(cardsContext.feedback)
-
     const trigger = "trigger";
     const things = "things";
     const feedback = "feedback";
+    const triggerChosen = !["null", null].includes(localStorage.getItem(trigger))
+    const thingChosen = !["null", null].includes(localStorage.getItem(things))
+    const feedbackChosen = !["null", null].includes(localStorage.getItem(feedback))
+
+    
     let errorOccured = false; // value turns true if error occured 
     let colorBorder; // color of border and font when no card is picked
     const buttonActive = triggerChosen && thingChosen && feedbackChosen
@@ -27,7 +24,7 @@ function ChosenCardsPage(props) {
             return <LinkButton target="/categories" title={category.charAt(0).toUpperCase + category.substring(1)} category={category} size="Small"></LinkButton>
         } else {
             let categoryName = category.charAt(0).toUpperCase() + category.substring(1)
-            return <LinkToPage target="/categories" title={categoryName} category={category} nameOfCategory={cardsContext[category]} classNameCard={"chosen" + categoryName}></LinkToPage>
+            return <LinkToPage target="/categories" title={categoryName} category={category} nameOfCard={localStorage.getItem(category)} classNameCard={"chosen" + categoryName}></LinkToPage>
         }
     }
 
@@ -60,10 +57,9 @@ function ChosenCardsPage(props) {
             </div>
                 <div id="buttonChosenCardsPage">
                     {/* Following code decides whether button is going to be enabled or not */}
-                    {((category === trigger) && (!(thingChosen)) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="trigger" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
-                    {((category === things) && (triggerChosen) && (!(feedbackChosen))) ? <LinkButton target="/categories" title="Choose!" category="things" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
+                    {(category === trigger) ? <LinkButton target="/categories" title="Choose!" category="trigger" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
+                    {((category === things) && triggerChosen) ? <LinkButton target="/categories" title="Choose!" category="things" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
                     {((category === feedback) && (triggerChosen) && (thingChosen)) ? <LinkButton target="/categories" title="Choose!" category="feedback" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
-
                 </div>
             </div>
 
