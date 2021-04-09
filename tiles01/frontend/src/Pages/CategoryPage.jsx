@@ -16,7 +16,7 @@ function CategoryPage(props) {
     var styling = { color: "#68C2C4" };
     { props.location.state ? (styling.color = props.location.state.color) : styling.color = "#F08A00" }
     var cardSelected = !(card == (null || "null"))
-    console.log(cardSelected)
+    
     //Function triggered when a card is selected
     function onCardClick(newValue) {
         setCard(newValue.src)
