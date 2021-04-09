@@ -64,12 +64,12 @@ function AnimationsPreview() {
             {/* The div below is where the animations will appear */}
             <div className="gridAnimationItem2">
                 {animation}
-                <AudioOnAnimations triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* Audio for some animations */}
             </div>
             {/* "Try again!"-button */}
             <div className="gridAnimationItem3">
                 <FormFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* The textarea */}
                 <AudioFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* Audio recording */}
+                <AudioOnAnimations triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* Audio for some animations */}
                 <LinkButton title="Try again!" target="/cards" size="tryagain" category="animation" onClick={resetCards} id="tryagainButton"></LinkButton> {/* "Try Again!" button */}
             </div>
         </div>

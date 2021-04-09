@@ -180,6 +180,7 @@ Button:disabled{
   text-shadow: 2px 2px rgb(0,0,0,0.1);
   box-shadow: 2px 3px 1.5px 2px rgb(0,0,0,0.25);
   position: relative;
+  margin-bottom: 10px;
 }
 
 #muteButton:hover {
