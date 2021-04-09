@@ -1,12 +1,21 @@
 {
   "name": "tiles01",
   "version": "0.1.0",
+    "babel": {
+      "plugins": ["transform-require-context"],
+      "env": {
+        "test": {
+          "plugins": ["transform-require-context"]
+        }
+      }
+    },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
     "audio-recorder-polyfill": "^0.4.1",
+    "babel-plugin-transform-require-context": "^0.1.1",
     "bootstrap": "^4.6.0",
     "connect": "^3.7.0",
     "enzyme": "^3.11.0",

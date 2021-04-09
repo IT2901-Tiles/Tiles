@@ -13,7 +13,7 @@ exports[`FormFieldAnimationPage component renders correctly 1`] = `
     className="textButtonAnimationPage"
     onClick={[Function]}
   >
-    Save
+    Download
   </button>
 </div>
 `;

@@ -31,4 +31,7 @@ describe('Animation page', () => {
         expect(paragraph.text()).toEqual('Welcome to the Tiles Internet of Things Invention! Let’s create some smart creations! ');
         expect(paragraph).toHaveLength(1);
     });
+    it('renders two img elements', () => {
+        expect(wrapper.find('img')).toHaveLength(2);
+    });
 });

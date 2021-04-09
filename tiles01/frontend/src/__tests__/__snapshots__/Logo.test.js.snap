@@ -3,27 +3,8 @@
 exports[`Logo renders correctly 1`] = `
 <div
   className="Logo"
-  style={
-    Object {
-      "backgroundColor": "#E53D2FEE",
-      "border": "0.25px solid #72140C",
-      "borderRadius": "30px",
-      "boxShadow": "1px 1px 3px #000000AA",
-      "color": "#F3EAC2",
-      "fontFamily": "Roboto",
-      "textShadow": "2px 2px #252525ab",
-    }
-  }
 >
-  <h1
-    style={
-      Object {
-        "margin": "15px 0",
-        "padding": "0",
-        "position": "center",
-      }
-    }
-  >
+  <h1>
     TILES
   </h1>
 </div>

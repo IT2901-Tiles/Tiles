@@ -19,9 +19,9 @@ describe('FormFieldAnimationPage component', () => {
         const tree = renderer.create(<FormFieldAnimationPage/>);
         expect(tree).toMatchSnapshot();
     });
-    it('renders a "Save"-button element', () => {
+    it('renders a "Download"-button element', () => {
         expect(wrapper.find('button')).toHaveLength(1);
-        expect(wrapper.find('button').text()).toEqual('Save');
+        expect(wrapper.find('button').text()).toEqual('Download');
     });
     it('renders a textarea', () => {
         expect(wrapper.find('textarea')).toHaveLength(1);
