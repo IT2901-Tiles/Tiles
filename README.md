@@ -15,13 +15,6 @@ Unique for this project is the way the application is organised. The children on
 ### Visuals and usage
 The user will start on a front page with the possibility to start picking out cards. The user must choose three cards, one from each category, before it is possible to push the "Run!" button. As a child you pick out the cards "temperature", "umbrella" and "color change" for example. The animation will then display this combination of cards. In this example animation the umbrella will change colour when the temperature drops. The children might find this idea really innovative and quite fun. The user can then write this idea as a text file or record an audio file and download it to their local computer.
 The picture below shows how this pages looks. 
-![image](https://user-images.githubusercontent.com/42800220/112612078-ccbc7d00-8e1e-11eb-8a65-ecbc16612f4c.png)
-
-
-
-https://user-images.githubusercontent.com/42800220/114178074-7df20580-993d-11eb-8aff-8db7906e8d1f.mov
-
-
 
 
 ### How to run the application
