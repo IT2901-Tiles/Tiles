@@ -8,8 +8,8 @@ import Temperature from './Temperature';
 
 function Tpc() {
     return (
-        <div className="Tpc">
-            <svg height="400" width="300">
+        <div>
+            <svg viewBox="0 0 300 400">
                 <g>
                     <rect id="wall" width="300" height="400" fill="#b3e6ff" />
                     <BookShelf />

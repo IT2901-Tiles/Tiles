@@ -5,6 +5,7 @@ import TopContainer from '../Components/TopContainer'
 import LinkToPage from '../Components/LinkToPage'
 import { useHistory } from "react-router-dom";
 import { useState } from 'react';
+import CharNormal from "../Components/CharNormal";
 
 function ChosenCardsPage(props) {
 
@@ -26,7 +27,7 @@ function ChosenCardsPage(props) {
     let feedbackChosenId = "feedback";
     let errorOccured = false; // value turns true if error occured 
     let colorBorder; // color of border and font when no card is picked
-    const [buttonActive, setButtonActive] = useState(triggerChosen && thingChosen && feedbackChosen);
+    const buttonActive = triggerChosen && thingChosen && feedbackChosen
     // This function checks which cards are checked off and sets a bool value
 
 
@@ -61,9 +62,9 @@ function ChosenCardsPage(props) {
             // Returns the placeholder image and button
             // (fjern kommentar: kanskje litt dårlig navngivning på divene og kanskje unødvendig mange, men ble finest og mest responsivt med 2 diver)
             return <div id="firstWrapperCardNotChosen"><div className="wrapperCardNotChosen">
-                <img src={placeholderImage} alt="test" className="noImgChosen" style={{ border: `${colorBorder}`, borderStyle: "solid", borderWidth: "0.65vw" }} />
-                <div id={classNameOfCard} style={{ color: `${colorBorder}` }}>
-                    {cardType.charAt(0).toUpperCase() + cardType.substring(1)}
+            <img src={placeholderImage} alt="test" className="noImgChosen" style={{ border: `${colorBorder}`, borderStyle: "solid", borderWidth: "0.65vw" }} />
+            <div id={classNameOfCard} style={{ color: `${colorBorder}`}}>
+                {classNameOfCard === thingNotChosenId ? cardType.charAt(0).toUpperCase() + cardType.substring(1) : cardType.charAt(0).toUpperCase() + cardType.substring(1)}
                 </div>
                 <br />
             </div>
@@ -78,11 +79,16 @@ function ChosenCardsPage(props) {
 
         }
     }
+
     return (
-        <div className="Page">
-            <TopContainer
-                text="Some text"
-            />
+        <div className="Page ChosenCardsPage">
+
+        <TopContainer
+            text = "Press the Choose button to select a card from this category!"
+        />
+        <div id="charNormalWrapper">
+            <CharNormal/>
+        </div>
 
             <div className="chosenCardsGrid">
                 <div className="chosenCardsGrid2">
@@ -97,7 +103,7 @@ function ChosenCardsPage(props) {
 
 
             <br />
-            <LinkButton target="/animation" title="RUN!" category="animation" size="Large" active={buttonActive} buttonError={"Please select one card in each category"}   ></LinkButton>
+            <LinkButton target="/animation" title="RUN!" category="animation" size="Large" disabled={!buttonActive}    ></LinkButton>
         </div>
     );
 }

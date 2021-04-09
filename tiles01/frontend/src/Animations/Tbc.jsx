@@ -5,8 +5,8 @@ import SmallTemperature from './SmallTemperature';
 
 function Tbc() {
     return (
-        <div className="Tbc">
-            <svg height="400" width="300">
+        <div>
+            <svg viewBox="0 0 300 400">
                 <Outdoors />
                 <Sun />
                 <g className="bike">

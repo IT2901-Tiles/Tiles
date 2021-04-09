@@ -5,8 +5,8 @@ import Pen from './Pen';
 
 function Dpc() {
     return (
-        <div className="Dpc">
-            <svg height="400" width="300">
+        <div>
+            <svg viewBox="0 0 300 400">
                 <g>
                     <rect width="300" height="400" fill="#b3e6ff" />
                     <BookShelf />

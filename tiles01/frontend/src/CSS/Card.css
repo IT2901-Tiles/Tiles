@@ -1,7 +1,7 @@
 .card{
-    width: 12rem;
+    width: 13vw;
     height: auto;
-    margin: 5% 2%;
+    margin: 4vw 2vw;
 }
 
 .card:hover {
@@ -10,28 +10,36 @@
             0px 7px 8px -4px rgba(0, 0, 0, 0.2);
 }
 .card-active{
-    transform: scale(1.3);
+    transform: scale(1.25);
     box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
             0px 5px 22px 4px rgba(0, 0, 0, 0.12),
             0px 7px 8px -4px rgba(0, 0, 0, 0.2);
 }
 
-/* STYLES FOR ChosenCardsPage.jsx */
+/* STYLES for the category pages */
+.chooseCardsButton {
+    position: relative;
+}
 
-/** Styles for the grids and wrappers **/
+/** STYLES FOR ChosenCardsPage.jsx **/
+
+/* Styles for the grids and wrappers */
 .chosenCardsGrid {
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
-    margin-top: 2vh;
+    margin-top: 0.45vw;
 }
 
 .chosenCardsGrid2 {
     grid-area: 1 / 2 / 1 / 4;
     display: grid;
     grid-template-columns: auto auto auto; /* remove one "auto" if we decide to go with 4 cards instad of 3 */
-    border-radius: 20px; /* same border radius as other elements */
-    padding: 3%;
+    border-radius: 15px;
+    padding-top: 3.5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 3.5vw;
     background-color: #FBF4D7;
 }
 
@@ -67,13 +75,14 @@
     top: 15%;
     font-size: 2vw;
     transition-timing-function: ease-out;
+    font-family: 'Comic Neue', sans-serif;
 }
 
-#textNoCardChosen1 { left: 36%; }
+#textNoCardChosen1 { left: 34%; }
 
-#textNoCardChosen2 { left: 39%; }
+#textNoCardChosen2 { left: 36%; }
 
-#textNoCardChosen3{ left: 32% }
+#textNoCardChosen3{ left: 31% }
 
 #buttonChosenCardsPage {
     position: relative;
@@ -82,11 +91,24 @@
     top: -85px;
 }
 
-/** Responsive design for buttons **/
+/** Responsive design for buttons and cards **/
 
+/* Enlargens cards on Category page and ChosenCardspage*/
 @media only screen and (max-width: 700px) {
     #buttonChosenCardsPage {
         top: -65%;
+    }
+
+    .card {
+        width: 17vw;
+    }
+
+    .wrapperCardNotChosen {
+        height: 23.7vw; /* Must be 1.3vw smaller than chosenCardContainer smaller due to the border */
+    }
+    
+    .chosenCardContainer, #firstWrapperCardNotChosen {
+        height: 24vw;
     }
 }
 
