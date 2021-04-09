@@ -32,7 +32,7 @@ describe('TopContainer with props', () => {
 
     const conatiner = shallow(<TopContainer {...initialProps} />);
 
-    it('should have props for p element', () => {
+    it('should have correct props for p element', () => {
         expect(conatiner.find('p').props()).toEqual({"children": "hello, this is a test"});
     })
 })

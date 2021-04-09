@@ -2,6 +2,7 @@ import {configure, shallow} from "enzyme"
 import Adapter from 'enzyme-adapter-react-16';
 import AnimationPage from '../Pages/AnimationPage';
 import {cleanup} from '@testing-library/react';
+import renderer from 'react-test-renderer';
 
 afterEach(() => {
     cleanup();
@@ -13,6 +14,10 @@ configure({
 
 describe('Animation page', () => {
     const wrapper = shallow(<AnimationPage/>);
+    // it('renders correctly', () => {
+    //     const tree = renderer.create(<AnimationPage/>).toJSON();
+    //     expect(tree).toMatchSnapshot();
+    // });
     it('renders a TopContainer', () => {
         expect(wrapper.find('TopContainer')).toHaveLength(1);
     });

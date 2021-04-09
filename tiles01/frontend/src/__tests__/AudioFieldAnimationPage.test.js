@@ -1,6 +1,6 @@
 import {configure, shallow} from "enzyme"
 import Adapter from 'enzyme-adapter-react-16';
-import {cleanup} from '@testing-library/react';
+import {cleanup, render} from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import AudioFieldAnimationPage from "../Components/AudioFieldAnimationPage";
 
@@ -21,9 +21,9 @@ describe('AudioFieldAnimationPage component', () => {
     it('renders three buttons', () => {
         expect(wrapper.find('Button')).toHaveLength(3);
     });
-    it('render an audio element', () => {
+    it('renders an audio element', () => {
         expect(wrapper.find('audio')).toHaveLength(1);
-    })
+    });
 });
 
 

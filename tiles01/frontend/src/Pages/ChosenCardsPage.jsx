@@ -5,6 +5,7 @@ import TopContainer from '../Components/TopContainer'
 import LinkToPage from '../Components/LinkToPage'
 import { useHistory } from "react-router-dom";
 import { useState } from 'react';
+
 function ChosenCardsPage(props) {
 
     try {
