@@ -12,9 +12,10 @@ Unique for this project is the way the application is organised. The children on
 ### Badges
 [sette inn bilder av testene?? Bruke denne linken som hjelp: https://www.makeareadme.com/#suggestions-for-a-good-readme]
 
-### Visuals
-The user will start on a front page with the possibility to start picking out cards. When they have chosen three cards they can "make" the animation. The picture below shows how this pages looks. This is where the children can save their idea as text in the database or record an audio file and download it to their computer.
-![image](https://user-images.githubusercontent.com/42800220/112601270-89f4a800-8e12-11eb-9f4f-509a407c10f0.png)
+### Visuals and usage
+The user will start on a front page with the possibility to start picking out cards. The user must choose three cards, one from each category, before it is possible to push the "Run!" button. As a child you pick out the cards "temperature", "umbrella" and "color change" for example. The animation will then display this combination of cards. In this example animation the umbrella will change colour when the temperature drops. The children might find this idea really innovative and quite fun. The user can then write this idea as a text file or record an audio file and download it to their local computer.
+The picture below shows how this pages looks. 
+![image](https://user-images.githubusercontent.com/42800220/112612078-ccbc7d00-8e1e-11eb-8a65-ecbc16612f4c.png)
 
 ### How to run the application
 1. <code>git clone https://github.com/IT2901-Tiles/Tiles.git</code>
@@ -25,10 +26,6 @@ The user will start on a front page with the possibility to start picking out ca
     1. Run <code>npm install</code>
     2. Run <code>npm start</code>
 4. Open http://localhost:8484/ in your preferred browser
-
-### Usage
-As a child you pick out the cards "temperature", "umbrella" and "color change" for example. The animation shows this combination. As a child you think this is an amazing and innovative idea, because the umbrella will change colour when the temperature drops. He or she will then write this idea as a text file and save it in the database, or download it to his/her local computer.
-![image](https://user-images.githubusercontent.com/42800220/112612078-ccbc7d00-8e1e-11eb-8a65-ecbc16612f4c.png)
 
 ### Roadmap
 Our project has been limited in the number of cards we chose to include, because developing all the animations from scratch takes a lot of time. There are also other ideas for releases in the future, some of them are listed below.
