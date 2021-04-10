@@ -3,7 +3,6 @@ import LinkButton from './LinkButton';
 import FormFieldAnimationPage from './FormFieldAnimationPage'
 import AudioFieldAnimationPage from './AudioFieldAnimationPage'
 import {
-
     Redirect,
 } from "react-router-dom";
 // Component for the preview of the animations + the selected cards. 
@@ -71,7 +70,7 @@ function AnimationsPreview() {
 
 export default AnimationsPreview
 
-//resets cards when
+//resets cards
 export function resetCards() {
     localStorage.setItem('trigger', null);
     localStorage.setItem('things', null);
