@@ -3,8 +3,16 @@ import LinkButton from '../Components/LinkButton'
 import placeholderImage from '../images/blankImg.png'
 import TopContainer from '../Components/TopContainer'
 import LinkToPage from '../Components/LinkToPage'
+import CharNormal from "../Components/CharNormal";
 
 function ChosenCardsPage(props) {
+
+    //try {
+    //    localStorage.setItem(props.location.state.category, props.location.state.card)
+    //} catch (error) {
+    //    console.log("no cards chosen")
+    //}
+  
     const trigger = "trigger";
     const things = "things";
     const feedback = "feedback";
@@ -49,9 +57,10 @@ function ChosenCardsPage(props) {
             // Returns the placeholder image and button
             // (fjern kommentar: kanskje litt dårlig navngivning på divene og kanskje unødvendig mange, men ble finest og mest responsivt med 2 diver)
             return <div id="firstWrapperCardNotChosen"><div className="wrapperCardNotChosen">
-                <img src={placeholderImage} alt="test" className="noImgChosen" style={{ border: `${colorBorder}`, borderStyle: "solid", borderWidth: "0.65vw" }} />
-                <div id={classNameOfCard} style={{ color: `${colorBorder}` }}>
-                    {category.charAt(0).toUpperCase() + category.substring(1)}
+            <img src={placeholderImage} alt="test" className="noImgChosen" style={{ border: `${colorBorder}`, borderStyle: "solid", borderWidth: "0.65vw" }} />
+            <div id={classNameOfCard} style={{ color: `${colorBorder}`}}>
+                {classNameOfCard === "noCardChosenThings" ? cardType.charAt(0).toUpperCase() + cardType.substring(1) : cardType.charAt(0).toUpperCase() + cardType.substring(1)}
+
                 </div>
                 <br />
             </div>
@@ -67,10 +76,13 @@ function ChosenCardsPage(props) {
     }
 
     return (
-        <div className="Page">
-            <TopContainer
-                text="Some text"
-            />
+        <div className="Page ChosenCardsPage">
+        <TopContainer
+            text = "Press the Choose button to select a card from this category!"
+        />
+        <div id="charNormalWrapper">
+            <CharNormal/>
+        </div>
             <div className="chosenCardsGrid">
                 <div className="chosenCardsGrid2">
                     {/* If-else statements to check the bool-variables */}

@@ -7,8 +7,8 @@ import Inside from './Inside';
 
 function Tfv() {
     return (
-        <div className="Tfv">
-            <svg width="300" height="400">
+        <div className="tfv">
+            <svg viewBox="0 0 300 400">
                 <Inside />
                 <Lamp />
                 <g>

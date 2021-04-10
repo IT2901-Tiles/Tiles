@@ -4,25 +4,56 @@
   padding-top: 1%;
   padding-bottom: 10%;
   padding-left: 1%;
+  position: relative;
+}
+
+.Logo{
+  background-color : #E53D2FEE;
+  color: #F3EAC2;
+  border-radius: 15px;
+  font-family: 'Roboto';
+  text-shadow: 0.25vw 0.25vw #252525ab;
+  border: 0.25px solid #72140C;
+  box-shadow: 1px 1px 3px #000000AA;
+  min-height: 20px;
+}
+
+.Logo h1{
+  padding: 0;
+  position: center;
+  margin: 2.5vh 0;
 }
 
 
 .TopContainer .Logo {
-    width: 19rem;
-    position: fixed;
-    font-size: x-large;
+    width: 20vw;
+    float: left;
+    font-size: 1.5vw;
+    margin-left: 2vw;
+    min-height: 30px;
   }
   
 .TopContainer .infoBox{
     background-color: rgba(108, 143, 143, 0.589);
     font-family: 'Comic Neue', cursive;
+    font-size: 1.5vw;
     color: #F3EAC2;
-    border-radius: 20px;
-    text-shadow: 2px 2px #252525ab;
-    width: 60%;
-    height: 3.7rem;
-    position: fixed;
-    left: 21rem;
-    padding: 1.5% 0;
+    border-radius: 15px;
+    text-shadow: 0.20vw 0.20vw #252525ab;
+    width: 60vw;
+    position: absolute;
+    right: 15vw;
+    padding: 1.8vh 0;
+    min-height: 30px;
   }
-  
+
+.TopContainer .infoBox p {
+  padding: 0 10vw;
+}
+
+  /* Avoid the info-box from overlapping the .Logo */
+@media only screen and (max-height: 800px) {
+  .TopContainer .infoBox{
+    margin-right: -4.5vw;
+  } 
+}
