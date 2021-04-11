@@ -10,7 +10,7 @@ import {
 import { Mbc, Mbv, Mcc, Mcv, Mfc, Mfv, Mpc, Mpv, Muc, Tbc, Tbv, Dbc, Dbv, Muv, Tcc, Tfc, Tfv, Tpc, Tpv, Tcv, Tuc, Tuv, Dcc, Dcv, Dfc, Dfv, Dpc, Dpv, Duc, Duv } from '../Animations';
 import AudioOnAnimations from './AudioOnAnimations';
 
-function AnimationsPreview() {
+
 
 function AnimationsPreview() {
     const trigger = "trigger";

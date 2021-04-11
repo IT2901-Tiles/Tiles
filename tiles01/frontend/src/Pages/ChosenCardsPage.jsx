@@ -59,7 +59,7 @@ function ChosenCardsPage(props) {
             return <div id="firstWrapperCardNotChosen"><div className="wrapperCardNotChosen">
             <img src={placeholderImage} alt="test" className="noImgChosen" style={{ border: `${colorBorder}`, borderStyle: "solid", borderWidth: "0.65vw" }} />
             <div id={classNameOfCard} style={{ color: `${colorBorder}`}}>
-                {classNameOfCard === "noCardChosenThings" ? cardType.charAt(0).toUpperCase() + cardType.substring(1) : cardType.charAt(0).toUpperCase() + cardType.substring(1)}
+                {classNameOfCard === "noCardChosenThings" ? category.charAt(0).toUpperCase() + category.substring(1) : category.charAt(0).toUpperCase() + category.substring(1)}
 
                 </div>
                 <br />
