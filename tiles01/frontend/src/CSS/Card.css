@@ -5,17 +5,17 @@
 }
 
 .card:hover {
-    box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
-            0px 5px 22px 4px rgba(0, 0, 0, 0.12),
-            0px 7px 8px -4px rgba(0, 0, 0, 0.2);
-}
-.card-active{
-    transform: scale(1.25);
-    box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
-            0px 5px 22px 4px rgba(0, 0, 0, 0.12),
-            0px 7px 8px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+    0px 5px 22px 4px rgba(0, 0, 0, 0.12), 0px 7px 8px -4px rgba(0, 0, 0, 0.2);
 }
 
+.card-active{
+  transform: scale(1.25);
+  box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+            0px 5px 22px 4px rgba(0, 0, 0, 0.12),
+            0px 7px 8px -4px rgba(0, 0, 0, 0.2);
+}
+  
 /* STYLES for the category pages */
 .chooseCardsButton {
     position: relative;
@@ -44,57 +44,74 @@
 }
 
 .wrapperCardNotChosen {
-    height: 18.7vw; /* Must be 1.3vw smaller than chosenCardContainer smaller due to the border */
-    position: relative;
-    /* padding-bottom: 7%; must have slightly (about 4%) bigger padding than images chosen because of the border */
+  height: 18.7vw; /* Must be 1.3vw smaller than chosenCardContainer smaller due to the border */
+  position: relative;
+  /* padding-bottom: 7%; must have slightly (about 4%) bigger padding than images chosen because of the border */
 }
 
-.chosenCardContainer, #firstWrapperCardNotChosen {
-    height: 20vw;
+.chosenCardContainer,
+#firstWrapperCardNotChosen {
+  height: 20vw;
 }
 
 /** Styles for the cards **/
-.chosenTrigger, .chosenThings, .chosenFeedback, .noImgChosen {
-    box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
-            0px 5px 22px 4px rgba(0, 0, 0, 0.12),
-            0px 7px 8px -4px rgba(0, 0, 0, 0.2);
+.chosenTrigger,
+.chosenThings,
+.chosenFeedback,
+.noImgChosen {
+  box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+    0px 5px 22px 4px rgba(0, 0, 0, 0.12), 0px 7px 8px -4px rgba(0, 0, 0, 0.2);
 }
 
-.chosenTrigger:hover, .chosenThings:hover, .chosenFeedback:hover {
-    opacity: 0.8;
+.chosenTrigger:hover,
+.chosenThings:hover,
+.chosenFeedback:hover {
+  opacity: 0.8;
 }
 
-
-.chosenTrigger, .chosenThings, .chosenFeedback, .noImgChosen {
-    height: 100%;
+.chosenTrigger,
+.chosenThings,
+.chosenFeedback,
+.noImgChosen {
+  height: 100%;
 }
 
 /** Styles when no card is picked **/
-#textNoCardChosen1, #textNoCardChosen2, #textNoCardChosen3 {
-    position: absolute;
-    top: 15%;
-    font-size: 2vw;
-    transition-timing-function: ease-out;
-    font-family: 'Comic Neue', sans-serif;
+#noCardChosenTrigger,
+#noCardChosenThings,
+#noCardChosenFeedback {
+  position: absolute;
+  top: 15%;
+  font-size: 2vw;
+  transition-timing-function: ease-out;
+  font-family: 'Comic Neue', sans-serif;
 }
 
-#textNoCardChosen1 { left: 34%; }
+#noCardChosenTrigger {
+  left: 34%;
+}
 
-#textNoCardChosen2 { left: 36%; }
+#noCardChosenThings {
+  left: 36%;
+}
 
-#textNoCardChosen3{ left: 31% }
+#noCardChosenFeedback {
+  left: 31%;
+}
+
 
 #buttonChosenCardsPage {
-    position: relative;
-    left: 25%;
-    width: 50%;
-    top: -85px;
+  position: relative;
+  left: 25%;
+  width: 50%;
+  top: -85px;
 }
 
 /** Responsive design for buttons and cards **/
 
 /* Enlargens cards on Category page and ChosenCardspage*/
 @media only screen and (max-width: 700px) {
+
     #buttonChosenCardsPage {
         top: -65%;
     }
@@ -113,13 +130,13 @@
 }
 
 @media only screen and (max-width: 600px) {
-    #buttonChosenCardsPage {
-        top: -60%;
-    }
+  #buttonChosenCardsPage {
+    top: -60%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    #buttonChosenCardsPage {
-        top: -55%;
-    }
+  #buttonChosenCardsPage {
+    top: -55%;
+  }
 }

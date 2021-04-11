@@ -90,6 +90,20 @@ Button:disabled {
   pointer-events: none;
 }
 
+.SmallButton:disabled:hover {
+  color: rgb(101, 109, 109) !important;
+  box-shadow: 2px 3px 1.5px 2px rgb(0, 0, 0, 0.25);
+  filter: grayscale(70%) brightness(100%);
+}
+
+.LargeButton:disabled:hover {
+  color: rgb(101, 109, 109) !important;
+  box-shadow: 4px 6px 3px 4px rgb(0, 0, 0, 0.25);
+  filter: grayscale(70%) brightness(100%);
+  filter:  grayscale(70%);
+  pointer-events: none;
+}
+
 /** styling try again button (used in AnimationsPreview.jsx) **/
 .tryagainButton {
   /* same as LargeButton, but some modifications in size etc */

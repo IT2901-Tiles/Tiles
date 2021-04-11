@@ -1,6 +1,6 @@
 //CSS import
 import './CSS/App.css';
-import React from 'react';
+import React, {useState} from 'react';
 import {
   //MemoryRouter as Router,
   BrowserRouter as Router,
@@ -14,7 +14,8 @@ import CategoryPage from './Pages/CategoryPage';
 import AnimationPage from './Pages/AnimationPage';
 import NotFoundPage from './Pages/NotFoundPage';
 
-function App() {
+function App() {  
+
   return (
     <div className="App">
       <Router >
@@ -32,3 +33,13 @@ function App() {
 }
 
 export default App;
+
+export const CardsContext = React.createContext(
+  {
+    trigger: null,
+    things: null,
+    feedback: null,
+    updateCard: (category, newCard)=>{},
+    resetCard: ()=>{}
+  }
+)

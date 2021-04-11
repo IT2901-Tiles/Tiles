@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function LinkToPage(props) {
     const [path] = useState(props.target)
     const [category] = useState(props.category)
-    const [nameOfCardType] = useState(props.nameOfCardType) // name of card, e.g. trigger, thing, feedback
+    const [nameOfCard] = useState(props.nameOfCard) // name of card, e.g. trigger, thing, feedback
     const [classNameCard] = useState(props.classNameCard) // classname of the card
 
     let colour = "#F08A00";
@@ -25,7 +25,7 @@ function LinkToPage(props) {
                 pathname: path,
                 state: { category: category, color: colour, card: props.card }
             }}>
-            <img src={nameOfCardType} className={classNameCard} />
+            <img src={nameOfCard} className={classNameCard} />
         </Link>
     );
 }

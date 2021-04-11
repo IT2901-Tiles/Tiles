@@ -103,8 +103,6 @@ function AudioFieldAnimationPage(props) {
     return (
         <div className="AudioAreaAnimationPage">
             <div className="Audio"><audio
-                //ref="audioSource"
-                //initialAudio="test.mp3"
                 controls="controls"
                 src={blobURL || "default.mp3"}
             /></div>

@@ -1,4 +1,4 @@
-/* MAIN DESIGN */ 
+/* MAIN DESIGN */
 /* OUR FONTS: 
     font-family: 'Comic Neue', cursive;
     font-family: 'Roboto', sans-serif;
@@ -16,13 +16,13 @@ html{
   background-color: #68C2C4;
   text-align: center;
 }
-h1{
-  color: #F3EAC2;
-  font-family: 'Roboto', sans-serif;
+h1 {
+  color: #f3eac2;
+  font-family: "Roboto", sans-serif;
 }
 
-p{
-  font-family: 'Comic Neue', cursive;
+p {
+  font-family: "Comic Neue", cursive;
 }
 
 /** MAIN PAGE **/ 
@@ -34,7 +34,7 @@ p{
   z-index: 1;
 }
 
-.mainPage .infoBox{
+.mainPage .infoBox {
   background-color: rgba(108, 143, 143, 0.589);
   font-family: 'Comic Neue', cursive;
   font-size: 2vw;
@@ -55,6 +55,7 @@ p{
   left: 0;
 }
 
+
 .mainPage .img2 {
   position: absolute;
   z-index: -1;
@@ -62,6 +63,7 @@ p{
   top: 0;
   right: 0;
 }
+
 
 /** Character CSS **/ 
 /* MainPage */ 

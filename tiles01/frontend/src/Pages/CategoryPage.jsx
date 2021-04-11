@@ -1,8 +1,7 @@
 //tenker at det blir sendt med en prop hit om hvilke kategori det gjelder,
 //men hvis personen som lager denne siden er uenig i det er det bare å si ifra
 
-import React from 'react';
-import { useState } from 'react';
+import React, {useState, useContext} from 'react';
 //Component Imports
 import TopContainer from '../Components/TopContainer';
 import LinkButton from '../Components/LinkButton';
@@ -28,14 +27,12 @@ function CategoryPage(props) {
     }
 
     { props.location.state ? (styling.color = props.location.state.color) : styling.color = "#F08A00" }
+    //var cardSelected = !(card == (null || "null"))
     var cardSelected = !["null", null].includes(card)
 
- 
-
-    //Function triggered when a card is selected
+     //Function triggered when a card is selected
     function onCardClick(newValue) {
         setCard(newValue.src)
-
     }
     return (
         <div className="Page">
@@ -49,7 +46,7 @@ function CategoryPage(props) {
                 <div className="CardContainerTitle" style={styling}> {category[0].toUpperCase() + category.substring(1)}</div>
 
                 <CardContainer category={category} onSelect={onCardClick} />
-                <LinkButton target="/cards" title="Choose" size="Small" category={category} onClick={localStorage.setItem(category, card)} card={card} disabled={!cardSelected} className="chooseCardsButton" ></LinkButton>
+                <LinkButton target="/cards" title="Choose" size="Small" category={category} onClick={() => {localStorage.setItem(category, card)}} card={card} disabled={!cardSelected}  className="chooseCardsButton"></LinkButton>
             </div>
         </div>
     );
