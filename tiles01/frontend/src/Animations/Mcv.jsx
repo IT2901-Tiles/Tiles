@@ -9,7 +9,7 @@ function Mcv() {
 
     return (
         <div className="Mcv">
-            <svg width="300" height="400">
+            <svg viewBox="0 0 300 400">
                 <Inside />
                 <ClothingShelf />
                 <g className="person">

@@ -6,8 +6,8 @@ import SmallTemperature from './SmallTemperature';
 
 function Tbv() {
     return (
-        <div className="Tbv">
-            <svg height="400" width="300">
+        <div>
+            <svg viewBox="0 0 300 400">
                 <Outdoors />
                 <Sun />
 

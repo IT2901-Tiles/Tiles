@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "declaration": true,
+    "typeRoots": [
+      "typings",
+      "node_modules/@types"
+    ],
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "outDir": "dist",
+    "listEmittedFiles": true,
+    "moduleResolution": "node"
+  },
+  "include": [
+    "./src/**/*",
+    "./types/**/*"
+  ]
+}

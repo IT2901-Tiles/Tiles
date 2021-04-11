@@ -9,6 +9,8 @@ import {
 // Component for the preview of the animations + the selected cards. 
 // This component uses the grid-property in html and css
 import { Mbc, Mbv, Mcc, Mcv, Mfc, Mfv, Mpc, Mpv, Muc, Tbc, Tbv, Dbc, Dbv, Muv, Tcc, Tfc, Tfv, Tpc, Tpv, Tcv, Tuc, Tuv, Dcc, Dcv, Dfc, Dfv, Dpc, Dpv, Duc, Duv } from '../Animations';
+import AudioOnAnimations from './AudioOnAnimations';
+
 function AnimationsPreview() {
 
     //Redirect if cards are not chosen
@@ -62,13 +64,13 @@ function AnimationsPreview() {
             {/* The div below is where the animations will appear */}
             <div className="gridAnimationItem2">
                 {animation}
-                {/* Suggestion for text-area field */}
             </div>
             {/* "Try again!"-button */}
             <div className="gridAnimationItem3">
                 <FormFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* The textarea */}
                 <AudioFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* Audio recording */}
-                <LinkButton title="Try again!" target="/cards" size="Large" category="animation" onClick={resetCards} ></LinkButton> {/* "Try Again!" button */}
+                <AudioOnAnimations triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* Audio for some animations */}
+                <LinkButton title="Try again!" target="/cards" size="tryagain" category="animation" onClick={resetCards} id="tryagainButton"></LinkButton> {/* "Try Again!" button */}
             </div>
         </div>
     )

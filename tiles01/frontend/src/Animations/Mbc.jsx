@@ -4,8 +4,8 @@ import Outdoors from './Outdoors';
 
 function Mbc() {
     return (
-        <div className="Mbc">
-            <svg height="400" width="300">
+        <div>
+            <svg viewBox="0 0 300 400">
                 <Outdoors />
                 <Sun />
                 <g className="bike">
