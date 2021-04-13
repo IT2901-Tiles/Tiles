@@ -3,6 +3,8 @@ import LinkButton from '../Components/LinkButton'
 import placeholderImage from '../images/blankImg.png'
 import TopContainer from '../Components/TopContainer'
 import LinkToPage from '../Components/LinkToPage'
+import { useHistory } from "react-router-dom";
+import { useState } from 'react';
 import CharNormal from "../Components/CharNormal";
 
 function ChosenCardsPage(props) {

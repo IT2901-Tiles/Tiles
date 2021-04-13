@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Not Found Page renders correctly 1`] = `
+<div
+  className="PageNotFound"
+>
+  <div
+    className="pageNotFoundTitle"
+  >
+    <h1>
+      Page not found
+    </h1>
+  </div>
+  <img
+    alt="TheBikeCard"
+    className="image bikeCard"
+    src="bike.png"
+  />
+  <img
+    alt="Card"
+    className="image colorChangeCard"
+    src="color_change.png"
+  />
+  <img
+    alt="A card"
+    className="image motionCard"
+    src="motion.png"
+  />
+  <img
+    alt="a card"
+    className="image dropCard"
+    src="drop.png"
+  />
+  <img
+    alt="a card"
+    className="image penCard"
+    src="pen.png"
+  />
+  <img
+    alt="a card"
+    className="image colorChangeCard2"
+    src="color_change.png"
+  />
+  <img
+    alt="a card"
+    className="image temperatureCard"
+    src="temperature.png"
+  />
+  <img
+    alt="a card"
+    className="image umbrellaCard"
+    src="umbrella.png"
+  />
+  <img
+    alt="a card"
+    className="image vibrateCard"
+    src="vibrate.png"
+  />
+  <img
+    alt="a card"
+    className="image motionCard2"
+    src="motion.png"
+  />
+  <img
+    alt="a card"
+    className="image dropCard2"
+    src="drop.png"
+  />
+  <div
+    className="middleContainer"
+  >
+    <p>
+      It seems like you are a bit lost. Let me help you find your way back! 
+    </p>
+  </div>
+  <div
+    className="bottomContainer"
+  >
+    <div
+      className="cardsButton"
+    >
+      <a
+        href="/cards"
+        onClick={[Function]}
+      >
+        <button
+          className="wider LargeButton btn btn-primary"
+          disabled={false}
+          style={
+            Object {
+              "backgroundColor": "#F08A00",
+              "color": "#F3EAC2",
+            }
+          }
+          type="button"
+        >
+          Back to the cards
+        </button>
+      </a>
+    </div>
+    <div
+      className="mainPageButton"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <button
+          className="wider LargeButton btn btn-primary"
+          disabled={false}
+          style={
+            Object {
+              "backgroundColor": "#F08A00",
+              "color": "#F3EAC2",
+            }
+          }
+          type="button"
+        >
+          Main page
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+`;

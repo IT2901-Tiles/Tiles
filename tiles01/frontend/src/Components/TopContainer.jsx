@@ -9,7 +9,7 @@ function TopContainer(props) {
         <div className="TopContainer">
             <Logo/>
             <div className="infoBox">
-            <p>{props.text}</p>
+                <p>{props.text}</p>
             </div>
         </div>
 

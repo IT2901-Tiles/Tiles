@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormFieldAnimationPage component renders correctly 1`] = `
+<div
+  className="textAreaAnimationPage"
+>
+  <textarea
+    id="textBoxAnimationPage"
+    onChange={[Function]}
+    placeholder="Write your idea here..."
+  />
+  <button
+    className="textButtonAnimationPage"
+    onClick={[Function]}
+  >
+    Download
+  </button>
+</div>
+`;

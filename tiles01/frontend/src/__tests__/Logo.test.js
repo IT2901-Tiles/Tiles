@@ -2,6 +2,7 @@ import {configure, shallow} from "enzyme"
 import Adapter from 'enzyme-adapter-react-16';
 import {cleanup} from '@testing-library/react';
 import Logo from '../Components/Logo';
+import renderer from 'react-test-renderer';
 
 afterEach(() => {
     cleanup();
@@ -13,6 +14,10 @@ configure({
 
 describe('Logo', () => {
     const wrapper = shallow(<Logo/>)
+    it('renders correctly', () => {
+        const tree = renderer.create(<Logo/>).toJSON();
+        expect(tree).toMatchSnapshot();
+    });
     it('contains a h1 element', () => {
         expect(wrapper.find('h1')).toHaveLength(1);
     });
