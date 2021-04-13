@@ -13,7 +13,7 @@ configure({
     adapter: new Adapter()
 });
 
-describe('Animation page', () => {
+describe('Main page', () => {
     const wrapper = shallow(<MainPage/>)
     it('renders correctly', () => {
         const tree = renderer.create(<Router><MainPage/></Router>).toJSON();

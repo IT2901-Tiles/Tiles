@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Animation page renders correctly 1`] = `
+exports[`Main page renders correctly 1`] = `
 <div
   className="Page mainPage"
 >

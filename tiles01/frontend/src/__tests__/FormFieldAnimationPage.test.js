@@ -28,7 +28,7 @@ describe('FormFieldAnimationPage component', () => {
     });
     it('button calls a function when clicked', () => {
         const mockedDownloadFile = jest.fn();
-        render(<button onClick={mockedDownloadFile} className="textButtonAnimationPage">Save</button>);
+        render(<button onClick={mockedDownloadFile} className="textButtonAnimationPage">Download</button>);
         userEvent.click(screen.getByRole('button'));
         expect(mockedDownloadFile).toHaveBeenCalledTimes(1);
     });
