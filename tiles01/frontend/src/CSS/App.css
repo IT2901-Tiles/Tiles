@@ -22,7 +22,7 @@ h1 {
 }
 
 p {
-  font-family: "Comic Neue", cursive;
+  font-family: Helvetica, sans-serif;
 }
 
 /** MAIN PAGE **/ 
@@ -36,7 +36,7 @@ p {
 
 .mainPage .infoBox {
   background-color: rgba(108, 143, 143, 0.589);
-  font-family: 'Comic Neue', cursive;
+  font-family: Helvetica, sans-serif;
   font-size: 2vw;
   color: #F3EAC2;
   padding: 1%;
