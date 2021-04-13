@@ -7,7 +7,7 @@
     grid-template-columns: auto auto auto auto;
     width: 100%;
     position: relative;
-    /* padding-top: 1vh; */
+    padding-top: 0.75vh;
     transition: ease-out 0.1ms;
 }
 
@@ -39,15 +39,20 @@
 }
 
 /* Styling of the cards */
-.card1AnimationsPage, .card2AnimationsPage, .card3AnimationsPage {
+.card1AnimationsPage, 
+.card2AnimationsPage, 
+.card3AnimationsPage {
     margin-top: 3vw;
     /*margin: 3px;*/
     margin: 0;
 }
 
-.triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
+.triggerAnimationsPage, 
+.thingAnimationsPage, 
+.feedbackAnimationsPage {
     height: 14vw;
     min-height: 70px;
+    border-radius: 5px;
 }
 
 .triggerAnimationsPage,
@@ -132,7 +137,7 @@ svg {
     height: 100%;
 }
 
-.gridAnimationItem2 div{
+.gridAnimationAnimation div{
     height: 100%;
     margin: 5px;
 } 
@@ -176,17 +181,15 @@ svg {
         height: 80%;
     }
 
+    .gridAnimationsPage {
+        padding-top: 2vh;
+    }
+
+
 }
 
 @media only screen and (max-width: 600px) {
     svg {
         height: 75%;
-    }
-}
-
-
-@media screen and (max-width: 400px) {
-    .gridAnimationsPage {
-        margin-top: 2.5vw;
     }
 }

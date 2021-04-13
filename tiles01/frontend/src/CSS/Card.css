@@ -2,6 +2,7 @@
     width: 13vw;
     height: auto;
     margin: 4vw 2vw;
+    border-radius: 5px;
 }
 
 .card:hover {
@@ -29,6 +30,7 @@
     grid-template-columns: auto auto auto auto;
     width: 100%;
     margin-top: 0.45vw;
+    padding-top: 0.25vw;
 }
 
 .chosenCardsGrid2 {
@@ -46,6 +48,7 @@
 .wrapperCardNotChosen {
   height: 18.7vw; /* Must be 1.3vw smaller than chosenCardContainer smaller due to the border */
   position: relative;
+  border: 5px;
   /* padding-bottom: 7%; must have slightly (about 4%) bigger padding than images chosen because of the border */
 }
 
@@ -55,6 +58,7 @@
 }
 
 /** Styles for the cards **/
+
 .chosenTrigger,
 .chosenThings,
 .chosenFeedback,
@@ -74,6 +78,7 @@
 .chosenFeedback,
 .noImgChosen {
   height: 100%;
+  border-radius: 5px; /* makes the edges of the cards/not picked cards rounded */
 }
 
 /** Styles when no card is picked **/
@@ -88,15 +93,15 @@
 }
 
 #noCardChosenTrigger {
-  left: 34%;
-}
-
-#noCardChosenThings {
   left: 36%;
 }
 
+#noCardChosenThings {
+  left: 37%;
+}
+
 #noCardChosenFeedback {
-  left: 31%;
+  left: 32%;
 }
 
 
@@ -120,12 +125,20 @@
         width: 17vw;
     }
 
+    .cardContainer {
+      margin-top: 10vw;
+    }
+
     .wrapperCardNotChosen {
         height: 23.7vw; /* Must be 1.3vw smaller than chosenCardContainer smaller due to the border */
     }
     
     .chosenCardContainer, #firstWrapperCardNotChosen {
         height: 24vw;
+    }
+
+    .chosenCardsGrid {
+      padding-top: 0.5vw;
     }
 }
 

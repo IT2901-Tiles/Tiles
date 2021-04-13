@@ -78,7 +78,7 @@ function ChosenCardsPage(props) {
     return (
         <div className="Page ChosenCardsPage">
         <TopContainer
-            text = "Press the Choose button to select a card from this category!"
+            text = "To select a card, click on the 'Choose' button!"
         />
         <div id="charNormalWrapper">
             <CharNormal/>
