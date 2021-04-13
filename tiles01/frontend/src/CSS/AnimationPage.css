@@ -39,15 +39,20 @@
 }
 
 /* Styling of the cards */
-.card1AnimationsPage, .card2AnimationsPage, .card3AnimationsPage {
+.card1AnimationsPage, 
+.card2AnimationsPage, 
+.card3AnimationsPage {
     margin-top: 3vw;
     /*margin: 3px;*/
     margin: 0;
 }
 
-.triggerAnimationsPage, .thingAnimationsPage, .feedbackAnimationsPage {
+.triggerAnimationsPage, 
+.thingAnimationsPage, 
+.feedbackAnimationsPage {
     height: 14vw;
     min-height: 70px;
+    border-radius: 5px;
 }
 
 .triggerAnimationsPage,
