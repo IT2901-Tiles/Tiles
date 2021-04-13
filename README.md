@@ -33,6 +33,7 @@ Our project has been limited in the number of cards we chose to include, because
 * Add more cards, so there can be more animations. This can spark the childrens creativity even more.
 * Let the children be able to log in with their own user. Then it will not breach GDPR to let them record and save the audio in the database, and not just download it.
 * Make it possible for children to work together to come up with better ideas.
+* Facilitate the application more for children with disabilities. This includes zooming on the animations and making the colour better suited for colourblind.
 
 ### Contributing
 Pull requests are welcome for everyone that has ideas. For major changes, please open an issue first to discuss what you would like to change.
