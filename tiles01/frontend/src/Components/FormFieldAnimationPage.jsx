@@ -47,4 +47,4 @@ function sendIdeaRequest(data){
 }
 
 
-export default FormFieldAnimationPage
+export default FormFieldAnimationPage;

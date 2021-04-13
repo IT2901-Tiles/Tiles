@@ -25,5 +25,12 @@ describe('LinkToPage', () => {
     it('contains an img element', () => {
         expect(wrapper.find('img')).toHaveLength(1);
     });
+    it('changes colour', () => {
+        const initialProps = {
+            category: "things",
+        }
+        const container = shallow(<LinkToPage {...initialProps} />);
+        expect(container.find('Link').props().to.state.color).toEqual("#D64539");
+    });
 });
 

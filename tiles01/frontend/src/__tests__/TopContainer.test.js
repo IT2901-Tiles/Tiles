@@ -30,9 +30,9 @@ describe('TopContainer with no props', () => {
 describe('TopContainer with props', () => {
     const initialProps = {text: 'hello, this is a test'};
 
-    const conatiner = shallow(<TopContainer {...initialProps} />);
+    const container = shallow(<TopContainer {...initialProps} />);
 
     it('should have correct props for p element', () => {
-        expect(conatiner.find('p').props()).toEqual({"children": "hello, this is a test"});
+        expect(container.find('p').props()).toEqual({"children": "hello, this is a test"});
     })
 })
