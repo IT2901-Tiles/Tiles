@@ -122,11 +122,11 @@ p {
 
 @media screen and (max-width: 1000px) {
   .CharNormal{ 
-    padding-top: 0.7vw;
+    padding-top: 0.95vw;
   }
 
   .AnimationPage .CharHappy {
-    padding-top: 1.5vw;
+    padding-top: 1.75vw;
   }
 
   .CharThinking {
@@ -136,11 +136,11 @@ p {
 
 @media screen and (max-width: 900px) {
   .CharNormal{ 
-    padding-top: 0.9vw;
+    padding-top: 1.15vw;
   }
 
   .AnimationPage .CharHappy {
-    padding-top: 1.7vw;
+    padding-top: 2vw;
   }
 
   .CharThinking {
@@ -150,11 +150,11 @@ p {
 
 @media screen and (max-width: 800px) {
   .CharNormal{ 
-    padding-top: 1.5vw;
+    padding-top: 1.75vw;
   }
 
   .AnimationPage .CharHappy {
-    padding-top: 2.3vw;
+    padding-top: 2.5vw;
   }
 
   .CharThinking {

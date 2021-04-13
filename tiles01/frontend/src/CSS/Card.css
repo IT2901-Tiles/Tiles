@@ -30,6 +30,7 @@
     grid-template-columns: auto auto auto auto;
     width: 100%;
     margin-top: 0.45vw;
+    padding-top: 0.25vw;
 }
 
 .chosenCardsGrid2 {
@@ -124,12 +125,20 @@
         width: 17vw;
     }
 
+    .cardContainer {
+      margin-top: 10vw;
+    }
+
     .wrapperCardNotChosen {
         height: 23.7vw; /* Must be 1.3vw smaller than chosenCardContainer smaller due to the border */
     }
     
     .chosenCardContainer, #firstWrapperCardNotChosen {
         height: 24vw;
+    }
+
+    .chosenCardsGrid {
+      padding-top: 0.5vw;
     }
 }
 
