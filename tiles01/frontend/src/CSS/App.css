@@ -43,7 +43,7 @@ p {
   border-radius: 20px;
   width: 70vw;  
   margin: 3vh auto 10vh;
-  text-shadow: 2px 2px #252525ab;
+  text-shadow: 1px 1px #252525ab;
 }
 
 /** Images on the MainPage (cards), placement **/

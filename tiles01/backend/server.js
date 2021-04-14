@@ -7,6 +7,7 @@ var path = require('path');
 var app = express();
 const { MongoClient } = require("mongodb");
 console.log("Starting server ...");
+console.log("http://localhost:8484/")
 app.use(express.static(path.join(__dirname, '/../frontend/build')));
 
 app.use(express.urlencoded({ extended: true }));
