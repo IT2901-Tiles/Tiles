@@ -28,6 +28,12 @@ The gif below shows this process.
     2. Run <code>npm start</code>
 4. Open http://localhost:8484/ in your preferred browser
 
+### How to run tests
+1. Navifate to the tiles01/frontend folder
+2. Run <code>npm test</code>
+3. To see test coverage, run <code>npm test -- --coverage --watchAll=false</code>
+   
+
 ### Roadmap
 Our project has been limited in the number of cards we chose to include, because developing all the animations from scratch takes a lot of time. There are also other ideas for releases in the future, some of them are listed below.
 * Add more cards, so there can be more animations. This can spark the childrens creativity even more.
