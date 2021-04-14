@@ -6,6 +6,7 @@ import CharNormalMainPage from "../Components/CharNormalMainPage";
 //img imports
 import img1 from "../images/img1.png"
 import img2 from "../images/img2.png"
+import {resetCards} from "../Components/AnimationsPreview"
 
 function MainPage() {
 
@@ -18,7 +19,7 @@ function MainPage() {
                 Pick one card from three different categories and create some smart creations.<br/>
                 Click on the button below to start!</p>
             </div>
-            <LinkButton title="Let's begin!" target="/cards" size="Large"></LinkButton>
+            <LinkButton title="Let's begin!" target="/cards" onClick={() => resetCards()} size="Large"></LinkButton>
             <img class="mainPage img1" src={img1} alt="stack of cards"/>
             <div id="charNormalMainWrapper">
                 <CharNormalMainPage />
