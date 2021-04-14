@@ -89,7 +89,7 @@
   top: 15%;
   font-size: 2vw;
   transition-timing-function: ease-out;
-  font-family: 'Comic Neue', sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 #noCardChosenTrigger {
@@ -123,10 +123,6 @@
 
     .card {
         width: 17vw;
-    }
-
-    .cardContainer {
-      margin-top: 10vw;
     }
 
     .wrapperCardNotChosen {

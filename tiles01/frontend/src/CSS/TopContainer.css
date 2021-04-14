@@ -34,7 +34,7 @@
   
 .TopContainer .infoBox{
     background-color: rgba(108, 143, 143, 0.589);
-    font-family: 'Comic Neue', cursive;
+    font-family: Helvetica, sans-serif;
     font-size: 1.5vw;
     color: #F3EAC2;
     border-radius: 15px;
