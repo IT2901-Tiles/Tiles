@@ -16,7 +16,8 @@ function MainPage() {
             <img className="img2" src={img2} alt="stack of cards2"/>
             <div className="infoBox">
                 <p>Welcome to the Tiles Internet of Things Invention! <br/>
-                Let’s create some smart creations! </p>
+                Pick one card from three different categories and create some smart creations.<br/>
+                Click on the button below to start!</p>
             </div>
             <LinkButton title="Let's begin!" target="/cards" onClick={() => resetCards()} size="Large"></LinkButton>
             <img class="mainPage img1" src={img1} alt="stack of cards"/>
