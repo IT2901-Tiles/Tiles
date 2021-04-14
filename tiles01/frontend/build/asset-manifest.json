@@ -1,6 +1,7 @@
 {
   "files": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "main.css": "/static/css/main.5e9b293a.chunk.css",
     "main.js": "/static/js/main.448a7d48.chunk.js",
     "main.js.map": "/static/js/main.448a7d48.chunk.js.map",
@@ -14,6 +15,8 @@
     "static/css/main.5e9b293a.chunk.css.map": "/static/css/main.5e9b293a.chunk.css.map",
     "static/js/2.cff71d7d.chunk.js.LICENSE.txt": "/static/js/2.cff71d7d.chunk.js.LICENSE.txt",
 =======
+=======
+>>>>>>> 1d65190bcf1984f65f8a69b69663bd2dcc7a0025
     "main.css": "/static/css/main.706714c2.chunk.css",
     "main.js": "/static/js/main.4b478f9f.chunk.js",
     "main.js.map": "/static/js/main.4b478f9f.chunk.js.map",
@@ -26,7 +29,10 @@
     "index.html": "/index.html",
     "static/css/main.706714c2.chunk.css.map": "/static/css/main.706714c2.chunk.css.map",
     "static/js/2.ecda2f92.chunk.js.LICENSE.txt": "/static/js/2.ecda2f92.chunk.js.LICENSE.txt",
+<<<<<<< HEAD
 >>>>>>> 1d02382de143ef861f8071842e82720373bc7034
+=======
+>>>>>>> 1d65190bcf1984f65f8a69b69663bd2dcc7a0025
     "static/media/bike.png": "/static/media/bike.4ef9ea3f.png",
     "static/media/blankImg.d4ab336b.png": "/static/media/blankImg.d4ab336b.png",
     "static/media/cellphone_vibrate.36ceff25.wav": "/static/media/cellphone_vibrate.36ceff25.wav",
@@ -45,6 +51,7 @@
   "entrypoints": [
     "static/js/runtime-main.1002ab45.js",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "static/js/2.cff71d7d.chunk.js",
     "static/css/main.5e9b293a.chunk.css",
     "static/js/main.448a7d48.chunk.js"
@@ -53,5 +60,10 @@
     "static/css/main.706714c2.chunk.css",
     "static/js/main.4b478f9f.chunk.js"
 >>>>>>> 1d02382de143ef861f8071842e82720373bc7034
+=======
+    "static/js/2.ecda2f92.chunk.js",
+    "static/css/main.706714c2.chunk.css",
+    "static/js/main.4b478f9f.chunk.js"
+>>>>>>> 1d65190bcf1984f65f8a69b69663bd2dcc7a0025
   ]
 }
