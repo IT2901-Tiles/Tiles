@@ -125,10 +125,6 @@
         width: 17vw;
     }
 
-    .cardContainer {
-      margin-top: 10vw;
-    }
-
     .wrapperCardNotChosen {
         height: 23.7vw; /* Must be 1.3vw smaller than chosenCardContainer smaller due to the border */
     }
