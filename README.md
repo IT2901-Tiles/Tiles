@@ -29,9 +29,10 @@ The gif below shows this process.
 4. Open http://localhost:8484/ in your preferred browser
 
 ### How to run tests
-1. Navifate to the tiles01/frontend folder
-2. Run <code>npm test</code>
+1. Navigate to the tiles01/frontend folder
+2. Run <code>npm test</code> to run the unit tests
 3. To see test coverage, run <code>npm test -- --coverage --watchAll=false</code>
+4. Run <code>???</code> to rund the Cypress end-to-end test
    
 
 ### Roadmap
