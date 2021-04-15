@@ -2,7 +2,6 @@ import {configure, shallow} from "enzyme"
 import Adapter from 'enzyme-adapter-react-16';
 import AnimationPage from '../Pages/AnimationPage';
 import {cleanup} from '@testing-library/react';
-import renderer from 'react-test-renderer';
 
 afterEach(() => {
     cleanup();
@@ -24,4 +23,9 @@ describe('Animation page', () => {
     it('renders an AnimationsPreview', () => {
         expect(wrapper.find('AnimationsPreview')).toHaveLength(1);
     });
+    it('renders a CharHappy', () => {
+        expect(wrapper.find('CharHappy')).toHaveLength(1);
+    });
+   
+    
 });

@@ -23,5 +23,8 @@ describe('ChosenCards Page', () => {
     it('renders two LinkButton elements', () => {
         expect(wrapper.find('LinkButton')).toHaveLength(2);
     });
+    it('renders a CharNormal', () => {
+        expect(wrapper.find('CharNormal')).toHaveLength(1);
+    });
 
 });
