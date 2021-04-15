@@ -32,12 +32,13 @@ The gif below shows this process.
 1. Navigate to the tiles01/frontend folder
 2. Run <code>npm test</code> to run the unit tests
 3. To see test coverage, run <code>npm test -- --coverage --watchAll=false</code>
-4. Run <code>???</code> to rund the Cypress end-to-end test
+4. Run <code>???</code> to run the Cypress end-to-end test
    
 
 ### Roadmap
 Our project has been limited in the number of cards we chose to include, because developing all the animations from scratch takes a lot of time. There are also other ideas for releases in the future, some of them are listed below.
 * Add more cards, so there can be more animations. This can spark the childrens creativity even more.
+* Add a voice that will read the instructions to the children and the text on the cards. This will facilitate more for children with reading disabilities.
 * Let the children be able to log in with their own user. Then it will not breach GDPR to let them record and save the audio in the database, and not just download it.
 * Make it possible for children to work together to come up with better ideas.
 * Facilitate the application more for children with disabilities. This includes zooming on the animations and making the colour better suited for colourblind.
