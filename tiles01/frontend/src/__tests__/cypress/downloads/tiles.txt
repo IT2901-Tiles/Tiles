@@ -1,0 +1,7 @@
+Cards chosen:
+- Trigger: drop
+- Thing: bike
+- Feedback: color_change
+
+Your idea:
+- My great idea

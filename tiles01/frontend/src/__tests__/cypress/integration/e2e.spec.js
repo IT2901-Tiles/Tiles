@@ -1,3 +1,6 @@
+
+
+
 let LOCAL_STORAGE_MEMORY = {};
 
 Cypress.Commands.add("saveLocalStorage", () => {
@@ -22,7 +25,7 @@ describe("End to end test", () => {
         cy.saveLocalStorage();
       });
     it('visits the app', () => {
-        cy.visit('http://localhost:3000')
+        cy.visit('http://localhost:8484')
     })
     it('Click start', () => {
         cy.get('.btn').click()
@@ -67,7 +70,13 @@ describe("End to end test", () => {
     })
     it('Download idea', () => {
         cy.get('.textButtonAnimationPage').click()
+        cy.task('updateTask',2).then((textOrNull) => {   
+            console.log(textOrNull) 
+          })
     })
+    
+    
+
     
 
 

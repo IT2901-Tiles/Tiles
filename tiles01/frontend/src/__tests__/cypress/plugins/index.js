@@ -20,3 +20,28 @@ module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 }
+
+const MongoClient = require('mongodb').MongoClient;
+module.exports = (on, config) => {
+  on('task', {
+    updateTask (id) {
+      console.log("cusk")
+      return new Promise((resolve) => {
+        MongoClient.connect('mongodb+srv://Tiles:CoolCoolCool@tilescluster.87fob.mongodb.net/tilesCards?retryWrites=true&w=majority', (err, client) => {
+          if (err) {
+            console.log(`MONGO CONNECTION ERROR: ${err}`)  
+            throw err;
+          } else {
+            
+            console.log("Connected correctly to server");
+            const db = client.db("tilesCards");
+            // Find one document
+            const myDoc =  db.collection("ideas").findOne({}, {sort:{$natural:-1}})
+            console.log(myDoc)
+            
+          }
+        });
+      }); // end of return Promise
+    }
+  }) // end of task
+}
