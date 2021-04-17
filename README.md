@@ -32,7 +32,8 @@ The gif below shows this process.
 1. Navigate to the tiles01/frontend folder
 2. Run <code>npm test</code> to run the unit tests
 3. To see test coverage, run <code>npm test -- --coverage --watchAll=false</code>
-4. Run <code>???</code> to run the Cypress end-to-end test
+4. Navigate to tiles01/frontend/__tests__ and run <code>npx cypress open</code> to open cypress
+5. To run the tests click the test files that appear when cypress is open.
    
 
 ### Roadmap
