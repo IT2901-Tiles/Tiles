@@ -34,4 +34,7 @@ describe('Main page', () => {
     it('renders two img elements', () => {
         expect(wrapper.find('img')).toHaveLength(2);
     });
+    it('renders a CharNormalMainPage', () => {
+        expect(wrapper.find('CharNormalMainPage')).toHaveLength(1);
+    });
 });

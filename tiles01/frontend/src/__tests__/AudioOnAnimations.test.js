@@ -19,6 +19,12 @@ describe('AudioOnAnimations component', () => {
         const tree = renderer.create(<AudioOnAnimations/>).toJSON();
         expect(tree).toMatchSnapshot();
     });
+    it('there does not exist a button element if the feedback card is not selected', () => {
+        expect(wrapper.find('button')).toHaveLength(0);
+    });
+    it('there does not exist a audio element if the feedback card is not selected', () => {
+        expect(wrapper.find('audio')).toHaveLength(0);
+    });
 });
 
 describe('AudioOnAnimations component if vibrate is chosen as feedback', () => {
