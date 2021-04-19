@@ -1,7 +1,6 @@
 import React from 'react';
 import Outdoors from './Outdoors';
 import Cloud from './Cloud';
-import ClosedUmbrella from './ClosedUmbrella';
 import PersonUmbrella from './PersonUmbrella';
 
 

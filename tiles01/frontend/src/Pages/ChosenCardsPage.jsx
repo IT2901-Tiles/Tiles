@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import LinkButton from '../Components/LinkButton'
 import placeholderImage from '../images/blankImg.png'
 import TopContainer from '../Components/TopContainer'
