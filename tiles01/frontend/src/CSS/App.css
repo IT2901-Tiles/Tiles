@@ -4,16 +4,17 @@
     font-family: 'Roboto', sans-serif;
     */
 /** Selector css */
-html, body {
-  margin: 0; 
-  height: 100%; 
+html,
+body {
+  margin: 0;
+  height: 100%;
   overflow: auto;
   overflow-x: hidden; /* Avoiding horizontal scrollbars */
   *overflow-x: hidden; /* IE-support */
 }
 
-html{
-  background-color: #68C2C4;
+html {
+  background-color: #68c2c4;
   text-align: center;
 }
 h1 {
@@ -25,8 +26,21 @@ p {
   font-family: Helvetica, sans-serif;
 }
 
-/** MAIN PAGE **/ 
-.mainPage .Logo{
+/** MAIN PAGE **/
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+}
+
+.mainPage {
+  height: 100%;
+  overflow: hidden;
+}
+
+.mainPage .Logo {
   padding: 0.5vw 2em;
   width: 25vw;
   margin: 5% auto 3%;
@@ -38,16 +52,16 @@ p {
   background-color: rgba(108, 143, 143, 0.589);
   font-family: Helvetica, sans-serif;
   font-size: 2vw;
-  color: #F3EAC2;
+  color: #f3eac2;
   padding: 1%;
   border-radius: 20px;
-  width: 70vw;  
+  width: 70vw;
   margin: 3vh auto 10vh;
   text-shadow: 1px 1px #252525ab;
 }
 
 /** Images on the MainPage (cards), placement **/
-.mainPage .img1 {
+.mainPage .mainPageImg1 {
   position: absolute;
   z-index: -1;
   width: 25vw;
@@ -55,8 +69,7 @@ p {
   left: 0;
 }
 
-
-.mainPage .img2 {
+.mainPage .mainPageImg2 {
   position: absolute;
   z-index: -1;
   width: 25vw;
@@ -64,20 +77,19 @@ p {
   right: 0;
 }
 
-
-/** Character CSS **/ 
-/* MainPage */ 
+/** Character CSS **/
+/* MainPage */
 #charNormalMainWrapper {
   height: 0;
   width: 0;
-} 
+}
 
 .svgCharacterNormalMainPage {
   position: relative;
   width: 33vw;
   top: -14vw;
   left: 65vw;
-}  
+}
 
 /* On category page */
 #charThinkingWrapper {
@@ -85,7 +97,7 @@ p {
   height: 0;
 }
 
-.CharThinking{
+.CharThinking {
   position: relative;
   height: 13vw;
   top: -7vw;
@@ -96,13 +108,13 @@ p {
 #charNormalWrapper {
   height: 0;
   width: 0;
-} 
+}
 
-.CharNormal{ 
+.CharNormal {
   position: relative;
   height: 13vw;
   left: 75vw;
-  top: -9.70vw;
+  top: -9.7vw;
 }
 
 /* On animation page */
@@ -111,7 +123,7 @@ p {
   width: 0;
 }
 
-.CharHappy{
+.CharHappy {
   position: relative;
   height: 13vw;
   top: -10vw;
@@ -121,7 +133,7 @@ p {
 /* Placement of the character on the different screen sizes */
 
 @media screen and (max-width: 1000px) {
-  .CharNormal{ 
+  .CharNormal {
     padding-top: 0.95vw;
   }
 
@@ -135,7 +147,7 @@ p {
 }
 
 @media screen and (max-width: 900px) {
-  .CharNormal{ 
+  .CharNormal {
     padding-top: 1.15vw;
   }
 
@@ -149,7 +161,7 @@ p {
 }
 
 @media screen and (max-width: 800px) {
-  .CharNormal{ 
+  .CharNormal {
     padding-top: 1.75vw;
   }
 
@@ -202,19 +214,16 @@ p {
   .svgCharacterNormalMainPage {
     display: none;
   }
-
 }
-
 
 /*PRE DEFINDED DESIGN KAN SLETTES? */
 
 .App {
   text-align: center;
-  font-family: 'Comic Neue', sans-serif;
+  font-family: "Comic Neue", sans-serif;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-
 }
