@@ -38,7 +38,7 @@ The gif below shows this process.
 
 ### Roadmap
 Our project has been limited in the number of cards we chose to include, because developing all the animations from scratch takes a lot of time. There are also other ideas for releases in the future, some of them are listed below.
-* Add more cards, so there can be more animations. This can spark the childrens creativity even more.
+* Add more cards, so there can be more animations. This can spark the children's creativity even more.
 * Add a voice that will read the instructions to the children and the text on the cards. This will facilitate more for children with reading disabilities.
 * Let the children be able to log in with their own user. Then it will not breach GDPR to let them record and save the audio in the database, and not just download it.
 * Make it possible for children to work together to come up with better ideas.
