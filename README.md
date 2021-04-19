@@ -29,12 +29,15 @@ The gif below shows this process.
 4. Open http://localhost:8484/ in your preferred browser
 
 ### How to run tests
-1. Navigate to the tiles01/frontend folder
-2. Run <code>npm test</code> to run the unit tests
-3. To see test coverage, run <code>npm test -- --coverage --watchAll=false</code>
-4. Navigate to tiles01/frontend/__tests__ and run <code>npx cypress open</code> to open cypress
-5. To run the tests click the test files that appear when cypress is open.
-   
+
+1. Navigate to the tiles01/frotend folder.
+2. Unit tests:
+    1. Run <code>npm test</code> to run the jest unit tests.
+    2. Run <code>npm test -- --coverage --watchAll=false</code> to see the test coverage.
+    3. Run <code>npm run cypress:open-unit</code> to run the cypress component tests.
+3. End-to-end tests:
+    1. Run <code>npm cypress:open</code> to open Cypress.
+    2. Click the test file that appears to run it.
 
 ### Roadmap
 Our project has been limited in the number of cards we chose to include, because developing all the animations from scratch takes a lot of time. There are also other ideas for releases in the future, some of them are listed below.
