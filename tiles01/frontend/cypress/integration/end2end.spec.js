@@ -1,7 +1,3 @@
-
-import {readIdeaDB} from "../../../backend/database"
-
-
 let LOCAL_STORAGE_MEMORY = {};
 
 Cypress.Commands.add("saveLocalStorage", () => {

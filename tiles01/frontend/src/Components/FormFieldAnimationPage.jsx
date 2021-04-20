@@ -40,9 +40,8 @@ function sendIdeaRequest(data){
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(data)
-    }).then(response=>response.json()).then(data=>{ // Response må være json
-        window.alert(data) // Kanskje litt dumt siden brukeren er barn. Kanskje heller til konsoll?
-        //Do anything else like Toast etc.
+    }).then(response=>response.json()).then(data=>{ 
+        window.alert(data) 
 })
 }
 
