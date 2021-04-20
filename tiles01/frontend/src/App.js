@@ -1,6 +1,6 @@
 //CSS import
 import './CSS/App.css';
-import React, {useState} from 'react';
+import React from 'react';
 import {
   //MemoryRouter as Router,
   BrowserRouter as Router,

@@ -25,7 +25,7 @@ function LinkToPage(props) {
                 pathname: path,
                 state: { category: category, color: colour, card: props.card }
             }}>
-            <img src={nameOfCard} className={classNameCard} />
+            <img alt={nameOfCard} src={nameOfCard} className={classNameCard} />
         </Link>
     );
 }
