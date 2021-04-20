@@ -13,10 +13,6 @@ configure({
 
 describe('Animation page', () => {
     const wrapper = shallow(<AnimationPage/>);
-    // it('renders correctly', () => {
-    //     const tree = renderer.create(<AnimationPage/>).toJSON();
-    //     expect(tree).toMatchSnapshot();
-    // });
     it('renders a TopContainer', () => {
         expect(wrapper.find('TopContainer')).toHaveLength(1);
     });
