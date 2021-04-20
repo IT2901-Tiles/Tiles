@@ -1,5 +1,5 @@
 
-import {readIdeaDB} from "../../../../../backend/database"
+import {readIdeaDB} from "../../../backend/database"
 
 
 let LOCAL_STORAGE_MEMORY = {};
@@ -71,23 +71,9 @@ describe("End to end test", () => {
     })
     it('Download idea', () => {
         cy.get('.textButtonAnimationPage').click()
-        
-        
-        
- 
     })
     it("Check idea written to database", ()=>{
         cy.request("GET",'http://localhost:8484/read_idea').its('body').should('include', 'My great idea').and("include", JSON.stringify({ trigger: 'drop', thing: 'bike', feedback: 'color_change' }))
     })
-    
-    
-
-    
-
-
-
-
-    
-    
 
   });
