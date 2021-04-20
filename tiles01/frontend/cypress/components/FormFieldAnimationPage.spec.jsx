@@ -10,9 +10,11 @@ describe('FormFieldAnimationPage', () => {
     }); 
     it('textarea works', () => {
         mount(<FormFieldAnimationPage/>);
+        cy.get('textarea').should('contain.text', '')
         cy.get('textarea').type('What a great idea')
-        cy.get('button').click();
     });
 });
+
+
 
 
