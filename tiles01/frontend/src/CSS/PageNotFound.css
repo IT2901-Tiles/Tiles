@@ -1,20 +1,19 @@
 .pageNotFoundTitle{
     background-color : #E53D2FEE;
     color: #F3EAC2;
-    font-family: 'Roboto';
-    font-size: 1.5rem;
     border-radius: 30px;
-    text-shadow: 2px 2px #252525ab;
     border: 0.25px solid #72140C;
     box-shadow: 1px 1px 3px #000000AA;
-    padding: 0 0.5rem;
-    position: center;
-    margin: 1rem 25rem 0;
+    font-size: 2rem;
+    border-radius: 20px;
+    text-shadow: 2px 2px #252525ab;
+    margin: 2.5rem 15rem 3rem;
+    padding: 1rem;
+    z-index: 1;
 }
 
 .middleContainer{
     background-color: rgba(108, 143, 143, 0.589);
-    font-family: 'Comic Neue', cursive;
     color: #F3EAC2;
     font-size: 2rem;
     border-radius: 20px;
@@ -35,6 +34,7 @@
     width: 6rem;
     position: absolute;
     box-shadow: 10px 10px 5px rgba(108, 143, 143, 0.5);
+    z-index: -1;
 }
 
 /*** left side ***/
@@ -106,3 +106,31 @@
     top: 95%;
     transform: rotate(-15deg);
 }
+
+/* Responsiveness for 404-page */
+
+@media only screen and (max-width: 800px) {
+    .pageNotFoundTitle{
+        font-size: 1rem;
+        min-width: 100px;
+        margin: 2rem 12rem 2rem;
+    }
+
+    .middleContainer {
+        font-size: 1rem;
+        min-width: 100px;
+        margin: 2rem 12rem 2rem;
+    }
+
+    .wider {
+        width: 13rem;
+        font-size: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .wider {
+        margin-left: 3.5rem;
+    }
+  }
