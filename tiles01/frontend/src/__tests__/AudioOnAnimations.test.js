@@ -22,13 +22,13 @@ describe('AudioOnAnimations component', () => {
     it('there does not exist a button element if the feedback card is not selected', () => {
         expect(wrapper.find('button')).toHaveLength(0);
     });
-    it('there does not exist a audio element if the feedback card is not selected', () => {
+    it('there does not exist a audio element if the feedback card vibrate is not selected', () => {
         expect(wrapper.find('audio')).toHaveLength(0);
     });
 });
 
 describe('AudioOnAnimations component if vibrate is chosen as feedback', () => {
-    const init = {feedbackCard: 'vibrate', muted:'false'};
+    const init = {feedbackCard: 'vibrate', muted: 'false'};
     const container = shallow(<AudioOnAnimations {...init}/>);
     it('there exists an audio element and a button', () => {
         expect(container.find('audio')).toHaveLength(1);

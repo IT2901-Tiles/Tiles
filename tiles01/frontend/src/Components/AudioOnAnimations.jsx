@@ -32,6 +32,7 @@ function AudioOnAnimations(props) {
     function muteAudio() {
         let player = document.getElementById('animationAudio');
         let muteButtonText = document.getElementById('muteButton');
+        console.log(player.muted)
         if (player.muted === false) {
             muteButtonText.innerHTML = "Unmute audio";
             return player.muted = true;

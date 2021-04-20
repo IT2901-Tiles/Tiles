@@ -33,19 +33,12 @@ function ChosenCardsPage(props) {
 
     // If bool value is true, then this function is returned. This returns the image and uses the LinkToPage-component
     function trueValue(cardType) {
-        if (errorOccured) { // error-solution for now, this will be fixed more professionally later on
-            return <LinkButton target="/categories" title={cardType.charAt(0).toUpperCase + cardType.substring(1)} category={cardType} size="Small"></LinkButton>
-        } else {
             let cardTypeName = cardType.charAt(0).toUpperCase() + cardType.substring(1)
             return <LinkToPage target="/categories" title={cardTypeName} category={cardType} nameOfCardType={localStorage.getItem(cardType)} classNameCard={"chosen" + cardTypeName}></LinkToPage>
-        }
     }
 
     // If bool value is false, then this function is returned. This function returns a placeholder image and a button
     function falseValue(cardType) {
-        if (errorOccured) { // error-solution for now, this will be fixed
-            return <LinkButton target="/categories" title={cardType} category={cardType} size="Small"></LinkButton>
-        } else {
             // Checks which type of card it is + sets the color of the border
             let classNameOfCard;
             if (cardType === triggerChosenId) {
@@ -74,20 +67,16 @@ function ChosenCardsPage(props) {
                     {((cardType === feedbackChosenId) && (triggerChosen) && (thingChosen)) ? <LinkButton target="/categories" title="Choose!" category="feedback" size="chosenCards" className="buttonChosenCardsPage"></LinkButton> : ""}
                 </div>
             </div>
-
-        }
     }
 
     return (
         <div className="Page ChosenCardsPage">
-
         <TopContainer
             text = "Press the Choose button to select a card from this category!"
         />
         <div id="charNormalWrapper">
             <CharNormal/>
         </div>
-
             <div className="chosenCardsGrid">
                 <div className="chosenCardsGrid2">
 
@@ -97,9 +86,6 @@ function ChosenCardsPage(props) {
                     {(feedbackChosen) ? <div className="chosenCardContainer">{trueValue(feedbackChosenId)}</div> : falseValue(feedbackChosenId)}
                 </div>
             </div>
-
-
-
             <br />
             <LinkButton target="/animation" title="RUN!" category="animation" size="Large" disabled={!buttonActive}    ></LinkButton>
         </div>
@@ -108,4 +94,4 @@ function ChosenCardsPage(props) {
 //checks if cards have been selected
 
 
-export default ChosenCardsPage
+export default ChosenCardsPage;
