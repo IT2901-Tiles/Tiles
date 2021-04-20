@@ -1,3 +1,7 @@
+.PageNotFound {
+    overflow: hidden;
+}
+
 .pageNotFoundTitle{
     background-color : #E53D2FEE;
     color: #F3EAC2;
