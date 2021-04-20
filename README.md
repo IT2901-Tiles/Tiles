@@ -20,7 +20,7 @@ The gif below shows this process.
 
 ### How to run the application
 1. <code>git clone https://github.com/IT2901-Tiles/Tiles.git</code>
-2. Navigate to the tiles01/frotend folder.
+2. Navigate to the tiles01/frontend folder.
     1. Run <code>npm install</code>
     2. Run <code>npm run build</code>
 3. Navigate to the tiles01/backend folder.
@@ -30,7 +30,7 @@ The gif below shows this process.
 
 ### How to run tests
 
-1. Navigate to the tiles01/frotend folder.
+1. Navigate to the tiles01/frontend folder.
 2. Unit tests:
     1. Run <code>npm test</code> to run the jest unit tests.
     2. Run <code>npm test -- --coverage --watchAll=false</code> to see the test coverage.
