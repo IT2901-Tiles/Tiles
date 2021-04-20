@@ -16,10 +16,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.post("/add_idea", (req, res) => {
-    console.log(req.body)
     let data = req.body
-    console.log(db)
     database.writeIdeaDB(db,data.trigger, data.thing, data.feedback, data.idea)
+})
+app.get("/read_idea", (req, res) => {
+    let data = req.body
+    const idea=database.readIdeaDB(db).then(result=>{
+
+        res.send(JSON.stringify(result))
+    })
+    
 })
 
 app.get('/*', function (req, res) {
