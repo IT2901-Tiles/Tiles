@@ -9,6 +9,7 @@
     position: relative;
     padding-top: 0.75vh;
     transition: ease-out 0.1ms;
+    margin-top: 1.2vw;
 }
 
 .gridAnimationCards {
@@ -145,7 +146,7 @@ svg {
 /* Styling below prevents animationpage from going into TopContainer, also including elements from ChosenCardsPage.jsx (.chosenCardsGrid) */
 @media only screen and (max-width: 1000px) {
     .gridAnimationsPage {
-        margin-top: 1vw;
+        margin-top: 1.2vw;
     }
 
     svg {
