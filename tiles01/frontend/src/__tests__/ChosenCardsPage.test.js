@@ -26,5 +26,16 @@ describe('ChosenCards Page', () => {
     it('renders a CharNormal', () => {
         expect(wrapper.find('CharNormal')).toHaveLength(1);
     });
+    it('renders choose-button for trigger, and not things + feedback', () => {
+        expect(wrapper.find('.buttonChosenCardsPage').props().category).toEqual('trigger');
+        expect(wrapper.find('.buttonChosenCardsPage').props().category).not.toEqual('things');
+        expect(wrapper.find('.buttonChosenCardsPage').props().category).not.toEqual('feedback');
+    });
+    // it('check that choose-button disappears', () => {
+    //     const init = {}
+    //     const container = shallow(<ChosenCardsPage {...init}/>)
+    //     console.log(container.debug())
 
+    //     expect(container.find('.buttonChosenCardsPage').props().category).not.toEqual('trigger');
+    // });
 });

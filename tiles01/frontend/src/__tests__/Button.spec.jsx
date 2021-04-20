@@ -7,8 +7,7 @@ describe('FormFieldAnimationPage', () => {
     it('Button to submit idea works.', () => {
         mount(<FormFieldAnimationPage/>);
         cy.get('button').contains('Download').click();
-    });
-    
-})
+    });  
+});
 
 
