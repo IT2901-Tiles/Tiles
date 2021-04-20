@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { mount } from '@cypress/react'
-import FormFieldAnimationPage from '../Components/FormFieldAnimationPage';
+import FormFieldAnimationPage from '../../src/Components/FormFieldAnimationPage';
 
 
 describe('FormFieldAnimationPage', () => {
