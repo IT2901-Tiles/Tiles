@@ -12,18 +12,13 @@ var cardPaths = {
     "trigger": require.context("./../images/triggers", false, /\.(png|jpe?g|svg)$/),
     "feedback": require.context("./../images/feedbacks", false, /\.(png|jpe?g|svg)$/)
 }
-//props:
-//category: the category of the cardcontainer, used to find the cards
-//onSelect: function to pass selected card to CategoryPage,
-//variables:
-//image: the image file
-//index: the index of the image file in listOfImages
 
 function CardContainer(props) {
     const listOfImages = importAll(cardPaths[props.category]);
     const [activeCard, setActiveCard] = useState(null);
 
     //called when a card in the container is clicked, sets the card as active 
+    //newvalue represents the card that is selected
     function handleCardClick(newValue) {
         props.onSelect(newValue)
         setActiveCard(newValue.id)
@@ -38,9 +33,7 @@ function CardContainer(props) {
     //map function maps the files imported in listOfImages to Card components
     return (
         <div>
-
             {listOfImages.map(
-
                 (image, index) => <Card active={activeCard} name={getName(image)} onClick={handleCardClick} id={index} key={index} src={image.default} />
             )}
         </div>

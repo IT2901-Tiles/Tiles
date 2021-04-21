@@ -20,7 +20,7 @@ The gif below shows this process.
 
 ### How to run the application
 1. <code>git clone https://github.com/IT2901-Tiles/Tiles.git</code>
-2. Navigate to the tiles01/frotend folder.
+2. Navigate to the tiles01/frontend folder.
     1. Run <code>npm install</code>
     2. Run <code>npm run build</code>
 3. Navigate to the tiles01/backend folder.
@@ -28,11 +28,24 @@ The gif below shows this process.
     2. Run <code>npm start</code>
 4. Open http://localhost:8484/ in your preferred browser
 
+### How to run tests
+
+1. Navigate to the tiles01/frontend folder.
+2. Unit tests:
+    1. Run <code>npm test</code> to run the jest unit tests.
+    2. Run <code>npm test -- --coverage --watchAll=false</code> to see the test coverage.
+    3. Run <code>npm run cypress:open-unit</code> to run the cypress component tests.
+3. End-to-end tests:
+    1. Run <code>npm run cypress:open</code> to open Cypress.
+    2. Click the test file that appears to run it.
+
 ### Roadmap
 Our project has been limited in the number of cards we chose to include, because developing all the animations from scratch takes a lot of time. There are also other ideas for releases in the future, some of them are listed below.
-* Add more cards, so there can be more animations. This can spark the childrens creativity even more.
+* Add more cards, so there can be more animations. This can spark the children's creativity even more.
+* Add a voice that will read the instructions to the children and the text on the cards. This will facilitate more for children with reading disabilities.
 * Let the children be able to log in with their own user. Then it will not breach GDPR to let them record and save the audio in the database, and not just download it.
 * Make it possible for children to work together to come up with better ideas.
+* Facilitate the application more for children with disabilities. This includes zooming on the animations and making the colour better suited for colourblind.
 
 ### Contributing
 Pull requests are welcome for everyone that has ideas. For major changes, please open an issue first to discuss what you would like to change.
