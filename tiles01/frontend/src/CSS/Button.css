@@ -58,6 +58,7 @@
 .wider {
   width: 25rem;
   font-size: 2rem;
+  z-index: 1;
 }
 
 /** Styling for the buttons (for choosing cards) on the chosen cards page, these have no brightness but are the same as the small button essentially**/
