@@ -12,6 +12,9 @@ Cypress.Commands.add("restoreLocalStorage", () => {
   });
 });
 
+//End to end test that goes through the entire application
+//It selects one card in each category,then views the animation, writes an idea and downloads it
+//It then tests if the idea has been written to the database
 
 describe("End to end test", () => {
     beforeEach(() => {
