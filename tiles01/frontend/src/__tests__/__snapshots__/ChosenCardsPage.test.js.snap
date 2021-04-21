@@ -18,7 +18,7 @@ exports[`ChosenCards Page renders correctly 1`] = `
       className="infoBox"
     >
       <p>
-        Press the Choose button to select a card from this category!
+        To select a card, click on the "Choose!" button!
       </p>
     </div>
   </div>
@@ -447,7 +447,7 @@ exports[`ChosenCards Page renders correctly 1`] = `
             }
           />
           <div
-            id="textNoCardChosen1"
+            id="noCardChosenTrigger"
             style={
               Object {
                 "color": "#F08A00",
@@ -502,7 +502,7 @@ exports[`ChosenCards Page renders correctly 1`] = `
             }
           />
           <div
-            id="textNoCardChosen2"
+            id="noCardChosenThings"
             style={
               Object {
                 "color": "#E53D2F",
@@ -540,7 +540,7 @@ exports[`ChosenCards Page renders correctly 1`] = `
             }
           />
           <div
-            id="textNoCardChosen3"
+            id="noCardChosenFeedback"
             style={
               Object {
                 "color": "#FFCD00",
@@ -562,18 +562,23 @@ exports[`ChosenCards Page renders correctly 1`] = `
     </div>
   </div>
   <br />
-  <button
-    className="LargeButton btn btn-primary"
-    disabled={true}
-    style={
-      Object {
-        "backgroundColor": "#84AD64",
-        "color": "#F3EAC2",
-      }
-    }
-    type="button"
+  <a
+    href="/animation"
+    onClick={[Function]}
   >
-    RUN!
-  </button>
+    <button
+      className="LargeButton btn btn-primary"
+      disabled={true}
+      style={
+        Object {
+          "backgroundColor": "#84AD64",
+          "color": "#F3EAC2",
+        }
+      }
+      type="button"
+    >
+      RUN!
+    </button>
+  </a>
 </div>
 `;

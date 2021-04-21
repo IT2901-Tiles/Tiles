@@ -6,7 +6,7 @@ import CharNormalMainPage from "../Components/CharNormalMainPage";
 //img imports
 import img1 from "../images/img1.png"
 import img2 from "../images/img2.png"
-import {resetCards} from "../Components/AnimationsPreview"
+import {resetCards} from "./AnimationPage"
 
 function MainPage() {
 

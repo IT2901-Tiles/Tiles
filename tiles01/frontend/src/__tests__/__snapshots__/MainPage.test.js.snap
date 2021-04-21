@@ -13,7 +13,7 @@ exports[`Main page renders correctly 1`] = `
   </div>
   <img
     alt="stack of cards2"
-    className="img2"
+    className="mainPageImg2"
     src="img2.png"
   />
   <div
@@ -22,7 +22,9 @@ exports[`Main page renders correctly 1`] = `
     <p>
       Welcome to the Tiles Internet of Things Invention! 
       <br />
-      Let’s create some smart creations! 
+      Pick one card from three different categories and create some smart creations.
+      <br />
+      Click on the button below to start!
     </p>
   </div>
   <a
@@ -32,6 +34,7 @@ exports[`Main page renders correctly 1`] = `
     <button
       className="LargeButton btn btn-primary"
       disabled={false}
+      onClick={[Function]}
       style={
         Object {
           "backgroundColor": "#F08A00",
@@ -45,7 +48,7 @@ exports[`Main page renders correctly 1`] = `
   </a>
   <img
     alt="stack of cards"
-    class="mainPage img1"
+    class="mainPageImg1"
     src="img1.png"
   />
   <div
