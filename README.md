@@ -36,7 +36,7 @@ The gif below shows this process.
     2. Run <code>npm test -- --coverage --watchAll=false</code> to see the test coverage.
     3. Run <code>npm run cypress:open-unit</code> to run the cypress component tests.
 3. End-to-end tests:
-    1. Run <code>npm cypress:open</code> to open Cypress.
+    1. Run <code>npm run cypress:open</code> to open Cypress.
     2. Click the test file that appears to run it.
 
 ### Roadmap
