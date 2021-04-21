@@ -29,6 +29,7 @@ function LinkButton(props) {
     } else if (category === "animation") {
         colour = "#84AD64"
     }
+
     return (
         <Link
         to={{

@@ -31,6 +31,7 @@ function CategoryPage(props) {
     var cardSelected = !["null", null].includes(card)
 
      //Function triggered when a card is selected
+     //newvalue represents the card chosen
     function onCardClick(newValue) {
         setCard(newValue.src)
     }

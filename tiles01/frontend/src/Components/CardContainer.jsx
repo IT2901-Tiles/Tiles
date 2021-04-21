@@ -18,6 +18,7 @@ function CardContainer(props) {
     const [activeCard, setActiveCard] = useState(null);
 
     //called when a card in the container is clicked, sets the card as active 
+    //newvalue represents the card that is selected
     function handleCardClick(newValue) {
         props.onSelect(newValue)
         setActiveCard(newValue.id)
