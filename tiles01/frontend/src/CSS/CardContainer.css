@@ -26,3 +26,10 @@
     padding: 12px 12px;
     z-index: 1;
 }
+
+/* Makes sure that the CardContainer does not overlap TopComponent */
+@media only screen and (max-width: 700px) {
+    .CardContainer {
+        margin-top: 4vw;
+      }
+}

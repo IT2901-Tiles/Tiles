@@ -10,8 +10,11 @@ import penCard from "../images/things/pen.png";
 import temperatureCard from "../images/triggers/temperature.png"
 import umbrellaCard from "../images/things/umbrella.png"
 import vibrateCard from "../images/feedbacks/vibrate.png"; 
+
+
 //This page does not exist
 function NotFoundPage() {
+
     return (
         <div className="PageNotFound">
             <div className="pageNotFoundTitle">

@@ -4,9 +4,6 @@ import "../CSS/AnimationPage.css"
 import TopContainer from '../Components/TopContainer'
 import CharHappy from "../Components/CharHappy"
 
-
-
-
 function AnimationPage() {
     return (
 
@@ -19,7 +16,6 @@ function AnimationPage() {
                     <CharHappy />
                 </div>
                 <AnimationsPreview />
-
             </div>
         </div>
     );

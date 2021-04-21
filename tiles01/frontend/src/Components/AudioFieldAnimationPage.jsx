@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import MicRecorder from 'mic-recorder-to-mp3'
 import "../CSS/Button.css"
 import Button from 'react-bootstrap/Button';
-import AudioOnAnimations from './AudioOnAnimations'
 
 const Mp3Recorder = new MicRecorder({ bitRate: 128 })
 
@@ -103,8 +102,6 @@ function AudioFieldAnimationPage(props) {
     return (
         <div className="AudioAreaAnimationPage">
             <div className="Audio"><audio
-                //ref="audioSource"
-                //initialAudio="test.mp3"
                 controls="controls"
                 src={blobURL || "default.mp3"}
             /></div>
