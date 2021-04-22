@@ -1,5 +1,5 @@
 import {configure, shallow} from "enzyme"
-import Adapter from 'enzyme-adapter-react-16';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import {cleanup} from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import AudioFieldAnimationPage from "../Components/AudioFieldAnimationPage";

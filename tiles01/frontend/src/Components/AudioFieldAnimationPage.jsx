@@ -9,10 +9,9 @@ const Mp3Recorder = new MicRecorder({ bitRate: 128 })
 function AudioFieldAnimationPage(props) {
     window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
-    const [triggerCard] = useState(props.triggerCard) // props to pass to AnimationsPreview.jsx
-    const [thingCard] = useState(props.thingCard) // props to pass to AnimationsPreview.jsx
-    const [feedbackCard] = useState(props.feedbackCard) // props to pass to AnimationsPreview.jsx
-    //const [audio, setAudio] = useState({ url: null, blob: null, chunks: null, duration: { h: 0, m: 0, s: 0 } })
+    const [triggerCard] = useState(props.triggerCard) // props to pass to AnimationPage.jsx
+    const [thingCard] = useState(props.thingCard) // props to pass to AnimationPage.jsx
+    const [feedbackCard] = useState(props.feedbackCard) // props to pass to AnimationsPage.jsx
     const [isRecording, setRecording] = useState(false)
     const [blobURL, setBlobURL] = useState('')
     const [blob, setBlob] = useState('')
@@ -44,8 +43,8 @@ function AudioFieldAnimationPage(props) {
             .catch(e => console.log(e))
     }
 
-    //function to dowload the audio
-    function dowloadRecording() {
+    //function to download the audio
+    function downloadRecording() {
         const element = document.createElement("a")
         const audioFile = new Blob(audio, {
             type: blob.type,
@@ -108,7 +107,7 @@ function AudioFieldAnimationPage(props) {
             <div className="AudioButtons">
                 <Button onClick={startRecording} className="SmallButton" disabled={isRecording}>Record</Button>
                 <Button onClick={stopRecording} className="SmallButton" disabled={!isRecording}>Stop</Button>
-                <Button onClick={dowloadRecording} className="SmallButton" disabled={audio === ''}>Download</Button>
+                <Button onClick={downloadRecording} className="SmallButton" disabled={audio === ''}>Download</Button>
             </div>
         </div>
     );
