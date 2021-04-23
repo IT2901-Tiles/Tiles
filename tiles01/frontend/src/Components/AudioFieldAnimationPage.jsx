@@ -1,20 +1,20 @@
 // Inspiration from this: https://matheswaaran.medium.com/nicol%C3%A1s-castano-i-think-using-a-functional-component-is-the-problem-f87d2a80dfae
 import React, { useEffect, useState } from 'react'
-import MicRecorder from 'mic-recorder-to-mp3'
+
 import "../CSS/Button.css"
 import Button from 'react-bootstrap/Button';
 import AudioOnAnimations from './AudioOnAnimations'
+import AudioReactRecorder, { RecordState } from 'audio-react-recorder'
 
-const Mp3Recorder = new MicRecorder({ bitRate: 128 })
 
 function AudioFieldAnimationPage(props) {
-    window.AudioContext = window.AudioContext || window.webkitAudioContext;
+    
 
     const [triggerCard] = useState(props.triggerCard) // props to pass to AnimationsPreview.jsx
     const [thingCard] = useState(props.thingCard) // props to pass to AnimationsPreview.jsx
     const [feedbackCard] = useState(props.feedbackCard) // props to pass to AnimationsPreview.jsx
     //const [audio, setAudio] = useState({ url: null, blob: null, chunks: null, duration: { h: 0, m: 0, s: 0 } })
-    const [isRecording, setRecording] = useState(false)
+    const [isRecording, setRecording] = useState(RecordState.NONE)
     const [blobURL, setBlobURL] = useState('')
     const [blob, setBlob] = useState('')
     const [isBlocked, setBlocked] = useState(false)
@@ -25,35 +25,22 @@ function AudioFieldAnimationPage(props) {
         if (isBlocked) {
             console.log("Permission denied")
         } else
-            Mp3Recorder.start()
-                .then(() => { setRecording(true) })
-                .catch(e => console.error(e))
+        setRecording(RecordState.START)
+        console.log("start")
     }
 
     //function to stop the recording
     function stopRecording() {
-        setRecording(false)
-        Mp3Recorder.stop()
-            .getMp3()
-            .then(async ([buffer, blob]) => {
-                setBlob(blob)
-                const blobURL = URL.createObjectURL(blob)
-                setBlobURL(blobURL)
-                setRecording(false)
-                setAudio(buffer)
-            })
-            .catch(e => console.log(e))
+        console.log("stop")
+        setRecording(RecordState.STOP)
     }
 
     //function to dowload the audio
     function dowloadRecording() {
         const element = document.createElement("a")
-        const audioFile = new Blob(audio, {
-            type: blob.type,
-            lastModified: Date.now()
-        })
+        const audioFile = blob
         element.href = URL.createObjectURL(audioFile)
-        element.download = triggerCard + "_" + thingCard + "_" + feedbackCard + ".mp3"
+        element.download = triggerCard + "_" + thingCard + "_" + feedbackCard + ".m4a"
         document.body.appendChild(element)
         element.click()
     }
@@ -99,7 +86,13 @@ function AudioFieldAnimationPage(props) {
     useEffect(() => {
         checkPermissionForAudio()
     })
+    function onStop(audioData){
+        setBlobURL(audioData.url)
+        setBlob(audioData.blob)
 
+    }
+
+    console.log(AudioReactRecorder)
     return (
         <div className="AudioAreaAnimationPage">
             <div className="Audio"><audio
@@ -107,10 +100,12 @@ function AudioFieldAnimationPage(props) {
                 src={blobURL || "default.mp3"}
             /></div>
             <div className="AudioButtons">
-                <Button onClick={startRecording} className="SmallButton" disabled={isRecording}>Record</Button>
-                <Button onClick={stopRecording} className="SmallButton" disabled={!isRecording}>Stop</Button>
-                <Button onClick={dowloadRecording} className="SmallButton" disabled={audio === ''}>Download</Button>
+            
+                <Button onClick={startRecording} className="SmallButton" disabled={isRecording==RecordState.START }>Record</Button>
+                <Button onClick={stopRecording} className="SmallButton" disabled={isRecording!=RecordState.START}>Stop</Button>
+                <Button onClick={dowloadRecording} className="SmallButton" disabled={blob === ''}>Download</Button>
             </div>
+            <AudioReactRecorder state={isRecording} onStop={onStop} />
         </div>
     );
 }
