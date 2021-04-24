@@ -33,13 +33,3 @@ function App() {
 }
 
 export default App;
-
-export const CardsContext = React.createContext(
-  {
-    trigger: null,
-    things: null,
-    feedback: null,
-    updateCard: (category, newCard)=>{},
-    resetCard: ()=>{}
-  }
-)
