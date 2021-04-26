@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer renders correctly 1`] = `
+<div>
+  <img
+    alt="A card"
+    className="card"
+    id={0}
+    name={null}
+    onClick={[Function]}
+  />
+  <img
+    alt="A card"
+    className="card"
+    id={1}
+    name={null}
+    onClick={[Function]}
+  />
+  <img
+    alt="A card"
+    className="card"
+    id={2}
+    name={null}
+    onClick={[Function]}
+  />
+</div>
+`;

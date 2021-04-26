@@ -11,11 +11,17 @@ import CharThinking from "../Components/CharThinking";
 import "../CSS/CardContainer.css";
 
 function CategoryPage(props) {
-    let category
-    { props.location.state ? (category = props.location.state.category) : category = "trigger" }
-    const [card, setCard] = useState(localStorage.getItem(category));
-    var styling = { color: "#68C2C4" };
 
+    let category = "trigger"
+    let styling = { color: "#F08A00" };
+    try{
+        category = props.location.state.category
+        styling.color = props.location.state.color
+    }catch{
+        console.log("No category chosen, trigger chosen as default")
+    }
+    const [card, setCard] = useState(localStorage.getItem(category));
+    
     let categoryInfoText = "Choose 1 card from this pile to ";
   
     if (category === "things"){
@@ -26,8 +32,6 @@ function CategoryPage(props) {
         categoryInfoText += "trigger some action"
     }
 
-    { props.location.state ? (styling.color = props.location.state.color) : styling.color = "#F08A00" }
-    //var cardSelected = !(card == (null || "null"))
     var cardSelected = !["null", null].includes(card)
 
      //Function triggered when a card is selected

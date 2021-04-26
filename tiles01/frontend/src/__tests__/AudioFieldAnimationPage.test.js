@@ -14,7 +14,8 @@ configure({
 });
 
 describe('AudioFieldAnimationPage component', () => {
-    const wrapper = shallow(<AudioFieldAnimationPage/>)
+    const mock = jest.fn()
+    const wrapper = shallow(<AudioFieldAnimationPage onClick={mock}/>)
     it('renders correctly', () => {
         const tree = renderer.create(<AudioFieldAnimationPage/>).toJSON();
         expect(tree).toMatchSnapshot();
@@ -25,8 +26,6 @@ describe('AudioFieldAnimationPage component', () => {
     it('renders an audio element', () => {
         expect(wrapper.find('audio')).toHaveLength(1);
     });
-    
-    
 });
 
 

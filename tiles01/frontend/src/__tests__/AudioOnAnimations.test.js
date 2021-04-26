@@ -29,7 +29,8 @@ describe('AudioOnAnimations component', () => {
 
 describe('AudioOnAnimations component if vibrate is chosen as feedback', () => {
     const init = {feedbackCard: 'vibrate', muted: 'false'};
-    const container = shallow(<AudioOnAnimations {...init}/>);
+    const mockFunction = jest.fn()
+    const container = shallow(<AudioOnAnimations onClick={mockFunction}{...init}/>);
     it('there exists an audio element and a button', () => {
         expect(container.find('audio')).toHaveLength(1);
         expect(container.find('button')).toHaveLength(1);
