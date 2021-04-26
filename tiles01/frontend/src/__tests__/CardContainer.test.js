@@ -13,10 +13,10 @@ configure({
 });
 
 describe('CardContainer', () => {
-	const mockFunction = jest.fn()
+	const mockFunction = jest.fn();
 	const initialProps = {
 	    category: "trigger",
-	    onSelect: mockFunction,
+		onSelect: mockFunction
 	}
 	const wrapper = shallow(<CardContainer {...initialProps}/>)
 	it('renders correctly', () => {
@@ -29,7 +29,6 @@ describe('CardContainer', () => {
 	it('changes number of cards when category changes', () => {
 	    const initialProps = {
 	        category: "feedback",
-	        onSelect: mockFunction,
 	    }
 	    const container = shallow(<CardContainer {...initialProps} />);
 	    expect(container.find('Card')).toHaveLength(2);

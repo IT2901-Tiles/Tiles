@@ -11,7 +11,8 @@ import CharThinking from "../Components/CharThinking";
 import "../CSS/CardContainer.css";
 
 function CategoryPage(props) {
-    let category
+
+    let category = "trigger"
     let styling = { color: "#F08A00" };
     try{
         category = props.location.state.category

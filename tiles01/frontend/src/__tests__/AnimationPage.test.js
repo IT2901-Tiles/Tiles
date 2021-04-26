@@ -13,7 +13,8 @@ configure({
 
 const localStorageMock = (function(){
     let store = {}
-    return {getItem: function(key){
+    return {
+    getItem: function(key){
         return store[key] || null
     },
     setItem: function(key, value){
@@ -52,5 +53,16 @@ describe('Animation page', () => {
         expect(wrapper.find('FormFieldAnimationPage').props().triggerCard).toEqual("drop");
         expect(wrapper.find('FormFieldAnimationPage').props().thingCard).toEqual("bike");
         expect(wrapper.find('FormFieldAnimationPage').props().feedbackCard).toEqual("color_change");
+    })
+    it('Redirects if card is not chosen', () => {
+        localStorage.setItem("trigger", null)
+        const nullWrapper = shallow(<AnimationPage/>);
+        expect(nullWrapper.find('Redirect')).toHaveLength(1);
+    })
+    it('resetCards function reset cards when try again button is clicked', () => {
+        wrapper.find('#tryagainButton').simulate('click');
+        expect(localStorage.getItem("trigger")).toEqual("null");
+        expect(localStorage.getItem("things")).toEqual("null");
+        expect(localStorage.getItem("feedback")).toEqual("null");
     })
 });

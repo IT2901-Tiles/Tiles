@@ -28,7 +28,6 @@ function AudioOnAnimations(props) {
     }
 
     // functionality of the mute button, audio will be muted if it is unmuted and unmuted audio will be muted (also changes text displayed on the button when button is toggled)
-
     function muteAudio() {
         let player = document.getElementById('animationAudio');
         let muteButtonText = document.getElementById('muteButton');

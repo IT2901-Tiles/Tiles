@@ -9,6 +9,7 @@ afterEach(() => {
 configure({
 	adapter: new Adapter()
 });
+
 describe('CategoryPage', () => {
 	const initialProps = {
         location: { 
@@ -19,7 +20,9 @@ describe('CategoryPage', () => {
             }
         }
 	}
-	const wrapper = shallow(<CategoryPage {...initialProps}/>)
+    const mock = jest.fn()
+    const consoleSpy = jest.spyOn(console, 'log')
+	const wrapper = shallow(<CategoryPage onClick={mock}{...initialProps}/>)
 	it('renders one LinkButton element', () => {
 	    expect(wrapper.find('LinkButton')).toHaveLength(1);
 	});
@@ -28,5 +31,12 @@ describe('CategoryPage', () => {
 	});
 	it('choose button is disabled before a card is chosen', () => {
 	    expect(wrapper.find("LinkButton").props().disabled).toEqual(true)
+	});
+    it('console shows that trigger is chosen as default when no props is given', () => {
+        const wrapperWithoutProps = shallow(<CategoryPage/>)
+	    expect(consoleSpy).toHaveBeenCalledWith('No category chosen, trigger chosen as default');
+	});
+    it('TopContainer displays correct text', () => {
+	    expect(wrapper.find('TopContainer').props().text).toEqual('Choose 1 card from this pile to trigger some action');
 	});
 });

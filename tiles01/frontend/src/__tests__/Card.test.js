@@ -14,7 +14,8 @@ configure({
 });
 
 describe('Card', () => {
-    const wrapper = shallow(<Card/>)
+    const mockFunction = jest.fn()
+    const wrapper = shallow(<Card onClick={mockFunction}/>)
     it('renders correctly', () => {
         const tree = renderer.create(<Card/>).toJSON();
         expect(tree).toMatchSnapshot();
@@ -30,5 +31,4 @@ describe('Card', () => {
         const container = shallow(<Card {...initialProps} />);
         expect(container.find('img').props().className).toEqual("card card-active");
     });
-
 });

@@ -6,7 +6,6 @@ import LinkToPage from '../Components/LinkToPage'
 import CharNormal from "../Components/CharNormal";
 
 function ChosenCardsPage(props) {
-
     //try {
     //    localStorage.setItem(props.location.state.category, props.location.state.card)
     //} catch (error) {

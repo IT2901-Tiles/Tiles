@@ -15,7 +15,8 @@ configure({
 });
 
 describe('LinkButton', () => {
-    const wrapper = shallow(<LinkButton/>)
+    const mock = jest.fn()
+    const wrapper = shallow(<LinkButton onClick={mock} category="things"/>)
     it('renders correctly', () => {
         const tree = renderer.create(<Router><LinkButton/></Router>).toJSON();
         expect(tree).toMatchSnapshot();
@@ -25,5 +26,16 @@ describe('LinkButton', () => {
     });
     it('contains a button element', () => {
         expect(wrapper.find('Button')).toHaveLength(1);
+    });
+    it('Button triggers function', () => {
+        wrapper.find('Button').simulate('click')
+        expect(mock).toHaveBeenCalled()
+    });
+    it('Right color is chosen, based on category prop, things', () => {
+        expect(wrapper.find('Link').props().to.state.color).toEqual("#D64539");
+    });
+    it('Right color is chosen, based on category prop, animation', () => {
+        const colorWrapper = shallow(<LinkButton onClick={mock} category="animation"/>)
+        expect(colorWrapper.find('Link').props().to.state.color).toEqual("#84AD64");
     });
 });
