@@ -36,7 +36,7 @@ function FormFieldAnimationPage(props) {
 
 
 function sendIdeaRequest(data){
-    fetch('http://localhost:8484/add_idea', {
+    fetch('/add_idea', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(data)

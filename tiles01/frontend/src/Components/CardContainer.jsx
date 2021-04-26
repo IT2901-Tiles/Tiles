@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Card from "./Card"
 
 //imports all of the images
-function importAll(r) {
-    return r.keys().map(r);
+function importAll(paths) {
+    return paths.keys().map(paths);
 }
 
 //snippet from https://stackoverflow.com/questions/38332094/how-can-i-mock-webpacks-require-context-in-jest
@@ -53,7 +53,7 @@ function CardContainer(props) {
     const [activeCard, setActiveCard] = useState(null);
 
     //called when a card in the container is clicked, sets the card as active 
-    //newvalue represents the card that is selected
+    //newValue represents the card that is selected
     function handleCardClick(newValue) {
         props.onSelect(newValue)
         setActiveCard(newValue.id)
