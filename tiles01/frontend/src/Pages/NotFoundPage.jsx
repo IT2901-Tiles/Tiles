@@ -21,18 +21,22 @@ function NotFoundPage() {
                 <h1>Page not found</h1>
             </div>
 
+            <div className="ImagesPageNotFound">
+                {/* Left side of the 404-page */}
             <img src={bikeCard} alt="TheBikeCard" className="image bikeCard"/>
             <img src={colorChangeCard} alt="Card" className="image colorChangeCard"/>
             <img src={motionCard} alt="A card" className="image motionCard"/>
             <img src={dropCard} alt="a card" className="image dropCard"/>
             <img src={penCard} alt="a card" className="image penCard"/>
 
-            <img src={colorChangeCard} alt="a card" className="image colorChangeCard2"/>
+                {/* Right side of the 404-page */}
+            {/* <img src={colorChangeCard} alt="a card" className="image colorChangeCard2"/> */}
             <img src={temperatureCard} alt="a card" className="image temperatureCard"/>
             <img src={umbrellaCard} alt="a card" className="image umbrellaCard"/>
             <img src={vibrateCard} alt="a card" className="image vibrateCard"/>
             <img src={motionCard} alt="a card" className="image motionCard2"/>
             <img src={dropCard} alt="a card" className="image dropCard2"/>
+            </div>
 
             <div className="middleContainer">
                 <p>It seems like you are a bit lost. 
@@ -48,6 +52,7 @@ function NotFoundPage() {
             </div>
             </div>
         </div>
+
     );
 }
 

@@ -1,7 +1,7 @@
 .PageNotFound {
-    overflow: hidden;
+    height: 100%;
+    /* overflow: hidden; */
 }
-
 .pageNotFoundTitle{
     background-color : #E53D2FEE;
     color: #F3EAC2;
@@ -29,11 +29,16 @@
 
 .cardsButton{
     display: block;
-    margin-top: 7%;
+    margin-top: 4%;
     margin-bottom: 3%;
 }
 
 /* Imgs */
+.ImagesPageNotFound {
+    /* overflow: hidden;
+    height: 100%; */
+}
+
 .image{
     width: 6rem;
     position: absolute;
@@ -44,80 +49,80 @@
 /*** left side ***/
 .bikeCard{
     right: 80%;
-    top: -2%;
+    top: -10%;
     transform: rotate(15deg);
 }
 
 .colorChangeCard{
     right: 90%;
-    top: 20%;
+    top: 10%;
     transform: rotate(-15deg);
 }
 
 .motionCard{
     right: 80%;
-    top: 42%;
+    top: 30%;
     transform: rotate(15deg);
-    z-index: -1;
 }
 
 .dropCard{
     right: 90%;
-    top: 64%;
+    top: 50%;
     transform: rotate(-15deg);
 }
 
 .penCard{
     right: 80%;
-    top: 86%;
+    top: 70%;
     transform: rotate(15deg);
 }
 
 /*** right side ***/
 .colorChangeCard2{
     left: 90%;
-    top: -14%;
+    top: -20%;
     transform: rotate(15deg);
 }
 
 .temperatureCard{
     left: 80%;
-    top: 8%;
+    top: -10%;
     transform: rotate(-15deg);
-    z-index: -1;
 }
 
 .umbrellaCard{
     left: 90%;
-    top: 30%;
+    top: 10%;
     transform: rotate(15deg);
 }
 
 .vibrateCard{
     left: 80%;
-    top: 52%;
+    top: 30%;
     transform: rotate(-15deg);
 }
 
 .motionCard2{
     left: 90%;
-    top: 74%;
+    top: 50%;
     transform: rotate(15deg);
 }
 
 .dropCard2{
     left: 80%;
-    top: 95%;
+    top: 70%;
     transform: rotate(-15deg);
 }
 
 /* Responsiveness for 404-page */
+
 
 @media only screen and (max-width: 800px) {
     .pageNotFoundTitle{
         font-size: 1rem;
         min-width: 100px;
         margin: 2rem 12rem 2rem;
+        overflow: hidden;
     }
 
     .middleContainer {
@@ -130,11 +135,53 @@
         width: 13rem;
         font-size: 1rem;
     }
+
   }
 
-  @media only screen and (max-width: 600px) {
+  /* Following code removes the cards at the bottom when the 404-page is shortened */
+  @media only screen and (max-height: 500px) {
+      /* Right side */
+      .dropCard2 {
+          display: none;
+      }
 
+      /* Left side */
+      .penCard {
+          display: none;
+      }
+
+  }
+
+  @media only screen and (max-height: 400px) {
+    /* Left side */
+    .dropCard {
+        display: none;
+    }
+
+    /* Right side */
+    .motionCard2 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-height: 300px) {
+    /* Left side */
+    .motionCard {
+        display: none;
+    }
+
+    /* Right side */
+    .vibrateCard {
+        display: none;
+    }
+
+}
+
+
+/* Responsiveness for the buttons */
+  @media only screen and (max-width: 600px) {
     .wider {
-        margin-left: 3.5rem;
+        margin-left: 2.9rem;
     }
   }
