@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import Card from "./Card"
 
 //imports all of the images
-function importAll(r) {
-    return r.keys().map(r);
+function importAll(paths) {
+    return paths.keys().map(paths);
 }
 
-//paths tp where the different image sets are
+//paths to where the different image sets are
 var cardPaths = {
     "things": require.context("./../images/things", false, /\.(png|jpe?g|svg)$/),
     "trigger": require.context("./../images/triggers", false, /\.(png|jpe?g|svg)$/),
@@ -18,7 +18,7 @@ function CardContainer(props) {
     const [activeCard, setActiveCard] = useState(null);
 
     //called when a card in the container is clicked, sets the card as active 
-    //newvalue represents the card that is selected
+    //newValue represents the card that is selected
     function handleCardClick(newValue) {
         props.onSelect(newValue)
         setActiveCard(newValue.id)
