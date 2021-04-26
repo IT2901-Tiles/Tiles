@@ -67,7 +67,7 @@ function CardContainer(props) {
             return null;
         }
         return path.default.slice(14, index)
-        }
+    }
     
 
     //map function maps the files imported in listOfImages to Card components

@@ -33,12 +33,16 @@ function AnimationPage() {
     }
     //takes in the path of the file and returns the name of the card
     function getCardName(path) {
-        let indexstartname = path.lastIndexOf("/") + 1
+        let indexstartname;
+        try{
+            indexstartname = path.lastIndexOf("/") + 1
+        }catch{
+            return null;
+        }
         let filename = path.slice(indexstartname)
         let indexendname = filename.indexOf(".")
         let cardname = filename.slice(0, indexendname)
         return cardname
-
     }
 
     const triggerName = getCardName(localStorage.getItem(trigger))
