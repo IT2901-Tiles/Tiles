@@ -2,7 +2,7 @@ import React from 'react';
 //Component imports
 import Logo from "../Components/Logo";
 import LinkButton from '../Components/LinkButton';
-import CharNormalMainPage from "../Components/CharNormalMainPage";
+import CharNormalMainPage from "../Animations/Character/CharNormalMainPage";
 //img imports
 import img1 from "../images/img1.png"
 import img2 from "../images/img2.png"

@@ -6,7 +6,7 @@ import React, {useState} from 'react';
 import TopContainer from '../Components/TopContainer';
 import LinkButton from '../Components/LinkButton';
 import CardContainer from "../Components/CardContainer";
-import CharThinking from "../Components/CharThinking";
+import CharThinking from "../Animations/Character/CharThinking";
 //Css imports
 import "../CSS/CardContainer.css";
 

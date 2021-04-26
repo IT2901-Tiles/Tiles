@@ -2,7 +2,7 @@ import React from 'react';
 //import AnimationsPreview from "../Components/AnimationsPreview"
 import "../CSS/AnimationPage.css"
 import TopContainer from '../Components/TopContainer'
-import CharHappy from "../Components/CharHappy"
+import CharHappy from "../Animations/Character/CharHappy"
 
 
 import LinkButton from '../Components/LinkButton';

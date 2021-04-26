@@ -3,7 +3,7 @@ import LinkButton from '../Components/LinkButton'
 import placeholderImage from '../images/blankImg.png'
 import TopContainer from '../Components/TopContainer'
 import LinkToPage from '../Components/LinkToPage'
-import CharNormal from "../Components/CharNormal";
+import CharNormal from "../Animations/Character/CharNormal";
 
 function ChosenCardsPage() {
   
