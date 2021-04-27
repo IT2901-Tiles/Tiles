@@ -33,7 +33,7 @@ describe('Not Found Page', () => {
         expect(heading).toHaveLength(1);
         expect(heading.text()).toEqual('Page not found');
     });
-    it('renders eleven images', () => {
+    it('renders ten images', () => {
         expect(wrapper.find('img')).toHaveLength(10);
     });
 });
