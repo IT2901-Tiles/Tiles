@@ -1,7 +1,7 @@
 import {configure, shallow} from "enzyme"
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import {cleanup} from '@testing-library/react';
-import CharThinking from '../Components/CharThinking';
+import CharThinking from '../Animations/Character/CharThinking';
 import renderer from 'react-test-renderer';
 
 

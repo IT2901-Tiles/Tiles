@@ -1,7 +1,7 @@
 import {configure, shallow} from "enzyme"
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import {cleanup} from '@testing-library/react';
-import CharHappy from '../Components/CharHappy';
+import CharHappy from '../Animations/Character/CharHappy';
 import renderer from 'react-test-renderer';
 
 

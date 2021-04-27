@@ -34,6 +34,6 @@ describe('Not Found Page', () => {
         expect(heading.text()).toEqual('Page not found');
     });
     it('renders eleven images', () => {
-        expect(wrapper.find('img')).toHaveLength(11);
+        expect(wrapper.find('img')).toHaveLength(10);
     });
 });
