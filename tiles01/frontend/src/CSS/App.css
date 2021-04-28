@@ -25,16 +25,15 @@ h1 {
 p {
   font-family: Helvetica, sans-serif;
 }
-
-/** MAIN PAGE **/
 #root {
-  height: 100%;
+  height: 98%;
 }
 
 .App {
   height: 100%;
 }
 
+/** MAIN PAGE **/
 .mainPage {
   height: 100%;
   overflow: hidden;

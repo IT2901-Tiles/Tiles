@@ -1,187 +1,180 @@
 .PageNotFound {
-    height: 100%;
-    /* overflow: hidden; */
+  height: 100%;
+  /* overflow: hidden; */
 }
-.pageNotFoundTitle{
-    background-color : #E53D2FEE;
-    color: #F3EAC2;
-    border-radius: 30px;
-    border: 0.25px solid #72140C;
-    box-shadow: 1px 1px 3px #000000AA;
-    font-size: 2rem;
-    border-radius: 20px;
-    text-shadow: 2px 2px #252525ab;
-    margin: 2.5rem 15rem 3rem;
-    padding: 1rem;
-    z-index: 1;
-}
-
-.middleContainer{
-    background-color: rgba(108, 143, 143, 0.589);
-    color: #F3EAC2;
-    font-size: 2rem;
-    border-radius: 20px;
-    text-shadow: 2px 2px #252525ab;
-    margin: 2.5rem 15rem 3rem;
-    padding: 1rem;
+.pageNotFoundTitle {
+  background-color: #e53d2fee;
+  color: #f3eac2;
+  border-radius: 30px;
+  border: 0.25px solid #72140c;
+  box-shadow: 1px 1px 3px #000000aa;
+  font-size: 2rem;
+  border-radius: 20px;
+  text-shadow: 2px 2px #252525ab;
+  margin: 1rem 15rem 3rem;
+  padding: 1rem;
+  z-index: 1;
 }
 
+.middleContainer {
+  background-color: rgba(108, 143, 143, 0.589);
+  color: #f3eac2;
+  font-size: 2rem;
+  border-radius: 20px;
+  text-shadow: 2px 2px #252525ab;
+  margin: 2.5rem 15rem 3rem;
+  padding: 1rem;
+}
 
-.cardsButton{
-    display: block;
-    margin-top: 4%;
-    margin-bottom: 3%;
+.cardsButton {
+  display: block;
+  margin-top: 4%;
+  margin-bottom: 3%;
 }
 
 /* Imgs */
 .ImagesPageNotFound {
-    /* overflow: hidden;
+  /* overflow: hidden;
     height: 100%; */
 }
 
-.image{
-    width: 6rem;
-    position: absolute;
-    box-shadow: 10px 10px 5px rgba(108, 143, 143, 0.5);
-    z-index: -1;
+.image {
+  width: 6rem;
+  position: absolute;
+  box-shadow: 10px 10px 5px rgba(108, 143, 143, 0.5);
+  z-index: -1;
 }
 
 /*** left side ***/
-.bikeCard{
-    right: 80%;
-    top: -10%;
-    transform: rotate(15deg);
+.bikeCard {
+  right: 80%;
+  top: -10%;
+  transform: rotate(15deg);
 }
 
-.colorChangeCard{
-    right: 90%;
-    top: 10%;
-    transform: rotate(-15deg);
+.colorChangeCard {
+  right: 90%;
+  top: 10%;
+  transform: rotate(-15deg);
 }
 
-.motionCard{
-    right: 80%;
-    top: 30%;
-    transform: rotate(15deg);
+.motionCard {
+  right: 80%;
+  top: 30%;
+  transform: rotate(15deg);
 }
 
-.dropCard{
-    right: 90%;
-    top: 50%;
-    transform: rotate(-15deg);
+.dropCard {
+  right: 90%;
+  top: 50%;
+  transform: rotate(-15deg);
 }
 
-.penCard{
-    right: 80%;
-    top: 70%;
-    transform: rotate(15deg);
+.penCard {
+  right: 80%;
+  top: 70%;
+  transform: rotate(15deg);
 }
 
 /*** right side ***/
-.colorChangeCard2{
-    left: 90%;
-    top: -20%;
-    transform: rotate(15deg);
+.colorChangeCard2 {
+  left: 90%;
+  top: -20%;
+  transform: rotate(15deg);
 }
 
-.temperatureCard{
-    left: 80%;
-    top: -10%;
-    transform: rotate(-15deg);
+.temperatureCard {
+  left: 80%;
+  top: -10%;
+  transform: rotate(-15deg);
 }
 
-.umbrellaCard{
-    left: 90%;
-    top: 10%;
-    transform: rotate(15deg);
+.umbrellaCard {
+  left: 90%;
+  top: 10%;
+  transform: rotate(15deg);
 }
 
-.vibrateCard{
-    left: 80%;
-    top: 30%;
-    transform: rotate(-15deg);
+.vibrateCard {
+  left: 80%;
+  top: 30%;
+  transform: rotate(-15deg);
 }
 
-.motionCard2{
-    left: 90%;
-    top: 50%;
-    transform: rotate(15deg);
+.motionCard2 {
+  left: 90%;
+  top: 50%;
+  transform: rotate(15deg);
 }
 
-.dropCard2{
-    left: 80%;
-    top: 70%;
-    transform: rotate(-15deg);
+.dropCard2 {
+  left: 80%;
+  top: 70%;
+  transform: rotate(-15deg);
 }
 
 /* Responsiveness for 404-page */
 
-
 @media only screen and (max-width: 800px) {
-    .pageNotFoundTitle{
-        font-size: 1rem;
-        min-width: 100px;
-        margin: 2rem 12rem 2rem;
-        overflow: hidden;
-    }
-
-    .middleContainer {
-        font-size: 1rem;
-        min-width: 100px;
-        margin: 2rem 12rem 2rem;
-    }
-
-    .wider {
-        width: 13rem;
-        font-size: 1rem;
-    }
-
+  .pageNotFoundTitle {
+    font-size: 1rem;
+    min-width: 100px;
+    margin: 2rem 12rem 2rem;
+    overflow: hidden;
   }
 
-  /* Following code removes the cards at the bottom when the 404-page is shortened */
-  @media only screen and (max-height: 500px) {
-      /* Right side */
-      .dropCard2 {
-          display: none;
-      }
-
-      /* Left side */
-      .penCard {
-          display: none;
-      }
-
+  .middleContainer {
+    font-size: 1rem;
+    min-width: 100px;
+    margin: 2rem 12rem 2rem;
   }
 
-  @media only screen and (max-height: 400px) {
-    /* Left side */
-    .dropCard {
-        display: none;
-    }
+  .wider {
+    width: 13rem;
+    font-size: 1rem;
+  }
+}
 
-    /* Right side */
-    .motionCard2 {
-        display: none;
-    }
+/* Following code removes the cards at the bottom when the 404-page is shortened */
+@media only screen and (max-height: 500px) {
+  /* Right side */
+  .dropCard2 {
+    display: none;
+  }
 
+  /* Left side */
+  .penCard {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  /* Left side */
+  .dropCard {
+    display: none;
+  }
+
+  /* Right side */
+  .motionCard2 {
+    display: none;
+  }
 }
 
 @media only screen and (max-height: 300px) {
-    /* Left side */
-    .motionCard {
-        display: none;
-    }
+  /* Left side */
+  .motionCard {
+    display: none;
+  }
 
-    /* Right side */
-    .vibrateCard {
-        display: none;
-    }
-
+  /* Right side */
+  .vibrateCard {
+    display: none;
+  }
 }
 
-
 /* Responsiveness for the buttons */
-  @media only screen and (max-width: 600px) {
-    .wider {
-        margin-left: 2.9rem;
-    }
+@media only screen and (max-width: 600px) {
+  .wider {
+    margin-left: 2.9rem;
   }
+}
