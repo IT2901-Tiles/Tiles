@@ -38,14 +38,15 @@ app.use(express.static(path.join(__dirname, '/../frontend/build')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+//used to recieve post request to add idea to database
 app.post("/add_idea", (req, res) => {
     let data = req.body
     database.writeIdeaDB(db,data.trigger, data.thing, data.feedback, data.idea)
 })
+//used to recieve and repond with latest idea added to database
 app.get("/read_idea", (req, res) => {
     let data = req.body
     const idea=database.readIdeaDB(db).then(result=>{
-
         res.send(JSON.stringify(result))
     })
     
