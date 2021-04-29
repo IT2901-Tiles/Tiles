@@ -48,13 +48,6 @@ describe('ChosenCards Page', () => {
         expect(wrapper.find('.buttonChosenCardsPage').props().category).not.toEqual('things');
         expect(wrapper.find('.buttonChosenCardsPage').props().category).not.toEqual('feedback');
     });
-    // it('check that choose-button disappears', () => {
-    //     const init = {}
-    //     const container = shallow(<ChosenCardsPage {...init}/>)
-    //     console.log(container.debug())
-
-    //     expect(container.find('.buttonChosenCardsPage').props().category).not.toEqual('trigger');
-    // });
     it('renders 1 LinkToPage elements when one card are chosen', () => {
         window.localStorage = localStorageMock
         localStorage.setItem("trigger", "http://localhost:8484/static/media/drop.d20cddd5.png")

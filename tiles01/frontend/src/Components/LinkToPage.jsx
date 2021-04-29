@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 // Component for link on images in ChosenCardsPage.jsx
 function LinkToPage(props) {
-    const [path] = useState(props.target)
-    const [category] = useState(props.category)
+    const [path] = useState(props.target) // which page the link is going to redirect to 
+    const [category] = useState(props.category) // which category is chosen
     const [nameOfCard] = useState(props.nameOfCard) // name of card, e.g. trigger, thing, feedback
     const [classNameCard] = useState(props.classNameCard) // classname of the card
 

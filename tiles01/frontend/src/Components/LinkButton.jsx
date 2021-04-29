@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../CSS/Button.css';
 import Button from 'react-bootstrap/Button';
 
-//Button component 
+//Button component that redirect to different page
 //props:
 //title: the title on the button
 //target: tha page the button is going to direct to
@@ -11,7 +11,6 @@ import Button from 'react-bootstrap/Button';
 //category: which category the button us linking to, optional
 //category will also change the colour of the button
 //options for categoryare: trigger, thing, feedback, animation
-
 function LinkButton(props) {
     const [title] = useState(props.title)
     const [path] = useState(props.target)
@@ -20,7 +19,7 @@ function LinkButton(props) {
     let colour = "#F08A00";
     let fontColour = "#F3EAC2";
 
-
+    //change the colour of the button based on the cateory or page the button is connected to
     if (category === "things") {
         colour = "#D64539"
     } else if (category === "feedback") {

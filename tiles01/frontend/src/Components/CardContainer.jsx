@@ -51,7 +51,6 @@ var cardPaths = {
 function CardContainer(props) {
     const listOfImages = importAll(cardPaths[props.category]);
     const [activeCard, setActiveCard] = useState(null);
-
     //called when a card in the container is clicked, sets the card as active 
     //newValue represents the card component that is selected
     function handleCardClick(newValue) {
