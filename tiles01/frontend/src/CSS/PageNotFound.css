@@ -119,14 +119,14 @@
   .pageNotFoundTitle {
     font-size: 1rem;
     min-width: 100px;
-    margin: 2rem 12rem 2rem;
+    margin: 4rem;
     overflow: hidden;
   }
 
   .middleContainer {
     font-size: 1rem;
     min-width: 100px;
-    margin: 2rem 12rem 2rem;
+    margin: 4rem;
   }
 
   .wider {
@@ -158,6 +158,31 @@
   .motionCard2 {
     display: none;
   }
+
+  .pageNotFoundTitle {
+    padding: 0.2rem;
+    margin: 1rem 4rem 1rem;
+  }
+
+  .middleContainer {
+    margin: 1rem 4rem 1rem;
+  }
+
+  .cardsButton {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    display: inline;
+  }
+
+  .mainPageButton {
+    display: inline;
+    margin-left: 1rem;
+  }
+
+  .bottomContainer {
+    display: inline;
+  }
 }
 
 @media only screen and (max-height: 300px) {
@@ -173,8 +198,8 @@
 }
 
 /* Responsiveness for the buttons */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .wider {
     margin-left: 2.9rem;
   }
-}
+} */
