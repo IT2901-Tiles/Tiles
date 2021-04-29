@@ -1,7 +1,10 @@
 
 const { MongoClient } = require("mongodb");
 
-async function writeIdeaDB(db_url,triggerCard, thingCard, feedbackCard, idea, res) {
+//used to add an idea to the database
+//db_url is the url to the database
+//Card arguments are the cards selected in the different 
+async function writeIdeaDB(db_url,triggerCard, thingCard, feedbackCard, idea) {
 
     const url = db_url;
     const client = new MongoClient(url,{ useUnifiedTopology: true });
@@ -12,34 +15,27 @@ async function writeIdeaDB(db_url,triggerCard, thingCard, feedbackCard, idea, re
         await client.connect();
         console.log("Connected correctly to server");
         const db = client.db(dbName);
-
         const ideas = db.collection("ideas");
         let ideaDocument = {
             "cards": { "trigger": triggerCard, "thing": thingCard, "feedback": feedbackCard },
             "idea": idea
         }
-
-        // Insert a single document, wait for promise so we can read it back
         const p = await ideas.insertOne(ideaDocument);
-        // Find one document
-        
-
-        // res.send("Data successfully saved"); Should be added  
     }
 
     catch (err) {
         console.log(err.stack);
-        // res.send("----- ERROR: " + err.stack); Should be added
     }
-
     finally {
         await client.close();
     }
 }
+
 function resolvePromise(promise){
     return promise
 }
 
+//used to fetch the latest idea added to the database
 async function readIdeaDB(url) {
     const client = new MongoClient(url,{ useUnifiedTopology: true });
     // The database to use
@@ -52,16 +48,11 @@ async function readIdeaDB(url) {
         // Find one document
         const myDocPromise = await ideas.findOne({}, {sort:{$natural:-1}})
         const myDoc = await resolvePromise(myDocPromise)
-        // Print to the console
         return myDoc
-        // res.send("Data successfully saved"); Should be added  
     }
-
     catch (err) {
         console.log(err.stack);
-        // res.send("----- ERROR: " + err.stack); Should be added
     }
-
     finally {
         await client.close();
     }
