@@ -36,7 +36,7 @@ p {
 /** MAIN PAGE **/
 .mainPage {
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .mainPage .Logo {
@@ -212,6 +212,14 @@ p {
 
   .svgCharacterNormalMainPage {
     display: none;
+  }
+  .mainPage .infoBox {
+    font-size: 1.5vw;
+    margin: 3vh auto 5vh;
+    width: 90vw;
+  }
+  .mainPage .Logo {
+    margin: 3% auto 3%;
   }
 }
 
