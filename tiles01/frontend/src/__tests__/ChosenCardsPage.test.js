@@ -48,7 +48,7 @@ describe('ChosenCards Page', () => {
         expect(wrapper.find('.buttonChosenCardsPage').props().category).not.toEqual('things');
         expect(wrapper.find('.buttonChosenCardsPage').props().category).not.toEqual('feedback');
     });
-    it('renders 1 LinkToPage elements when one card are chosen', () => {
+    it('renders 1 LinkToPage element when one card is chosen', () => {
         window.localStorage = localStorageMock
         localStorage.setItem("trigger", "http://localhost:8484/static/media/drop.d20cddd5.png")
         const chosenWrapper = shallow(<ChosenCardsPage/>)
