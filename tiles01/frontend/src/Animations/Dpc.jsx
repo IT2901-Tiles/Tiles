@@ -11,6 +11,7 @@ function Dpc() {
                     <rect width="300" height="400" fill="#b3e6ff" />
                     <BookShelf />
                     <Desk />
+                    {/* svg of hand from here: https://freesvg.org/vector-of-a-hand */}
                     <g transform="scale(.49235) translate(300)" >
                         <g
                             className="g5121"
