@@ -22,10 +22,8 @@ function Sun() {
                 to="360 250 50"
                 dur="4s"
                 repeatCount="indefinite" />
-
         </g>
     );
 }
-
 
 export default Sun;

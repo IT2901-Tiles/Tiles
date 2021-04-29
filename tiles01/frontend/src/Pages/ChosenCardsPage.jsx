@@ -13,11 +13,10 @@ function ChosenCardsPage() {
     const triggerChosen = !["null", null].includes(localStorage.getItem(trigger))
     const thingChosen = !["null", null].includes(localStorage.getItem(things))
     const feedbackChosen = !["null", null].includes(localStorage.getItem(feedback))
-
     
     let colorBorder; // color of border and font when no card is picked
-    const buttonActive = triggerChosen && thingChosen && feedbackChosen
-    // This function checks which cards are checked off and sets a bool value
+    const buttonActive = triggerChosen && thingChosen && feedbackChosen    // This function checks which cards are checked off and sets a bool value
+
 
     // If bool value is true, then this function is returned. This returns the image and uses the LinkToPage-component
     function trueValue(category) {
@@ -81,4 +80,4 @@ function ChosenCardsPage() {
 }
 //checks if cards have been selected
 
-export default ChosenCardsPage
+export default ChosenCardsPage;

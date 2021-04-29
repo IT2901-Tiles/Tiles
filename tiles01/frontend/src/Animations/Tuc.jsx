@@ -8,7 +8,6 @@ import PersonUmbrella from './PersonUmbrella';
 function Tuc() {
     return (
         <div className='Tuc'>
-
             <svg viewBox="0 0 300 400">
                 <Outdoors />
                 <Cloud dur="10" begin="6s" />

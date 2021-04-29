@@ -25,7 +25,6 @@ function Dbc() {
                         <line x1="198" y1="68" x2="122" y2="95" stroke="black" strokeWidth="3" />
                     </g>
                     <circle cx="160" cy="80" r="40" stroke="black" strokeWidth="3" fill="transparent" />
-
                     <polygon points="80,40 140,20 100,80 50,80" stroke="pink" strokeWidth="3" fill="transparent">
                         <animate
                             attributeName="stroke"
@@ -44,7 +43,6 @@ function Dbc() {
                             repeatCount="indefinite"
                         />
                     </line>
-
                     <line x1="128" y1="10" x2="150" y2="10" stroke="black" strokeWidth="3" />
                     <line x1="70" y1="20" x2="100" y2="80" stroke="black" strokeWidth="3" />
                     <ellipse cx="70" cy="20" rx="15" ry="3" stroke="black" strokeWidth="3" />
@@ -57,9 +55,7 @@ function Dbc() {
                         dur="2s"
                         repeatCount="indefinite"
                     />
-
                     {/* Person */}
-
                     <circle className="head" cx="90" cy="-50" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
                     <circle className="eye1" cx="83" cy="-55" r="2" stroke="black" strokeWidth="1" fill="black" />
                     <circle className="eye2" cx="97" cy="-55" r="2" stroke="black" strokeWidth="1" fill="black" />

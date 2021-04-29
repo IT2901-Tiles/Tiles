@@ -2,8 +2,6 @@ import React from 'react';
 import Sun from '../Animations/Sun';
 import Outdoors from './Outdoors';
 
-
-
 function Mbv() {
     return (
         <div>
@@ -23,7 +21,6 @@ function Mbv() {
                             repeatCount="indefinite" />
                     </g>
                     <circle cx="50" cy="280" r="40" stroke="black" strokeWidth="3" fill="transparent" />
-
 
                     <g className="wheel2">
                         <line x1="130" y1="255" x2="190" y2="308" stroke="black" strokeWidth="3" />
@@ -48,7 +45,6 @@ function Mbv() {
 
                     <ellipse cx="70" cy="220" rx="15" ry="3" stroke="black" strokeWidth="3" />
                 </g>
-
 
                 <g className="person">
                     <circle className="head" cx="90" cy="150" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
@@ -86,8 +82,6 @@ function Mbv() {
                     <line className="tshirtArm2" x1="83" y1="181" x2="100" y2="191" stroke="#ff5050" strokeWidth="8" />
                 </g>
                 <Sun />
-
-
             </svg>
         </div>
 

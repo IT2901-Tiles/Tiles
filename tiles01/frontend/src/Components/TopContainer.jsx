@@ -2,7 +2,6 @@ import React from 'react';
 import "../CSS/TopContainer.css";
 import Logo from "./Logo";
 
-
 function TopContainer(props) {
     
     return (

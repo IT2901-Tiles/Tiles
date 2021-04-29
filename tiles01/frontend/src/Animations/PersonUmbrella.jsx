@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 function PersonUmbrella() {
     return (
         <g className="PersonUmbrella">
@@ -25,18 +23,15 @@ function PersonUmbrella() {
             </g>
             <line className="body" x1="140" y1="220" x2="140" y2="275" stroke="#ffe5cc" strokeWidth="4" />
             <line className="tshirt" x1="140" y1="238" x2="140" y2="277" stroke="#ff5050" strokeWidth="8" />
-
             <g>
                 <line className="leg1" x1="140" y1="275" x2="150" y2="340" stroke="#ffe5cc" strokeWidth="4" />
                 <line className="pant1" x1="140" y1="275" x2="150" y2="330" stroke="#006600" strokeWidth="7" />
                 <line className="shoe1" x1="145" y1="340" x2="160" y2="340" stroke="#3366cc" strokeWidth="7" />
-
             </g>
             <g>
                 <line className="leg2" x1="140" y1="275" x2="130" y2="340" stroke="#ffe5cc" strokeWidth="4" />
                 <line className="pant2" x1="140" y1="275" x2="130" y2="330" stroke="#006600" strokeWidth="7" />
                 <line className="shoe2" x1="120" y1="340" x2="135" y2="340" stroke="#3366cc" strokeWidth="7" />
-
             </g>
             </g>
     );

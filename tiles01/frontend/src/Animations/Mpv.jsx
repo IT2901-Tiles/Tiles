@@ -49,7 +49,6 @@ function Mpv() {
                             repeatCount="indefinite" />
                     </g>
 
-
                     <line className="body" x1="90" y1="200" x2="90" y2="320" stroke="#ffe5cc" strokeWidth="4" />
                     <line className="shoe" x1="100" y1="320" x2="87" y2="320" stroke="#3366cc" strokeWidth="7" />
                     <line className="pants" x1="90" y1="255" x2="90" y2="310" stroke="#006600" strokeWidth="6" />
@@ -70,16 +69,8 @@ function Mpv() {
                     <line x1="155" y1="215" x2="145" y2="210" stroke="yellow" strokeWidth="3" />
                     <line x1="155" y1="225" x2="145" y2="230" stroke="yellow" strokeWidth="3" />
                     <line x1="165" y1="230" x2="165" y2="240" stroke="yellow" strokeWidth="3" />
-
                 </g>
-
-
             </svg>
-
-
-
-
-
         </div>
     );
 }

@@ -1,4 +1,4 @@
-// Inspiration from this: https://matheswaaran.medium.com/nicol%C3%A1s-castano-i-think-using-a-functional-component-is-the-problem-f87d2a80dfae
+// Inspiration from: https://matheswaaran.medium.com/nicol%C3%A1s-castano-i-think-using-a-functional-component-is-the-problem-f87d2a80dfae
 import React, { useEffect, useState } from 'react'
 import MicRecorder from 'mic-recorder-to-mp3'
 import "../CSS/Button.css"

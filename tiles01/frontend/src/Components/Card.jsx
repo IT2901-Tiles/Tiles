@@ -2,7 +2,6 @@ import React from 'react';
 import "../CSS/Card.css";
 
 function Card(props) {
-
     function handleClick(event) {
         props.onClick(event.target)
     }

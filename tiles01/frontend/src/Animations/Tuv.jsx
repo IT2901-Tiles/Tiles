@@ -13,9 +13,7 @@ function Tuv() {
                 <Outdoors />
                 <Sun />
                 <Cloud />
-
                 <g transform="translate(-155, 180)"><Temperature /></g>
-
                 <PersonUmbrella />
                 <g>
                     <OpenUmbrella />
@@ -28,7 +26,6 @@ function Tuv() {
                         begin="4s"
                         dur="13s"
                         repeatCount="indefinite" />
-
                 </g>
             </svg>
         </div>

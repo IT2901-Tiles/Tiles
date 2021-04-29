@@ -3,7 +3,6 @@ import Chair from './Chair';
 import Lamp from './Lamp';
 import Inside from './Inside';
 
-
 function Mfv() {
     return (
         <div className="Mfv">
@@ -29,8 +28,6 @@ function Mfv() {
                     <line className="arm2" x1="90" y1="220" x2="130" y2="230" stroke="#ffe5cc" strokeWidth="4" />
                     <line className="tshirtArm2" x1="90" y1="222" x2="110" y2="226" stroke="#ff5050" strokeWidth="8" />
                     <line className="fingers2" x1="125" y1="230" x2="137" y2="228" stroke="#ffe5cc" strokeWidth="6" />
-
-
 
                     <line className="body" x1="90" y1="200" x2="90" y2="320" stroke="#ffe5cc" strokeWidth="4" />
                     <line className="shoe" x1="100" y1="320" x2="87" y2="320" stroke="#3366cc" strokeWidth="7" />

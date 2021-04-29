@@ -3,7 +3,6 @@ import ClothingShelf from './ClothingShelf';
 import Inside from './Inside';
 import Temperature from './Temperature';
 
-
 function Tfc() {
     return (
         <div className="tfv">
@@ -16,6 +15,5 @@ function Tfc() {
         </div>
     );
 }
-
 
 export default Tfc;

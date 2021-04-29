@@ -13,7 +13,6 @@ function Dbv() {
                 <Sun />
                 {/* Bike */}
                 <g className="bike">
-
                     <g className="wheel1">
                         <line x1="20" y1="55" x2="80" y2="108" stroke="black" strokeWidth="3" />
                         <line x1="60" y1="40" x2="40" y2="120" stroke="black" strokeWidth="3" />
@@ -34,9 +33,7 @@ function Dbv() {
                     <line x1="70" y1="20" x2="100" y2="80" stroke="black" strokeWidth="3" />
                     <ellipse cx="70" cy="20" rx="15" ry="3" stroke="black" strokeWidth="3" />
 
-
                     {/* Person */}
-
                     <circle className="head" cx="90" cy="-50" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
                     <circle className="eye1" cx="83" cy="-55" r="2" stroke="black" strokeWidth="1" fill="black" />
                     <circle className="eye2" cx="97" cy="-55" r="2" stroke="black" strokeWidth="1" fill="black" />
@@ -72,7 +69,6 @@ function Dbv() {
                         repeatCount="indefinite"
                     />
                 </g>
-
             </svg>
         </div>
     );

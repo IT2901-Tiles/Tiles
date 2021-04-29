@@ -2,16 +2,12 @@ import React from 'react';
 import "../CSS/AnimationPage.css"
 import TopContainer from '../Components/TopContainer'
 import CharHappy from "../Animations/Character/CharHappy"
-
-
 import LinkButton from '../Components/LinkButton';
 import FormFieldAnimationPage from '../Components/FormFieldAnimationPage'
 import AudioFieldAnimationPage from '../Components/AudioFieldAnimationPage'
 import {
     Redirect,
 } from "react-router-dom";
-// Component for the preview of the animations + the selected cards. 
-// This component uses the grid-property in html and css
 import { Mbc, Mbv, Mcc, Mcv, Mfc, Mfv, Mpc, Mpv, Muc, Tbc, Tbv, Dbc, Dbv, Muv, Tcc, Tfc, Tfv, Tpc, Tpv, Tcv, Tuc, Tuv, Dcc, Dcv, Dfc, Dfv, Dpc, Dpv, Duc, Duv } from '../Animations';
 import AudioOnAnimations from '../Components/AudioOnAnimations';
 
@@ -50,10 +46,7 @@ function AnimationPage() {
     //select the correct animation based on the selected cards
     const animation = animationDictionary[triggerName][thingName][feedbackName]
 
-
-
     return (
-
         <div className="Page AnimationPage">
             <div className="Page">
                 <TopContainer
@@ -62,35 +55,32 @@ function AnimationPage() {
                 <div id="charHappyWrapper">
                     <CharHappy />
                 </div>
-                {/*<AnimationsPreview />*/}
-
                 <div className="gridAnimationsPage">
-            <div className="gridAnimationCards">
-                <div className="card1AnimationsPage">
-                    <img src={localStorage.getItem(trigger)} className="triggerAnimationsPage" alt="A 'trigger' card" />
+                    <div className="gridAnimationCards">
+                        <div className="card1AnimationsPage">
+                            <img src={localStorage.getItem(trigger)} className="triggerAnimationsPage" alt="A 'trigger' card" />
+                        </div>
+                        <div className="card2AnimationsPage">
+                            <img src={localStorage.getItem(things)} className="thingAnimationsPage" alt="A 'thing' card" />
+                        </div>
+                        <div className="card3AnimationsPage">
+                            <img src={localStorage.getItem(feedback)} className="feedbackAnimationsPage" alt="A 'feedback' card" />
+                        </div>
+                    </div>
+                    {/* The div below is where the animations will appear */}
+                    <div className="gridAnimationAnimation">
+                        {animation}
+                    </div>
+                    {/* "Try again!"-button */}
+                    <div className="gridAnimationSaving">
+                        <FormFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* The textarea */}
+                        <AudioFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* Audio recording */}
+                        <AudioOnAnimations triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* Audio for some animations */}
+                        <LinkButton title="Try again!" target="/cards" size="tryagain" category="animation" onClick={resetCards} id="tryagainButton"></LinkButton> {/* "Try Again!" button */}
+                    </div>
                 </div>
-                <div className="card2AnimationsPage">
-                    <img src={localStorage.getItem(things)} className="thingAnimationsPage" alt="A 'thing' card" />
-                </div>
-                <div className="card3AnimationsPage">
-                    <img src={localStorage.getItem(feedback)} className="feedbackAnimationsPage" alt="A 'feedback' card" />
-                </div>
-            </div>
-            {/* The div below is where the animations will appear */}
-            <div className="gridAnimationAnimation">
-                {animation}
-            </div>
-            {/* "Try again!"-button */}
-            <div className="gridAnimationSaving">
-                <FormFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* The textarea */}
-                <AudioFieldAnimationPage triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* Audio recording */}
-                <AudioOnAnimations triggerCard={triggerName} thingCard={thingName} feedbackCard={feedbackName} /> {/* Audio for some animations */}
-                <LinkButton title="Try again!" target="/cards" size="tryagain" category="animation" onClick={resetCards} id="tryagainButton"></LinkButton> {/* "Try Again!" button */}
             </div>
         </div>
-            </div>
-        </div>
-
     );
 }
 

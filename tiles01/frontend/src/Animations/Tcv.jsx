@@ -9,7 +9,6 @@ function Tcv() {
             <svg viewBox="0 0 300 400">
                 <Inside />
                 <ClothingShelf />
-
                 <g className="person">
                     <circle className="head" cx="140" cy="190" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
                     <circle className="eye1" cx="133" cy="185" r="2" stroke="black" strokeWidth="1" fill="black" />

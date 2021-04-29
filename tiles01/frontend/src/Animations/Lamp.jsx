@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function Lamp() {
     return (
         <g className="Lamp">

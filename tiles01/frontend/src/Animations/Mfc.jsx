@@ -58,11 +58,8 @@ function Mfc() {
                     <line className="pants" x1="90" y1="255" x2="90" y2="310" stroke="#006600" strokeWidth="6" />
                     <line className="tshirt" x1="90" y1="218" x2="90" y2="257" stroke="#ff5050" strokeWidth="8" />
                 </g>
-
             </svg>
-
         </div>
-
     );
 }
 

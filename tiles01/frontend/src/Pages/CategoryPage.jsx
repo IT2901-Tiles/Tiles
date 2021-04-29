@@ -1,23 +1,18 @@
-//tenker at det blir sendt med en prop hit om hvilke kategori det gjelder,
-//men hvis personen som lager denne siden er uenig i det er det bare å si ifra
-
 import React, {useState} from 'react';
-//Component Imports
 import TopContainer from '../Components/TopContainer';
 import LinkButton from '../Components/LinkButton';
 import CardContainer from "../Components/CardContainer";
 import CharThinking from "../Animations/Character/CharThinking";
-//Css imports
 import "../CSS/CardContainer.css";
 
 function CategoryPage(props) {
 
     let category = "trigger"
     let styling = { color: "#F08A00" };
-    try{
+    try {
         category = props.location.state.category
         styling.color = props.location.state.color
-    }catch{
+    } catch {
         console.log("No category chosen, trigger chosen as default")
     }
     const [card, setCard] = useState(localStorage.getItem(category));

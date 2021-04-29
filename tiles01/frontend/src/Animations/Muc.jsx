@@ -36,10 +36,7 @@ function Muc() {
                             additive="sum" /></circle>
                     <path className="umbrella" d="M183.6,263.3 a20,90 0 0,0 15,0" fill="transparent" stroke="#000000" strokeWidth="2" />
                 </g >
-
             </svg >
-
-
         </div >
     );
 }

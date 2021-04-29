@@ -2,11 +2,7 @@ import React from 'react';
 import ClothingShelf from './ClothingShelf';
 import Inside from './Inside';
 
-
 function Mcv() {
-
-
-
     return (
         <div className="Mcv">
             <svg viewBox="0 0 300 400">
@@ -66,11 +62,8 @@ function Mcv() {
                             repeatCount="indefinite"
                             calcMode="linear"
                         />
-
                     </g>
-
                 </g>
-
             </svg>
         </div>
     );

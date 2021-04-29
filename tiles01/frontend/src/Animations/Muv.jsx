@@ -3,7 +3,6 @@ import Outdoors from './Outdoors';
 import Cloud from './Cloud';
 import PersonUmbrella from './PersonUmbrella';
 
-
 function Muv() {
     return (
         <div>
@@ -11,8 +10,6 @@ function Muv() {
                 <Outdoors />
                 <Cloud />
                 <PersonUmbrella />
-
-
                 <g>
                     <line className="umbrella" x1="184" y1="265" x2="184" y2="170" stroke="#000000" strokeWidth="2" />
                     <path id="umbrellaMuvLeft" className="umbrella" d="m 90,170 L185,170 L185,120 Q 184,100 90,170" fill="#000000" />

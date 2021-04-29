@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Component for link on images in ChosenCardsPage.jsx
-
 function LinkToPage(props) {
     const [path] = useState(props.target)
     const [category] = useState(props.category)
@@ -30,4 +29,4 @@ function LinkToPage(props) {
     );
 }
 
-export default LinkToPage
+export default LinkToPage;

@@ -10,8 +10,6 @@ function Dcv() {
                 <Inside />
                 <ClothingShelf />
                 <PersonArmsUp />
-
-
                 <g>
                     <line className="tshirt" x1="200" y1="200" x2="200" y2="239" stroke="#ff5050" strokeWidth="10" />
                     <line className="tshirtArm1" x1="200" y1="203" x2="175" y2="185" stroke="#ff5050" strokeWidth="10" />
@@ -23,9 +21,7 @@ function Dcv() {
                         values="0 0; 0 25;0 50; 0 75; 0 100; 0 100; -3 100; 3 100; -3 100; 3 100; -3 100; 3 100; -3 100; 3 100;-3 100;3 100;-3 100;3 100;-3 100;3 100;-3 100;3 100"
                         dur="5s"
                         repeatCount="indefinite" />
-
                 </g>
-
             </svg>
         </div>
     );

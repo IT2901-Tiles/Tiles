@@ -4,7 +4,6 @@ import Lamp from './Lamp';
 import Chair from './Chair';
 import Inside from './Inside';
 
-
 function Tfv() {
     return (
         <div className="tfv">
@@ -26,6 +25,5 @@ function Tfv() {
             </svg>
         </div>
     );
-
 }
 export default Tfv;

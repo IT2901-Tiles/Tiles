@@ -4,8 +4,6 @@ import Desk from './Desk';
 import Pen from './Pen';
 import Temperature from './Temperature';
 
-
-
 function Tpc() {
     return (
         <div>
@@ -21,7 +19,6 @@ function Tpc() {
                 </g>
             </svg>
         </div>
-
     );
 }
 
