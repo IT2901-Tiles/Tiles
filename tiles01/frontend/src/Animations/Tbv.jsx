@@ -3,15 +3,12 @@ import Sun from '../Animations/Sun';
 import Outdoors from './Outdoors';
 import SmallTemperature from './SmallTemperature';
 
-
 function Tbv() {
     return (
         <div>
             <svg viewBox="0 0 300 400">
                 <Outdoors />
                 <Sun />
-
-
                 <g className="bike">
                     <g className="wheel1">
                         <line x1="20" y1="255" x2="80" y2="308" stroke="black" strokeWidth="3" />
@@ -43,12 +40,8 @@ function Tbv() {
                         repeatCount="indefinite" />
                 </g>
                 <SmallTemperature />
-
-
             </svg>
-
         </div>
-
     );
 }
 

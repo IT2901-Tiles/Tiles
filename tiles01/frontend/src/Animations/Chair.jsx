@@ -6,9 +6,7 @@ function Chair(props) {
     const [durTime] = useState(props.dur ? props.dur : "0s")
 
     return (
-
         <g className="chair">
-
             <line id="leftLeg1" x1="204" y1="250" x2="207" y2="270" stroke="#ff8c1a" strokeWidth="4" />
             <line id="rightLeg1" x1="246" y1="250" x2="243" y2="270" stroke="#ff8c1a" strokeWidth="4" />
 
@@ -35,7 +33,6 @@ function Chair(props) {
             <circle id="circleLeft2" cx="207" cy="244" r="2" strokeWidth="1" fill="#ff8c1a" />
             <circle id="circleRight1" cx="243" cy="230" r="2" strokeWidth="1" fill="#ff8c1a" />
             <circle id="circleRight2" cx="243" cy="244" r="2" strokeWidth="1" fill="#ff8c1a" />
-
         </g>
     );
 }

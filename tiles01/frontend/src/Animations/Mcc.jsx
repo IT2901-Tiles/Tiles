@@ -100,7 +100,6 @@ function Mcc() {
                     </g>
                 </g>
             </svg>
-
         </div>
     );
 }

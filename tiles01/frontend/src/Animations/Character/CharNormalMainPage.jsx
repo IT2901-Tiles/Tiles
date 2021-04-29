@@ -4,7 +4,6 @@ import Character from './Character'
 function CharNormalMainPage() {
     return (
         <div className='mainPageCharNormal'>
-
             <svg viewBox="0 0 165 120" className="svgCharacterNormalMainPage">
                 <Character/> 
                 <g className="LightBulb">

@@ -34,8 +34,6 @@ function Mpc() {
                     </g>
                 </g>
             </svg>
-
-
         </div >
     );
 }

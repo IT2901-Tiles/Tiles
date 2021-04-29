@@ -21,7 +21,6 @@ function Mbc() {
                         <line x1="198" y1="268" x2="122" y2="295" stroke="black" strokeWidth="3" />
                     </g>
                     <circle cx="160" cy="280" r="40" stroke="black" strokeWidth="3" fill="transparent" />
-
                     <g>
                         <polygon points="80,240 140,220 100,280 50,280" stroke="pink" strokeWidth="3" fill="transparent">
                             <animate
@@ -91,9 +90,7 @@ function Mbc() {
                     </g>
                 </g>
             </svg>
-
         </div>
-
     );
 }
 

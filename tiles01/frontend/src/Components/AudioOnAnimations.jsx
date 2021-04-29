@@ -3,12 +3,11 @@ import vibrateSound from '../Audio/cellphone_vibrate.wav' // Free sound effect f
 
 // Adding sounds to the different animations provided in AnimationsPage.jsx
 function AudioOnAnimations(props) {
-    const [triggerCard] = useState(props.triggerCard) // props to pass to AnimationsPreview.jsx
-    const [thingCard] = useState(props.thingCard) // props to pass to AnimationsPreview.jsx
-    const [feedbackCard] = useState(props.feedbackCard) // props to pass to AnimationsPreview.jsx
+    const [triggerCard] = useState(props.triggerCard) // props to pass to AnimationPage.jsx
+    const [thingCard] = useState(props.thingCard) // props to pass to AnimationPage.jsx
+    const [feedbackCard] = useState(props.feedbackCard) // props to pass to AnimationPage.jsx
     var audioType = 'audio/'
     
-
     // Check which cards are picked by the user, and match the audio with each card (that has audio associated to it)
     // to add more sounds - add them here. Remember to return an array including the sound and what file-type it is
     function matchAudioToCards() {

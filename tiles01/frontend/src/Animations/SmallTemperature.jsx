@@ -26,7 +26,6 @@ function SmallTemperature() {
                 values="240; 170; 240"
                 keyTimes="0;0.5;1"
             />
-            
                 <animate 
                     attributeName = "stroke"
                     dur = "10s"
@@ -42,8 +41,6 @@ function SmallTemperature() {
                     repeatCount="indefinite"/>
             </circle>
         </g>    
-
-        
     );
 }
 

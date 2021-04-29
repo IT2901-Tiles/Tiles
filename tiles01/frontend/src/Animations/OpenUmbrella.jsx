@@ -16,7 +16,6 @@ function OpenUmbrella(props) {
                     keyTimes={keyTimes}
                     repeatCount="indefinite"
                 />
-
             </path>
             <path id="umbrella12" className="umbrella" d="m 280,170 L183,170 L183,120 Q 184,100 280,170" fill="#000000">
                 <animate

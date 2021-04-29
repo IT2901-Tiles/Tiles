@@ -1,7 +1,6 @@
 import React from 'react';
 import LinkButton from '../Components/LinkButton';
 import '../CSS/PageNotFound.css';
-//IMG imports
 import bikeCard from "../images/things/bike.png";
 import colorChangeCard from "../images/feedbacks/color_change.png";
 import motionCard from "../images/triggers/motion.png"
@@ -11,8 +10,6 @@ import temperatureCard from "../images/triggers/temperature.png"
 import umbrellaCard from "../images/things/umbrella.png"
 import vibrateCard from "../images/feedbacks/vibrate.png"; 
 
-
-//This page does not exist
 function NotFoundPage() {
 
     return (

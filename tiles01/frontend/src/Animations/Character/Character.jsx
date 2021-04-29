@@ -2,9 +2,7 @@ import React from "react"
 
 function Character(){
     return(
-       
         <g className="whole">
-
                 <g className="HeadParts">
                     <rect id="head" x="60" y="36" height="35" width="55" fill="grey" stroke="black"/>
                     <rect id="lEar" x="53" y="46" height="15" width="5" fill="grey" stroke="black"/>
@@ -15,16 +13,12 @@ function Character(){
                     <line id="topSmile" x1="79" y1="62" x2="96" y2="62" stroke="black"/>
                 </g>
                 
-                
                 <g className="BodyParts">
                     <rect id="neck" x="80" y="73" height="8" width="15" fill="grey" stroke="black"/>
                     <rect id="body" x="60" y="83" height="35" width="55" fill="grey" stroke="black"/>
                 </g>
-        </g>
-        
-            
+        </g>       
     );
-
 }
 
 export default Character;

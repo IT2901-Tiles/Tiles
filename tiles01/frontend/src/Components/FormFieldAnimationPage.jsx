@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 
 function FormFieldAnimationPage(props) {
     const [input, setInput] = useState('')
-    const [triggerCard] = useState(props.triggerCard) // props to pass to AnimationsPreview.jsx
-    const [thingCard] = useState(props.thingCard) // props to pass to AnimationsPreview.jsx
-    const [feedbackCard] = useState(props.feedbackCard) // props to pass to AnimationsPreview.jsx
+    const [triggerCard] = useState(props.triggerCard) // props to pass to AnimationPage.jsx
+    const [thingCard] = useState(props.thingCard) // props to pass to AnimationPage.jsx
+    const [feedbackCard] = useState(props.feedbackCard) // props to pass to AnimationPage.jsx
     let outputStandardText = `Cards chosen:\n- Trigger: ${triggerCard}\n- Thing: ${thingCard}\n- Feedback: ${feedbackCard}\n\nYour idea:\n- ` // passed as first parameter in the downloadFile Blob
 
     // The following function gathers the content from the textarea and inserts it into a external txt-file
@@ -34,7 +34,6 @@ function FormFieldAnimationPage(props) {
     );
 }
 
-
 function sendIdeaRequest(data){
     fetch('/add_idea', {
       method: 'post',
@@ -44,6 +43,5 @@ function sendIdeaRequest(data){
         window.alert(data) 
 })
 }
-
 
 export default FormFieldAnimationPage;

@@ -29,8 +29,6 @@ function Tpv() {
                         repeatCount="indefinite"
                     />
                 </g>
-
-
             </svg>
         </div>
     )

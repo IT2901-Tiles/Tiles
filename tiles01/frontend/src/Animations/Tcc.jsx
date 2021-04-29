@@ -4,7 +4,6 @@ import SmallTemperature from './SmallTemperature';
 import Outdoors from './Outdoors';
 import PersonArmsUp from './PersonArmsUp';
 
-
 function Tcc() {
     return (
         <div>
@@ -14,9 +13,7 @@ function Tcc() {
                 <PersonArmsUp colour="blue;blue;red;red;blue;blue"
                     keyTimes="0;0.3;0.31;0.7;0.71;1" dur="10" />
                 <SmallTemperature />
-
             </svg>
-
         </div>
     );
 }

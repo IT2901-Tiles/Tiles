@@ -7,7 +7,6 @@ function PersonArmsUp(props) {
 
     return (
         <g className="PersonArmsUp">
-
             <circle id="head" cx="140" cy="190" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
             <circle id="eye1" cx="133" cy="185" r="2" stroke="black" strokeWidth="1" fill="black" />
             <circle id="eye2" cx="147" cy="185" r="2" stroke="black" strokeWidth="1" fill="black" />
@@ -26,7 +25,6 @@ function PersonArmsUp(props) {
                 <line id="fingers2" x1="178" y1="190" x2="190" y2="190" stroke="#ffe5cc" strokeWidth="6" />
             </g>
             <line id="body" x1="140" y1="200" x2="140" y2="255" stroke="#ffe5cc" strokeWidth="7" />
-
 
             <g>
                 <line id="leg1" x1="140" y1="255" x2="150" y2="320" stroke="#ffe5cc" strokeWidth="4" />
@@ -69,7 +67,6 @@ function PersonArmsUp(props) {
                     />
                 </line>
             </g>
-
         </g>
     );
 }

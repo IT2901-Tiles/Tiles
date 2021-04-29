@@ -11,7 +11,7 @@ function Dpv() {
                     <rect width="300" height="400" fill="#b3e6ff" />
                     <BookShelf />
                     <Desk />
-                    {/* svg of hand from here: https://freesvg.org/vector-of-a-hand */}
+                    {/* svg of hand from: https://freesvg.org/vector-of-a-hand */}
                     <g transform="scale(.49235) translate(300)" >
                         <g
                             className="g5121"
@@ -217,14 +217,9 @@ function Dpv() {
                             fill="#dabdac"
                             d="m362.42 130.07l82.92 67.76c15.14 69.35 1.81 128.74-9.26 126.28-23.26-17.64-30.9-29.97-62.72-35.36l-11.79-21.46c22.71 16.53 49.5 18.47 50.94 5.89 11.99-62.68-27.47-107.09-50.09-143.11z"
                         />
-
                     </g>
-
                 </g>
-
             </svg >
-
-
         </div >
     );
 }

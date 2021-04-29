@@ -4,7 +4,6 @@ import Character from './Character'
 function CharThinking() {
     return (
         <div className='CharThinking'>
-
             <svg viewBox="0 0 165 150" className="svgCharacter">
                 <Character/> 
                 <g className="LightBulb">

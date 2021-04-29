@@ -40,8 +40,7 @@ function Temperature() {
                     dur="10s"
                     repeatCount="indefinite"/>
             </circle>
-        </g>
-        
+        </g>  
     );
 }
 

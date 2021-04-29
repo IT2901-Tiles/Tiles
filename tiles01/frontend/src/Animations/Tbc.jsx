@@ -49,11 +49,8 @@ function Tbc() {
                     <ellipse id="seat" cx="70" cy="220" rx="15" ry="3" stroke="black" strokeWidth="3" />
                 </g>
                 <SmallTemperature />
-
             </svg>
-
         </div>
-
     );
 }
 

@@ -33,7 +33,6 @@ function Pen(props) {
             </polygon>
             <polygon id="pen4" points="64.5,258.5 83,276 89.5,268.5 71,251" fill="#ffffff" />
             <polygon id="pen4" points="180.5,132 199,149 205,142 186.5,125" fill="#ffffff" />
-
         </g>
     );
 }
