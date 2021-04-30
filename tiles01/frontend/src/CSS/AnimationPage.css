@@ -1,6 +1,6 @@
 /* CSS-styling for the components/page of AnimationPage.jsx - feel free to incorporate this in a common CSS-file */
 
-/* The styling below belongs to the grid-outline of AnimationsPreview.jsx */
+/* The styling below belongs to the grid-outline of AnimationPage.jsx */
 
 .gridAnimationsPage {
     display: grid;
@@ -63,7 +63,7 @@
     0px 5px 22px 4px rgba(0, 0, 0, 0.12), 0px 7px 8px -4px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling for saving text file, in FormFieldAnimation.jsx */
+/* Styling for saving text file, in FormFieldAnimationPage.jsx */
 
 .textAreaAnimationPage {
     position: relative;
