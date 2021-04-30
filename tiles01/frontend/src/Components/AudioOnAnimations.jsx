@@ -42,6 +42,7 @@ function AudioOnAnimations(props) {
 
     return (
         <div>
+            {/* If following if-condition is not true, then a placeholder button will be returned so that the site does not glitch */}
         {checkIfCardHasAudio() ?
         <div>
             <audio id="animationAudio" autoPlay loop>
@@ -51,7 +52,7 @@ function AudioOnAnimations(props) {
                 Mute audio {/* Default value*/}
             </button>
         </div>
-        : <div></div>}
+        : <div><button id="muteButtonPlaceholder"></button></div>}
         </div>
     )
 }
