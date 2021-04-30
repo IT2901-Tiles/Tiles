@@ -8,7 +8,7 @@ function CharNormal() {
                 <Character/> 
                 <g className="LightBulb">
                     <g className ="lightShine">
-                    <line id="lightStick1" x1="77" y1="4" x2="82" y2="9" stroke="black" strokeWidth="2">
+                    <line x1="77" y1="4" x2="82" y2="9" stroke="black" strokeWidth="2">
                         <animate
                             attributeName = "y1"
                             keyTimes="0;0.5;1"
@@ -24,7 +24,7 @@ function CharNormal() {
                             repeatCount="indefinite" 
                         />
                     </line>
-                    <line id="lightStick2" x1="83" y1="2" x2="85" y2="8" stroke="yellow" strokeWidth="2">
+                    <line x1="83" y1="2" x2="85" y2="8" stroke="yellow" strokeWidth="2">
                     <animate
                             attributeName = "y1"
                             keyTimes="0;0.5;1"
@@ -42,7 +42,7 @@ function CharNormal() {
                             repeatCount="indefinite" 
                         />
                     </line>
-                    <line id="lightStick3" x1="91" y1="2" x2="89" y2="8" stroke="black" strokeWidth="2">
+                    <line x1="91" y1="2" x2="89" y2="8" stroke="black" strokeWidth="2">
                     <animate
                             attributeName = "y1"
                             keyTimes="0;0.5;1"
@@ -60,7 +60,7 @@ function CharNormal() {
                             repeatCount="indefinite" 
                         />
                     </line>
-                    <line id="lightStick4" x1="97" y1="4" x2="93" y2="9" stroke="yellow" strokeWidth="2">
+                    <line x1="97" y1="4" x2="93" y2="9" stroke="yellow" strokeWidth="2">
                     <animate
                             attributeName = "y1"
                             keyTimes="0;0.5;1"
@@ -79,8 +79,8 @@ function CharNormal() {
                         />
                     </line>
                     </g>
-                    <circle id="lightBulb" cx="87.5" cy="15" r="5" fill="yellow" stroke="black"/>
-                    <line id="lightStickMain" x1="87.5" y1="20" x2="87.5" y2="28" stroke="black" strokeWidth="2"/>
+                    <circle cx="87.5" cy="15" r="5" fill="yellow" stroke="black"/>
+                    <line x1="87.5" y1="20" x2="87.5" y2="28" stroke="black" strokeWidth="2"/>
                      <animateTransform
                         attributeName = "transform"
                         attributeType = "XML"
@@ -94,19 +94,19 @@ function CharNormal() {
                 </g>
 
                 <g className="eyes"> 
-                    <polygon id="eyeL" points="75 44, 68 56, 82 56" fill="black"/>
-                    <polygon id="eyeR" points="97 44, 90 56, 104 56" fill="black"/>
+                    <polygon points="75 44, 68 56, 82 56" fill="black"/>
+                    <polygon points="97 44, 90 56, 104 56" fill="black"/>
                 </g>
                 <g className="leftArm"> 
                     <g className="leftArmOver">
-                    <circle id="shoulderL" cx="53.5" cy="86" r="5" fill="grey" stroke="black" />
-                    <rect id="overarmL" x="50" y="93" height="16" width="7" fill="grey" stroke="black"/>
+                    <circle cx="53.5" cy="86" r="5" fill="grey" stroke="black" />
+                    <rect x="50" y="93" height="16" width="7" fill="grey" stroke="black"/>
                     </g>
                     <g className="leftArmUnder">
-                    <circle id="elbowL" cx="53.5" cy="115.5" r="5" fill="grey" stroke="black" />
-                    <rect id="underarmL" x="31" y="113" height="7" width="16" fill="grey" stroke="black" transform="rotate(20 53.5 115.5)"/>
-                    <rect id="handLL" x="16" y="112" height="5" width="13" fill="grey" stroke="black" transform="rotate(10 53.5 115.5)"/>
-                    <rect id="handLR" x="17" y="117" height="5" width="13" fill="grey" stroke="black" transform="rotate(35 53.5 115.5)"/>
+                    <circle cx="53.5" cy="115.5" r="5" fill="grey" stroke="black" />
+                    <rect x="31" y="113" height="7" width="16" fill="grey" stroke="black" transform="rotate(20 53.5 115.5)"/>
+                    <rect x="16" y="112" height="5" width="13" fill="grey" stroke="black" transform="rotate(10 53.5 115.5)"/>
+                    <rect x="17" y="117" height="5" width="13" fill="grey" stroke="black" transform="rotate(35 53.5 115.5)"/>
                     <animateTransform
                         attributeName = "transform"
                         attributeType = "XML"
@@ -130,12 +130,12 @@ function CharNormal() {
                     />
                 </g> 
                 <g className="rightArm">
-                    <circle id="shoulderR" cx="121.5" cy="86" r="5" fill="grey" stroke="black" />           
-                    <rect id="overarmR" x="118" y="93" height="16" width="7" fill="grey" stroke="black"/>
-                    <circle id="elbowR" cx="121.5" cy="115.5" r="5" fill="grey" stroke="black" />
-                    <rect id="underarmR" x="128" y="113" height="7" width="16" fill="grey" stroke="black" transform="rotate(-20 121.5 115.5)"/>
-                    <rect id="handRL" x="140" y="103" height="5" width="13" fill="grey" stroke="black" transform="rotate(-30 140 101)"/>
-                    <rect id="handRR" x="145" y="107" height="5" width="13" fill="grey" stroke="black" transform="rotate(10 145 107)"/> 
+                    <circle cx="121.5" cy="86" r="5" fill="grey" stroke="black" />           
+                    <rect x="118" y="93" height="16" width="7" fill="grey" stroke="black"/>
+                    <circle cx="121.5" cy="115.5" r="5" fill="grey" stroke="black" />
+                    <rect x="128" y="113" height="7" width="16" fill="grey" stroke="black" transform="rotate(-20 121.5 115.5)"/>
+                    <rect x="140" y="103" height="5" width="13" fill="grey" stroke="black" transform="rotate(-30 140 101)"/>
+                    <rect x="145" y="107" height="5" width="13" fill="grey" stroke="black" transform="rotate(10 145 107)"/> 
                 </g>
             </svg>
         </div>
