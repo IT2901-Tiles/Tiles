@@ -101,7 +101,7 @@ Button:disabled {
   color: rgb(101, 109, 109) !important;
   box-shadow: 4px 6px 3px 4px rgb(0, 0, 0, 0.25);
   filter: grayscale(70%) brightness(100%);
-  filter:  grayscale(70%);
+  filter: grayscale(70%);
   pointer-events: none;
 }
 

@@ -216,15 +216,3 @@ p {
     margin: 3% auto 3%;
   }
 }
-
-/*PRE DEFINDED DESIGN KAN SLETTES? */
-
-.App {
-  text-align: center;
-  font-family: "Comic Neue", sans-serif;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
