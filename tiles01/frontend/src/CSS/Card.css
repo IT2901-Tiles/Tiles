@@ -49,7 +49,6 @@
   height: 18.7vw; /* Must be 1.3vw smaller than chosenCardContainer smaller due to the border */
   position: relative;
   border: 5px;
-  /* padding-bottom: 7%; must have slightly (about 4%) bigger padding than images chosen because of the border */
 }
 
 .chosenCardContainer,

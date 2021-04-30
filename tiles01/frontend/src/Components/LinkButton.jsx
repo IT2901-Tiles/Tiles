@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../CSS/Button.css';
-import Button from 'react-bootstrap/Button';
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import '../CSS/Button.css'
+import Button from 'react-bootstrap/Button'
 
 //Button component that redirect to different page
 //props:
@@ -11,13 +11,14 @@ import Button from 'react-bootstrap/Button';
 //category: which category the button us linking to, optional
 //category will also change the colour of the button
 //options for category are: trigger, thing, feedback, animation
+
 function LinkButton(props) {
     const [title] = useState(props.title)
     const [path] = useState(props.target)
     const [category] = useState(props.category)
     const [size] = useState(props.size + "Button")
-    let colour = "#F08A00";
-    let fontColour = "#F3EAC2";
+    let colour = "#F08A00"
+    let fontColour = "#F3EAC2"
 
     //change the colour of the button based on the category or page the button is connected to(sent with props)
     if (category === "things") {
@@ -37,7 +38,7 @@ function LinkButton(props) {
         }} >
             <Button style={{ backgroundColor: colour, color: fontColour }} className={size} variant="primary" onClick={props.onClick} disabled={props.disabled}>{title}</Button>
         </Link>
-    );
+    )
 }
 
-export default LinkButton;
+export default LinkButton

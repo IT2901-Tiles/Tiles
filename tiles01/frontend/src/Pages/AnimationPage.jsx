@@ -1,20 +1,20 @@
-import React from 'react';
+import React from 'react'
 import "../CSS/AnimationPage.css"
 import TopContainer from '../Components/TopContainer'
 import CharHappy from "../Animations/Character/CharHappy"
-import LinkButton from '../Components/LinkButton';
+import LinkButton from '../Components/LinkButton'
 import FormFieldAnimationPage from '../Components/FormFieldAnimationPage'
 import AudioFieldAnimationPage from '../Components/AudioFieldAnimationPage'
 import {
     Redirect,
-} from "react-router-dom";
-import { Mbc, Mbv, Mcc, Mcv, Mfc, Mfv, Mpc, Mpv, Muc, Tbc, Tbv, Dbc, Dbv, Muv, Tcc, Tfc, Tfv, Tpc, Tpv, Tcv, Tuc, Tuv, Dcc, Dcv, Dfc, Dfv, Dpc, Dpv, Duc, Duv } from '../Animations';
-import AudioOnAnimations from '../Components/AudioOnAnimations';
+} from "react-router-dom"
+import { Mbc, Mbv, Mcc, Mcv, Mfc, Mfv, Mpc, Mpv, Muc, Tbc, Tbv, Dbc, Dbv, Muv, Tcc, Tfc, Tfv, Tpc, Tpv, Tcv, Tuc, Tuv, Dcc, Dcv, Dfc, Dfv, Dpc, Dpv, Duc, Duv } from '../Animations'
+import AudioOnAnimations from '../Components/AudioOnAnimations'
 
 function AnimationPage() {
-    const trigger = "trigger";
-    const things = "things";
-    const feedback = "feedback";
+    const trigger = "trigger"
+    const things = "things"
+    const feedback = "feedback"
     //Redirect if cards are not chosen
     if (localStorage.getItem(trigger) === (null || "null") ||localStorage.getItem(things) === (null || "null") ||localStorage.getItem(feedback) === (null || "null")) {
         return < Redirect to="/404" />
@@ -28,11 +28,11 @@ function AnimationPage() {
     }
     //takes in the path of the file and returns the name of the card
     function getCardName(path) {
-        let indexstartname;
+        let indexstartname
         try{
             indexstartname = path.lastIndexOf("/") + 1
         }catch{
-            return null;
+            return null
         }
         let filename = path.slice(indexstartname)
         let indexendname = filename.indexOf(".")
@@ -81,14 +81,14 @@ function AnimationPage() {
                 </div>
             </div>
         </div>
-    );
+    )
 }
 
-export default AnimationPage;
+export default AnimationPage
 
 //resets cards
 export function resetCards() {
-    localStorage.setItem('trigger', null);
-    localStorage.setItem('things', null);
-    localStorage.setItem('feedback', null);
+    localStorage.setItem('trigger', null)
+    localStorage.setItem('things', null)
+    localStorage.setItem('feedback', null)
 }

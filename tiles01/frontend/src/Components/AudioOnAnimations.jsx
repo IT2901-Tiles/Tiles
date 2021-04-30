@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import vibrateSound from '../Audio/cellphone_vibrate.wav' // Free sound effect from: https://freesound.org/people/SpliceSound/sounds/369840/ (please hmu if you have better sound effects)
+import React, { useState } from 'react'
+import vibrateSound from '../Audio/cellphone_vibrate.wav' // Free sound effect from: https://freesound.org/people/SpliceSound/sounds/369840/ 
 
 // Adding sounds to the different animations provided in AnimationsPage.jsx
 function AudioOnAnimations(props) {
@@ -20,23 +20,23 @@ function AudioOnAnimations(props) {
     // if it does NOT have a sound effect: mute button shall not be included.
     function checkIfCardHasAudio() {
         if (feedbackCard === 'vibrate') {
-            return true; 
+            return true
         } else {
-            return false;
+            return false
         }
     }
 
     // functionality of the mute button, audio will be muted if it is unmuted and unmuted audio will be muted (also changes text displayed on the button when button is toggled)
     function muteAudio() {
-        let player = document.getElementById('animationAudio');
-        let muteButtonText = document.getElementById('muteButton');
+        let player = document.getElementById('animationAudio')
+        let muteButtonText = document.getElementById('muteButton')
         console.log(player.muted)
         if (player.muted === false) {
-            muteButtonText.innerHTML = "Unmute audio";
-            return player.muted = true;
+            muteButtonText.innerHTML = "Unmute audio"
+            return player.muted = true
         } else if (player.muted === true) {
-            muteButtonText.innerHTML = "Mute audio";
-            return player.muted = false;
+            muteButtonText.innerHTML = "Mute audio"
+            return player.muted = false
         }
     }
 
@@ -57,4 +57,4 @@ function AudioOnAnimations(props) {
     )
 }
 
-export default AudioOnAnimations;
+export default AudioOnAnimations
