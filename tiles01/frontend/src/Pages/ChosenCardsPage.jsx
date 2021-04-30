@@ -10,9 +10,9 @@ function ChosenCardsPage() {
     const trigger = "trigger"
     const things = "things"
     const feedback = "feedback"
-    const triggerChosen = !["null", null].includes(localStorage.getItem(trigger))
-    const thingChosen = !["null", null].includes(localStorage.getItem(things))
-    const feedbackChosen = !["null", null].includes(localStorage.getItem(feedback))
+    const triggerChosen = !["null", null].includes(localStorage.getItem(trigger)) // fetches the image of the trigger-card that the user has chosen
+    const thingChosen = !["null", null].includes(localStorage.getItem(things)) // fetches the image of the thing-card that the user has chosen
+    const feedbackChosen = !["null", null].includes(localStorage.getItem(feedback)) // fetches the image of the feedback-card that the user has chosen
     
     let colorBorder // color of border and font when no card is picked
     const buttonActive = triggerChosen && thingChosen && feedbackChosen    // This variable checks which cards are checked off and sets a bool value
