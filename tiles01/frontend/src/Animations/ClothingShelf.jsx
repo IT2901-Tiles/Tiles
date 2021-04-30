@@ -8,6 +8,7 @@ function ClothingShelf(props) {
 
     return (
         <g className="clothingShelf">
+            {/*Shelf*/}
             <rect y="50" width="130" height="250" fill="#663300" >
                 <animate
                     attributeName="fill"
@@ -20,6 +21,7 @@ function ClothingShelf(props) {
             <rect x="9" y="64" width="111" height="56" fill="#331a00" />
             <rect x="9" y="129" width="111" height="56" fill="#331a00" />
             <rect x="9" y="194" width="111" height="56" fill="#331a00" />
+            {/*Clothes*/}
             <rect x="60" y="79" width="50" height="12" fill="#555555" />
             <rect x="55" y="91" width="60" height="9" fill="#ccccff" />
             <rect x="60" y="100" width="52" height="14" fill="#a3c2c2" />

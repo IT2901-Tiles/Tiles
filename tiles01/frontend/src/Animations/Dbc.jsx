@@ -6,6 +6,7 @@ function Dbc() {
     return (
         <div className='Dbc'>
             <svg viewBox="0 0 300 400">
+                {/*Background*/}
                 <g>
                     <Outdoors />
                     <polygon points="0,300 0,160 150,300" fill="#8ccd7e" strokeWidth="3" />
@@ -82,7 +83,6 @@ function Dbc() {
                     <line className="tshirt" x1="85" y1="-22" x2="70" y2="17" stroke="#ff5050" strokeWidth="8" />
                     <line className="tshirtArm2" x1="83" y1="-19" x2="100" y2="-9" stroke="#ff5050" strokeWidth="8" />
                 </g>
-
             </svg>
         </div>
     );
