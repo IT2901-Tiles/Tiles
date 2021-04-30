@@ -4,6 +4,7 @@ function Mcc() {
     return (
         <div>
             <svg viewBox="0 0 300 400">
+                {/*background*/}
                 <g>
                     <rect width="300" height="400" fill="#a3c2c2" />
                     <rect x="0" y="300" width="300" height="100" fill="#d2a679" />
@@ -13,6 +14,7 @@ function Mcc() {
                     <circle cx="250" cy="305" r="17" stroke="hotpink" strokeWidth="1" fill="hotpink" />
                     <polygon points="237,277 263,277 250,300" stroke="hotpink" strokeWidth="3" fill="transparent" />
                 </g>
+                {/*person*/}
                 <g className="person">
                     <circle className="head" cx="140" cy="190" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
                     <circle className="eye1" cx="133" cy="185" r="2" stroke="black" strokeWidth="1" fill="black" />

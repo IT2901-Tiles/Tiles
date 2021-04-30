@@ -8,6 +8,7 @@ function Mbc() {
             <svg viewBox="0 0 300 400">
                 <Outdoors />
                 <Sun />
+                {/*bike*/}
                 <g className="bike">
                     <g className="wheel1">
                         <line x1="20" y1="255" x2="80" y2="308" stroke="black" strokeWidth="3" />
@@ -47,7 +48,7 @@ function Mbc() {
                     <line x1="70" y1="220" x2="100" y2="280" stroke="black" strokeWidth="3" />
 
                     <ellipse cx="70" cy="220" rx="15" ry="3" stroke="black" strokeWidth="3" />
-
+                    {/*person*/}
                     <g className="person">
                         <circle className="head" cx="90" cy="190" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
                         <circle className="eye1" cx="83" cy="185" r="2" stroke="black" strokeWidth="1" fill="black" />

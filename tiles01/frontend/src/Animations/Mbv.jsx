@@ -7,6 +7,7 @@ function Mbv() {
         <div>
             <svg viewBox="0 0 300 400">
                 <Outdoors />
+                {/*bike*/}
                 <g className="bike">
                     <g className="wheel1">
                         <line x1="20" y1="255" x2="80" y2="308" stroke="black" strokeWidth="3" />
@@ -45,7 +46,7 @@ function Mbv() {
 
                     <ellipse cx="70" cy="220" rx="15" ry="3" stroke="black" strokeWidth="3" />
                 </g>
-
+                {/*person*/}
                 <g className="person">
                     <circle className="head" cx="90" cy="150" r="20" stroke="#ffe5cc" strokeWidth="1" fill="#ffe5cc" />
                     <circle className="eye1" cx="83" cy="145" r="2" stroke="black" strokeWidth="1" fill="black" />
