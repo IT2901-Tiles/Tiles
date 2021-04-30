@@ -3,7 +3,7 @@ const { MongoClient } = require("mongodb");
 
 //used to add an idea to the database
 //db_url is the url to the database
-//Card arguments are the cards selected in the different 
+//Card arguments are the cards selected in the different categories
 async function writeIdeaDB(db_url,triggerCard, thingCard, feedbackCard, idea) {
 
     const url = db_url;
