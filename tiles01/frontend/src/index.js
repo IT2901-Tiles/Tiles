@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AudioRecorder from 'audio-recorder-polyfill'
 
+
 if (!window.MediaRecorder) {
   document.write(
     decodeURI('%3Cscript defer src="/polyfill.js">%3C/script>')
