@@ -186,7 +186,7 @@ Button:disabled {
   }
 }
 
-/* Styling for the Mute button on AudioOnAnimations.jsx */
+/* Styling for the Mute and the placeholder button on AudioOnAnimations.jsx */
 #muteButton {
   background-color: #f08a00;
   border: solid 0.6vh #00000035;
@@ -207,4 +207,21 @@ Button:disabled {
   box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.24),
     0 19px 52px 0 rgba(0, 0, 0, 0.19);
   filter: brightness(110%);
+}
+
+#muteButtonPlaceholder {
+  border: none;
+  font-size: 1.2vw;
+  width: 10vw;
+  height: 5vh;
+  min-height: 40px;
+  position: relative;
+  background-color: transparent;
+}
+
+/* Removing the placeholder button for sizes smaller than 1300px in width, the page only glitches on the animationpage downloads on larger screens */
+@media only screen and (max-width: 1300px) {
+  #muteButtonPlaceholder {
+    display: none;
+  }
 }
