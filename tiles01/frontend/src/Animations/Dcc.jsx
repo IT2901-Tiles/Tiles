@@ -7,9 +7,12 @@ function Dcc() {
     return (
         <div className='Dcc'>
             <svg viewBox="0 0 300 400">
+                {/*Background*/}
                 <Inside />
                 <ClothingShelf />
+                {/*Person*/}
                 <PersonArmsUp />
+                {/*T-shirt*/}
                 <g>
                     <line id="tshirt" x1="200" y1="200" x2="200" y2="239" stroke="#ff5050" strokeWidth="10">
                         <animate

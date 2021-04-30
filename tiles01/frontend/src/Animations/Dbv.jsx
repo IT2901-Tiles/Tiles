@@ -6,6 +6,7 @@ function Dbv() {
     return (
         <div className='Dbv'>
             <svg viewBox="0 0 300 400">
+                {/*Background*/}
                 <g>
                     <Outdoors />
                     <polygon points="0,300 0,160 150,300" fill="#8ccd7e" strokeWidth="3" />
