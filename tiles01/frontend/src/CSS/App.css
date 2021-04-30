@@ -1,9 +1,4 @@
 /* MAIN DESIGN */
-/* OUR FONTS: 
-    font-family: 'Comic Neue', cursive;
-    font-family: 'Roboto', sans-serif;
-    */
-/** Selector css */
 html,
 body {
   margin: 0;
@@ -36,7 +31,6 @@ p {
 /** MAIN PAGE **/
 .mainPage {
   height: 100%;
-  /* overflow: hidden; */
 }
 
 .mainPage .Logo {

@@ -1,23 +1,23 @@
-import React, {useState} from 'react';
-import TopContainer from '../Components/TopContainer';
-import LinkButton from '../Components/LinkButton';
-import CardContainer from "../Components/CardContainer";
-import CharThinking from "../Animations/Character/CharThinking";
-import "../CSS/CardContainer.css";
+import React, {useState} from 'react'
+import TopContainer from '../Components/TopContainer'
+import LinkButton from '../Components/LinkButton'
+import CardContainer from "../Components/CardContainer"
+import CharThinking from "../Animations/Character/CharThinking"
+import "../CSS/CardContainer.css"
 
 function CategoryPage(props) {
 
     let category = "trigger"
-    let styling = { color: "#F08A00" };
+    let styling = { color: "#F08A00" }
     try {
         category = props.location.state.category
         styling.color = props.location.state.color
     } catch {
         console.log("No category chosen, trigger chosen as default")
     }
-    const [card, setCard] = useState(localStorage.getItem(category));
+    const [card, setCard] = useState(localStorage.getItem(category))
     
-    let categoryInfoText = "Choose 1 card from this pile to ";
+    let categoryInfoText = "Choose 1 card from this pile to "
   
     if (category === "things"){
         categoryInfoText += "select a thing to perform the action on"
@@ -34,6 +34,7 @@ function CategoryPage(props) {
     function onCardClick(newValue) {
         setCard(newValue.src)
     }
+
     return (
         <div className="Page">
         <TopContainer
@@ -49,8 +50,8 @@ function CategoryPage(props) {
                 <LinkButton target="/cards" title="Choose" size="Small" category={category} onClick={() => {localStorage.setItem(category, card)}} card={card} disabled={!cardSelected}  className="chooseCardsButton"></LinkButton>
             </div>
         </div>
-    );
+    )
 }
 
-export default CategoryPage;
+export default CategoryPage
 

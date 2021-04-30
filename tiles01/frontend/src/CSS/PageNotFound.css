@@ -1,6 +1,5 @@
 .PageNotFound {
   height: 100%;
-  /* overflow: hidden; */
 }
 .pageNotFoundTitle {
   background-color: #e53d2fee;
@@ -33,11 +32,6 @@
 }
 
 /* Imgs */
-.ImagesPageNotFound {
-  /* overflow: hidden;
-    height: 100%; */
-}
-
 .image {
   width: 6rem;
   position: absolute;
@@ -45,7 +39,7 @@
   z-index: -1;
 }
 
-/*** left side ***/
+/*** left side - images ***/
 .bikeCard {
   right: 80%;
   top: -10%;
@@ -76,7 +70,7 @@
   transform: rotate(15deg);
 }
 
-/*** right side ***/
+/*** right side - images ***/
 .colorChangeCard2 {
   left: 90%;
   top: -20%;

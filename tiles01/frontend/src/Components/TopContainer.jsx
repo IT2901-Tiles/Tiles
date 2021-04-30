@@ -1,6 +1,6 @@
-import React from 'react';
-import "../CSS/TopContainer.css";
-import Logo from "./Logo";
+import React from 'react'
+import "../CSS/TopContainer.css"
+import Logo from "./Logo"
 
 function TopContainer(props) {
     
@@ -12,7 +12,7 @@ function TopContainer(props) {
             </div>
         </div>
 
-    );
+    )
 }
 
-export default TopContainer;
+export default TopContainer

@@ -10,30 +10,36 @@ function FormFieldAnimationPage(props) {
 
     // The following function gathers the content from the textarea and inserts it into a external txt-file
     function downloadFile() {
-        let userInputValue // will change depending on the user writes something or not 
+        let userInputValue // will change depending on the user writes something or not
+
         if (document.getElementById("textBoxAnimationPage").value === "") { // if user does not write anything in the textarea
             userInputValue = "Oops! Looks like no brilliant ideas were written down..."
         } else { // if the user writes something in the textare
             userInputValue = document.getElementById("textBoxAnimationPage").value
         }
+
         const htmlElement = document.createElement("a") // creates an "a" element in the html page, where we'll "store" the value of the user input
         const valueInput = new Blob([outputStandardText + userInputValue], { type: 'text/plain' }) // value of txt file must be passed in the first parameter of Blob
         htmlElement.href = URL.createObjectURL(valueInput)
-        htmlElement.download = "tiles.txt"
+        htmlElement.download = "tiles.txt" // name of the file that is being downloaded
         document.body.appendChild(htmlElement)
         htmlElement.click()
+
+        // JSON-request
         sendIdeaRequest({"trigger":props.triggerCard,"thing":props.thingCard,"feedback":props.feedbackCard,"idea":userInputValue})
     }
 
-    // Will fix the position when the animations are ready
     return (
         <div className="textAreaAnimationPage">
+            {/* The text-area */}
             <textarea id="textBoxAnimationPage" placeholder="Write your idea here..." onChange={newInput => setInput(newInput.target.value)} />
+            {/* Download button */}
             <button onClick={downloadFile} className="textButtonAnimationPage">Download</button>
         </div>
-    );
+    )
 }
 
+// sendIdeaRequest fetches the idea (data) as a JSON request, is used in the downloadFile-function within the FormFieldAnimationPage function 
 function sendIdeaRequest(data){
     fetch('/add_idea', {
       method: 'post',
@@ -41,7 +47,7 @@ function sendIdeaRequest(data){
       body: JSON.stringify(data)
     }).then(response=>response.json()).then(data=>{ 
         window.alert(data) 
-})
+    })
 }
 
-export default FormFieldAnimationPage;
+export default FormFieldAnimationPage

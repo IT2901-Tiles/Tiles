@@ -1,14 +1,14 @@
-import React from 'react';
-import LinkButton from '../Components/LinkButton';
-import '../CSS/PageNotFound.css';
-import bikeCard from "../images/things/bike.png";
-import colorChangeCard from "../images/feedbacks/color_change.png";
+import React from 'react'
+import LinkButton from '../Components/LinkButton'
+import '../CSS/PageNotFound.css'
+import bikeCard from "../images/things/bike.png"
+import colorChangeCard from "../images/feedbacks/color_change.png"
 import motionCard from "../images/triggers/motion.png"
 import dropCard from "../images/triggers/drop.png"
-import penCard from "../images/things/pen.png";
+import penCard from "../images/things/pen.png"
 import temperatureCard from "../images/triggers/temperature.png"
 import umbrellaCard from "../images/things/umbrella.png"
-import vibrateCard from "../images/feedbacks/vibrate.png"; 
+import vibrateCard from "../images/feedbacks/vibrate.png" 
 
 function NotFoundPage() {
 
@@ -50,7 +50,7 @@ function NotFoundPage() {
             </div>
         </div>
 
-    );
+    )
 }
 
-export default NotFoundPage;
+export default NotFoundPage

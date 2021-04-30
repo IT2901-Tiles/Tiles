@@ -1,5 +1,5 @@
-import React from 'react';
-import "../CSS/Card.css";
+import React from 'react'
+import "../CSS/Card.css"
 
 // Card component which displays the image of one card
 function Card(props) {
@@ -15,7 +15,7 @@ function Card(props) {
 
     return (
         <img className={imageClass} name={props.name} onClick={handleClick} id={props.id} key={props.id} src={props.src} alt="A card" ></img>
-    );
+    )
 }
 
-export default Card;
+export default Card

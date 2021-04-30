@@ -44,7 +44,6 @@
 .card2AnimationsPage, 
 .card3AnimationsPage {
     margin-top: 3vw;
-    /*margin: 3px;*/
     margin: 0;
 }
 
@@ -91,12 +90,9 @@
     padding-top: 7px;
     background-repeat: no-repeat;
     font-family: 'Comic Neue', sans-serif;
-    /* margin-right: 10px;
-    margin-left: 10px; */
 }
 
 .textAreaAnimationPage textarea { /* border color for textarea */
-
     border: 0.5vh solid  #F08A00;
 }
 

@@ -1,7 +1,7 @@
-import React from 'react';
-import Logo from "../Components/Logo";
-import LinkButton from '../Components/LinkButton';
-import CharNormalMainPage from "../Animations/Character/CharNormalMainPage";
+import React from 'react'
+import Logo from "../Components/Logo"
+import LinkButton from '../Components/LinkButton'
+import CharNormalMainPage from "../Animations/Character/CharNormalMainPage"
 import img1 from "../images/img1.png"
 import img2 from "../images/img2.png"
 import {resetCards} from "./AnimationPage"
@@ -23,7 +23,7 @@ function MainPage() {
                 <CharNormalMainPage />
             </div>
         </div>
-    );
+    )
 }
 
-export default MainPage;
+export default MainPage

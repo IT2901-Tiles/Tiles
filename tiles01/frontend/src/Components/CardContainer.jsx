@@ -1,44 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import Card from "./Card"
 
 //imports all of the images
 function importAll(paths) {
-    return paths.keys().map(paths);
+    return paths.keys().map(paths)
 }
 
 //snippet from https://stackoverflow.com/questions/38332094/how-can-i-mock-webpacks-require-context-in-jest
 if (typeof require.context === 'undefined') {
-	const fs = require('fs');
-	const path = require('path');
+	const fs = require('fs')
+	const path = require('path')
 
 	require.context = (base = '.', scanSubDirectories = false, regularExpression = /\.js$/) => {
-	    const files = {};
+	    const files = {}
 	    function readDirectory(directory) {
 	        fs.readdirSync(directory).forEach((file) => {
-	            const fullPath = path.resolve(directory, file);
+	            const fullPath = path.resolve(directory, file)
 
 	            if (fs.statSync(fullPath).isDirectory()) {
-	                if (scanSubDirectories) readDirectory(fullPath);
+	                if (scanSubDirectories) readDirectory(fullPath)
 	    
-                    return;
+                    return
 	            }
 	            
-                if (!regularExpression.test(fullPath)) return;
+                if (!regularExpression.test(fullPath)) return
 	            
-                files[fullPath] = true;
-	        });
+                files[fullPath] = true
+	        })
 	    }
 
-	    readDirectory(path.resolve(__dirname, base));
+	    readDirectory(path.resolve(__dirname, base))
 	    
         function Module(file) {
-	        return require(file);
+	        return require(file)
 	    }
 	    
-        Module.keys = () => Object.keys(files);
+        Module.keys = () => Object.keys(files)
 	    
-        return Module;
-	    };
+        return Module
+	    }
 	}
 
 //paths to where the different image sets are
@@ -49,8 +49,8 @@ var cardPaths = {
 }
 
 function CardContainer(props) {
-    const listOfImages = importAll(cardPaths[props.category]);
-    const [activeCard, setActiveCard] = useState(null);
+    const listOfImages = importAll(cardPaths[props.category])
+    const [activeCard, setActiveCard] = useState(null)
     //called when a card in the container is clicked, sets the card as active 
     //newValue represents the card component that is selected
     function handleCardClick(newValue) {
@@ -59,11 +59,11 @@ function CardContainer(props) {
     }
     //gets card name from path	
 	function getName(path) {
-        let index;
+        let index
         try{
             index = path.default.indexOf(".")
         }catch{
-            return null;
+            return null
         }
         return path.default.slice(14, index)
     }
@@ -75,7 +75,7 @@ function CardContainer(props) {
                 (image, index) => <Card active={activeCard} name={getName(image)} onClick={handleCardClick} id={index} key={index} src={image.default} />
             )}
         </div>
-    );
+    )
 }
 
-export default CardContainer;
+export default CardContainer

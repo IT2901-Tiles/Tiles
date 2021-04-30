@@ -2,12 +2,12 @@
 import React, { useEffect, useState } from 'react'
 import MicRecorder from 'mic-recorder-to-mp3'
 import "../CSS/Button.css"
-import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button'
 
 const Mp3Recorder = new MicRecorder({ bitRate: 128 })
 
 function AudioFieldAnimationPage(props) {
-    window.AudioContext = window.AudioContext || window.webkitAudioContext;
+    window.AudioContext = window.AudioContext || window.webkitAudioContext
 
     const [triggerCard] = useState(props.triggerCard) // props to pass to AnimationPage.jsx
     const [thingCard] = useState(props.thingCard) // props to pass to AnimationPage.jsx
@@ -59,40 +59,40 @@ function AudioFieldAnimationPage(props) {
     //function to check permission to record
     function checkPermissionForAudio() {
         if (navigator.mediaDevices === undefined) {
-            navigator.mediaDevices = {};
+            navigator.mediaDevices = {}
         }
         if (navigator.mediaDevices.getUserMedia === undefined) {
             navigator.mediaDevices.getUserMedia = function (constraints) {
                 // First get ahold of the legacy getUserMedia, if present
                 var getUserMedia =
                     // navigator.getUserMedia ||
-                    navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+                    navigator.webkitGetUserMedia || navigator.mozGetUserMedia
 
                 // Some browsers just don't implement it - return a rejected promise with an error
                 // to keep a consistent interface
                 if (!getUserMedia) {
                     return Promise.reject(
                         new Error("getUserMedia is not implemented in this browser")
-                    );
+                    )
                 }
 
                 // Otherwise, wrap the call to the old navigator.getUserMedia with a Promise
                 return new Promise(function (resolve, reject) {
-                    getUserMedia.call(navigator, constraints, resolve, reject);
-                });
-            };
+                    getUserMedia.call(navigator, constraints, resolve, reject)
+                })
+            }
         }
         navigator.mediaDevices
             .getUserMedia({ audio: true })
             .then(stream => {
-                setBlocked(false);
+                setBlocked(false)
             })
             .catch(err => {
-                setBlocked(true);
-                console.log("Please give permission for the microphone to record audio.");
-                console.log(err.name + ": " + err.message);
-            });
-    };
+                setBlocked(true)
+                console.log("Please give permission for the microphone to record audio.")
+                console.log(err.name + ": " + err.message)
+            })
+    }
 
     useEffect(() => {
         checkPermissionForAudio()
@@ -110,7 +110,7 @@ function AudioFieldAnimationPage(props) {
                 <Button onClick={downloadRecording} className="SmallButton" disabled={audio === ''}>Download</Button>
             </div>
         </div>
-    );
+    )
 }
 
 export default AudioFieldAnimationPage
