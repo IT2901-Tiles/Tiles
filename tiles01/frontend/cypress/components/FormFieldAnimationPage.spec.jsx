@@ -12,6 +12,7 @@ describe('FormFieldAnimationPage', () => {
         mount(<FormFieldAnimationPage/>);
         cy.get('textarea').should('contain.text', '')
         cy.get('textarea').type('What a great idea')
+        cy.get("textarea").should('have.value', 'What a great idea')
     });
 });
 

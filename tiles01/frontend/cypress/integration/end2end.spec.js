@@ -67,6 +67,7 @@ describe("End to end test", () => {
     })
     it('Write idea', () => {
         cy.get('#textBoxAnimationPage').type("My great idea");
+        cy.get("#textBoxAnimationPage").should('have.value', 'My great idea')
     })
     it('Download idea', () => {
         cy.get('.textButtonAnimationPage').click()

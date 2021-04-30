@@ -1,7 +1,7 @@
 Cards chosen:
-- Trigger: undefined
-- Thing: undefined
-- Feedback: undefined
+- Trigger: drop
+- Thing: bike
+- Feedback: color_change
 
 Your idea:
-- Oops! Looks like no brilliant ideas were written down...
+- My great idea
