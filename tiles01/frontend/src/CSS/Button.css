@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
 
+a[disabled] {
+  pointer-events: none;
+}
+
 .LargeButton {
   background-color: #f08a00;
   border: solid 5px #00000035;
