@@ -19,8 +19,9 @@ describe('AudioOnAnimations component', () => {
         const tree = renderer.create(<AudioOnAnimations/>).toJSON();
         expect(tree).toMatchSnapshot();
     });
-    it('there does not exist a button element if the feedback card is not selected', () => {
-        expect(wrapper.find('button')).toHaveLength(0);
+    it('there exists a placeholder-button if vibrate is not chosen as the feedback-card', () => {
+        expect(wrapper.find('button')).toHaveLength(1);
+        expect(wrapper.find('button').props().id).toEqual('muteButtonPlaceholder')
     });
     it('there does not exist a audio element if the feedback card vibrate is not selected', () => {
         expect(wrapper.find('audio')).toHaveLength(0);

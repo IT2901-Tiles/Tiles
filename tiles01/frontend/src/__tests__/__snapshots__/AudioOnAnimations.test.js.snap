@@ -2,6 +2,10 @@
 
 exports[`AudioOnAnimations component renders correctly 1`] = `
 <div>
-  <div />
+  <div>
+    <button
+      id="muteButtonPlaceholder"
+    />
+  </div>
 </div>
 `;

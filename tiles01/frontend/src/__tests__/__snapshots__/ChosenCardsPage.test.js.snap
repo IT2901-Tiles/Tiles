@@ -41,7 +41,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
             <rect
               fill="grey"
               height="35"
-              id="head"
               stroke="black"
               width="55"
               x="60"
@@ -50,7 +49,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
             <rect
               fill="grey"
               height="15"
-              id="lEar"
               stroke="black"
               width="5"
               x="53"
@@ -59,7 +57,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
             <rect
               fill="grey"
               height="15"
-              id="rEar"
               stroke="black"
               width="5"
               x="117"
@@ -68,7 +65,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
             <rect
               fill="grey"
               height="6"
-              id="topHead"
               stroke="black"
               width="15"
               x="80"
@@ -78,20 +74,17 @@ exports[`ChosenCards Page renders correctly 1`] = `
               cx="87.5"
               cy="61"
               fill="red"
-              id="smile"
               r="8"
               stroke="black"
             />
             <rect
               fill="grey"
               height="10"
-              id="smileRect"
               width="19"
               x="78"
               y="52"
             />
             <line
-              id="topSmile"
               stroke="black"
               x1="79"
               x2="96"
@@ -105,7 +98,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
             <rect
               fill="grey"
               height="8"
-              id="neck"
               stroke="black"
               width="15"
               x="80"
@@ -114,7 +106,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
             <rect
               fill="grey"
               height="35"
-              id="body"
               stroke="black"
               width="55"
               x="60"
@@ -129,7 +120,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
             className="lightShine"
           >
             <line
-              id="lightStick1"
               stroke="black"
               strokeWidth="2"
               x1="77"
@@ -153,7 +143,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
               />
             </line>
             <line
-              id="lightStick2"
               stroke="yellow"
               strokeWidth="2"
               x1="83"
@@ -179,7 +168,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
               />
             </line>
             <line
-              id="lightStick3"
               stroke="black"
               strokeWidth="2"
               x1="91"
@@ -205,7 +193,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
               />
             </line>
             <line
-              id="lightStick4"
               stroke="yellow"
               strokeWidth="2"
               x1="97"
@@ -235,12 +222,10 @@ exports[`ChosenCards Page renders correctly 1`] = `
             cx="87.5"
             cy="15"
             fill="yellow"
-            id="lightBulb"
             r="5"
             stroke="black"
           />
           <line
-            id="lightStickMain"
             stroke="black"
             strokeWidth="2"
             x1="87.5"
@@ -264,12 +249,10 @@ exports[`ChosenCards Page renders correctly 1`] = `
         >
           <polygon
             fill="black"
-            id="eyeL"
             points="75 44, 68 56, 82 56"
           />
           <polygon
             fill="black"
-            id="eyeR"
             points="97 44, 90 56, 104 56"
           />
         </g>
@@ -283,14 +266,12 @@ exports[`ChosenCards Page renders correctly 1`] = `
               cx="53.5"
               cy="86"
               fill="grey"
-              id="shoulderL"
               r="5"
               stroke="black"
             />
             <rect
               fill="grey"
               height="16"
-              id="overarmL"
               stroke="black"
               width="7"
               x="50"
@@ -304,14 +285,12 @@ exports[`ChosenCards Page renders correctly 1`] = `
               cx="53.5"
               cy="115.5"
               fill="grey"
-              id="elbowL"
               r="5"
               stroke="black"
             />
             <rect
               fill="grey"
               height="7"
-              id="underarmL"
               stroke="black"
               transform="rotate(20 53.5 115.5)"
               width="16"
@@ -321,7 +300,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
             <rect
               fill="grey"
               height="5"
-              id="handLL"
               stroke="black"
               transform="rotate(10 53.5 115.5)"
               width="13"
@@ -331,7 +309,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
             <rect
               fill="grey"
               height="5"
-              id="handLR"
               stroke="black"
               transform="rotate(35 53.5 115.5)"
               width="13"
@@ -367,14 +344,12 @@ exports[`ChosenCards Page renders correctly 1`] = `
             cx="121.5"
             cy="86"
             fill="grey"
-            id="shoulderR"
             r="5"
             stroke="black"
           />
           <rect
             fill="grey"
             height="16"
-            id="overarmR"
             stroke="black"
             width="7"
             x="118"
@@ -384,14 +359,12 @@ exports[`ChosenCards Page renders correctly 1`] = `
             cx="121.5"
             cy="115.5"
             fill="grey"
-            id="elbowR"
             r="5"
             stroke="black"
           />
           <rect
             fill="grey"
             height="7"
-            id="underarmR"
             stroke="black"
             transform="rotate(-20 121.5 115.5)"
             width="16"
@@ -401,7 +374,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
           <rect
             fill="grey"
             height="5"
-            id="handRL"
             stroke="black"
             transform="rotate(-30 140 101)"
             width="13"
@@ -411,7 +383,6 @@ exports[`ChosenCards Page renders correctly 1`] = `
           <rect
             fill="grey"
             height="5"
-            id="handRR"
             stroke="black"
             transform="rotate(10 145 107)"
             width="13"
@@ -563,6 +534,7 @@ exports[`ChosenCards Page renders correctly 1`] = `
   </div>
   <br />
   <a
+    disabled={true}
     href="/animation"
     onClick={[Function]}
   >
