@@ -1,7 +1,7 @@
 # Tiles
 
 ![test(coverage)](https://img.shields.io/badge/test%20coverage-47%2C77%25-orange)
-![license(MIT)](https://img.shields.io/badge/license-MIT-green)
+[![license(MIT)](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 ### Tiles
 Our project is a digital interface to be used in innovation workshops for children in the age of 8-12, based on a card deck called Tiles. The Tiles card deck consists of 110 unique cards, which are sectioned into different categories. The overall idea is to enable innovative thinking processes by using combinations of these cards in a workshop-like manner. These innovative ideas can be for example Internet of Things (IoT) items, that can be produced later. The different combinations of the cards are going to give the users an interactive metaphor, which in our case will be animations. The users can be able to save their ideas as both text or audio. A live demo of our finished product can be viewed at [https://tiles.hapta.no](https://tiles.hapta.no).
@@ -56,6 +56,6 @@ Please make sure to update tests as appropriate.
 Thanks to our product owner Giulia Cosentino, our supervisor Marius Sjøberg, NTNU for giving us this project and the group members Millie Burhol Austad, Gunvor Huso, Emilie Kalleberg, Stuart Gallina Ottersen, Karen Villmones, Anne Mosvold Ørke and Malin Holte.
 
 ### License
-The source code for the site is licensed under the [MIT license](tiles/LICENSE)
+The source code for the site is licensed under the [MIT license](LICENSE)
 
 Copyright (c) 2021 Giulia Cosentino.
